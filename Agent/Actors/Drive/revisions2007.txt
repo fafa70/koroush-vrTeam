@@ -1,0 +1,17 @@
+------------------------------------------------------------------------
+r565 | baslamet | 2007-06-21 13:29:39 +0200 (Thu, 21 Jun 2007) | 8 lines
+
+MbICP:
+- refactored scanmatchers to prepare for MbICP
+- added initial (unstable) version of MbICP scanmatcher
+
+WSS:
+- moved Actors
+- prepared Agent for WSS
+
+------------------------------------------------------------------------
+r664 | tschmits | 2007-07-06 14:09:27 +0200 (Fri, 06 Jul 2007) | 2 lines
+
+- Loglineparser could not parse strings of size 0: Bug FIXED
+- Included Camera (up/down) control to GUI. (Maybe Bayu can share some of his precious icons for this interface...?)
+------------------------------------------------------------------------

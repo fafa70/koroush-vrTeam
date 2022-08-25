@@ -1,0 +1,55 @@
+[map]
+levelname = newmap
+startposes = AutoPlayerStart_0 9.3840,-6.2560,1.4720 0.0000,0.0000,0.0000
+
+
+[team]
+operatorname = BaseStation
+teammembers = 0-BaseStation
+
+
+[local]
+localhost = 127.0.0.1
+
+
+[network]
+imageserverhost = 127.0.0.1
+imageserverport = 5003
+usarsimhost = 127.0.0.1
+usarsimport = 3000
+wirelessserverhost = 127.0.0.1
+wirelessserverport = 5874
+
+
+[backup]
+backupfrequency = 120
+createbackups = True
+
+
+[basestation]
+agentnumber = 1
+agenttype = slam
+behaviorbalance = 1
+behaviormode = TeleOperation
+detectortheta = 
+logfile = <Click to Select ...>
+logfileformat = UsarSim
+logplayback = False
+multiviewpanels = 
+noisesigma = 0
+pathplangoal = 
+robotmodel = P3AT
+skindetectotmode = Detection
+slam-mappingmode = ScanMatching
+slam-scanmatcher = IDC
+slam-seedmode = None
+spawnfromcommander = True
+startlocation = -1.2670,-0.9379,1.4720
+startrotation = 
+teachermode = SkinOnly
+useimageserver = True
+uselogger = False
+usemultiview = False
+usenoise = False
+
+

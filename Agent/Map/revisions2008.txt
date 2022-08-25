@@ -1,0 +1,215 @@
+------------------------------------------------------------------------
+r674 | baslamet | 2007-07-08 10:12:36 +0200 (Sun, 08 Jul 2007) | 10 lines
+
+Comm refactory:
+- only the Operator had access to Comm-related information like which agents are out-of-range and in-range
+- moved this functionality to CommAgent, which is the base class for Operator but also for regular agents
+- as a consequence, CommAgent and derived classes have full access to all info provided by the CommActor too
+
+Put SmartAgent in the loop:
+- UsarAgent is the base class for our UsarSlamAgent and UsarSkinDetAgent
+- UsarAgent used to be derived from CommAgent, but now it derives from SmartAgent
+- SmartAgent in turn derives from CommAgent so it put 'in the chain'
+- SmartAgent adds behavior control .... (turned off by default)
+------------------------------------------------------------------------
+r688 | baslamet | 2007-07-13 10:02:50 +0200 (Fri, 13 Jul 2007) | 1 line
+
+Minor refactory to memento stuff. Also added some documentation.
+------------------------------------------------------------------------
+r693 | baslamet | 2007-07-14 14:01:58 +0200 (Sat, 14 Jul 2007) | 10 lines
+
+Did some refactory to pave the way for frontiers:
+- restored the nice gradient-style FreeSpaceLayer
+- ditched FastFreeSpaceLayer, the rendering performance is fine as it is, the factor that slowed it down most was the high resolution used in the past. We used to be on 50px/m and have been using 20px/m for a while now.
+- started new FrontierLayer, is work in progress as it is now, will work on this the coming week.
+
+Enhanced ManifoldView to accomodate changes:
+- added button to show/hide new FrontierLayer
+- added missing button to show/hide victim reports
+- it became a but crowded up there, so sized it down to make it fit again on my 15in screen .:-)
+
+------------------------------------------------------------------------
+r694 | baslamet | 2007-07-14 17:04:53 +0200 (Sat, 14 Jul 2007) | 1 line
+
+Made a first step towards frontier extraction.
+------------------------------------------------------------------------
+r695 | baslamet | 2007-07-15 17:36:04 +0200 (Sun, 15 Jul 2007) | 11 lines
+
+Large refactory to ManifoldImage and related classes:
+- added lots of garbage collection (using blocks)
+- moved agent trail to AgentsLayer, where it belongs
+- made naming consistent" renamed all Observations to Obstacles
+- added settings that remember which layers were on/off
+- added SafeSpaceLayer
+- added buttons to show/hide VictimsLayer, SafeSpaceLayer and FrontierLayer
+
+And probably much more .... don't recall. Nothing 'dangerous' though. 
+
+
+------------------------------------------------------------------------
+r715 | baslamet | 2007-07-22 00:14:40 +0200 (Sun, 22 Jul 2007) | 5 lines
+
+Implemented a QuadTree:
+- HybridIcpScanMatcher uses this to index the points before correlating them, performance boost is HUGE (factor 2 speedup)
+- next step is index the full manifold using a QuadTree, ManifoldIndex.vb is a first step
+- then it will be possible to match a scan against the whole manifold while still having acceptable performance
+- refactored parts of scan matching classes to prepare for these upcoming changes 
+------------------------------------------------------------------------
+r716 | baslamet | 2007-07-22 23:50:01 +0200 (Sun, 22 Jul 2007) | 2 lines
+
+Many updates to all the scan matching stuff. The code is growing into a mess, will clean this up asap. 
+This commit is mainly for backup purposes, may great additions needed a secure place. :-)
+------------------------------------------------------------------------
+r719 | baslamet | 2007-07-23 16:11:21 +0200 (Mon, 23 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r721 | baslamet | 2007-07-23 16:41:02 +0200 (Mon, 23 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r722 | baslamet | 2007-07-24 15:09:17 +0200 (Tue, 24 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r723 | baslamet | 2007-07-24 16:09:00 +0200 (Tue, 24 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r765 | baslamet | 2007-08-06 18:44:39 +0200 (Mon, 06 Aug 2007) | 9 lines
+
+Leftovers:
+- numerous little modifications to slam and scan matching, mostly fine-tunings for the purpose of several log files
+
+Implemented frontier extraction tools:
+- set resolution of manifold image to 10px/m for performance
+- numerous little routine that are able to filter out some piece of information from the manifold image
+- most importantly: frontier extraction
+- very nice too: navigation map extraction using value iteration
+
+------------------------------------------------------------------------
+r766 | baslamet | 2007-08-07 17:47:32 +0200 (Tue, 07 Aug 2007) | 4 lines
+
+Added another frontier tool: ExtractFrontierRegions
+- frontier space = free space - safe space (so, all free space beyond 2m)
+- frontier region = all connected components in frontier space (i.e. 'blobs')
+- the associated information gain for each frontier region is simply the area of the region in m^2
+------------------------------------------------------------------------
+r767 | baslamet | 2007-08-07 23:13:53 +0200 (Tue, 07 Aug 2007) | 1 line
+
+Half-done result of today's efforts to get frontier exploration behavior.
+------------------------------------------------------------------------
+r768 | baslamet | 2007-08-08 17:55:04 +0200 (Wed, 08 Aug 2007) | 1 line
+
+Implemented single-robot frontier exploration
+------------------------------------------------------------------------
+r769 | baslamet | 2007-08-09 00:28:04 +0200 (Thu, 09 Aug 2007) | 3 lines
+
+Improved single-robot frontier exploration.
+- performance is up because safety maps are only computed on a local scale
+- robustness is up due to some tuning
+------------------------------------------------------------------------
+r779 | baslamet | 2007-08-12 16:53:36 +0200 (Sun, 12 Aug 2007) | 3 lines
+
+- added Gaussian blurred image extraction 
+- started multi-robot frontier exploration code
+
+------------------------------------------------------------------------
+r780 | baslamet | 2007-08-12 17:00:06 +0200 (Sun, 12 Aug 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r781 | baslamet | 2007-08-12 18:36:20 +0200 (Sun, 12 Aug 2007) | 1 line
+
+intermediate commit
+------------------------------------------------------------------------
+r784 | baslamet | 2007-08-12 22:04:28 +0200 (Sun, 12 Aug 2007) | 1 line
+
+added area computation function to ManifoldImage
+------------------------------------------------------------------------
+r785 | baslamet | 2007-08-12 22:14:33 +0200 (Sun, 12 Aug 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r786 | baslamet | 2007-08-12 23:46:38 +0200 (Sun, 12 Aug 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r787 | baslamet | 2007-08-13 00:31:52 +0200 (Mon, 13 Aug 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r789 | baslamet | 2007-08-13 20:51:02 +0200 (Mon, 13 Aug 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r790 | baslamet | 2007-08-14 03:11:35 +0200 (Tue, 14 Aug 2007) | 1 line
+
+THIS IS THE REVISION THAT I DID THE FRONTIER EXPLORATION EXPERIMENTS WITH IN DM-COMPWORLDDAY2
+------------------------------------------------------------------------
+r806 | baslamet | 2007-09-26 15:53:00 +0200 (Wed, 26 Sep 2007) | 1 line
+
+Changes made for Probabilistic Robotics.
+------------------------------------------------------------------------
+r809 | arnoud | 2007-10-11 19:44:49 +0200 (Thu, 11 Oct 2007) | 1 line
+
+Experimental version of FrontierExploration. Strange behavior, so I tried to draw the current goal or future path (seems to be different than the FrontierLayer). Corrected TeleOperation.OnActivated (should be tested). pc-unreal = 146.50.1.149. 
+------------------------------------------------------------------------
+r813 | arnoud | 2007-10-30 09:55:29 +0100 (Tue, 30 Oct 2007) | 1 line
+
+Last 10 frontiers
+------------------------------------------------------------------------
+r814 | arnoud | 2007-10-30 15:16:06 +0100 (Tue, 30 Oct 2007) | 1 line
+
+Added UpperBound to pathplanning.
+------------------------------------------------------------------------
+r818 | arnoud | 2007-10-31 01:00:38 +0100 (Wed, 31 Oct 2007) | 2 lines
+
+* Added third bestpath-cache
+* Increased Blur-kernel from 13 to 15
+------------------------------------------------------------------------
+r823 | arnoud | 2007-11-05 16:04:31 +0100 (Mon, 05 Nov 2007) | 1 line
+
+Version as used for Euros2008 paper (including solved SafeSpaceLayer problem)
+------------------------------------------------------------------------
+r826 | arnoud | 2007-11-14 20:49:05 +0100 (Wed, 14 Nov 2007) | 3 lines
+
+No patches are forgotten, although some patches are sent double.
+
+To be tested more extensively.
+------------------------------------------------------------------------
+r841 | arnoud | 2007-11-26 02:46:51 +0100 (Mon, 26 Nov 2007) | 1 line
+
+Two small optimalisations
+------------------------------------------------------------------------
+r1009 | rtobi | 2008-02-26 18:27:51 +0100 (Tue, 26 Feb 2008) | 1 line
+
+eliminate some Console.WriteLine() calls
+------------------------------------------------------------------------
+r1136 | arnoud | 2008-04-02 17:18:38 +0200 (Wed, 02 Apr 2008) | 1 line
+
+Added OmniP2DX
+------------------------------------------------------------------------
+r1157 | arnoud | 2008-04-24 09:42:44 +0200 (Thu, 24 Apr 2008) | 12 lines
+
+German Open 2008 Thursday morning: 
+* bugfix to allow  TeleOperation over WSS
+* included GPSSensor
+* Preparations for including Apriori-data in FrontierExploration (not active)
+* Larger Axis-font
+* FreeSpaceAlpha on competition setting
+* Every 20 seconds an AREA print
+* Protection on creation of histogram-bitmap (pre-GO2008)
+* AirRobot introduced (no buttons to get AirBorne yet)
+* 
+* 
+
+------------------------------------------------------------------------
+r1158 | arnoud | 2008-04-24 18:16:11 +0200 (Thu, 24 Apr 2008) | 1 line
+
+German Open: Thursday Evening: Debugged BtnCamReq + added some comments
+------------------------------------------------------------------------
+r1333 | jdehoog | 2008-07-02 18:17:36 +0200 (Wed, 02 Jul 2008) | 1 line
+
+Extensive changes to SaveMapDialog: individual agent contributions can be adjusted using trackbars; added constant class (e.g. map resolution)
+------------------------------------------------------------------------

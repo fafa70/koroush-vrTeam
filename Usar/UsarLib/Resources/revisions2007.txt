@@ -1,0 +1,91 @@
+------------------------------------------------------------------------
+r509 | baslamet | 2007-05-30 16:37:17 +0200 (Wed, 30 May 2007) | 1 line
+
+Refactored UI stuff, moved everything to the shared usarlib.
+------------------------------------------------------------------------
+r512 | baslamet | 2007-06-07 15:07:28 +0200 (Thu, 07 Jun 2007) | 19 lines
+
+Massive update:
+
+- new NavAgent, subclass of Agent that adds navigability through a joystick
+
+- revamped Gui all over the place
+  - ManifoldView is now wrapped in a MapController which now also enables you to turn on/off individual layers 
+  - RunControllerView is refactored into a TeamController 
+  - AgentController is enriched with a joystick control
+
+- The TeamController has a workflow model that mimics typical competition runs:
+  - preparation stage: setup robots
+  - ready stage: check configurations, load apriori file (you can switch forth and back between preparation and ready)
+  - running stage: shows 20-mins countdown stopwatch, config buttons disappear and joystick controls appear
+  - deliverables stage: shows 10-mins countdown stopwatch, all agents are stopped
+  - done stage: run is over
+
+Numerous bits and pieces have been refactored / debugged all over the place.
+
+Bayu
+------------------------------------------------------------------------
+r525 | baslamet | 2007-06-11 09:46:11 +0200 (Mon, 11 Jun 2007) | 3 lines
+
+- Updated some icons
+- Added light switch for robot headlight
+- reverse gear works now too
+------------------------------------------------------------------------
+r531 | baslamet | 2007-06-11 17:40:59 +0200 (Mon, 11 Jun 2007) | 3 lines
+
+Added Config functionality
+- it is now possible to load/save configs
+
+------------------------------------------------------------------------
+r532 | baslamet | 2007-06-12 12:40:04 +0200 (Tue, 12 Jun 2007) | 4 lines
+
+Refactored Config options
+- NetworkConfig for server names/ips and ports
+- AgentConfig for robotmodel/startlocations
+- ConfigDialogs 
+------------------------------------------------------------------------
+r537 | baslamet | 2007-06-12 15:46:01 +0200 (Tue, 12 Jun 2007) | 2 lines
+
+- bugfix CameraData
+- camera mode in agentcontroller
+------------------------------------------------------------------------
+r556 | baslamet | 2007-06-16 11:47:37 +0200 (Sat, 16 Jun 2007) | 13 lines
+
+Integrated OpenCV into the framework:
+- added C++ OpenCV libs to Third Party libs
+- added OpenCVDotNet wrapper to Third Party libs
+- changed reference to OpenCVDotNet in UsarLib project to make it point to the relative path
+- added post-build event to UsarCommander so that it copies the C++ files to the build directory, this should fix file-not-found exceptions error
+
+Many small things:
+- made histoPic2.JPG part of the UsarLib project as Content that is copied to the build dir
+- fixed GEO and CONF message handling
+- fixed GETGEO and GETCONF message requests in Sensor
+- fixed GeoReferencing of the produced GeoTIFF files (x-north / y-east)
+- reorganized scamatching code a bit
+
+------------------------------------------------------------------------
+r597 | baslamet | 2007-06-30 13:12:55 +0200 (Sat, 30 Jun 2007) | 2 lines
+
+Added show/hide clearspace functionality to MapController
+
+------------------------------------------------------------------------
+r623 | baslamet | 2007-07-03 12:05:38 +0200 (Tue, 03 Jul 2007) | 3 lines
+
+Added advanced apriori analysis functionality:
+- using Aforge image library (http://code.google.com/p/aforge/)
+- individual apriori-layers can be turned on and off now
+------------------------------------------------------------------------
+r634 | baslamet | 2007-07-04 13:39:14 +0200 (Wed, 04 Jul 2007) | 4 lines
+
+- modified syn such that it does not run automatically
+- the operator now triggers syncs 
+- this implies a MASSIVE reduction of the load on WSS
+- fixed a small bug in AgentConfig
+------------------------------------------------------------------------
+r646 | baslamet | 2007-07-05 15:01:16 +0200 (Thu, 05 Jul 2007) | 3 lines
+
+- fixed a small bug in FastFreeSpaceLayer
+- added and tested speed-up and speed-down buttons to AgentController
+- set rotational speed back to .5, it was too hard to get between cars with .8
+------------------------------------------------------------------------

@@ -1,0 +1,120 @@
+------------------------------------------------------------------------
+r566 | baslamet | 2007-06-23 19:55:49 +0200 (Sat, 23 Jun 2007) | 9 lines
+
+Factored CommAgent into framework
+- redesigned Agent - Sensor/Actor collaboration
+- added CommActor
+- added Communication project
+
+Unfortunately, due to the amount and kind of changes, bugs and merge conflicts are almost guaranteed.
+Sorry for that. ;-)
+
+Bayu
+------------------------------------------------------------------------
+r568 | baslamet | 2007-06-24 17:01:24 +0200 (Sun, 24 Jun 2007) | 1 line
+
+Sending text through WSS works
+------------------------------------------------------------------------
+r569 | baslamet | 2007-06-24 17:30:43 +0200 (Sun, 24 Jun 2007) | 1 line
+
+Binary messaging works too
+------------------------------------------------------------------------
+r570 | baslamet | 2007-06-25 16:59:27 +0200 (Mon, 25 Jun 2007) | 1 line
+
+Numerous bits and pieces.
+------------------------------------------------------------------------
+r571 | baslamet | 2007-06-26 11:57:52 +0200 (Tue, 26 Jun 2007) | 7 lines
+
+Added functionality so that each agent, regardless of which pc it is spawned, knows a-priori who his team members are and how he can communicate to them (i.e. port numbers they are listening to).
+- renamed NetworkConfig to TeamConfig
+- renamed NetworkConfigDialog to TeamConfigDialog
+- added [team] section to TeamConfig, so now it has two sections: [network] and [team]
+- the [team] section will hold a setting for the name of the operator and one for all team-members (comma-delimited)
+
+
+------------------------------------------------------------------------
+r577 | baslamet | 2007-06-27 10:53:56 +0200 (Wed, 27 Jun 2007) | 1 line
+
+Merged Tijn's code from yesterday and this morning into my latest changes.
+------------------------------------------------------------------------
+r586 | baslamet | 2007-06-27 23:05:20 +0200 (Wed, 27 Jun 2007) | 6 lines
+
+Lotsa changes:
+- moved Manifold data structure to Agent project
+- got WSS to work such that any pair of Agents will try to have an open connection whenever they are within range
+- got Agents to submit manifold data over the wire (Patches)
+
+
+------------------------------------------------------------------------
+r593 | baslamet | 2007-06-29 22:06:59 +0200 (Fri, 29 Jun 2007) | 4 lines
+
+- Comm works (WSS), huge refactory and numerous little improvements
+- refactored OperatorAgent
+- introduced some extension thresholds for ManifoldSLAM
+
+------------------------------------------------------------------------
+r594 | baslamet | 2007-06-29 22:38:21 +0200 (Fri, 29 Jun 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r595 | baslamet | 2007-06-30 11:54:25 +0200 (Sat, 30 Jun 2007) | 3 lines
+
+- relaying actor commands (e.g. DRIVE commands) from operator to robot works
+- atm this only works when the operator is in DIRECT contact with the robot, later on (asap) I will work on a broadcasting system that will enable the operator to communicate through intermediary robots (if time permits I hope to get to this later today)
+- the setup with Operator + Proxies works, this means that the Usar Commander boots an operator and several proxies of which only the operator (usually ComStation) is actually spawned in the simulator. The 'real' counterparts of the proxies are to be spawned from the command line (using the UsarClient console app).
+------------------------------------------------------------------------
+r616 | baslamet | 2007-07-02 18:04:22 +0200 (Mon, 02 Jul 2007) | 3 lines
+
+- agents now also communicate poses so that the Operator can render the agents in the Manifold
+- resync timeout set to 1 sec, results in faster feed-back from agent to operator
+
+------------------------------------------------------------------------
+r631 | baslamet | 2007-07-04 01:10:23 +0200 (Wed, 04 Jul 2007) | 6 lines
+
+Debugged WSS:
+- rewrote the sync protocol, the time-stamping system was flawed and caused 'gaps' to occur, should be solved now
+- found a serious bug in ProxyAgent that caused it to 'think' it could not control the remote robot, while in fact it just could, this bug is also fixed
+- got the path-loss values to be printed in the AgentController, really convenient
+- made agents continuously communicate their current pose, so even though the operators GUI is not up-to-date, it does receive pose updates which may be enough to act in time. Note that also the pose updates will suffer from lags when the WSS is in the midst of a sync-routine.
+
+------------------------------------------------------------------------
+r632 | baslamet | 2007-07-04 01:12:39 +0200 (Wed, 04 Jul 2007) | 1 line
+
+minor annoyance
+------------------------------------------------------------------------
+r634 | baslamet | 2007-07-04 13:39:14 +0200 (Wed, 04 Jul 2007) | 4 lines
+
+- modified syn such that it does not run automatically
+- the operator now triggers syncs 
+- this implies a MASSIVE reduction of the load on WSS
+- fixed a small bug in AgentConfig
+------------------------------------------------------------------------
+r636 | baslamet | 2007-07-04 15:21:59 +0200 (Wed, 04 Jul 2007) | 1 line
+
+fixed a major bug in WssConversation
+------------------------------------------------------------------------
+r637 | baslamet | 2007-07-04 15:24:19 +0200 (Wed, 04 Jul 2007) | 1 line
+
+(again) fixed a major bug in WssConversation
+------------------------------------------------------------------------
+r666 | baslamet | 2007-07-06 23:58:29 +0200 (Fri, 06 Jul 2007) | 1 line
+
+- changed GETSS query interval from 5 secs to 2 sec
+------------------------------------------------------------------------
+r670 | baslamet | 2007-07-07 11:52:09 +0200 (Sat, 07 Jul 2007) | 14 lines
+
+WARNING:
+- Comm will most probably NOT be backwards compatible with previous revisions
+- so either update all your clients and commander, or update none
+
+Comm update:
+- command relaying through intermediaries works (DRIVE commands)
+- pose update broadcasting through intermediaries works
+- NOT implemented: sync through intermediaries, too complex to implement on short notice (semi is in 4 hours)
+
+Comm improvements:
+- SyncStart and SyncCommit messages now also include CurrentPose of remote robot
+- benefit 1: before applying the sync, the GUI will already display the current pose of the robot
+- benefit 2: after the sync is applied, the pose update will cause the GUI to refresh, so no more clicking necessary
+
+------------------------------------------------------------------------

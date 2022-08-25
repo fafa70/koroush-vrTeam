@@ -1,0 +1,65 @@
+------------------------------------------------------------------------
+r715 | baslamet | 2007-07-22 00:14:40 +0200 (Sun, 22 Jul 2007) | 5 lines
+
+Implemented a QuadTree:
+- HybridIcpScanMatcher uses this to index the points before correlating them, performance boost is HUGE (factor 2 speedup)
+- next step is index the full manifold using a QuadTree, ManifoldIndex.vb is a first step
+- then it will be possible to match a scan against the whole manifold while still having acceptable performance
+- refactored parts of scan matching classes to prepare for these upcoming changes 
+------------------------------------------------------------------------
+r716 | baslamet | 2007-07-22 23:50:01 +0200 (Sun, 22 Jul 2007) | 2 lines
+
+Many updates to all the scan matching stuff. The code is growing into a mess, will clean this up asap. 
+This commit is mainly for backup purposes, may great additions needed a secure place. :-)
+------------------------------------------------------------------------
+r717 | baslamet | 2007-07-23 08:24:01 +0200 (Mon, 23 Jul 2007) | 2 lines
+
+Fixed a bug in QuadIDC
+
+------------------------------------------------------------------------
+r719 | baslamet | 2007-07-23 16:11:21 +0200 (Mon, 23 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r723 | baslamet | 2007-07-24 16:09:00 +0200 (Tue, 24 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r781 | baslamet | 2007-08-12 18:36:20 +0200 (Sun, 12 Aug 2007) | 1 line
+
+intermediate commit
+------------------------------------------------------------------------
+r804 | baslamet | 2007-09-19 15:33:59 +0200 (Wed, 19 Sep 2007) | 1 line
+
+Added Readme and Licence for public code release
+------------------------------------------------------------------------
+r806 | baslamet | 2007-09-26 15:53:00 +0200 (Wed, 26 Sep 2007) | 1 line
+
+Changes made for Probabilistic Robotics.
+------------------------------------------------------------------------
+r823 | arnoud | 2007-11-05 16:04:31 +0100 (Mon, 05 Nov 2007) | 1 line
+
+Version as used for Euros2008 paper (including solved SafeSpaceLayer problem)
+------------------------------------------------------------------------
+r1333 | jdehoog | 2008-07-02 18:17:36 +0200 (Wed, 02 Jul 2008) | 1 line
+
+Extensive changes to SaveMapDialog: individual agent contributions can be adjusted using trackbars; added constant class (e.g. map resolution)
+------------------------------------------------------------------------
+r1338 | arnoud | 2008-07-10 22:25:17 +0200 (Thu, 10 Jul 2008) | 3 lines
+
+This is the version for the WSS 0.4
+* this version is NOT backwards compatible with the old wireless simulator
+* change the wireless port to 50000
+------------------------------------------------------------------------
+r1343 | jdehoog | 2008-07-16 06:53:33 +0200 (Wed, 16 Jul 2008) | 1 line
+
+RoboCup08 Prelim Trial version: sleep between spawn and WSS connection, some sensors unmounted, prelim work on camera image use, multiple small bug fixes
+------------------------------------------------------------------------
+r1349 | arnoud | 2008-07-23 09:45:40 +0200 (Wed, 23 Jul 2008) | 5 lines
+
+Last changes of 2008 competition code
+* Updated licence, readme.txt and add_revisions to AOJFR 2008
+* Agent uses new GPSsensor
+* UsarCommander.vbproj includes postbuild which allows to read Apriori
+* RegularThread reports the name of the thread started
+------------------------------------------------------------------------

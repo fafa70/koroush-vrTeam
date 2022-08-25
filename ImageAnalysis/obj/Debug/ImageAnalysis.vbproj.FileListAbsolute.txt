@@ -1,0 +1,288 @@
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\NonSkinModel.hist
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\SkinModel.hist
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.ImageAnalysis.dll.config
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.ImageAnalysis.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.ImageAnalysis.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.xml
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\MathNet.Iridium.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\MathNet.Neodym.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.Agent.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.Math.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.Slam.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.Communication.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.Tools.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\AForge.Imaging.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\AForge.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\gdal_csharp.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\ogr_csharp.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\AForge.Math.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.Agent.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.Math.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.Slam.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\MathNet.Iridium.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\MathNet.Neodym.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.Communication.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.Communication.xml
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.Tools.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.Tools.xml
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\ICSharpCode.SharpZipLib.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\de\MathNet.Iridium.resources.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\es\MathNet.Iridium.resources.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\bin\Debug\fr\MathNet.Iridium.resources.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\obj\Debug\ResolveAssemblyReference.cache
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\obj\Debug\UvARescue.ImageAnalysis.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\obj\Debug\UvARescue.xml
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\ImageAnalysis\obj\Debug\UvARescue.ImageAnalysis.pdb
+H:\AOJRF2011\ImageAnalysis\bin\Debug\NonSkinModel.hist
+H:\AOJRF2011\ImageAnalysis\bin\Debug\SkinModel.hist
+H:\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.ImageAnalysis.dll.config
+H:\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.ImageAnalysis.dll
+H:\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.ImageAnalysis.pdb
+H:\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.xml
+H:\AOJRF2011\ImageAnalysis\bin\Debug\MathNet.Iridium.dll
+H:\AOJRF2011\ImageAnalysis\bin\Debug\MathNet.Neodym.dll
+H:\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.Agent.dll
+H:\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.Math.dll
+H:\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.Slam.dll
+H:\AOJRF2011\ImageAnalysis\bin\Debug\AForge.dll
+H:\AOJRF2011\ImageAnalysis\bin\Debug\AForge.Math.dll
+H:\AOJRF2011\ImageAnalysis\bin\Debug\gdal_csharp.dll
+H:\AOJRF2011\ImageAnalysis\bin\Debug\ICSharpCode.SharpZipLib.dll
+H:\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.Tools.dll
+H:\AOJRF2011\ImageAnalysis\bin\Debug\ogr_csharp.dll
+H:\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.Communication.dll
+H:\AOJRF2011\ImageAnalysis\bin\Debug\AForge.Imaging.dll
+H:\AOJRF2011\ImageAnalysis\bin\Debug\ICSharpCode.SharpZipLib.pdb
+H:\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.Tools.pdb
+H:\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.Tools.xml
+H:\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.Math.pdb
+H:\AOJRF2011\ImageAnalysis\bin\Debug\MathNet.Neodym.pdb
+H:\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.Slam.pdb
+H:\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.Communication.pdb
+H:\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.Communication.xml
+H:\AOJRF2011\ImageAnalysis\bin\Debug\MathNet.Iridium.pdb
+H:\AOJRF2011\ImageAnalysis\bin\Debug\UvARescue.Agent.pdb
+H:\AOJRF2011\ImageAnalysis\bin\Debug\de\MathNet.Iridium.resources.dll
+H:\AOJRF2011\ImageAnalysis\bin\Debug\es\MathNet.Iridium.resources.dll
+H:\AOJRF2011\ImageAnalysis\bin\Debug\fr\MathNet.Iridium.resources.dll
+H:\AOJRF2011\ImageAnalysis\obj\Debug\ResolveAssemblyReference.cache
+H:\AOJRF2011\ImageAnalysis\obj\Debug\UvARescue.ImageAnalysis.dll
+H:\AOJRF2011\ImageAnalysis\obj\Debug\UvARescue.xml
+H:\AOJRF2011\ImageAnalysis\obj\Debug\UvARescue.ImageAnalysis.pdb
+D:\AOJRF2012\ImageAnalysis\obj\Debug\ResolveAssemblyReference.cache
+D:\AOJRF2012\ImageAnalysis\bin\Debug\NonSkinModel.hist
+D:\AOJRF2012\ImageAnalysis\bin\Debug\SkinModel.hist
+D:\AOJRF2012\ImageAnalysis\bin\Debug\UvARescue.ImageAnalysis.dll.config
+D:\AOJRF2012\ImageAnalysis\bin\Debug\UvARescue.ImageAnalysis.dll
+D:\AOJRF2012\ImageAnalysis\bin\Debug\UvARescue.ImageAnalysis.pdb
+D:\AOJRF2012\ImageAnalysis\bin\Debug\UvARescue.xml
+D:\AOJRF2012\ImageAnalysis\bin\Debug\MathNet.Iridium.dll
+D:\AOJRF2012\ImageAnalysis\bin\Debug\MathNet.Neodym.dll
+D:\AOJRF2012\ImageAnalysis\bin\Debug\UvARescue.Agent.dll
+D:\AOJRF2012\ImageAnalysis\bin\Debug\UvARescue.Math.dll
+D:\AOJRF2012\ImageAnalysis\bin\Debug\UvARescue.Slam.dll
+D:\AOJRF2012\ImageAnalysis\bin\Debug\UvARescue.Communication.dll
+D:\AOJRF2012\ImageAnalysis\bin\Debug\UvARescue.Tools.dll
+D:\AOJRF2012\ImageAnalysis\bin\Debug\AForge.Imaging.dll
+D:\AOJRF2012\ImageAnalysis\bin\Debug\AForge.dll
+D:\AOJRF2012\ImageAnalysis\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\AOJRF2012\ImageAnalysis\bin\Debug\gdal_csharp.dll
+D:\AOJRF2012\ImageAnalysis\bin\Debug\ogr_csharp.dll
+D:\AOJRF2012\ImageAnalysis\bin\Debug\AForge.Math.dll
+D:\AOJRF2012\ImageAnalysis\bin\Debug\UvARescue.Agent.pdb
+D:\AOJRF2012\ImageAnalysis\bin\Debug\UvARescue.Math.pdb
+D:\AOJRF2012\ImageAnalysis\bin\Debug\UvARescue.Slam.pdb
+D:\AOJRF2012\ImageAnalysis\bin\Debug\MathNet.Iridium.pdb
+D:\AOJRF2012\ImageAnalysis\bin\Debug\MathNet.Neodym.pdb
+D:\AOJRF2012\ImageAnalysis\bin\Debug\UvARescue.Communication.pdb
+D:\AOJRF2012\ImageAnalysis\bin\Debug\UvARescue.Communication.xml
+D:\AOJRF2012\ImageAnalysis\bin\Debug\UvARescue.Tools.pdb
+D:\AOJRF2012\ImageAnalysis\bin\Debug\UvARescue.Tools.xml
+D:\AOJRF2012\ImageAnalysis\bin\Debug\ICSharpCode.SharpZipLib.pdb
+D:\AOJRF2012\ImageAnalysis\bin\Debug\de\MathNet.Iridium.resources.dll
+D:\AOJRF2012\ImageAnalysis\bin\Debug\es\MathNet.Iridium.resources.dll
+D:\AOJRF2012\ImageAnalysis\bin\Debug\fr\MathNet.Iridium.resources.dll
+D:\AOJRF2012\ImageAnalysis\obj\Debug\UvARescue.ImageAnalysis.dll
+D:\AOJRF2012\ImageAnalysis\obj\Debug\UvARescue.xml
+D:\AOJRF2012\ImageAnalysis\obj\Debug\UvARescue.ImageAnalysis.pdb
+D:\IUST-BASE\ImageAnalysis\obj\Debug\ResolveAssemblyReference.cache
+D:\IUST-BASE\ImageAnalysis\obj\Debug\UvARescue.ImageAnalysis.dll
+D:\IUST-BASE\ImageAnalysis\obj\Debug\UvARescue.xml
+D:\IUST-BASE\ImageAnalysis\obj\Debug\UvARescue.ImageAnalysis.pdb
+D:\IUST-BASE\ImageAnalysis\bin\Debug\NonSkinModel.hist
+D:\IUST-BASE\ImageAnalysis\bin\Debug\SkinModel.hist
+D:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.ImageAnalysis.dll.config
+D:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.ImageAnalysis.dll
+D:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.ImageAnalysis.pdb
+D:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.xml
+D:\IUST-BASE\ImageAnalysis\bin\Debug\MathNet.Iridium.dll
+D:\IUST-BASE\ImageAnalysis\bin\Debug\MathNet.Neodym.dll
+D:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Agent.dll
+D:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Math.dll
+D:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Slam.dll
+D:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Communication.dll
+D:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Tools.dll
+D:\IUST-BASE\ImageAnalysis\bin\Debug\AForge.Imaging.dll
+D:\IUST-BASE\ImageAnalysis\bin\Debug\AForge.dll
+D:\IUST-BASE\ImageAnalysis\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\IUST-BASE\ImageAnalysis\bin\Debug\gdal_csharp.dll
+D:\IUST-BASE\ImageAnalysis\bin\Debug\ogr_csharp.dll
+D:\IUST-BASE\ImageAnalysis\bin\Debug\AForge.Math.dll
+D:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Agent.pdb
+D:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Math.pdb
+D:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Slam.pdb
+D:\IUST-BASE\ImageAnalysis\bin\Debug\MathNet.Iridium.pdb
+D:\IUST-BASE\ImageAnalysis\bin\Debug\MathNet.Neodym.pdb
+D:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Communication.pdb
+D:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Communication.xml
+D:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Tools.pdb
+D:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Tools.xml
+D:\IUST-BASE\ImageAnalysis\bin\Debug\ICSharpCode.SharpZipLib.pdb
+D:\IUST-BASE\ImageAnalysis\bin\Debug\de\MathNet.Iridium.resources.dll
+D:\IUST-BASE\ImageAnalysis\bin\Debug\es\MathNet.Iridium.resources.dll
+D:\IUST-BASE\ImageAnalysis\bin\Debug\fr\MathNet.Iridium.resources.dll
+F:\IUST-BASE\ImageAnalysis\bin\Debug\NonSkinModel.hist
+F:\IUST-BASE\ImageAnalysis\bin\Debug\SkinModel.hist
+F:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.ImageAnalysis.dll.config
+F:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.ImageAnalysis.dll
+F:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.ImageAnalysis.pdb
+F:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.xml
+F:\IUST-BASE\ImageAnalysis\bin\Debug\MathNet.Iridium.dll
+F:\IUST-BASE\ImageAnalysis\bin\Debug\MathNet.Neodym.dll
+F:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Agent.dll
+F:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Math.dll
+F:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Slam.dll
+F:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Communication.dll
+F:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Tools.dll
+F:\IUST-BASE\ImageAnalysis\bin\Debug\AForge.Imaging.dll
+F:\IUST-BASE\ImageAnalysis\bin\Debug\AForge.dll
+F:\IUST-BASE\ImageAnalysis\bin\Debug\ICSharpCode.SharpZipLib.dll
+F:\IUST-BASE\ImageAnalysis\bin\Debug\gdal_csharp.dll
+F:\IUST-BASE\ImageAnalysis\bin\Debug\ogr_csharp.dll
+F:\IUST-BASE\ImageAnalysis\bin\Debug\AForge.Math.dll
+F:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Agent.pdb
+F:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Math.pdb
+F:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Slam.pdb
+F:\IUST-BASE\ImageAnalysis\bin\Debug\MathNet.Iridium.pdb
+F:\IUST-BASE\ImageAnalysis\bin\Debug\MathNet.Neodym.pdb
+F:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Communication.pdb
+F:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Communication.xml
+F:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Tools.pdb
+F:\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Tools.xml
+F:\IUST-BASE\ImageAnalysis\bin\Debug\ICSharpCode.SharpZipLib.pdb
+F:\IUST-BASE\ImageAnalysis\bin\Debug\de\MathNet.Iridium.resources.dll
+F:\IUST-BASE\ImageAnalysis\bin\Debug\es\MathNet.Iridium.resources.dll
+F:\IUST-BASE\ImageAnalysis\bin\Debug\fr\MathNet.Iridium.resources.dll
+F:\IUST-BASE\ImageAnalysis\obj\Debug\ResolveAssemblyReference.cache
+F:\IUST-BASE\ImageAnalysis\obj\Debug\UvARescue.ImageAnalysis.dll
+F:\IUST-BASE\ImageAnalysis\obj\Debug\UvARescue.xml
+F:\IUST-BASE\ImageAnalysis\obj\Debug\UvARescue.ImageAnalysis.pdb
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\NonSkinModel.hist
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\SkinModel.hist
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.ImageAnalysis.dll.config
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.ImageAnalysis.dll
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.ImageAnalysis.pdb
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.xml
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\MathNet.Iridium.dll
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\MathNet.Neodym.dll
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Agent.dll
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Math.dll
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Slam.dll
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Communication.dll
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Tools.dll
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\AForge.Imaging.dll
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\AForge.dll
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\gdal_csharp.dll
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\ogr_csharp.dll
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\AForge.Math.dll
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Agent.pdb
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Math.pdb
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Slam.pdb
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\MathNet.Iridium.pdb
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\MathNet.Neodym.pdb
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Communication.pdb
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Communication.xml
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Tools.pdb
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Tools.xml
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\ICSharpCode.SharpZipLib.pdb
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\de\MathNet.Iridium.resources.dll
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\es\MathNet.Iridium.resources.dll
+D:\usarsim\IUST-BASE\ImageAnalysis\bin\Debug\fr\MathNet.Iridium.resources.dll
+D:\usarsim\IUST-BASE\ImageAnalysis\obj\Debug\ResolveAssemblyReference.cache
+D:\usarsim\IUST-BASE\ImageAnalysis\obj\Debug\UvARescue.ImageAnalysis.dll
+D:\usarsim\IUST-BASE\ImageAnalysis\obj\Debug\UvARescue.xml
+D:\usarsim\IUST-BASE\ImageAnalysis\obj\Debug\UvARescue.ImageAnalysis.pdb
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\NonSkinModel.hist
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\SkinModel.hist
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.ImageAnalysis.dll.config
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.ImageAnalysis.dll
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.ImageAnalysis.pdb
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.xml
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\MathNet.Iridium.dll
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\MathNet.Neodym.dll
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Agent.dll
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Math.dll
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Slam.dll
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Communication.dll
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Tools.dll
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\AForge.Imaging.dll
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\AForge.dll
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\gdal_csharp.dll
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\ogr_csharp.dll
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\AForge.Math.dll
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Agent.pdb
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Math.pdb
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Slam.pdb
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\MathNet.Iridium.pdb
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\MathNet.Neodym.pdb
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Communication.pdb
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Communication.xml
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Tools.pdb
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Tools.xml
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\ICSharpCode.SharpZipLib.pdb
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\de\MathNet.Iridium.resources.dll
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\es\MathNet.Iridium.resources.dll
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\bin\Debug\fr\MathNet.Iridium.resources.dll
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\obj\Debug\ResolveAssemblyReference.cache
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\obj\Debug\UvARescue.ImageAnalysis.dll
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\obj\Debug\UvARescue.xml
+C:\base-backup\fresh-backup\IUST-BASE\ImageAnalysis\obj\Debug\UvARescue.ImageAnalysis.pdb
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\NonSkinModel.hist
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\SkinModel.hist
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.ImageAnalysis.dll.config
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.ImageAnalysis.dll
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.ImageAnalysis.pdb
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.xml
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\MathNet.Iridium.dll
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\MathNet.Neodym.dll
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Agent.dll
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Math.dll
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Slam.dll
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Communication.dll
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Tools.dll
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\AForge.Imaging.dll
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\AForge.dll
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\gdal_csharp.dll
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\ogr_csharp.dll
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\AForge.Math.dll
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Agent.pdb
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Math.pdb
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Slam.pdb
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\MathNet.Iridium.pdb
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\MathNet.Neodym.pdb
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Communication.pdb
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Communication.xml
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Tools.pdb
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\UvARescue.Tools.xml
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\ICSharpCode.SharpZipLib.pdb
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\de\MathNet.Iridium.resources.dll
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\es\MathNet.Iridium.resources.dll
+D:\mapping\IUST-BASE\ImageAnalysis\bin\Debug\fr\MathNet.Iridium.resources.dll
+D:\mapping\IUST-BASE\ImageAnalysis\obj\Debug\ResolveAssemblyReference.cache
+D:\mapping\IUST-BASE\ImageAnalysis\obj\Debug\UvARescue.ImageAnalysis.dll
+D:\mapping\IUST-BASE\ImageAnalysis\obj\Debug\UvARescue.xml
+D:\mapping\IUST-BASE\ImageAnalysis\obj\Debug\UvARescue.ImageAnalysis.pdb

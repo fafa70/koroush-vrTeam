@@ -1,0 +1,102 @@
+------------------------------------------------------------------------
+r2105 | arnoud | 2010-02-19 10:36:05 +0100 (Fri, 19 Feb 2010) | 1 line
+
+Copy from 2009 competition rev. 2100
+------------------------------------------------------------------------
+r2107 | arnoud | 2010-02-19 14:55:55 +0100 (Fri, 19 Feb 2010) | 7 lines
+
+Merge with experimental (rev. 2053) COMPILES, not tested yet
+* GetPoses should work now
+* P3AT and ATVR from UT3 available
+* Some additional Behaviors
+* SensorPoses instead of SensorCurrentData
+* Some additional logfiles which can be Read
+
+------------------------------------------------------------------------
+r2108 | arnoud | 2010-02-28 23:30:03 +0100 (Sun, 28 Feb 2010) | 3 lines
+
+GetStartPoses is now working.
+* Tried to test SaveMap, but MotionControl failed in 
+Me._Motions.Add(MotionType.AvoidTeamMate, New AvoidTeamMate(Me))
+------------------------------------------------------------------------
+r2110 | arnoud | 2010-03-15 10:15:56 +0100 (Mon, 15 Mar 2010) | 3 lines
+
+Extensively tested on Corridors-world
+* MotionControl is working
+* Remaining problem is camera image in GUI.
+------------------------------------------------------------------------
+r2117 | arnoud | 2010-03-30 23:53:03 +0200 (Tue, 30 Mar 2010) | 1 line
+
+Added TeleOpRobrechtMap
+------------------------------------------------------------------------
+r2120 | arnoud | 2010-03-31 16:38:07 +0200 (Wed, 31 Mar 2010) | 3 lines
+
+Version teste on RobotTeleopRobrecht_v2
+* smaller font for TargetPoints
+* less comments
+------------------------------------------------------------------------
+r2121 | arnoud | 2010-04-04 14:33:39 +0200 (Sun, 04 Apr 2010) | 5 lines
+
+Get images over communication link
+* was related with named cameras
+* To be checked, the proxy already receives images before the UsarAgent is started.
+* To be checked, proxy is Spawn
+* highest priority, to get lasersancs
+------------------------------------------------------------------------
+r2123 | arnoud | 2010-04-05 10:11:20 +0200 (Mon, 05 Apr 2010) | 3 lines
+
+Operator has no longer imageview in the AgentController
+* Added three buttons (Flip, FrontLeft and FrontRear)
+* Solved a small bug in SonarSensor
+------------------------------------------------------------------------
+r2124 | arnoud | 2010-04-06 08:19:14 +0200 (Tue, 06 Apr 2010) | 2 lines
+
+IranOpen TeleOp version
+* P3AT no longer mounts Sonar
+------------------------------------------------------------------------
+r2125 | arnoud | 2010-04-06 09:14:55 +0200 (Tue, 06 Apr 2010) | 1 line
+
+Missing button icons
+------------------------------------------------------------------------
+r2126 | arnoud | 2010-04-06 09:21:31 +0200 (Tue, 06 Apr 2010) | 2 lines
+
+Solved SpeedUp bug
+* During setup the Agent is not yet spawn (Added Not IsNothing(Me.Agent) protection)
+------------------------------------------------------------------------
+r2128 | arnoud | 2010-04-07 17:16:06 +0200 (Wed, 07 Apr 2010) | 2 lines
+
+Final working version of the Mapping Challenge
+* Essential change is in Agent.vb
+------------------------------------------------------------------------
+r2130 | arnoud | 2010-04-19 14:16:11 +0200 (Mon, 19 Apr 2010) | 1 line
+
+Improved error handling in the GUI
+------------------------------------------------------------------------
+r2154 | oformsma | 2010-05-27 21:13:58 +0200 (Thu, 27 May 2010) | 4 lines
+
+Changed following behavior to follow point that can be specified on the Map.
+So far, the scaling is off, so a path can not be planned.
+Also, if a location can not be planned to, it should be dropped and the next waypoint should be the new target.
+Removed LightFx references, as they broke my build.
+------------------------------------------------------------------------
+r2157 | oformsma | 2010-05-28 11:22:21 +0200 (Fri, 28 May 2010) | 1 line
+
+Coordinate transformations from screencoordinates to mapcoordinates to worldcoordinates work now.
+------------------------------------------------------------------------
+r2159 | oformsma | 2010-05-28 11:35:22 +0200 (Fri, 28 May 2010) | 1 line
+
+removed a button used for testing
+------------------------------------------------------------------------
+r2162 | oformsma | 2010-06-21 04:01:43 +0200 (Mon, 21 Jun 2010) | 5 lines
+
+RoboCup 2010 first challenge (TeleOperation) settings.
+ * minor bugfix: atrv is not spelled atvr
+ * printing whether the targets.txt file is loaded or not 
+ * removed clearlayer from jury file
+ * if one agent does not provide any pathces, the save file dialog still functions.
+------------------------------------------------------------------------
+r2163 | arnoud | 2010-07-02 10:39:02 +0200 (Fri, 02 Jul 2010) | 2 lines
+
+The LiveProxyDriver is not constantly polling for camera-images, which improved the response rate.
+A camera image is now only requested when the halt button is pushed.
+------------------------------------------------------------------------

@@ -1,0 +1,33 @@
+------------------------------------------------------------------------
+r2105 | arnoud | 2010-02-19 10:36:05 +0100 (Fri, 19 Feb 2010) | 1 line
+
+Copy from 2009 competition rev. 2100
+------------------------------------------------------------------------
+r2107 | arnoud | 2010-02-19 14:55:55 +0100 (Fri, 19 Feb 2010) | 7 lines
+
+Merge with experimental (rev. 2053) COMPILES, not tested yet
+* GetPoses should work now
+* P3AT and ATVR from UT3 available
+* Some additional Behaviors
+* SensorPoses instead of SensorCurrentData
+* Some additional logfiles which can be Read
+
+------------------------------------------------------------------------
+r2122 | arnoud | 2010-04-04 16:03:46 +0200 (Sun, 04 Apr 2010) | 1 line
+
+Solved the NoSync bug (could not serialize omnicam bitmap).
+------------------------------------------------------------------------
+r2129 | arnoud | 2010-04-09 11:40:57 +0200 (Fri, 09 Apr 2010) | 3 lines
+
+RunnerUp version
+* protected AverageCovariance from returning INF
+* removed a some print messages
+------------------------------------------------------------------------
+r2155 | jdehoog | 2010-05-27 21:16:28 +0200 (Thu, 27 May 2010) | 1 line
+
+Implemented scheduler for processing of laser range data.   In first tests this leads to a great improvement of the map update delay problem.
+------------------------------------------------------------------------
+r2158 | jdehoog | 2010-05-28 11:25:21 +0200 (Fri, 28 May 2010) | 1 line
+
+
+------------------------------------------------------------------------

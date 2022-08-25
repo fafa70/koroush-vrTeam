@@ -1,0 +1,30 @@
+------------------------------------------------------------------------
+r586 | baslamet | 2007-06-27 23:05:20 +0200 (Wed, 27 Jun 2007) | 6 lines
+
+Lotsa changes:
+- moved Manifold data structure to Agent project
+- got WSS to work such that any pair of Agents will try to have an open connection whenever they are within range
+- got Agents to submit manifold data over the wire (Patches)
+
+
+------------------------------------------------------------------------
+r599 | baslamet | 2007-06-30 17:12:20 +0200 (Sat, 30 Jun 2007) | 7 lines
+
+Victim stuff works:
+- victims observations are stored on the Manifold
+- and they are nicely rendered in the map
+- 2 new layers were added for this purpose; VictimsLayer and VictimReportsLayer
+
+
+
+------------------------------------------------------------------------
+r616 | baslamet | 2007-07-02 18:04:22 +0200 (Mon, 02 Jul 2007) | 3 lines
+
+- agents now also communicate poses so that the Operator can render the agents in the Manifold
+- resync timeout set to 1 sec, results in faster feed-back from agent to operator
+
+------------------------------------------------------------------------
+r643 | baslamet | 2007-07-05 12:10:55 +0200 (Thu, 05 Jul 2007) | 1 line
+
+added real-time pose tracking to manifold view, it doesn't get any faster than this.
+------------------------------------------------------------------------

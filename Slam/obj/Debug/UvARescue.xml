@@ -1,0 +1,40 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+UvARescue.Slam
+</name>
+</assembly>
+<members>
+<member name="T:UvARescue.Slam.WeightedScanMatcher">
+	<summary>
+ Implementaton fot the Weighted scanmatcher by Pfister et al.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Slam.ManifoldSlam.ProcessSensorUpdate(UvARescue.Agent.Sensor)">
+	<summary>
+ The Agent will forward any sensor updates to Slam through this member
+ </summary>
+	<param name="sensor"></param>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Slam.ManifoldSlam">
+	<summary>
+ ManifoldSLAM as inspired by Howard et al.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:UvARescue.Slam.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:UvARescue.Slam.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:UvARescue.Slam.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

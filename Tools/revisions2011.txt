@@ -1,0 +1,18 @@
+------------------------------------------------------------------------
+r2198 | ndijkshoorn | 2011-03-31 17:46:02 +0200 (Thu, 31 Mar 2011) | 2 lines
+
+Visual Studio 2011 project
+Added separate conversations for frames
+------------------------------------------------------------------------
+r2216 | arnoud | 2011-06-26 21:18:28 +0200 (Sun, 26 Jun 2011) | 5 lines
+
+Added some protections needed for UDK.
++ Status message is shorter
++ Tachometer gives empty messages
++ Removed some debug messages
++ Added some extra information in existing debug messages
+------------------------------------------------------------------------
+r2228 | arnoud | 2011-07-18 13:11:36 +0200 (Mon, 18 Jul 2011) | 1 line
+
+Preparing the 2011 Source-code release
+------------------------------------------------------------------------

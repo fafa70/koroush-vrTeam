@@ -1,0 +1,124 @@
+[map]
+levelname = map2
+startposes = PlayerStart -2.5028,-4.6020,-0.3200 0.0000,0.0000,2.1598 PlayerStart -0.6288,3.7226,-0.3200 0.0000,0.0000,2.1598
+
+
+[team]
+operatorname = koroush
+teammembers = 1
+
+
+[local]
+localhost = 127.0.0.1
+
+
+[network]
+imageserverhost = 127.0.0.1
+imageserverport = 5003
+usarsimhost = 127.0.0.1
+usarsimport = 3000
+wirelessserverhost = 127.0.0.1
+wirelessserverport = 50000
+
+
+[backup]
+backupfrequency = 120
+createbackups = False
+
+
+[1]
+agentnumber = 1
+agenttype = slam
+behaviorbalance = 1
+behaviormode = TeleOperation
+logfileformat = UsarSim
+logplayback = False
+multiviewpanels = 1
+noisesigma = 0
+robotmodel = P3AT
+skindetectotmode = Detection
+slam-mappingmode = ScanMatching
+slam-scanmatcher = WSM
+slam-seedmode = None
+spawnfromcommander = True
+startlocation = -0.6288,3.7226,-0.3200
+startrotation = 0,0,0
+teachermode = SkinOnly
+useimageserver = True
+uselogger = False
+usemultiview = True
+usenoise = False
+
+
+[2]
+agentnumber = 2
+agenttype = slam
+behaviorbalance = 1
+behaviormode = TeleOperation
+logfileformat = UsarSim
+logplayback = False
+multiviewpanels = 2
+noisesigma = 0
+robotmodel = P3AT
+skindetectotmode = Detection
+slam-mappingmode = ScanMatching
+slam-scanmatcher = WSM
+slam-seedmode = None
+spawnfromcommander = True
+startlocation = -12.3895,12.7307,1.4720
+startrotation = 0,0,0
+teachermode = SkinOnly
+useimageserver = True
+uselogger = False
+usemultiview = True
+usenoise = False
+
+
+[3]
+agentnumber = 3
+agenttype = slam
+behaviorbalance = 1
+behaviormode = TeleOperation
+logfileformat = UsarSim
+logplayback = False
+multiviewpanels = 3
+noisesigma = 0
+robotmodel = P3AT
+skindetectotmode = Detection
+slam-mappingmode = ScanMatching
+slam-scanmatcher = WSM
+slam-seedmode = None
+spawnfromcommander = True
+startlocation = -11.4345,13.7231,1.4720
+startrotation = 0,0,0
+teachermode = SkinOnly
+useimageserver = True
+uselogger = False
+usemultiview = True
+usenoise = False
+
+
+[4]
+agentnumber = 4
+agenttype = slam
+behaviorbalance = 1
+behaviormode = TeleOperation
+logfileformat = UsarSim
+logplayback = False
+multiviewpanels = 4
+noisesigma = 0
+robotmodel = P3AT
+skindetectotmode = Detection
+slam-mappingmode = ScanMatching
+slam-scanmatcher = WSM
+slam-seedmode = None
+spawnfromcommander = True
+startlocation = -7.7413,3.4218,1.4720
+startrotation = 0,0,0
+teachermode = SkinOnly
+useimageserver = True
+uselogger = False
+usemultiview = True
+usenoise = False
+
+

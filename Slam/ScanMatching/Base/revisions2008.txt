@@ -1,0 +1,64 @@
+------------------------------------------------------------------------
+r692 | baslamet | 2007-07-14 13:24:50 +0200 (Sat, 14 Jul 2007) | 6 lines
+
+1. Changed convergence check in IcpScanMatcher:
+- it will consider the scan matcher as having converged iff the scan matcher needed less than max-iterations
+
+2. Factored Noise settings into AgentConfig.
+- in the AgentConfigDialog you can now also configure the noise to apply to SLAM
+
+------------------------------------------------------------------------
+r696 | baslamet | 2007-07-17 17:10:22 +0200 (Tue, 17 Jul 2007) | 5 lines
+
+Added HybridIcpScanMatcher.vb and MultiIcpScanMatcher.vb:
+- HybridIcpScanMatcher.vb = WSM using metric from MbICP, this is work in progress so don't use 
+- MultiIcpScanMatcher.vb = basically WSM which runs IDC as fall-back option, work in progress but seems to work nicely already
+
+
+------------------------------------------------------------------------
+r715 | baslamet | 2007-07-22 00:14:40 +0200 (Sun, 22 Jul 2007) | 5 lines
+
+Implemented a QuadTree:
+- HybridIcpScanMatcher uses this to index the points before correlating them, performance boost is HUGE (factor 2 speedup)
+- next step is index the full manifold using a QuadTree, ManifoldIndex.vb is a first step
+- then it will be possible to match a scan against the whole manifold while still having acceptable performance
+- refactored parts of scan matching classes to prepare for these upcoming changes 
+------------------------------------------------------------------------
+r716 | baslamet | 2007-07-22 23:50:01 +0200 (Sun, 22 Jul 2007) | 2 lines
+
+Many updates to all the scan matching stuff. The code is growing into a mess, will clean this up asap. 
+This commit is mainly for backup purposes, may great additions needed a secure place. :-)
+------------------------------------------------------------------------
+r717 | baslamet | 2007-07-23 08:24:01 +0200 (Mon, 23 Jul 2007) | 2 lines
+
+Fixed a bug in QuadIDC
+
+------------------------------------------------------------------------
+r720 | baslamet | 2007-07-23 16:14:01 +0200 (Mon, 23 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r722 | baslamet | 2007-07-24 15:09:17 +0200 (Tue, 24 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r765 | baslamet | 2007-08-06 18:44:39 +0200 (Mon, 06 Aug 2007) | 9 lines
+
+Leftovers:
+- numerous little modifications to slam and scan matching, mostly fine-tunings for the purpose of several log files
+
+Implemented frontier extraction tools:
+- set resolution of manifold image to 10px/m for performance
+- numerous little routine that are able to filter out some piece of information from the manifold image
+- most importantly: frontier extraction
+- very nice too: navigation map extraction using value iteration
+
+------------------------------------------------------------------------
+r783 | baslamet | 2007-08-12 21:21:56 +0200 (Sun, 12 Aug 2007) | 1 line
+
+another intermediate commit
+------------------------------------------------------------------------
+r806 | baslamet | 2007-09-26 15:53:00 +0200 (Wed, 26 Sep 2007) | 1 line
+
+Changes made for Probabilistic Robotics.
+------------------------------------------------------------------------

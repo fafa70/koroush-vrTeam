@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FF84B9BD-6765-4884-8F09-6F906FB4D5D6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>UvARescue.Agent</RootNamespace>
+    <AssemblyName>UvARescue.Agent</AssemblyName>
+    <MyType>Windows</MyType>
+    <OptionStrict>On</OptionStrict>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>UvARescue.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>UvARescue.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=1.1.0.0, Culture=neutral, PublicKeyToken=9a0d19ffd4e7fe67, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Third Party\Aforge\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Fuzzy, Version=2.2.4.0, Culture=neutral, PublicKeyToken=cb12670d0eae17c9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Third Party\Fuzzy\obj\Debug\AForge.Fuzzy.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging, Version=1.1.0.0, Culture=neutral, PublicKeyToken=d604c8342bbdeba9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Third Party\Aforge\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Math, Version=1.1.0.0, Culture=neutral, PublicKeyToken=ec69efb6646d15f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Third Party\Aforge\AForge.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actors\Comm\CommActor.vb" />
+    <Compile Include="Actors\Fly\FlyActor.vb" />
+    <Compile Include="Actors\Fly\StandardFlyActor.vb" />
+    <Compile Include="Actors\NaoMove\StandardNano.vb" />
+    <Compile Include="Actors\NaoMove\NaoMovement.vb" />
+    <Compile Include="Agent\Agent.vb" />
+    <Compile Include="Agent\CommAgent.vb" />
+    <Compile Include="Agent\OperatorAgent.vb" />
+    <Compile Include="Agent\ProxyAgent.vb" />
+    <Compile Include="Agent\BehaviorAgent.vb" />
+    <Compile Include="Agent\WorldView.vb" />
+    <Compile Include="Behavior\Base\Behavior.vb" />
+    <Compile Include="Behavior\Base\Motion.vb" />
+    <Compile Include="Behavior\BehaviorControl.vb" />
+    <Compile Include="Behavior\Behaviors\Astar.vb" />
+    <Compile Include="Behavior\Behaviors\AutonomousExploration.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Behavior\Behaviors\node.vb" />
+    <Compile Include="Behavior\Behaviors\DeploymentBehavior.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Behavior\Behaviors\DriveSquare.vb" />
+    <Compile Include="Behavior\Behaviors\ExploreTraversibility.vb" />
+    <Compile Include="Behavior\Behaviors\FollowWaypoint.vb" />
+    <Compile Include="Behavior\Behaviors\ConservativeTeleOp.vb" />
+    <Compile Include="Behavior\Behaviors\semiAutonomous.vb" />
+    <Compile Include="Behavior\Motions\semiBehaviour.vb" />
+    <Compile Include="Behavior\Motions\DeploymentMotion.vb" />
+    <Compile Include="Behavior\Behaviors\DriveCircle.vb" />
+    <Compile Include="Behavior\Motions\Following\AvoidTeamMate_Following.vb" />
+    <Compile Include="Behavior\Motions\Following\AvoidVictim_Following.vb" />
+    <Compile Include="Behavior\Motions\Following\CorridorWalk_Following.vb" />
+    <Compile Include="Behavior\Motions\Following\ObstacleAvoidance_Following.vb" />
+    <Compile Include="Behavior\Motions\Following\RandomWalk_Following.vb" />
+    <Compile Include="Behavior\Motions\Following\Following.vb" />
+    <Compile Include="Behavior\Behaviors\FollowCorridorBehavior.vb" />
+    <Compile Include="Behavior\Behaviors\FollowPath.vb" />
+    <Compile Include="Behavior\Behaviors\ObstacleAvoidanceBehavior.vb" />
+    <Compile Include="Behavior\Behaviors\TeleOperation.vb" />
+    <Compile Include="Behavior\MotionControl.vb" />
+    <Compile Include="Behavior\Motions\AvoidTeamMate.vb" />
+    <Compile Include="Behavior\Motions\AvoidVictim.vb" />
+    <Compile Include="Behavior\Motions\ConservativeTeleOpMotion.vb" />
+    <Compile Include="Behavior\Motions\CorridorWalk.vb" />
+    <Compile Include="Behavior\Motions\ExploreTerrain.vb" />
+    <Compile Include="Behavior\Motions\FrontierExploration.vb" />
+    <Compile Include="Behavior\Motions\ObstacleAvoidance.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Behavior\Motions\RandomWalk.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Behavior\Motions\Retreat.vb" />
+    <Compile Include="Behavior\Motions\NoMotion.vb" />
+    <Compile Include="Behavior\Motions\WalkCircle.vb" />
+    <Compile Include="Behavior\Motions\WalkSquare.vb" />
+    <Compile Include="Config\AgentConfig.vb" />
+    <Compile Include="Agent\Views\IAgentObserver.vb" />
+    <Compile Include="Config\TeamConfig.vb" />
+    <Compile Include="Driver\Driver.vb" />
+    <Compile Include="Driver\IDriver.vb" />
+    <Compile Include="Driver\LiveDriver.vb" />
+    <Compile Include="Driver\LiveProxyDriver.vb" />
+    <Compile Include="Driver\Log Parsing\ImageParser.vb" />
+    <Compile Include="Driver\Log Parsing\LineParsers.vb" />
+    <Compile Include="Driver\Log Parsing\MessageType.vb" />
+    <Compile Include="Driver\Log Printing\LogFileWriter.vb" />
+    <Compile Include="Driver\LogDriver.vb" />
+    <Compile Include="Map\Frontiers\FrontierInfo.vb" />
+    <Compile Include="Map\Frontiers\FrontierTools.vb" />
+    <Compile Include="Map\Frontiers\PriorityQueue.vb" />
+    <Compile Include="Map\Frontiers\TraversabilityTools.vb" />
+    <Compile Include="Map\Manifold.vb" />
+    <Compile Include="Map\ManifoldIndex.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Map\Memento\IMemento.vb" />
+    <Compile Include="Map\Observations\OmnicamObservation.vb" />
+    <Compile Include="Map\Observations\ScanObservation.vb" />
+    <Compile Include="Map\Observations\VictimObservation.vb" />
+    <Compile Include="Map\Rendering\Layers\ClearSpaceLayer.vb" />
+    <Compile Include="Map\Rendering\Layers\CommsLayer.vb" />
+    <Compile Include="Map\Rendering\Layers\FrontierLayer.vb" />
+    <Compile Include="Map\Rendering\Layers\MobilityLayer.vb" />
+    <Compile Include="Map\Rendering\Layers\NavigationLayer.vb" />
+    <Compile Include="Map\Rendering\Layers\OmniMapLayer.vb" />
+    <Compile Include="Map\Rendering\Layers\SafeSpaceLayer.vb" />
+    <Compile Include="Map\Rendering\Layers\NotesLayer.vb" />
+    <Compile Include="Map\Rendering\Layers\VictimsLayer.vb" />
+    <Compile Include="Map\Rendering\ManifoldRenderingMode.vb" />
+    <Compile Include="Map\Views\IManifoldObserver.vb" />
+    <Compile Include="Map\Patch.vb" />
+    <Compile Include="Map\Relation.vb" />
+    <Compile Include="Map\Rendering\Layers\AgentsLayer.vb" />
+    <Compile Include="Map\Rendering\Layers\AxesLayer.vb" />
+    <Compile Include="Map\Rendering\Layers\BackgroundLayer.vb" />
+    <Compile Include="Map\Rendering\Layers\BufferedLayer.vb" />
+    <Compile Include="Map\Rendering\Layers\FreeSpaceLayer.vb" />
+    <Compile Include="Map\Rendering\Layers\GeoTifflayer.vb" />
+    <Compile Include="Map\Rendering\Layers\ObstaclesLayer.vb" />
+    <Compile Include="Map\Rendering\ManifoldImage.vb" />
+    <Compile Include="Map\Rendering\ManifoldLayer.vb" />
+    <Compile Include="Map\Views\IManifoldView.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Actors\Base\Actor.vb" />
+    <Compile Include="Actors\Drive\DriveActor.vb" />
+    <Compile Include="Actors\Drive\StandardDriveActor.vb" />
+    <Compile Include="Sensors\Base\ISensorData.vb" />
+    <Compile Include="Sensors\Base\MultiStateSensor.vb" />
+    <Compile Include="Sensors\Base\Sensor.vb" />
+    <Compile Include="Sensors\Base\SingleStateSensor.vb" />
+    <Compile Include="Sensors\CameraSensor.vb" />
+    <Compile Include="Sensors\Data\CameraData.vb" />
+    <Compile Include="Sensors\Data\EncoderData.vb" />
+    <Compile Include="Sensors\Data\GPSData.vb" />
+    <Compile Include="Sensors\Data\GroundTruthData.vb" />
+    <Compile Include="Sensors\Data\InsData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sensors\Data\InuData.vb" />
+    <Compile Include="Sensors\Data\LaserRangeData.vb" />
+    <Compile Include="Sensors\Data\OdometryData.vb" />
+    <Compile Include="Sensors\Data\RfidData.vb" />
+    <Compile Include="Sensors\Data\SonarData.vb" />
+    <Compile Include="Sensors\Data\StatusData.vb" />
+    <Compile Include="Sensors\Data\TachometerData.vb" />
+    <Compile Include="Sensors\Data\TouchData.vb" />
+    <Compile Include="Sensors\Data\VictimRfidData.vb" />
+    <Compile Include="Sensors\EncoderSensor.vb" />
+    <Compile Include="Sensors\GPSSensor.vb" />
+    <Compile Include="Sensors\GroundTruthSensor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sensors\InsSensor.vb" />
+    <Compile Include="Sensors\InuSensor.vb" />
+    <Compile Include="Sensors\LaserRangeSensor.vb" />
+    <Compile Include="Sensors\OdometrySensor.vb" />
+    <Compile Include="Sensors\RfidSensor.vb" />
+    <Compile Include="Sensors\SonarSensor.vb" />
+    <Compile Include="Sensors\StatusSensor.vb" />
+    <Compile Include="Sensors\TachometerSensor.vb" />
+    <Compile Include="Sensors\TouchSensor.vb" />
+    <Compile Include="Sensors\VictimRfidSensor.vb" />
+    <Compile Include="Sensors\VictimSensor.vb" />
+    <Compile Include="Sensors\Data\VictimData.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Communication\Communication.vbproj">
+      <Project>{D1E9CE78-8FA4-4B3F-90F1-7B209E6C8ACD}</Project>
+      <Name>Communication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Math\Math.vbproj">
+      <Project>{66482951-CDA0-4BDE-8F7D-BE4CB03C3E28}</Project>
+      <Name>Math</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Third Party\Iridium\Iridium.csproj">
+      <Project>{26FC15DE-EFDA-403A-8284-1E2A4AE8A9D8}</Project>
+      <Name>Iridium</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Third Party\Neodym\Neodym.csproj">
+      <Project>{61BF11FF-5C75-45E3-BA36-2B50C291EA7D}</Project>
+      <Name>Neodym</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.vbproj">
+      <Project>{93BCE67B-C885-4E33-A7F0-10C9DF820554}</Project>
+      <Name>Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="ClassDiagram4.cd" />
+    <None Include="Resources\Frontier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

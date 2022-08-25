@@ -1,0 +1,55 @@
+------------------------------------------------------------------------
+r2105 | arnoud | 2010-02-19 10:36:05 +0100 (Fri, 19 Feb 2010) | 1 line
+
+Copy from 2009 competition rev. 2100
+------------------------------------------------------------------------
+r2107 | arnoud | 2010-02-19 14:55:55 +0100 (Fri, 19 Feb 2010) | 7 lines
+
+Merge with experimental (rev. 2053) COMPILES, not tested yet
+* GetPoses should work now
+* P3AT and ATVR from UT3 available
+* Some additional Behaviors
+* SensorPoses instead of SensorCurrentData
+* Some additional logfiles which can be Read
+
+------------------------------------------------------------------------
+r2108 | arnoud | 2010-02-28 23:30:03 +0100 (Sun, 28 Feb 2010) | 3 lines
+
+GetStartPoses is now working.
+* Tried to test SaveMap, but MotionControl failed in 
+Me._Motions.Add(MotionType.AvoidTeamMate, New AvoidTeamMate(Me))
+------------------------------------------------------------------------
+r2117 | arnoud | 2010-03-30 23:53:03 +0200 (Tue, 30 Mar 2010) | 1 line
+
+Added TeleOpRobrechtMap
+------------------------------------------------------------------------
+r2121 | arnoud | 2010-04-04 14:33:39 +0200 (Sun, 04 Apr 2010) | 5 lines
+
+Get images over communication link
+* was related with named cameras
+* To be checked, the proxy already receives images before the UsarAgent is started.
+* To be checked, proxy is Spawn
+* highest priority, to get lasersancs
+------------------------------------------------------------------------
+r2124 | arnoud | 2010-04-06 08:19:14 +0200 (Tue, 06 Apr 2010) | 2 lines
+
+IranOpen TeleOp version
+* P3AT no longer mounts Sonar
+------------------------------------------------------------------------
+r2128 | arnoud | 2010-04-07 17:16:06 +0200 (Wed, 07 Apr 2010) | 2 lines
+
+Final working version of the Mapping Challenge
+* Essential change is in Agent.vb
+------------------------------------------------------------------------
+r2130 | arnoud | 2010-04-19 14:16:11 +0200 (Mon, 19 Apr 2010) | 1 line
+
+Improved error handling in the GUI
+------------------------------------------------------------------------
+r2162 | oformsma | 2010-06-21 04:01:43 +0200 (Mon, 21 Jun 2010) | 5 lines
+
+RoboCup 2010 first challenge (TeleOperation) settings.
+ * minor bugfix: atrv is not spelled atvr
+ * printing whether the targets.txt file is loaded or not 
+ * removed clearlayer from jury file
+ * if one agent does not provide any pathces, the save file dialog still functions.
+------------------------------------------------------------------------

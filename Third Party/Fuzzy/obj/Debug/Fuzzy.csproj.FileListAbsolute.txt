@@ -1,0 +1,12 @@
+D:\Program Files\AForge.NET\Framework\Release\AForge.Fuzzy.dll
+D:\Program Files\AForge.NET\Framework\Release\AForge.Fuzzy.pdb
+D:\Program Files\AForge.NET\Framework\Release\AForge.Fuzzy.xml
+D:\Program Files\AForge.NET\Framework\Sources\Fuzzy\obj\Debug\ResolveAssemblyReference.cache
+D:\Program Files\AForge.NET\Framework\Sources\Fuzzy\obj\Debug\AForge.Fuzzy.dll
+D:\Program Files\AForge.NET\Framework\Sources\Fuzzy\obj\Debug\AForge.Fuzzy.pdb
+D:\usarsim\IUST-BASE\Release\AForge.Fuzzy.dll
+D:\usarsim\IUST-BASE\Release\AForge.Fuzzy.pdb
+D:\usarsim\IUST-BASE\Release\AForge.Fuzzy.xml
+D:\usarsim\IUST-BASE\Third Party\Fuzzy\obj\Debug\ResolveAssemblyReference.cache
+D:\usarsim\IUST-BASE\Third Party\Fuzzy\obj\Debug\AForge.Fuzzy.dll
+D:\usarsim\IUST-BASE\Third Party\Fuzzy\obj\Debug\AForge.Fuzzy.pdb

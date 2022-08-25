@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{26DCF73B-DA73-4D44-AD12-A8BFAC6C8097}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>UvARescue.Usar.Lib</RootNamespace>
+    <AssemblyName>UvARescue.Usar.Lib</AssemblyName>
+    <MyType>Windows</MyType>
+    <OptionStrict>On</OptionStrict>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>UvARescue.Usar.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DefineConstants>COMPETITION_MODE=FALSE</DefineConstants>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>UvARescue.Usar.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DefineConstants>COMPETITION_MODE=FALSE</DefineConstants>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge.Fuzzy, Version=2.2.4.0, Culture=neutral, PublicKeyToken=cb12670d0eae17c9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files\AForge.NET\Framework\Sources\Fuzzy\obj\Debug\AForge.Fuzzy.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging, Version=1.3.0.0, Culture=neutral, PublicKeyToken=38eb47741dd0492e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Third Party\Aforge\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge2, Version=2.2.4.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files\AForge.NET\Framework\Release\AForge2.dll</HintPath>
+    </Reference>
+    <Reference Include="LightFX, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Third Party\LightFix\obj\Debug\LightFX.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCVDotNet, Version=1.0.2615.24735, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Third Party\OpenCV\dotnet\OpenCVDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dialogs\ConfigDialog.Designer.vb">
+      <DependentUpon>ConfigDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\ConfigDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SaveMapDialog.Designer.vb">
+      <DependentUpon>SaveMapDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\SaveMapDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Team\Config\UsarAgentConfig.vb" />
+    <Compile Include="Team\UsarAgent.vb" />
+    <Compile Include="Team\UsarFollowAgent.vb" />
+    <Compile Include="Team\UsarOperatorAgent.vb" />
+    <Compile Include="Team\UsarProxyAgent.vb" />
+    <Compile Include="Team\UsarSkinDetAgent.vb" />
+    <Compile Include="UsarRunStatus.vb" />
+    <Compile Include="Dialogs\AgentConfigDialog.Designer.vb">
+      <DependentUpon>AgentConfigDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\AgentConfigDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Team\UsarSlamAgent.vb" />
+    <Compile Include="Views\AgentController.Designer.vb">
+      <DependentUpon>AgentController.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AgentController.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\AgentPatchController.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\MapController.Designer.vb">
+      <DependentUpon>MapController.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MapController.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ManifoldView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialogs\TeamConfigDialog.Designer.vb">
+      <DependentUpon>TeamConfigDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\TeamConfigDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PhotoLibraryController.Designer.vb">
+      <DependentUpon>PhotoLibraryController.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PhotoLibraryController.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\PhotoView.Designer.vb">
+      <DependentUpon>PhotoView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PhotoView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\TeamController.Designer.vb">
+      <DependentUpon>TeamController.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TeamController.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Agent\Agent.vbproj">
+      <Project>{FF84B9BD-6765-4884-8F09-6F906FB4D5D6}</Project>
+      <Name>Agent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ImageAnalysis\ImageAnalysis.vbproj">
+      <Project>{3E36C280-6096-4C40-A221-1A31906A6CA0}</Project>
+      <Name>ImageAnalysis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Math\Math.vbproj">
+      <Project>{66482951-CDA0-4BDE-8F7D-BE4CB03C3E28}</Project>
+      <Name>Math</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Slam\Slam.vbproj">
+      <Project>{57E550BC-8595-4F82-877F-29F610D7A571}</Project>
+      <Name>Slam</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Third Party\Iridium\Iridium.csproj">
+      <Project>{26FC15DE-EFDA-403A-8284-1E2A4AE8A9D8}</Project>
+      <Name>Iridium</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Tools\Tools.vbproj">
+      <Project>{93BCE67B-C885-4E33-A7F0-10C9DF820554}</Project>
+      <Name>Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AutoFit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Gear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Event.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Picture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Pose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Power.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Rewind.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Seal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Shoot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\SignalAnalog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\SignalDigital.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\View.png" />
+    <EmbeddedResource Include="Dialogs\AgentConfigDialog.resx">
+      <DependentUpon>AgentConfigDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AgentController.resx">
+      <DependentUpon>AgentController.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Add.png" />
+    <EmbeddedResource Include="Views\TeamController.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TeamController.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Matrix.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Achilles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\JamesBond.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Jupiter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Ready.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <EmbeddedResource Include="Resources\Report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Reset.png" />
+    <EmbeddedResource Include="Views\MapController.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MapController.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ManifoldView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ManifoldView.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Apriori.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ZoomOut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ZoomIn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Radar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\GeoTiff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Obstacles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Freespace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Move.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Halt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\TurnLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\TurnRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Drive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Reverse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ConfigSave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dialogs\ConfigDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ConfigDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\TeamConfigDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TeamConfigDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ConfigOpen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ConfigSaveAs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ConfigDelete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ConfigNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ConfigReload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Network.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\PhotoLibraryController.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PhotoLibraryController.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PhotoView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PhotoView.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\LightStatus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="histoPic2.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Resources\Button_Answer_to_Life.png" />
+    <Content Include="Resources\CameraOn.png" />
+    <Content Include="Resources\CameraOff.png" />
+    <None Include="Resources\Flip.png" />
+    <None Include="Resources\Comms.png" />
+    <Content Include="Resources\FrontLeft.png" />
+    <Content Include="Resources\FrontRight.png" />
+    <Content Include="Resources\RearLeft.png" />
+    <Content Include="Resources\RearRight.png" />
+    <None Include="Resources\ArrowRight.png" />
+    <None Include="Resources\ArrowLeft.png" />
+    <None Include="Resources\FolderSmall.png" />
+    <EmbeddedResource Include="Dialogs\SaveMapDialog.resx">
+      <DependentUpon>SaveMapDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ExtractFrontiers.png" />
+    <EmbeddedResource Include="Resources\Safespace.png" />
+    <EmbeddedResource Include="Resources\Victims.png" />
+    <EmbeddedResource Include="Resources\Frontiers.png" />
+    <EmbeddedResource Include="Resources\Notes.png" />
+    <EmbeddedResource Include="Resources\SpeedDown.png" />
+    <EmbeddedResource Include="Resources\SpeedUp.png" />
+    <EmbeddedResource Include="Resources\Sync.png" />
+    <EmbeddedResource Include="Resources\AprioriMobility.png" />
+    <EmbeddedResource Include="Resources\AprioriComm.png" />
+    <EmbeddedResource Include="Resources\AprioriVictims.png" />
+    <EmbeddedResource Include="Resources\Clearspace.png" />
+    <EmbeddedResource Include="Views\AgentPatchController.resx">
+      <DependentUpon>AgentPatchController.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>copy /Y "$(ProjectDir)\..\..\Third Party\LightFix\bin\$(ConfigurationName)\*.dll" "$(ProjectDir)\..\UsarCommander\bin\$(ConfigurationName)"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

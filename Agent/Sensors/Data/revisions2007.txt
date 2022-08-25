@@ -1,0 +1,194 @@
+------------------------------------------------------------------------
+r259 | baslamet | 2006-06-28 08:50:36 +0200 (Wed, 28 Jun 2006) | 1 line
+
+Moved remotely
+------------------------------------------------------------------------
+r273 | baslamet | 2006-07-01 10:05:40 +0200 (Sat, 01 Jul 2006) | 1 line
+
+
+------------------------------------------------------------------------
+r455 | baslamet | 2007-05-08 16:28:53 +0200 (Tue, 08 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r461 | baslamet | 2007-05-10 22:36:24 +0200 (Thu, 10 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r491 | arnoud | 2007-05-21 18:29:57 +0200 (Mon, 21 May 2007) | 1 line
+
+Added parsing of VictSensor-msg. Nothing is done with this information (yet). Had to change Base/Sensor.vb with a check if a key already exists. Change can have side-effects. Tested both on UsarSim 3.11 (DM-VictTest) and arena-loop.log.
+------------------------------------------------------------------------
+r495 | tschmits | 2007-05-22 15:22:26 +0200 (Tue, 22 May 2007) | 2 lines
+
+- Modified CameraDriver to make use of the extended TcpConnection class
+- Added FrameData class
+------------------------------------------------------------------------
+r496 | arnoud | 2007-05-22 18:58:53 +0200 (Tue, 22 May 2007) | 1 line
+
+Tried to add rendering of Victims. Partly solved. Tried to render in a specific layer, but I cannot control the layer. Commented out the link to specific layer, so code should still work. (Tested on DM-VictTest)
+------------------------------------------------------------------------
+r497 | tschmits | 2007-05-23 15:44:34 +0200 (Wed, 23 May 2007) | 1 line
+
+Implemented FrameData and ImageParser classes and updated TcpConnection, CameraAgent, CameraDriver and CameraSensor. The camera sensor setup is completely according to UsarCommander project design.
+------------------------------------------------------------------------
+r503 | tschmits | 2007-05-29 23:19:33 +0200 (Tue, 29 May 2007) | 5 lines
+
+- Updated FrameData class to process Jpeg data sent by Image Server
+- Added ImageAnalysis project containing
+ *ImageAnalysis Interface
+ *SkinDetector class
+ *ColorHistogram class
+------------------------------------------------------------------------
+r508 | tschmits | 2007-05-30 16:03:52 +0200 (Wed, 30 May 2007) | 1 line
+
+Added MathNet.Numerics.BitmapConverter functionality to FrameData.vb to retrieve RGB data from Jpeg
+------------------------------------------------------------------------
+r516 | baslamet | 2007-06-08 17:36:23 +0200 (Fri, 08 Jun 2007) | 16 lines
+
+Since Tijn got all ImageServer related functionality to work, I have decided to merge his work into the core framework classes:
+- merged CameraDriver into LiveDriver
+- merged CameraAgent into Agent
+- renamed FrameData to CameraData for consistency (the xxxSensor has xxxData, so CameraSensor has CameraData)
+
+
+Also refactored the TcpConnection class, also to pave the way for future work on WSS by Luis:
+- two types of connections are distinguished
+- MessagingConnection is for text-based communication as between the Agent and UsarSim
+- CameraConnection is for the ImageServer, where sent messages are plain text (e.g. acknowledgements) and the incoming data are images
+- they both derive from the by now well-known TcpConnection class which has transformed into a regular base class
+
+Other then that I also found and fixed some bugs in the image recieving logic.
+
+Bayu
+
+------------------------------------------------------------------------
+r521 | tschmits | 2007-06-09 11:59:50 +0200 (Sat, 09 Jun 2007) | 1 line
+
+Cleaned up CameraData.vb
+------------------------------------------------------------------------
+r523 | baslamet | 2007-06-09 17:14:01 +0200 (Sat, 09 Jun 2007) | 2 lines
+
+Added GroundTruthSensor 
+- only works when bDebug is set to true in Usarbot.ini, in the section of the specific robot
+------------------------------------------------------------------------
+r524 | baslamet | 2007-06-11 08:56:01 +0200 (Mon, 11 Jun 2007) | 11 lines
+
+Refactored and extended Sensor model:
+- MessageType enum describes what kind of message was recieved (sensor/status/response/configuration/...)
+- added InsSensor (new in UsarSim 3, seems to replace INU, maintains x,y,z and roll,pitch,yaw)
+- added StatusSenor, gives several pieces of information of which only the Battery is of interest
+
+Modified base Agent class:
+- Agent now mounts GroundTruthSensor and StatusSensor by default
+
+Also modified AgentController view so that it displays the ground-truth and battery status.
+
+Bayu
+------------------------------------------------------------------------
+r532 | baslamet | 2007-06-12 12:40:04 +0200 (Tue, 12 Jun 2007) | 4 lines
+
+Refactored Config options
+- NetworkConfig for server names/ips and ports
+- AgentConfig for robotmodel/startlocations
+- ConfigDialogs 
+------------------------------------------------------------------------
+r536 | tschmits | 2007-06-12 15:16:30 +0200 (Tue, 12 Jun 2007) | 4 lines
+
+ImageParser: Modified for proper use of global variables
+Agent, CameraSensor, AgentController, TeamController: SpawnNumber Handling
+CameraData: Handling of sampling correct camera subview (based on SpawnNumber) in UTClient running with Multiview 
+
+------------------------------------------------------------------------
+r537 | baslamet | 2007-06-12 15:46:01 +0200 (Tue, 12 Jun 2007) | 2 lines
+
+- bugfix CameraData
+- camera mode in agentcontroller
+------------------------------------------------------------------------
+r540 | tschmits | 2007-06-12 16:18:38 +0200 (Tue, 12 Jun 2007) | 1 line
+
+Fixed sequence overflow bug
+------------------------------------------------------------------------
+r562 | baslamet | 2007-06-18 17:45:46 +0200 (Mon, 18 Jun 2007) | 6 lines
+
+IDC has been implemented:
+- IdcScanMatcher works
+- AgentConfig extended with relevant options
+- AgentConfigDialog changed accordingly
+
+Bayu
+------------------------------------------------------------------------
+r563 | baslamet | 2007-06-19 13:42:38 +0200 (Tue, 19 Jun 2007) | 4 lines
+
+- debugged IdcScanMatcher
+- added reset functionality to OdometrySensor
+- added reset functioality to InsSensor
+
+------------------------------------------------------------------------
+r572 | tschmits | 2007-06-26 14:00:29 +0200 (Tue, 26 Jun 2007) | 2 lines
+
+- extended Config and Config Dialog for SkinDetector agent configuration
+- Included hist-file handling for SkinDetector(Teacher) classes
+------------------------------------------------------------------------
+r586 | baslamet | 2007-06-27 23:05:20 +0200 (Wed, 27 Jun 2007) | 6 lines
+
+Lotsa changes:
+- moved Manifold data structure to Agent project
+- got WSS to work such that any pair of Agents will try to have an open connection whenever they are within range
+- got Agents to submit manifold data over the wire (Patches)
+
+
+------------------------------------------------------------------------
+r598 | baslamet | 2007-06-30 14:01:17 +0200 (Sat, 30 Jun 2007) | 7 lines
+
+Got confused!
+
+For my own clarity:
+- renamed VictimSensor of 2006 to VictimRfidSensor (put the RFID in the name to make its working obvious)
+- renamed VictSensor of 2007 to VictimSensor (since it works with 'real victim', and not with the RFIDs)
+
+
+------------------------------------------------------------------------
+r599 | baslamet | 2007-06-30 17:12:20 +0200 (Sat, 30 Jun 2007) | 7 lines
+
+Victim stuff works:
+- victims observations are stored on the Manifold
+- and they are nicely rendered in the map
+- 2 new layers were added for this purpose; VictimsLayer and VictimReportsLayer
+
+
+
+------------------------------------------------------------------------
+r600 | baslamet | 2007-06-30 18:11:01 +0200 (Sat, 30 Jun 2007) | 1 line
+
+several minor bits and pieces
+------------------------------------------------------------------------
+r606 | baslamet | 2007-07-01 22:41:36 +0200 (Sun, 01 Jul 2007) | 5 lines
+
+- added min-range and max-range handling to SLAM
+- switch GeoTIFF back to native .Net based tiff loading
+- committed non-functioning HybridScanMatcher.vb, this is work in progress
+
+
+------------------------------------------------------------------------
+r608 | tschmits | 2007-07-02 11:10:37 +0200 (Mon, 02 Jul 2007) | 2 lines
+
+- Fixed UsarCommander camera-image peek functionality: the commander has its own image queue now
+- Included ProcessVictimPicture to Memento in Patch
+------------------------------------------------------------------------
+r629 | tschmits | 2007-07-03 16:34:40 +0200 (Tue, 03 Jul 2007) | 2 lines
+
+- fixed Bitmap memory sharing error handling
+- Patch logging enabled
+------------------------------------------------------------------------
+r638 | baslamet | 2007-07-04 22:44:58 +0200 (Wed, 04 Jul 2007) | 2 lines
+
+MAJOR BUGFIX
+- the 'jumpy' behavior with first scans was due to a bug in InsData ........ FIXED
+------------------------------------------------------------------------
+r667 | arnoud | 2007-07-07 06:10:38 +0200 (Sat, 07 Jul 2007) | 3 lines
+
+Protection against Theseus-bug. Theseus-bug originated in the config-file, which specified ground-truth as seed.
+
+This protection prevents that the offset is stored in the origin, independent where this origin is coming from. Has some side-effect, but should be save during the competition
+------------------------------------------------------------------------

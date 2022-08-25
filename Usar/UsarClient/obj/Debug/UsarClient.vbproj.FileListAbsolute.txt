@@ -1,0 +1,195 @@
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\histoPic2.JPG
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\UsarClient.exe
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\UsarClient.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\UsarClient.xml
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.Agent.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.Slam.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.Tools.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.Usar.Lib.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.Communication.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.Math.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\AForge.Imaging.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\MathNet.Iridium.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\MathNet.Neodym.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\AForge.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\gdal_csharp.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\ogr_csharp.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\OpenCVDotNet.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.ImageAnalysis.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\AForge.Math.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.Agent.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.Slam.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.Tools.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.Tools.xml
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.Usar.Lib.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.Communication.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.Communication.xml
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.Math.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\MathNet.Iridium.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\MathNet.Neodym.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.ImageAnalysis.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\ICSharpCode.SharpZipLib.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\de\MathNet.Iridium.resources.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\es\MathNet.Iridium.resources.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\bin\Debug\fr\MathNet.Iridium.resources.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\obj\Debug\ResolveAssemblyReference.cache
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\obj\Debug\UsarClient.exe
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\obj\Debug\UsarClient.xml
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Usar\UsarClient\obj\Debug\UsarClient.pdb
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\histoPic2.JPG
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\UsarClient.exe
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\UsarClient.pdb
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\UsarClient.xml
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.Agent.dll
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.Slam.dll
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.Tools.dll
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.Usar.Lib.dll
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\AForge.dll
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.Communication.dll
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\gdal_csharp.dll
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.Math.dll
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.ImageAnalysis.dll
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\ICSharpCode.SharpZipLib.dll
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\MathNet.Neodym.dll
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\ogr_csharp.dll
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\AForge.Math.dll
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\OpenCVDotNet.dll
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\MathNet.Iridium.dll
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\AForge.Imaging.dll
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.Communication.pdb
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.Communication.xml
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.Usar.Lib.pdb
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.Math.pdb
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.ImageAnalysis.pdb
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\ICSharpCode.SharpZipLib.pdb
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.Tools.pdb
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.Tools.xml
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\MathNet.Neodym.pdb
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.Slam.pdb
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\MathNet.Iridium.pdb
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\UvARescue.Agent.pdb
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\de\MathNet.Iridium.resources.dll
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\es\MathNet.Iridium.resources.dll
+H:\AOJRF2011\Usar\UsarClient\bin\Debug\fr\MathNet.Iridium.resources.dll
+H:\AOJRF2011\Usar\UsarClient\obj\Debug\ResolveAssemblyReference.cache
+H:\AOJRF2011\Usar\UsarClient\obj\Debug\UsarClient.exe
+H:\AOJRF2011\Usar\UsarClient\obj\Debug\UsarClient.xml
+H:\AOJRF2011\Usar\UsarClient\obj\Debug\UsarClient.pdb
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\histoPic2.JPG
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\UsarClient.exe
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\UsarClient.pdb
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\UsarClient.xml
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\UvARescue.Agent.dll
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\UvARescue.Slam.dll
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\UvARescue.Tools.dll
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\UvARescue.Usar.Lib.dll
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\UvARescue.Communication.dll
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\UvARescue.Math.dll
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\AForge.Imaging.dll
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\MathNet.Iridium.dll
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\MathNet.Neodym.dll
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\AForge.dll
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\gdal_csharp.dll
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\ogr_csharp.dll
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\OpenCVDotNet.dll
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\UvARescue.ImageAnalysis.dll
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\AForge.Math.dll
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\UvARescue.Agent.pdb
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\UvARescue.Slam.pdb
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\UvARescue.Tools.pdb
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\UvARescue.Tools.xml
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\UvARescue.Usar.Lib.pdb
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\UvARescue.Communication.pdb
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\UvARescue.Communication.xml
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\UvARescue.Math.pdb
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\MathNet.Iridium.pdb
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\MathNet.Neodym.pdb
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\UvARescue.ImageAnalysis.pdb
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\ICSharpCode.SharpZipLib.pdb
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\de\MathNet.Iridium.resources.dll
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\es\MathNet.Iridium.resources.dll
+D:\AOJRF2012\Usar\UsarClient\bin\Debug\fr\MathNet.Iridium.resources.dll
+D:\AOJRF2012\Usar\UsarClient\obj\Debug\ResolveAssemblyReference.cache
+D:\AOJRF2012\Usar\UsarClient\obj\Debug\UsarClient.exe
+D:\AOJRF2012\Usar\UsarClient\obj\Debug\UsarClient.xml
+D:\AOJRF2012\Usar\UsarClient\obj\Debug\UsarClient.pdb
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\histoPic2.JPG
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\UsarClient.exe
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\UsarClient.pdb
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\UsarClient.xml
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\UvARescue.Agent.dll
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\UvARescue.Slam.dll
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\UvARescue.Tools.dll
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\UvARescue.Usar.Lib.dll
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\UvARescue.Communication.dll
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\UvARescue.Math.dll
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\AForge.Imaging.dll
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\MathNet.Iridium.dll
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\MathNet.Neodym.dll
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\AForge.dll
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\gdal_csharp.dll
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\ogr_csharp.dll
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\OpenCVDotNet.dll
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\UvARescue.ImageAnalysis.dll
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\AForge.Math.dll
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\UvARescue.Agent.pdb
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\UvARescue.Slam.pdb
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\UvARescue.Tools.pdb
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\UvARescue.Tools.xml
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\UvARescue.Usar.Lib.pdb
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\UvARescue.Communication.pdb
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\UvARescue.Communication.xml
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\UvARescue.Math.pdb
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\MathNet.Iridium.pdb
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\MathNet.Neodym.pdb
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\UvARescue.ImageAnalysis.pdb
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\ICSharpCode.SharpZipLib.pdb
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\de\MathNet.Iridium.resources.dll
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\es\MathNet.Iridium.resources.dll
+D:\IUST-BASE\Usar\UsarClient\bin\Debug\fr\MathNet.Iridium.resources.dll
+D:\IUST-BASE\Usar\UsarClient\obj\Debug\ResolveAssemblyReference.cache
+D:\IUST-BASE\Usar\UsarClient\obj\Debug\UsarClient.exe
+D:\IUST-BASE\Usar\UsarClient\obj\Debug\UsarClient.xml
+D:\IUST-BASE\Usar\UsarClient\obj\Debug\UsarClient.pdb
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\histoPic2.JPG
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\UvARescue.Agent.dll
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\UvARescue.Slam.dll
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\UvARescue.Tools.dll
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\UvARescue.Communication.dll
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\UvARescue.Math.dll
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\AForge.Imaging.dll
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\MathNet.Iridium.dll
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\MathNet.Neodym.dll
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\AForge.dll
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\gdal_csharp.dll
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\ogr_csharp.dll
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\OpenCVDotNet.dll
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\UvARescue.ImageAnalysis.dll
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\AForge.Math.dll
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\UvARescue.Agent.pdb
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\UvARescue.Slam.pdb
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\UvARescue.Tools.pdb
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\UvARescue.Tools.xml
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\UvARescue.Communication.pdb
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\UvARescue.Communication.xml
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\UvARescue.Math.pdb
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\MathNet.Iridium.pdb
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\MathNet.Neodym.pdb
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\UvARescue.ImageAnalysis.pdb
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\ICSharpCode.SharpZipLib.pdb
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\de\MathNet.Iridium.resources.dll
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\es\MathNet.Iridium.resources.dll
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\fr\MathNet.Iridium.resources.dll
+D:\usarsim\IUST-BASE\Usar\UsarClient\obj\Debug\ResolveAssemblyReference.cache
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\IUST_BASE_CONSOLE.exe
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\IUST_BASE_CONSOLE.pdb
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\IUST_BASE_CONSOLE.xml
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\IUST_LIB.dll
+D:\usarsim\IUST-BASE\Usar\UsarClient\bin\Debug\IUST_LIB.pdb
+D:\usarsim\IUST-BASE\Usar\UsarClient\obj\Debug\IUST_BASE_CONSOLE.exe
+D:\usarsim\IUST-BASE\Usar\UsarClient\obj\Debug\IUST_BASE_CONSOLE.xml
+D:\usarsim\IUST-BASE\Usar\UsarClient\obj\Debug\IUST_BASE_CONSOLE.pdb

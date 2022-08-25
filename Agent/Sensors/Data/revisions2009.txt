@@ -1,0 +1,41 @@
+------------------------------------------------------------------------
+r1505 | arnoud | 2008-10-22 16:47:33 +0200 (Wed, 22 Oct 2008) | 1 line
+
+
+------------------------------------------------------------------------
+r1607 | arnoud | 2009-01-06 18:02:12 +0100 (Tue, 06 Jan 2009) | 1 line
+
+Moved remotely
+------------------------------------------------------------------------
+r1608 | arnoud | 2009-01-06 18:02:49 +0100 (Tue, 06 Jan 2009) | 1 line
+
+Renamed remotely
+------------------------------------------------------------------------
+r1685 | jdehoog | 2009-02-03 16:27:00 +0100 (Tue, 03 Feb 2009) | 1 line
+
+Merge with DOAS revision 1683
+------------------------------------------------------------------------
+r1819 | arnoud | 2009-04-17 13:39:41 +0200 (Fri, 17 Apr 2009) | 3 lines
+
+* Implemented Bas recommendations (should be 11% faster).
+* Reduced dependencies of different projects
+* Better Sync of AgentConfigDialog
+------------------------------------------------------------------------
+r1823 | arnoud | 2009-04-20 10:21:27 +0200 (Mon, 20 Apr 2009) | 3 lines
+
+Georeferencing works again with partial Merge of honours rev 1822
+* Mainly UsarLib/Dialogs and UsarLib/Views/
+* Also Agent/Agent and Agent/Sensor (which mainly contain relevant modifications from experimental)
+------------------------------------------------------------------------
+r1842 | arnoud | 2009-04-23 19:19:41 +0200 (Thu, 23 Apr 2009) | 1 line
+
+SyncLock around multiview
+------------------------------------------------------------------------
+r1845 | arnoud | 2009-04-24 02:50:13 +0200 (Fri, 24 Apr 2009) | 1 line
+
+This is the first working version where the camera images are sent over the WSS (and directly from the ImgSrv)
+------------------------------------------------------------------------
+r1884 | arnoud | 2009-06-10 17:25:08 +0200 (Wed, 10 Jun 2009) | 1 line
+
+Only convert RawData on request (only in WalkSquare, SkinDetector and ColorHistogram)
+------------------------------------------------------------------------

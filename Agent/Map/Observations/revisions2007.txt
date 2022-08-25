@@ -1,0 +1,63 @@
+------------------------------------------------------------------------
+r586 | baslamet | 2007-06-27 23:05:20 +0200 (Wed, 27 Jun 2007) | 6 lines
+
+Lotsa changes:
+- moved Manifold data structure to Agent project
+- got WSS to work such that any pair of Agents will try to have an open connection whenever they are within range
+- got Agents to submit manifold data over the wire (Patches)
+
+
+------------------------------------------------------------------------
+r591 | tschmits | 2007-06-29 15:02:12 +0200 (Fri, 29 Jun 2007) | 2 lines
+
+- added Histograms from ICIS presentation day
+- included 'add victim observation'-functionality to Manifold Patches
+------------------------------------------------------------------------
+r599 | baslamet | 2007-06-30 17:12:20 +0200 (Sat, 30 Jun 2007) | 7 lines
+
+Victim stuff works:
+- victims observations are stored on the Manifold
+- and they are nicely rendered in the map
+- 2 new layers were added for this purpose; VictimsLayer and VictimReportsLayer
+
+
+
+------------------------------------------------------------------------
+r601 | tschmits | 2007-07-01 04:43:16 +0200 (Sun, 01 Jul 2007) | 3 lines
+
+- modified VictimObservation to catch only head and chest to prevent multiple observations per single victim
+- modified skindetector to higher positive skin threshold
+- modified ManifoldSlam to prevent false single victim part positives (like a 'head' in a police car's wheels...)
+------------------------------------------------------------------------
+r603 | tschmits | 2007-07-01 13:41:01 +0200 (Sun, 01 Jul 2007) | 1 line
+
+- implemented victim rapport: creates victim file + images
+------------------------------------------------------------------------
+r604 | baslamet | 2007-07-01 14:16:26 +0200 (Sun, 01 Jul 2007) | 7 lines
+
+Redesigned map saving routines:
+- one layer with the map, exactly according to map-scoring rules
+- one additional layer with victim reports (funky annotations with position, name and parts info)
+- and another additional layer with the axes (minor importance, but since I was into it anyways ...)
+
+Merged recent changes from Tijn, not sure if I did that correctly. 
+- NEEDS VERIFICATION!
+------------------------------------------------------------------------
+r606 | baslamet | 2007-07-01 22:41:36 +0200 (Sun, 01 Jul 2007) | 5 lines
+
+- added min-range and max-range handling to SLAM
+- switch GeoTIFF back to native .Net based tiff loading
+- committed non-functioning HybridScanMatcher.vb, this is work in progress
+
+
+------------------------------------------------------------------------
+r608 | tschmits | 2007-07-02 11:10:37 +0200 (Mon, 02 Jul 2007) | 2 lines
+
+- Fixed UsarCommander camera-image peek functionality: the commander has its own image queue now
+- Included ProcessVictimPicture to Memento in Patch
+------------------------------------------------------------------------
+r621 | baslamet | 2007-07-03 10:26:36 +0200 (Tue, 03 Jul 2007) | 2 lines
+
+- fixed a bug in IcpScanMatcher that made it assume 180 degrees range scans
+
+------------------------------------------------------------------------

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IUST_LIB
+</name>
+</assembly>
+<members>
+<member name="M:UvARescue.Usar.Lib.TeamController.QueryCanQuitApplication">
+	<summary>
+ Will be invoked by the mainform when the user attempts to quit the application.
+ In case we are in a run, we enable the user to cancel his action.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Usar.Lib.TeamController.OnRunStatusChanged">
+	<summary>
+ Syncs TeamController view to facilitate current runstatus.''' 
+ </summary>
+	<remarks></remarks>
+</member><member name="P:UvARescue.Usar.Lib.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:UvARescue.Usar.Lib.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:UvARescue.Usar.Lib.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:UvARescue.Usar.Lib.UsarSlamAgent.NotifySensorUpdate(UvARescue.Agent.Sensor)">
+	<summary>
+ Forwards sensor readings to Slam.
+ </summary>
+	<param name="sensor"></param>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Usar.Lib.UsarSlamAgent">
+	<summary>
+ Specific Agent class used for matches.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Usar.Lib.UsarOperatorAgent">
+	<summary>
+ Base class used for USAR Agents.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Usar.Lib.UsarAgent.ReceiveGeoMessage(UvARescue.Agent.MessageType,System.Collections.Specialized.StringCollection)">
+	<summary>
+ The Agent will have taken care of some of the message parsing already, since 
+ it had to anyway in order to figure out to which body the message should
+ be forwarded. All that the agent does is extracting all the separate
+ curly-brached parts which are supplied here in a stringcollection.
+ 
+ It is up to the body to further examine the relevant parts and translate
+ this into properties relevant for that body
+ </summary>
+	<param name="msgtype"></param>
+	<param name="parts"></param>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Usar.Lib.UsarAgent.ToDictionary(System.Collections.Specialized.StringCollection)">
+	<summary>
+ Assumes the default format for body messages. The message parts
+ will be broken down further into key-value pairs using the ToKeyValuePair
+ member and subsequently be put in a stringdictionary.
+ </summary>
+	<param name="msg"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Usar.Lib.UsarAgent.ToKeyValuePair(System.String)">
+	<summary>
+ Breaks down a single message part into a key and its corresponding value.
+ </summary>
+	<param name="part"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Usar.Lib.UsarAgent">
+	<summary>
+ Base class used for USAR Agents.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Usar.Lib.UsarProxyAgent">
+	<summary>
+ Specific Agent class used for matches.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Usar.Lib.UsarSkinDetAgent.NotifySensorUpdate(UvARescue.Agent.Sensor)">
+	<summary>
+ Forwards sensor readings to Image Analyser.
+ </summary>
+	<param name="sensor"></param>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

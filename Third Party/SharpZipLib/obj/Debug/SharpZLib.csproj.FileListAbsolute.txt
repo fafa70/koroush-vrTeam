@@ -1,0 +1,40 @@
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Third Party\bin\ICSharpCode.SharpZipLib.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Third Party\bin\ICSharpCode.SharpZipLib.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Third Party\SharpZipLib\obj\Debug\ResolveAssemblyReference.cache
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Third Party\SharpZipLib\obj\Debug\ICSharpCode.SharpZipLib.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Third Party\SharpZipLib\obj\Debug\ICSharpCode.SharpZipLib.pdb
+H:\AOJRF2011\Third Party\bin\ICSharpCode.SharpZipLib.dll
+H:\AOJRF2011\Third Party\bin\ICSharpCode.SharpZipLib.pdb
+H:\AOJRF2011\Third Party\SharpZipLib\obj\Debug\ResolveAssemblyReference.cache
+H:\AOJRF2011\Third Party\SharpZipLib\obj\Debug\ICSharpCode.SharpZipLib.dll
+H:\AOJRF2011\Third Party\SharpZipLib\obj\Debug\ICSharpCode.SharpZipLib.pdb
+D:\AOJRF2012\Third Party\bin\ICSharpCode.SharpZipLib.dll
+D:\AOJRF2012\Third Party\bin\ICSharpCode.SharpZipLib.pdb
+D:\AOJRF2012\Third Party\SharpZipLib\obj\Debug\ResolveAssemblyReference.cache
+D:\AOJRF2012\Third Party\SharpZipLib\obj\Debug\ICSharpCode.SharpZipLib.dll
+D:\AOJRF2012\Third Party\SharpZipLib\obj\Debug\ICSharpCode.SharpZipLib.pdb
+D:\IUST-BASE\Third Party\bin\ICSharpCode.SharpZipLib.dll
+D:\IUST-BASE\Third Party\bin\ICSharpCode.SharpZipLib.pdb
+D:\IUST-BASE\Third Party\SharpZipLib\obj\Debug\ResolveAssemblyReference.cache
+D:\IUST-BASE\Third Party\SharpZipLib\obj\Debug\ICSharpCode.SharpZipLib.dll
+D:\IUST-BASE\Third Party\SharpZipLib\obj\Debug\ICSharpCode.SharpZipLib.pdb
+F:\IUST-BASE\Third Party\bin\ICSharpCode.SharpZipLib.dll
+F:\IUST-BASE\Third Party\bin\ICSharpCode.SharpZipLib.pdb
+F:\IUST-BASE\Third Party\SharpZipLib\obj\Debug\ResolveAssemblyReference.cache
+F:\IUST-BASE\Third Party\SharpZipLib\obj\Debug\ICSharpCode.SharpZipLib.dll
+F:\IUST-BASE\Third Party\SharpZipLib\obj\Debug\ICSharpCode.SharpZipLib.pdb
+D:\usarsim\IUST-BASE\Third Party\bin\ICSharpCode.SharpZipLib.dll
+D:\usarsim\IUST-BASE\Third Party\bin\ICSharpCode.SharpZipLib.pdb
+D:\usarsim\IUST-BASE\Third Party\SharpZipLib\obj\Debug\ResolveAssemblyReference.cache
+D:\usarsim\IUST-BASE\Third Party\SharpZipLib\obj\Debug\ICSharpCode.SharpZipLib.dll
+D:\usarsim\IUST-BASE\Third Party\SharpZipLib\obj\Debug\ICSharpCode.SharpZipLib.pdb
+C:\base-backup\fresh-backup\IUST-BASE\Third Party\bin\ICSharpCode.SharpZipLib.dll
+C:\base-backup\fresh-backup\IUST-BASE\Third Party\bin\ICSharpCode.SharpZipLib.pdb
+C:\base-backup\fresh-backup\IUST-BASE\Third Party\SharpZipLib\obj\Debug\ResolveAssemblyReference.cache
+C:\base-backup\fresh-backup\IUST-BASE\Third Party\SharpZipLib\obj\Debug\ICSharpCode.SharpZipLib.dll
+C:\base-backup\fresh-backup\IUST-BASE\Third Party\SharpZipLib\obj\Debug\ICSharpCode.SharpZipLib.pdb
+D:\mapping\IUST-BASE\Third Party\bin\ICSharpCode.SharpZipLib.dll
+D:\mapping\IUST-BASE\Third Party\bin\ICSharpCode.SharpZipLib.pdb
+D:\mapping\IUST-BASE\Third Party\SharpZipLib\obj\Debug\ResolveAssemblyReference.cache
+D:\mapping\IUST-BASE\Third Party\SharpZipLib\obj\Debug\ICSharpCode.SharpZipLib.dll
+D:\mapping\IUST-BASE\Third Party\SharpZipLib\obj\Debug\ICSharpCode.SharpZipLib.pdb

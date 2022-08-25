@@ -1,0 +1,40 @@
+------------------------------------------------------------------------
+r693 | baslamet | 2007-07-14 14:01:58 +0200 (Sat, 14 Jul 2007) | 10 lines
+
+Did some refactory to pave the way for frontiers:
+- restored the nice gradient-style FreeSpaceLayer
+- ditched FastFreeSpaceLayer, the rendering performance is fine as it is, the factor that slowed it down most was the high resolution used in the past. We used to be on 50px/m and have been using 20px/m for a while now.
+- started new FrontierLayer, is work in progress as it is now, will work on this the coming week.
+
+Enhanced ManifoldView to accomodate changes:
+- added button to show/hide new FrontierLayer
+- added missing button to show/hide victim reports
+- it became a but crowded up there, so sized it down to make it fit again on my 15in screen .:-)
+
+------------------------------------------------------------------------
+r695 | baslamet | 2007-07-15 17:36:04 +0200 (Sun, 15 Jul 2007) | 11 lines
+
+Large refactory to ManifoldImage and related classes:
+- added lots of garbage collection (using blocks)
+- moved agent trail to AgentsLayer, where it belongs
+- made naming consistent" renamed all Observations to Obstacles
+- added settings that remember which layers were on/off
+- added SafeSpaceLayer
+- added buttons to show/hide VictimsLayer, SafeSpaceLayer and FrontierLayer
+
+And probably much more .... don't recall. Nothing 'dangerous' though. 
+
+
+------------------------------------------------------------------------
+r806 | baslamet | 2007-09-26 15:53:00 +0200 (Wed, 26 Sep 2007) | 1 line
+
+Changes made for Probabilistic Robotics.
+------------------------------------------------------------------------
+r1333 | jdehoog | 2008-07-02 18:17:36 +0200 (Wed, 02 Jul 2008) | 1 line
+
+Extensive changes to SaveMapDialog: individual agent contributions can be adjusted using trackbars; added constant class (e.g. map resolution)
+------------------------------------------------------------------------
+r1344 | jdehoog | 2008-07-16 06:56:53 +0200 (Wed, 16 Jul 2008) | 1 line
+
+Some missing button image files
+------------------------------------------------------------------------

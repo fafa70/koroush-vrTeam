@@ -1,0 +1,135 @@
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Build\Debug\MathNet.Iridium.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Build\Debug\MathNet.Iridium.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Build\Debug\es\MathNet.Iridium.resources.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Build\Debug\fr\MathNet.Iridium.resources.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Build\Debug\de\MathNet.Iridium.resources.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Third Party\Iridium\obj\Debug\ResolveAssemblyReference.cache
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.resources
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.es.resources
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.fr.resources
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.de.resources
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Third Party\Iridium\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Third Party\Iridium\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Third Party\Iridium\obj\Debug\es\MathNet.Iridium.resources.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Third Party\Iridium\obj\Debug\fr\MathNet.Iridium.resources.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Third Party\Iridium\obj\Debug\de\MathNet.Iridium.resources.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Third Party\Iridium\obj\Debug\MathNet.Iridium.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Third Party\Iridium\obj\Debug\MathNet.Iridium.pdb
+H:\AOJRF2011\Build\Debug\MathNet.Iridium.dll
+H:\AOJRF2011\Build\Debug\MathNet.Iridium.pdb
+H:\AOJRF2011\Build\Debug\es\MathNet.Iridium.resources.dll
+H:\AOJRF2011\Build\Debug\fr\MathNet.Iridium.resources.dll
+H:\AOJRF2011\Build\Debug\de\MathNet.Iridium.resources.dll
+H:\AOJRF2011\Third Party\Iridium\obj\Debug\ResolveAssemblyReference.cache
+H:\AOJRF2011\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.resources
+H:\AOJRF2011\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.es.resources
+H:\AOJRF2011\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.fr.resources
+H:\AOJRF2011\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.de.resources
+H:\AOJRF2011\Third Party\Iridium\obj\Debug\Iridium.csproj.GenerateResource.Cache
+H:\AOJRF2011\Third Party\Iridium\obj\Debug\es\MathNet.Iridium.resources.dll
+H:\AOJRF2011\Third Party\Iridium\obj\Debug\fr\MathNet.Iridium.resources.dll
+H:\AOJRF2011\Third Party\Iridium\obj\Debug\de\MathNet.Iridium.resources.dll
+H:\AOJRF2011\Third Party\Iridium\obj\Debug\MathNet.Iridium.dll
+H:\AOJRF2011\Third Party\Iridium\obj\Debug\MathNet.Iridium.pdb
+D:\AOJRF2012\Build\Debug\MathNet.Iridium.dll
+D:\AOJRF2012\Build\Debug\MathNet.Iridium.pdb
+D:\AOJRF2012\Build\Debug\es\MathNet.Iridium.resources.dll
+D:\AOJRF2012\Build\Debug\fr\MathNet.Iridium.resources.dll
+D:\AOJRF2012\Build\Debug\de\MathNet.Iridium.resources.dll
+D:\AOJRF2012\Third Party\Iridium\obj\Debug\ResolveAssemblyReference.cache
+D:\AOJRF2012\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.resources
+D:\AOJRF2012\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.es.resources
+D:\AOJRF2012\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.fr.resources
+D:\AOJRF2012\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.de.resources
+D:\AOJRF2012\Third Party\Iridium\obj\Debug\ResGen.read.1.tlog
+D:\AOJRF2012\Third Party\Iridium\obj\Debug\ResGen.write.1.tlog
+D:\AOJRF2012\Third Party\Iridium\obj\Debug\es\MathNet.Iridium.resources.dll
+D:\AOJRF2012\Third Party\Iridium\obj\Debug\fr\MathNet.Iridium.resources.dll
+D:\AOJRF2012\Third Party\Iridium\obj\Debug\de\MathNet.Iridium.resources.dll
+D:\AOJRF2012\Third Party\Iridium\obj\Debug\MathNet.Iridium.dll
+D:\AOJRF2012\Third Party\Iridium\obj\Debug\MathNet.Iridium.pdb
+D:\IUST-BASE\Build\Debug\MathNet.Iridium.dll
+D:\IUST-BASE\Build\Debug\MathNet.Iridium.pdb
+D:\IUST-BASE\Build\Debug\es\MathNet.Iridium.resources.dll
+D:\IUST-BASE\Build\Debug\fr\MathNet.Iridium.resources.dll
+D:\IUST-BASE\Build\Debug\de\MathNet.Iridium.resources.dll
+D:\IUST-BASE\Third Party\Iridium\obj\Debug\ResolveAssemblyReference.cache
+D:\IUST-BASE\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.resources
+D:\IUST-BASE\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.es.resources
+D:\IUST-BASE\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.fr.resources
+D:\IUST-BASE\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.de.resources
+D:\IUST-BASE\Third Party\Iridium\obj\Debug\ResGen.read.1.tlog
+D:\IUST-BASE\Third Party\Iridium\obj\Debug\ResGen.write.1.tlog
+D:\IUST-BASE\Third Party\Iridium\obj\Debug\es\MathNet.Iridium.resources.dll
+D:\IUST-BASE\Third Party\Iridium\obj\Debug\fr\MathNet.Iridium.resources.dll
+D:\IUST-BASE\Third Party\Iridium\obj\Debug\de\MathNet.Iridium.resources.dll
+D:\IUST-BASE\Third Party\Iridium\obj\Debug\MathNet.Iridium.dll
+D:\IUST-BASE\Third Party\Iridium\obj\Debug\MathNet.Iridium.pdb
+F:\IUST-BASE\Build\Debug\MathNet.Iridium.dll
+F:\IUST-BASE\Build\Debug\MathNet.Iridium.pdb
+F:\IUST-BASE\Build\Debug\es\MathNet.Iridium.resources.dll
+F:\IUST-BASE\Build\Debug\fr\MathNet.Iridium.resources.dll
+F:\IUST-BASE\Build\Debug\de\MathNet.Iridium.resources.dll
+F:\IUST-BASE\Third Party\Iridium\obj\Debug\ResolveAssemblyReference.cache
+F:\IUST-BASE\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.resources
+F:\IUST-BASE\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.es.resources
+F:\IUST-BASE\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.fr.resources
+F:\IUST-BASE\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.de.resources
+F:\IUST-BASE\Third Party\Iridium\obj\Debug\ResGen.read.1.tlog
+F:\IUST-BASE\Third Party\Iridium\obj\Debug\ResGen.write.1.tlog
+F:\IUST-BASE\Third Party\Iridium\obj\Debug\es\MathNet.Iridium.resources.dll
+F:\IUST-BASE\Third Party\Iridium\obj\Debug\fr\MathNet.Iridium.resources.dll
+F:\IUST-BASE\Third Party\Iridium\obj\Debug\de\MathNet.Iridium.resources.dll
+F:\IUST-BASE\Third Party\Iridium\obj\Debug\MathNet.Iridium.dll
+F:\IUST-BASE\Third Party\Iridium\obj\Debug\MathNet.Iridium.pdb
+D:\usarsim\IUST-BASE\Build\Debug\MathNet.Iridium.dll
+D:\usarsim\IUST-BASE\Build\Debug\MathNet.Iridium.pdb
+D:\usarsim\IUST-BASE\Build\Debug\es\MathNet.Iridium.resources.dll
+D:\usarsim\IUST-BASE\Build\Debug\fr\MathNet.Iridium.resources.dll
+D:\usarsim\IUST-BASE\Build\Debug\de\MathNet.Iridium.resources.dll
+D:\usarsim\IUST-BASE\Third Party\Iridium\obj\Debug\ResolveAssemblyReference.cache
+D:\usarsim\IUST-BASE\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.resources
+D:\usarsim\IUST-BASE\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.es.resources
+D:\usarsim\IUST-BASE\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.fr.resources
+D:\usarsim\IUST-BASE\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.de.resources
+D:\usarsim\IUST-BASE\Third Party\Iridium\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\usarsim\IUST-BASE\Third Party\Iridium\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\usarsim\IUST-BASE\Third Party\Iridium\obj\Debug\es\MathNet.Iridium.resources.dll
+D:\usarsim\IUST-BASE\Third Party\Iridium\obj\Debug\fr\MathNet.Iridium.resources.dll
+D:\usarsim\IUST-BASE\Third Party\Iridium\obj\Debug\de\MathNet.Iridium.resources.dll
+D:\usarsim\IUST-BASE\Third Party\Iridium\obj\Debug\MathNet.Iridium.dll
+D:\usarsim\IUST-BASE\Third Party\Iridium\obj\Debug\MathNet.Iridium.pdb
+C:\base-backup\fresh-backup\IUST-BASE\Build\Debug\MathNet.Iridium.dll
+C:\base-backup\fresh-backup\IUST-BASE\Build\Debug\MathNet.Iridium.pdb
+C:\base-backup\fresh-backup\IUST-BASE\Build\Debug\es\MathNet.Iridium.resources.dll
+C:\base-backup\fresh-backup\IUST-BASE\Build\Debug\fr\MathNet.Iridium.resources.dll
+C:\base-backup\fresh-backup\IUST-BASE\Build\Debug\de\MathNet.Iridium.resources.dll
+C:\base-backup\fresh-backup\IUST-BASE\Third Party\Iridium\obj\Debug\ResolveAssemblyReference.cache
+C:\base-backup\fresh-backup\IUST-BASE\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.resources
+C:\base-backup\fresh-backup\IUST-BASE\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.es.resources
+C:\base-backup\fresh-backup\IUST-BASE\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.fr.resources
+C:\base-backup\fresh-backup\IUST-BASE\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.de.resources
+C:\base-backup\fresh-backup\IUST-BASE\Third Party\Iridium\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\base-backup\fresh-backup\IUST-BASE\Third Party\Iridium\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\base-backup\fresh-backup\IUST-BASE\Third Party\Iridium\obj\Debug\es\MathNet.Iridium.resources.dll
+C:\base-backup\fresh-backup\IUST-BASE\Third Party\Iridium\obj\Debug\fr\MathNet.Iridium.resources.dll
+C:\base-backup\fresh-backup\IUST-BASE\Third Party\Iridium\obj\Debug\de\MathNet.Iridium.resources.dll
+C:\base-backup\fresh-backup\IUST-BASE\Third Party\Iridium\obj\Debug\MathNet.Iridium.dll
+C:\base-backup\fresh-backup\IUST-BASE\Third Party\Iridium\obj\Debug\MathNet.Iridium.pdb
+D:\mapping\IUST-BASE\Build\Debug\MathNet.Iridium.dll
+D:\mapping\IUST-BASE\Build\Debug\MathNet.Iridium.pdb
+D:\mapping\IUST-BASE\Build\Debug\es\MathNet.Iridium.resources.dll
+D:\mapping\IUST-BASE\Build\Debug\fr\MathNet.Iridium.resources.dll
+D:\mapping\IUST-BASE\Build\Debug\de\MathNet.Iridium.resources.dll
+D:\mapping\IUST-BASE\Third Party\Iridium\obj\Debug\ResolveAssemblyReference.cache
+D:\mapping\IUST-BASE\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.resources
+D:\mapping\IUST-BASE\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.es.resources
+D:\mapping\IUST-BASE\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.fr.resources
+D:\mapping\IUST-BASE\Third Party\Iridium\obj\Debug\MathNet.Numerics.Properties.Resources.de.resources
+D:\mapping\IUST-BASE\Third Party\Iridium\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\mapping\IUST-BASE\Third Party\Iridium\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\mapping\IUST-BASE\Third Party\Iridium\obj\Debug\es\MathNet.Iridium.resources.dll
+D:\mapping\IUST-BASE\Third Party\Iridium\obj\Debug\fr\MathNet.Iridium.resources.dll
+D:\mapping\IUST-BASE\Third Party\Iridium\obj\Debug\de\MathNet.Iridium.resources.dll
+D:\mapping\IUST-BASE\Third Party\Iridium\obj\Debug\MathNet.Iridium.dll
+D:\mapping\IUST-BASE\Third Party\Iridium\obj\Debug\MathNet.Iridium.pdb

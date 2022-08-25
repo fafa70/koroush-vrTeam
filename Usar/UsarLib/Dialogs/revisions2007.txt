@@ -1,0 +1,144 @@
+------------------------------------------------------------------------
+r532 | baslamet | 2007-06-12 12:40:04 +0200 (Tue, 12 Jun 2007) | 4 lines
+
+Refactored Config options
+- NetworkConfig for server names/ips and ports
+- AgentConfig for robotmodel/startlocations
+- ConfigDialogs 
+------------------------------------------------------------------------
+r533 | baslamet | 2007-06-12 13:03:07 +0200 (Tue, 12 Jun 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r544 | baslamet | 2007-06-13 15:45:07 +0200 (Wed, 13 Jun 2007) | 6 lines
+
+Added dead-reckoning functionality to SLAM
+- based on Odometry
+- based on INS
+- based on GroundTruth (only when bDebug is set to true in p2at section of usarbot.ini
+
+Bayu
+------------------------------------------------------------------------
+r557 | baslamet | 2007-06-16 16:52:06 +0200 (Sat, 16 Jun 2007) | 9 lines
+
+Changed Map Saving functionality:
+- new SaveMapDialog 
+- defaults to TFW files
+- optionally, GeoTiff files can still be created
+- Global Mapper supports TFW + TIF only
+- GeoTiffViewer supports TFW + TIF and TFW + PNG
+- we can also produce JPG en GIF, but they cannot be used with TFW files
+
+Bayu
+------------------------------------------------------------------------
+r562 | baslamet | 2007-06-18 17:45:46 +0200 (Mon, 18 Jun 2007) | 6 lines
+
+IDC has been implemented:
+- IdcScanMatcher works
+- AgentConfig extended with relevant options
+- AgentConfigDialog changed accordingly
+
+Bayu
+------------------------------------------------------------------------
+r565 | baslamet | 2007-06-21 13:29:39 +0200 (Thu, 21 Jun 2007) | 8 lines
+
+MbICP:
+- refactored scanmatchers to prepare for MbICP
+- added initial (unstable) version of MbICP scanmatcher
+
+WSS:
+- moved Actors
+- prepared Agent for WSS
+
+------------------------------------------------------------------------
+r566 | baslamet | 2007-06-23 19:55:49 +0200 (Sat, 23 Jun 2007) | 9 lines
+
+Factored CommAgent into framework
+- redesigned Agent - Sensor/Actor collaboration
+- added CommActor
+- added Communication project
+
+Unfortunately, due to the amount and kind of changes, bugs and merge conflicts are almost guaranteed.
+Sorry for that. ;-)
+
+Bayu
+------------------------------------------------------------------------
+r570 | baslamet | 2007-06-25 16:59:27 +0200 (Mon, 25 Jun 2007) | 1 line
+
+Numerous bits and pieces.
+------------------------------------------------------------------------
+r571 | baslamet | 2007-06-26 11:57:52 +0200 (Tue, 26 Jun 2007) | 7 lines
+
+Added functionality so that each agent, regardless of which pc it is spawned, knows a-priori who his team members are and how he can communicate to them (i.e. port numbers they are listening to).
+- renamed NetworkConfig to TeamConfig
+- renamed NetworkConfigDialog to TeamConfigDialog
+- added [team] section to TeamConfig, so now it has two sections: [network] and [team]
+- the [team] section will hold a setting for the name of the operator and one for all team-members (comma-delimited)
+
+
+------------------------------------------------------------------------
+r572 | tschmits | 2007-06-26 14:00:29 +0200 (Tue, 26 Jun 2007) | 2 lines
+
+- extended Config and Config Dialog for SkinDetector agent configuration
+- Included hist-file handling for SkinDetector(Teacher) classes
+------------------------------------------------------------------------
+r577 | baslamet | 2007-06-27 10:53:56 +0200 (Wed, 27 Jun 2007) | 1 line
+
+Merged Tijn's code from yesterday and this morning into my latest changes.
+------------------------------------------------------------------------
+r582 | baslamet | 2007-06-27 13:09:56 +0200 (Wed, 27 Jun 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r586 | baslamet | 2007-06-27 23:05:20 +0200 (Wed, 27 Jun 2007) | 6 lines
+
+Lotsa changes:
+- moved Manifold data structure to Agent project
+- got WSS to work such that any pair of Agents will try to have an open connection whenever they are within range
+- got Agents to submit manifold data over the wire (Patches)
+
+
+------------------------------------------------------------------------
+r593 | baslamet | 2007-06-29 22:06:59 +0200 (Fri, 29 Jun 2007) | 4 lines
+
+- Comm works (WSS), huge refactory and numerous little improvements
+- refactored OperatorAgent
+- introduced some extension thresholds for ManifoldSLAM
+
+------------------------------------------------------------------------
+r604 | baslamet | 2007-07-01 14:16:26 +0200 (Sun, 01 Jul 2007) | 7 lines
+
+Redesigned map saving routines:
+- one layer with the map, exactly according to map-scoring rules
+- one additional layer with victim reports (funky annotations with position, name and parts info)
+- and another additional layer with the axes (minor importance, but since I was into it anyways ...)
+
+Merged recent changes from Tijn, not sure if I did that correctly. 
+- NEEDS VERIFICATION!
+------------------------------------------------------------------------
+r605 | tschmits | 2007-07-01 20:26:07 +0200 (Sun, 01 Jul 2007) | 1 line
+
+- included default theta value for skindetector
+------------------------------------------------------------------------
+r606 | baslamet | 2007-07-01 22:41:36 +0200 (Sun, 01 Jul 2007) | 5 lines
+
+- added min-range and max-range handling to SLAM
+- switch GeoTIFF back to native .Net based tiff loading
+- committed non-functioning HybridScanMatcher.vb, this is work in progress
+
+
+------------------------------------------------------------------------
+r610 | baslamet | 2007-07-02 14:17:57 +0200 (Mon, 02 Jul 2007) | 7 lines
+
+- fixed apriori handling
+- use thumbnail images in GeoTiffLayer to speed up rendering, it does speed up but some apriori files are simply too big
+- implemented another speed up in map saving
+- returned to default gdi+ coords system in ManifoldView again
+- fixed text rendering in geo referenced mode (90 degrees rotated)
+- fixed a bug in PatchMemento that would cause syncs to fail
+- numerous little things ...
+------------------------------------------------------------------------
+r618 | baslamet | 2007-07-02 19:30:15 +0200 (Mon, 02 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------

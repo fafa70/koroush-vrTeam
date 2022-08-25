@@ -1,0 +1,24 @@
+------------------------------------------------------------------------
+r1505 | arnoud | 2008-10-22 16:47:33 +0200 (Wed, 22 Oct 2008) | 1 line
+
+
+------------------------------------------------------------------------
+r1607 | arnoud | 2009-01-06 18:02:12 +0100 (Tue, 06 Jan 2009) | 1 line
+
+Moved remotely
+------------------------------------------------------------------------
+r1608 | arnoud | 2009-01-06 18:02:49 +0100 (Tue, 06 Jan 2009) | 1 line
+
+Renamed remotely
+------------------------------------------------------------------------
+r1685 | jdehoog | 2009-02-03 16:27:00 +0100 (Tue, 03 Feb 2009) | 1 line
+
+Merge with DOAS revision 1683
+------------------------------------------------------------------------
+r1898 | jdehoog | 2009-06-29 23:17:00 +0200 (Mon, 29 Jun 2009) | 4 lines
+
+Day 1 of RoboCup2009
+- Minor bugfixes to existing NewTargetLocationMessage functionality, not tested
+- Added interface to Kenaf robot, can raise and lower flippers -- works ok, but robot jumps a bit when first driving/reversing, maybe a robot parameter to be changed in config files
+- Added Deploy button, next to AllTele, AllAuto buttons
+------------------------------------------------------------------------

@@ -1,0 +1,65 @@
+------------------------------------------------------------------------
+r2105 | arnoud | 2010-02-19 10:36:05 +0100 (Fri, 19 Feb 2010) | 1 line
+
+Copy from 2009 competition rev. 2100
+------------------------------------------------------------------------
+r2106 | arnoud | 2010-02-19 11:35:48 +0100 (Fri, 19 Feb 2010) | 1 line
+
+Merge with 2009/honours 1950 (ConservativeTeleOp for AirRobot)
+------------------------------------------------------------------------
+r2107 | arnoud | 2010-02-19 14:55:55 +0100 (Fri, 19 Feb 2010) | 7 lines
+
+Merge with experimental (rev. 2053) COMPILES, not tested yet
+* GetPoses should work now
+* P3AT and ATVR from UT3 available
+* Some additional Behaviors
+* SensorPoses instead of SensorCurrentData
+* Some additional logfiles which can be Read
+
+------------------------------------------------------------------------
+r2110 | arnoud | 2010-03-15 10:15:56 +0100 (Mon, 15 Mar 2010) | 3 lines
+
+Extensively tested on Corridors-world
+* MotionControl is working
+* Remaining problem is camera image in GUI.
+------------------------------------------------------------------------
+r2120 | arnoud | 2010-03-31 16:38:07 +0200 (Wed, 31 Mar 2010) | 3 lines
+
+Version teste on RobotTeleopRobrecht_v2
+* smaller font for TargetPoints
+* less comments
+------------------------------------------------------------------------
+r2122 | arnoud | 2010-04-04 16:03:46 +0200 (Sun, 04 Apr 2010) | 1 line
+
+Solved the NoSync bug (could not serialize omnicam bitmap).
+------------------------------------------------------------------------
+r2128 | arnoud | 2010-04-07 17:16:06 +0200 (Wed, 07 Apr 2010) | 2 lines
+
+Final working version of the Mapping Challenge
+* Essential change is in Agent.vb
+------------------------------------------------------------------------
+r2129 | arnoud | 2010-04-09 11:40:57 +0200 (Fri, 09 Apr 2010) | 3 lines
+
+RunnerUp version
+* protected AverageCovariance from returning INF
+* removed a some print messages
+------------------------------------------------------------------------
+r2154 | oformsma | 2010-05-27 21:13:58 +0200 (Thu, 27 May 2010) | 4 lines
+
+Changed following behavior to follow point that can be specified on the Map.
+So far, the scaling is off, so a path can not be planned.
+Also, if a location can not be planned to, it should be dropped and the next waypoint should be the new target.
+Removed LightFx references, as they broke my build.
+------------------------------------------------------------------------
+r2157 | oformsma | 2010-05-28 11:22:21 +0200 (Fri, 28 May 2010) | 1 line
+
+Coordinate transformations from screencoordinates to mapcoordinates to worldcoordinates work now.
+------------------------------------------------------------------------
+r2162 | oformsma | 2010-06-21 04:01:43 +0200 (Mon, 21 Jun 2010) | 5 lines
+
+RoboCup 2010 first challenge (TeleOperation) settings.
+ * minor bugfix: atrv is not spelled atvr
+ * printing whether the targets.txt file is loaded or not 
+ * removed clearlayer from jury file
+ * if one agent does not provide any pathces, the save file dialog still functions.
+------------------------------------------------------------------------

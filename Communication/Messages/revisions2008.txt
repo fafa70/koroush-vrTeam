@@ -1,0 +1,58 @@
+------------------------------------------------------------------------
+r678 | tschmits | 2007-07-08 12:15:16 +0200 (Sun, 08 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r679 | tschmits | 2007-07-08 12:17:53 +0200 (Sun, 08 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r681 | baslamet | 2007-07-08 14:50:14 +0200 (Sun, 08 Jul 2007) | 11 lines
+
+Implemented retreat behavior in case robot get out of range of the ComStation:
+- pose update message has been extended such that every robot also communicates the other robots he is connected to
+- therefore the pose update message is no longer directed to just the operator, but to everyone
+- this enables every robot to maintain a complete connectivity matrix of who is connected with whom
+
+This connectivity matrix is then used to:
+- make the robot retreat as soon as it looses contact (directly AND indirectly) with the Operator
+(- hence, as long as there is at least indirect contact the robot will be simply happy)
+- this retreat is pretty dumb (read 'pragmatic' ;-p): no obstacle avoidance of any kind. It just goes until connectivity with the Operator is re-established
+- so, the (reasonably valid) underlying assumption is that the robot went out of range while going straight ahead, and that it can get in range simply using reverse drive
+
+------------------------------------------------------------------------
+r682 | tschmits | 2007-07-08 15:58:23 +0200 (Sun, 08 Jul 2007) | 1 line
+
+- Setup for Camera Requests
+------------------------------------------------------------------------
+r683 | tschmits | 2007-07-08 15:59:13 +0200 (Sun, 08 Jul 2007) | 1 line
+
+- forgot camreplmessage
+------------------------------------------------------------------------
+r684 | baslamet | 2007-07-08 16:11:53 +0200 (Sun, 08 Jul 2007) | 4 lines
+
+Two things: 
+- fixed double deliveries of broadcasted messages by checking timestamps
+- fixed sending of cam-replies back to operator
+- fixed a mini-bug in OperatorAgent
+------------------------------------------------------------------------
+r806 | baslamet | 2007-09-26 15:53:00 +0200 (Wed, 26 Sep 2007) | 1 line
+
+Changes made for Probabilistic Robotics.
+------------------------------------------------------------------------
+r1158 | arnoud | 2008-04-24 18:16:11 +0200 (Thu, 24 Apr 2008) | 1 line
+
+German Open: Thursday Evening: Debugged BtnCamReq + added some comments
+------------------------------------------------------------------------
+r1324 | jdehoog | 2008-06-27 19:20:40 +0200 (Fri, 27 Jun 2008) | 1 line
+
+Initial behavior change broadcast message testing
+------------------------------------------------------------------------
+r1325 | jdehoog | 2008-06-27 19:29:12 +0200 (Fri, 27 Jun 2008) | 1 line
+
+Forgot one file last commit (behaviourchange)
+------------------------------------------------------------------------
+r1343 | jdehoog | 2008-07-16 06:53:33 +0200 (Wed, 16 Jul 2008) | 1 line
+
+RoboCup08 Prelim Trial version: sleep between spawn and WSS connection, some sensors unmounted, prelim work on camera image use, multiple small bug fixes
+------------------------------------------------------------------------

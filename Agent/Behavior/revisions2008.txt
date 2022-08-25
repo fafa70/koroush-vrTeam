@@ -1,0 +1,279 @@
+------------------------------------------------------------------------
+r714 | baslamet | 2007-07-21 12:10:40 +0200 (Sat, 21 Jul 2007) | 6 lines
+
+Re-activated BehaviorControl (see BehaviorAgent):
+- TeleOperation behavior is turned on by default, the robot will not initiate any exploratory actions by itself but await for drive commands from the operator instead. What this behavior \does\ do is ensure connectivity to the Operator by initiating a retreat as soon as the robot got out-of-range.
+
+The motions currently supported are:
+- NoMotion, halts the robot upon activation and does nothing after that (so Operator is in control and robot will not interfer)
+- Retreat, triggered when Operator lost contact, then robot will change to Reverse gear and try to get back in range
+------------------------------------------------------------------------
+r767 | baslamet | 2007-08-07 23:13:53 +0200 (Tue, 07 Aug 2007) | 1 line
+
+Half-done result of today's efforts to get frontier exploration behavior.
+------------------------------------------------------------------------
+r768 | baslamet | 2007-08-08 17:55:04 +0200 (Wed, 08 Aug 2007) | 1 line
+
+Implemented single-robot frontier exploration
+------------------------------------------------------------------------
+r769 | baslamet | 2007-08-09 00:28:04 +0200 (Thu, 09 Aug 2007) | 3 lines
+
+Improved single-robot frontier exploration.
+- performance is up because safety maps are only computed on a local scale
+- robustness is up due to some tuning
+------------------------------------------------------------------------
+r779 | baslamet | 2007-08-12 16:53:36 +0200 (Sun, 12 Aug 2007) | 3 lines
+
+- added Gaussian blurred image extraction 
+- started multi-robot frontier exploration code
+
+------------------------------------------------------------------------
+r781 | baslamet | 2007-08-12 18:36:20 +0200 (Sun, 12 Aug 2007) | 1 line
+
+intermediate commit
+------------------------------------------------------------------------
+r782 | baslamet | 2007-08-12 19:09:05 +0200 (Sun, 12 Aug 2007) | 1 line
+
+- changed frontier assignment protocol
+------------------------------------------------------------------------
+r783 | baslamet | 2007-08-12 21:21:56 +0200 (Sun, 12 Aug 2007) | 1 line
+
+another intermediate commit
+------------------------------------------------------------------------
+r786 | baslamet | 2007-08-12 23:46:38 +0200 (Sun, 12 Aug 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r788 | baslamet | 2007-08-13 01:14:42 +0200 (Mon, 13 Aug 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r789 | baslamet | 2007-08-13 20:51:02 +0200 (Mon, 13 Aug 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r806 | baslamet | 2007-09-26 15:53:00 +0200 (Wed, 26 Sep 2007) | 1 line
+
+Changes made for Probabilistic Robotics.
+------------------------------------------------------------------------
+r807 | arnoud | 2007-09-26 15:59:11 +0200 (Wed, 26 Sep 2007) | 1 line
+
+New DriveSquare behavior and motion WalkSquare
+------------------------------------------------------------------------
+r808 | arnoud | 2007-09-26 18:41:53 +0200 (Wed, 26 Sep 2007) | 1 line
+
+Added Configuration box to control behavior.
+------------------------------------------------------------------------
+r809 | arnoud | 2007-10-11 19:44:49 +0200 (Thu, 11 Oct 2007) | 1 line
+
+Experimental version of FrontierExploration. Strange behavior, so I tried to draw the current goal or future path (seems to be different than the FrontierLayer). Corrected TeleOperation.OnActivated (should be tested). pc-unreal = 146.50.1.149. 
+------------------------------------------------------------------------
+r810 | arnoud | 2007-10-25 18:31:34 +0200 (Thu, 25 Oct 2007) | 2 lines
+
+Tested version, including StatusSensor (threshold should be increased from 1 to 60 seconds, because Battery starts at 1200 sec).
+
+------------------------------------------------------------------------
+r811 | arnoud | 2007-10-25 23:08:49 +0200 (Thu, 25 Oct 2007) | 1 line
+
+* Tested Battery < 1100, and set it to 100. 
+------------------------------------------------------------------------
+r812 | arnoud | 2007-10-29 12:03:05 +0100 (Mon, 29 Oct 2007) | 1 line
+
+Created parameter for ReplanningDistance (and reduced the value from 15000 to 5000).
+------------------------------------------------------------------------
+r813 | arnoud | 2007-10-30 09:55:29 +0100 (Tue, 30 Oct 2007) | 1 line
+
+Last 10 frontiers
+------------------------------------------------------------------------
+r814 | arnoud | 2007-10-30 15:16:06 +0100 (Tue, 30 Oct 2007) | 1 line
+
+Added UpperBound to pathplanning.
+------------------------------------------------------------------------
+r815 | arnoud | 2007-10-30 16:47:41 +0100 (Tue, 30 Oct 2007) | 1 line
+
+Some extra code to count the number of Frontiers that are searched
+------------------------------------------------------------------------
+r816 | arnoud | 2007-10-30 17:36:53 +0100 (Tue, 30 Oct 2007) | 1 line
+
+Added Gui for BehaviorBalance
+------------------------------------------------------------------------
+r817 | arnoud | 2007-10-30 19:36:15 +0100 (Tue, 30 Oct 2007) | 1 line
+
+Added distance-measure between agents, to prevent coordinating too much
+------------------------------------------------------------------------
+r818 | arnoud | 2007-10-31 01:00:38 +0100 (Wed, 31 Oct 2007) | 2 lines
+
+* Added third bestpath-cache
+* Increased Blur-kernel from 13 to 15
+------------------------------------------------------------------------
+r819 | arnoud | 2007-10-31 16:12:55 +0100 (Wed, 31 Oct 2007) | 1 line
+
+* Solved third-bestcache bug
+------------------------------------------------------------------------
+r820 | arnoud | 2007-10-31 20:24:48 +0100 (Wed, 31 Oct 2007) | 2 lines
+
+* Complete new algorithm. First the complete utility matrix is calculated, and only the best utilities are recalculated with the distance from the pathplanning.
+* This version still contains a bug, because not always the best utility is chosen (but the last tested).
+------------------------------------------------------------------------
+r821 | arnoud | 2007-11-01 00:55:26 +0100 (Thu, 01 Nov 2007) | 2 lines
+
+* Solved problem with too tight upperbound by using the utility of the 2nd (goodmemberutil)
+* The previous best is set on 0.99 of the goodmember if pp doesn't succeed (should be 0.9)
+------------------------------------------------------------------------
+r822 | arnoud | 2007-11-01 13:06:15 +0100 (Thu, 01 Nov 2007) | 1 line
+
+Recalculate  best and good util for every agent after assignment, to prevent looping
+------------------------------------------------------------------------
+r824 | arnoud | 2007-11-05 18:06:27 +0100 (Mon, 05 Nov 2007) | 1 line
+
+Corrected endless loop when no solution can be found
+------------------------------------------------------------------------
+r825 | arnoud | 2007-11-14 17:26:31 +0100 (Wed, 14 Nov 2007) | 3 lines
+
+First changes for the MultiHop paper.
+
+Tested combination of Operator (T-junction) and Achilles (North-West corridor)
+------------------------------------------------------------------------
+r827 | arnoud | 2007-11-15 16:44:11 +0100 (Thu, 15 Nov 2007) | 2 lines
+
+Changed the protocol completely. LastUpdate is written at only one place: when a Commit is received. A commit is received directly when a message is received, followed by t
+he Manifold Writers-block. Reduced the WSSdevice frequency to 10 seconds, because it takes up to 5 seconds before a commit returns.
+------------------------------------------------------------------------
+r830 | arnoud | 2007-11-16 14:20:01 +0100 (Fri, 16 Nov 2007) | 3 lines
+
+Every body can ask an Sync, but now first master gives a fast update of the latest information, followed by a complete update from the slave.
+
+Not tested
+------------------------------------------------------------------------
+r831 | arnoud | 2007-11-19 14:30:40 +0100 (Mon, 19 Nov 2007) | 1 line
+
+Normally, only latest updates. Only complete updates when paused
+------------------------------------------------------------------------
+r832 | arnoud | 2007-11-20 18:33:55 +0100 (Tue, 20 Nov 2007) | 1 line
+
+When no target is found, the robots switch back to Random Walk behavior. In principle after two minutes the robots should go back to FrontierExploration, but have not observed this switch. Test tomorrow with debugger.
+------------------------------------------------------------------------
+r833 | arnoud | 2007-11-21 11:07:46 +0100 (Wed, 21 Nov 2007) | 1 line
+
+Relay 1:10 PoseUpdates to the other Agents
+------------------------------------------------------------------------
+r835 | arnoud | 2007-11-21 18:17:05 +0100 (Wed, 21 Nov 2007) | 1 line
+
+Added CorridorWalk and DifferentialDrive. To be further tested
+------------------------------------------------------------------------
+r836 | arnoud | 2007-11-22 13:33:25 +0100 (Thu, 22 Nov 2007) | 2 lines
+
+* Sanity-check in ManifoldSlam before storing the first Patch
+* Tilt-sensing and Retreat 
+------------------------------------------------------------------------
+r837 | arnoud | 2007-11-22 15:33:57 +0100 (Thu, 22 Nov 2007) | 1 line
+
+Commit for nb-avmovie (only added more PoseUpdates when connecting (for the Operator))
+------------------------------------------------------------------------
+r838 | arnoud | 2007-11-22 23:50:52 +0100 (Thu, 22 Nov 2007) | 1 line
+
+Added an EstimateSignalStrengthAtDistance to CommAgent
+------------------------------------------------------------------------
+r841 | arnoud | 2007-11-26 02:46:51 +0100 (Mon, 26 Nov 2007) | 1 line
+
+Two small optimalisations
+------------------------------------------------------------------------
+r951 | rtobi | 2008-02-17 13:50:33 +0100 (Sun, 17 Feb 2008) | 1 line
+
+prepare the codebase for assigment 2
+------------------------------------------------------------------------
+r952 | rtobi | 2008-02-17 16:05:35 +0100 (Sun, 17 Feb 2008) | 1 line
+
+add some WriteLine() calls to clear up the program control flow
+------------------------------------------------------------------------
+r953 | rtobi | 2008-02-17 16:16:09 +0100 (Sun, 17 Feb 2008) | 1 line
+
+fix a bug that always caused the TeleOperation behavior to be activated (instead of CorridorWalk)
+------------------------------------------------------------------------
+r955 | rtobi | 2008-02-17 22:15:32 +0100 (Sun, 17 Feb 2008) | 1 line
+
+partially implement Max & Bayu's original C++ processSonarData() algorithm for ass2
+------------------------------------------------------------------------
+r956 | rtobi | 2008-02-17 22:45:03 +0100 (Sun, 17 Feb 2008) | 1 line
+
+fix a WriteLine() call
+------------------------------------------------------------------------
+r958 | rtobi | 2008-02-17 23:37:00 +0100 (Sun, 17 Feb 2008) | 1 line
+
+comment updates
+------------------------------------------------------------------------
+r978 | rtobi | 2008-02-20 14:41:59 +0100 (Wed, 20 Feb 2008) | 1 line
+
+preparations for ObstacleAvoidance assigment
+------------------------------------------------------------------------
+r1003 | rtobi | 2008-02-26 14:29:47 +0100 (Tue, 26 Feb 2008) | 1 line
+
+add the OA behavior and motion classes
+------------------------------------------------------------------------
+r1004 | rtobi | 2008-02-26 14:38:04 +0100 (Tue, 26 Feb 2008) | 1 line
+
+add the ProcessSensorUpdate functions again
+------------------------------------------------------------------------
+r1007 | rtobi | 2008-02-26 17:13:26 +0100 (Tue, 26 Feb 2008) | 1 line
+
+commit the basic obstacle-avoidance algorithm
+------------------------------------------------------------------------
+r1008 | rtobi | 2008-02-26 17:16:11 +0100 (Tue, 26 Feb 2008) | 1 line
+
+small bugfix
+------------------------------------------------------------------------
+r1009 | rtobi | 2008-02-26 18:27:51 +0100 (Tue, 26 Feb 2008) | 1 line
+
+eliminate some Console.WriteLine() calls
+------------------------------------------------------------------------
+r1010 | rtobi | 2008-02-26 19:56:23 +0100 (Tue, 26 Feb 2008) | 1 line
+
+deal with the 0 <==> 2PI angle flip for the ObstAvoid behavior
+------------------------------------------------------------------------
+r1011 | rtobi | 2008-02-26 20:07:12 +0100 (Tue, 26 Feb 2008) | 1 line
+
+bugfix
+------------------------------------------------------------------------
+r1020 | rtobi | 2008-02-27 14:51:27 +0100 (Wed, 27 Feb 2008) | 1 line
+
+laser-range step preparation
+------------------------------------------------------------------------
+r1051 | rtobi | 2008-03-05 14:47:51 +0100 (Wed, 05 Mar 2008) | 1 line
+
+some fiddling
+------------------------------------------------------------------------
+r1157 | arnoud | 2008-04-24 09:42:44 +0200 (Thu, 24 Apr 2008) | 12 lines
+
+German Open 2008 Thursday morning: 
+* bugfix to allow  TeleOperation over WSS
+* included GPSSensor
+* Preparations for including Apriori-data in FrontierExploration (not active)
+* Larger Axis-font
+* FreeSpaceAlpha on competition setting
+* Every 20 seconds an AREA print
+* Protection on creation of histogram-bitmap (pre-GO2008)
+* AirRobot introduced (no buttons to get AirBorne yet)
+* 
+* 
+
+------------------------------------------------------------------------
+r1272 | jdehoog | 2008-06-13 16:20:13 +0200 (Fri, 13 Jun 2008) | 1 line
+
+
+------------------------------------------------------------------------
+r1273 | jdehoog | 2008-06-13 16:27:29 +0200 (Fri, 13 Jun 2008) | 1 line
+
+Implemented AvoidTeamMate motion, triggered by FrontierExploration, CorridorWalk or RandomWalk
+------------------------------------------------------------------------
+r1300 | jdehoog | 2008-06-24 13:47:12 +0200 (Tue, 24 Jun 2008) | 1 line
+
+Implemented ability to change behaviour during run; several small changes to user interface
+------------------------------------------------------------------------
+r1340 | jdehoog | 2008-07-13 12:41:05 +0200 (Sun, 13 Jul 2008) | 1 line
+
+ConservativeTeleOp behavior added -- currently only uses laser range scanner to detect obstacles
+------------------------------------------------------------------------
+r1343 | jdehoog | 2008-07-16 06:53:33 +0200 (Wed, 16 Jul 2008) | 1 line
+
+RoboCup08 Prelim Trial version: sleep between spawn and WSS connection, some sensors unmounted, prelim work on camera image use, multiple small bug fixes
+------------------------------------------------------------------------

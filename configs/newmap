@@ -1,0 +1,154 @@
+[map]
+levelname = newmap
+startposes = AutoPlayerStart_0 9.3840,-6.2560,1.4720 0.0000,0.0000,0.0000 AutoPlayerStart_0 -5.0800,-7.0880,1.4720 0.0000,0.0000,0.0000 AutoPlayerStart_0 -0.6000,5.0720,1.4720 0.0000,0.0000,0.0000
+
+
+[team]
+operatorname = BaseStation
+teammembers = 0-BaseStation,1-Robot1
+
+
+[local]
+localhost = 127.0.0.1
+
+
+[network]
+imageserverhost = 127.0.0.1
+imageserverport = 5003
+usarsimhost = 127.0.0.1
+usarsimport = 3000
+wirelessserverhost = 127.0.0.1
+wirelessserverport = 50000
+
+
+[backup]
+backupfrequency = 120
+createbackups = False
+
+
+[basestation]
+agentnumber = 1
+agenttype = slam
+behaviorbalance = 1
+behaviormode = TeleOperation
+detectortheta = 50
+logfile = <Click to Select ...>
+logfileformat = UsarSim
+logplayback = False
+multiviewpanels = 1
+noisesigma = 0
+pathplangoal = 
+robotmodel = P3AT
+skindetectotmode = Detection
+slam-mappingmode = ScanMatching
+slam-scanmatcher = WSM
+slam-seedmode = None
+spawnfromcommander = True
+startlocation = 9.3840,-6.2560,1.4720
+startrotation = 0,0,0
+teachermode = SkinOnly
+useimageserver = True
+uselogger = True
+usemultiview = True
+usenoise = False
+
+
+[robot1]
+agentnumber = 2
+agenttype = slam
+behaviorbalance = 1
+behaviormode = TeleOperation
+detectortheta = 
+logfile = <Click to Select ...>
+logfileformat = UsarSim
+logplayback = False
+multiviewpanels = 2
+noisesigma = 0
+pathplangoal = 
+robotmodel = P3AT
+skindetectotmode = Detection
+slam-mappingmode = ScanMatching
+slam-scanmatcher = WSM
+slam-seedmode = None
+spawnfromcommander = True
+startlocation = -5.0800,-7.0880,1.4720
+startrotation = 0,0,0
+teachermode = SkinOnly
+useimageserver = True
+uselogger = True
+usemultiview = True
+usenoise = False
+
+
+[robot2]
+agentnumber = 3
+agenttype = slam
+behaviorbalance = 1
+behaviormode = TeleOperation
+detectortheta = 
+logfile = <Click to Select ...>
+logfileformat = UsarSim
+logplayback = False
+multiviewpanels = 3
+noisesigma = 0
+pathplangoal = 
+robotmodel = P3AT
+skindetectotmode = Detection
+slam-mappingmode = ScanMatching
+slam-scanmatcher = WSM
+slam-seedmode = None
+spawnfromcommander = True
+startlocation = -1.8520,1.0040,1.4720
+startrotation = 0,0,0
+teachermode = SkinOnly
+useimageserver = True
+uselogger = True
+usemultiview = True
+usenoise = False
+
+
+[robot3]
+agentnumber = 4
+agenttype = slam
+behaviorbalance = 1
+behaviormode = TeleOperation
+detectortheta = 
+logfile = <Click to Select ...>
+logfileformat = UsarSim
+logplayback = False
+multiviewpanels = 4
+noisesigma = 0
+pathplangoal = 
+robotmodel = P3AT
+skindetectotmode = Detection
+slam-mappingmode = ScanMatching
+slam-scanmatcher = WSM
+slam-seedmode = None
+spawnfromcommander = True
+startlocation = 1.6040,2.7320,1.4720
+startrotation = 0,0,0
+teachermode = SkinOnly
+useimageserver = True
+uselogger = True
+usemultiview = True
+usenoise = False
+
+
+[2]
+agentnumber = 2
+agenttype = operator
+behaviorbalance = 1
+behaviormode = TeleOperation
+noisesigma = 0
+robotmodel = AirRobot
+slam-mappingmode = ScanMatching
+slam-scanmatcher = WSM
+slam-seedmode = None
+spawnfromcommander = True
+startlocation = -0.6000,5.0720,1.4720
+startrotation = 0,0,0
+useimageserver = True
+usemultiview = True
+usenoise = False
+
+

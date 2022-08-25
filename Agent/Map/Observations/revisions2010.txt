@@ -1,0 +1,15 @@
+------------------------------------------------------------------------
+r2105 | arnoud | 2010-02-19 10:36:05 +0100 (Fri, 19 Feb 2010) | 1 line
+
+Copy from 2009 competition rev. 2100
+------------------------------------------------------------------------
+r2107 | arnoud | 2010-02-19 14:55:55 +0100 (Fri, 19 Feb 2010) | 7 lines
+
+Merge with experimental (rev. 2053) COMPILES, not tested yet
+* GetPoses should work now
+* P3AT and ATVR from UT3 available
+* Some additional Behaviors
+* SensorPoses instead of SensorCurrentData
+* Some additional logfiles which can be Read
+
+------------------------------------------------------------------------

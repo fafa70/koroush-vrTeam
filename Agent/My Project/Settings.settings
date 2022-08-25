@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="UsarBotNameFormat" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">USARBot.{0}</Value>
+    </Setting>
+    <Setting Name="LogFileNameFormat" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Logs\{0}.log</Value>
+    </Setting>
+    <Setting Name="CommentChar" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">#</Value>
+    </Setting>
+    <Setting Name="DefaultUsarSimPort" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">3000</Value>
+    </Setting>
+    <Setting Name="DefaultImageServerPort" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">5003</Value>
+    </Setting>
+    <Setting Name="DefaultWirelessServerPort" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">5874</Value>
+    </Setting>
+    <Setting Name="OperatorName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Operator</Value>
+    </Setting>
+    <Setting Name="DefaultBackupFrequency" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">120</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

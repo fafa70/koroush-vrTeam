@@ -1,0 +1,24 @@
+------------------------------------------------------------------------
+r565 | baslamet | 2007-06-21 13:29:39 +0200 (Thu, 21 Jun 2007) | 8 lines
+
+MbICP:
+- refactored scanmatchers to prepare for MbICP
+- added initial (unstable) version of MbICP scanmatcher
+
+WSS:
+- moved Actors
+- prepared Agent for WSS
+
+------------------------------------------------------------------------
+r566 | baslamet | 2007-06-23 19:55:49 +0200 (Sat, 23 Jun 2007) | 9 lines
+
+Factored CommAgent into framework
+- redesigned Agent - Sensor/Actor collaboration
+- added CommActor
+- added Communication project
+
+Unfortunately, due to the amount and kind of changes, bugs and merge conflicts are almost guaranteed.
+Sorry for that. ;-)
+
+Bayu
+------------------------------------------------------------------------

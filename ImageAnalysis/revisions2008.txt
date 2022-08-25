@@ -1,0 +1,29 @@
+------------------------------------------------------------------------
+r672 | tschmits | 2007-07-07 20:10:44 +0200 (Sat, 07 Jul 2007) | 2 lines
+
+- update victdetect parameters
+- image save for clients
+------------------------------------------------------------------------
+r673 | tschmits | 2007-07-08 00:51:06 +0200 (Sun, 08 Jul 2007) | 1 line
+
+- a revert to 671
+------------------------------------------------------------------------
+r806 | baslamet | 2007-09-26 15:53:00 +0200 (Wed, 26 Sep 2007) | 1 line
+
+Changes made for Probabilistic Robotics.
+------------------------------------------------------------------------
+r1157 | arnoud | 2008-04-24 09:42:44 +0200 (Thu, 24 Apr 2008) | 12 lines
+
+German Open 2008 Thursday morning: 
+* bugfix to allow  TeleOperation over WSS
+* included GPSSensor
+* Preparations for including Apriori-data in FrontierExploration (not active)
+* Larger Axis-font
+* FreeSpaceAlpha on competition setting
+* Every 20 seconds an AREA print
+* Protection on creation of histogram-bitmap (pre-GO2008)
+* AirRobot introduced (no buttons to get AirBorne yet)
+* 
+* 
+
+------------------------------------------------------------------------

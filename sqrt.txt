@@ -1,0 +1,9 @@
+float sqrt7(float x)
+ {
+   unsigned int i = *(unsigned int*) &x; 
+   // adjust bias
+   i  += 127 << 23;
+   // approximation of square root
+   i >>= 1; 
+   return *(float*) &i;
+ }   

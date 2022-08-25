@@ -1,0 +1,14 @@
+------------------------------------------------------------------------
+r690 | baslamet | 2007-07-14 10:08:28 +0200 (Sat, 14 Jul 2007) | 6 lines
+
+Added AForge.NET library:
+- we already had the imaging and core dlls, but they were older versions (1.1)
+- updated to complete v1.3 release version 
+
+Also added original documentation to SVN.
+
+------------------------------------------------------------------------
+r806 | baslamet | 2007-09-26 15:53:00 +0200 (Wed, 26 Sep 2007) | 1 line
+
+Changes made for Probabilistic Robotics.
+------------------------------------------------------------------------

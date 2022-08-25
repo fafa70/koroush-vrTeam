@@ -1,0 +1,33 @@
+------------------------------------------------------------------------
+r2198 | ndijkshoorn | 2011-03-31 17:46:02 +0200 (Thu, 31 Mar 2011) | 2 lines
+
+Visual Studio 2011 project
+Added separate conversations for frames
+------------------------------------------------------------------------
+r2204 | arnoud | 2011-04-05 09:03:55 +0200 (Tue, 05 Apr 2011) | 4 lines
+
+* Added names to GoalPoints in NotesLayer
+* Added IrOpenMapping to KnownMaps
+* Added Helen to team
+
+------------------------------------------------------------------------
+r2219 | arnoud | 2011-07-07 09:47:20 +0200 (Thu, 07 Jul 2011) | 1 line
+
+Added RoboCup2011day1 as known AllowedMapsPoses
+------------------------------------------------------------------------
+r2222 | hflynn | 2011-07-08 11:22:40 +0200 (Fri, 08 Jul 2011) | 1 line
+
+* Updated start location propagation
+------------------------------------------------------------------------
+r2223 | hflynn | 2011-07-08 12:43:54 +0200 (Fri, 08 Jul 2011) | 1 line
+
+*Startposes: "PlayerStart" and "Robot" entries both work now
+------------------------------------------------------------------------
+r2224 | hflynn | 2011-07-08 12:55:15 +0200 (Fri, 08 Jul 2011) | 1 line
+
+StartPosition update
+------------------------------------------------------------------------
+r2225 | hflynn | 2011-07-08 13:18:03 +0200 (Fri, 08 Jul 2011) | 1 line
+
+StartLocations updated: now can select position name from the combobox
+------------------------------------------------------------------------

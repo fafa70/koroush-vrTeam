@@ -1,0 +1,142 @@
+------------------------------------------------------------------------
+r674 | baslamet | 2007-07-08 10:12:36 +0200 (Sun, 08 Jul 2007) | 10 lines
+
+Comm refactory:
+- only the Operator had access to Comm-related information like which agents are out-of-range and in-range
+- moved this functionality to CommAgent, which is the base class for Operator but also for regular agents
+- as a consequence, CommAgent and derived classes have full access to all info provided by the CommActor too
+
+Put SmartAgent in the loop:
+- UsarAgent is the base class for our UsarSlamAgent and UsarSkinDetAgent
+- UsarAgent used to be derived from CommAgent, but now it derives from SmartAgent
+- SmartAgent in turn derives from CommAgent so it put 'in the chain'
+- SmartAgent adds behavior control .... (turned off by default)
+------------------------------------------------------------------------
+r678 | tschmits | 2007-07-08 12:15:16 +0200 (Sun, 08 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r681 | baslamet | 2007-07-08 14:50:14 +0200 (Sun, 08 Jul 2007) | 11 lines
+
+Implemented retreat behavior in case robot get out of range of the ComStation:
+- pose update message has been extended such that every robot also communicates the other robots he is connected to
+- therefore the pose update message is no longer directed to just the operator, but to everyone
+- this enables every robot to maintain a complete connectivity matrix of who is connected with whom
+
+This connectivity matrix is then used to:
+- make the robot retreat as soon as it looses contact (directly AND indirectly) with the Operator
+(- hence, as long as there is at least indirect contact the robot will be simply happy)
+- this retreat is pretty dumb (read 'pragmatic' ;-p): no obstacle avoidance of any kind. It just goes until connectivity with the Operator is re-established
+- so, the (reasonably valid) underlying assumption is that the robot went out of range while going straight ahead, and that it can get in range simply using reverse drive
+
+------------------------------------------------------------------------
+r682 | tschmits | 2007-07-08 15:58:23 +0200 (Sun, 08 Jul 2007) | 1 line
+
+- Setup for Camera Requests
+------------------------------------------------------------------------
+r684 | baslamet | 2007-07-08 16:11:53 +0200 (Sun, 08 Jul 2007) | 4 lines
+
+Two things: 
+- fixed double deliveries of broadcasted messages by checking timestamps
+- fixed sending of cam-replies back to operator
+- fixed a mini-bug in OperatorAgent
+------------------------------------------------------------------------
+r806 | baslamet | 2007-09-26 15:53:00 +0200 (Wed, 26 Sep 2007) | 1 line
+
+Changes made for Probabilistic Robotics.
+------------------------------------------------------------------------
+r825 | arnoud | 2007-11-14 17:26:31 +0100 (Wed, 14 Nov 2007) | 3 lines
+
+First changes for the MultiHop paper.
+
+Tested combination of Operator (T-junction) and Achilles (North-West corridor)
+------------------------------------------------------------------------
+r826 | arnoud | 2007-11-14 20:49:05 +0100 (Wed, 14 Nov 2007) | 3 lines
+
+No patches are forgotten, although some patches are sent double.
+
+To be tested more extensively.
+------------------------------------------------------------------------
+r827 | arnoud | 2007-11-15 16:44:11 +0100 (Thu, 15 Nov 2007) | 2 lines
+
+Changed the protocol completely. LastUpdate is written at only one place: when a Commit is received. A commit is received directly when a message is received, followed by t
+he Manifold Writers-block. Reduced the WSSdevice frequency to 10 seconds, because it takes up to 5 seconds before a commit returns.
+------------------------------------------------------------------------
+r828 | arnoud | 2007-11-15 18:11:10 +0100 (Thu, 15 Nov 2007) | 2 lines
+
+Changed the protocol further. The Slave sends complete updates, the Master sends only the latest updates. Works fine, a few extra patches (one in set of 12). Only had a socket problem that should be catched.
+
+------------------------------------------------------------------------
+r830 | arnoud | 2007-11-16 14:20:01 +0100 (Fri, 16 Nov 2007) | 3 lines
+
+Every body can ask an Sync, but now first master gives a fast update of the latest information, followed by a complete update from the slave.
+
+Not tested
+------------------------------------------------------------------------
+r831 | arnoud | 2007-11-19 14:30:40 +0100 (Mon, 19 Nov 2007) | 1 line
+
+Normally, only latest updates. Only complete updates when paused
+------------------------------------------------------------------------
+r832 | arnoud | 2007-11-20 18:33:55 +0100 (Tue, 20 Nov 2007) | 1 line
+
+When no target is found, the robots switch back to Random Walk behavior. In principle after two minutes the robots should go back to FrontierExploration, but have not observed this switch. Test tomorrow with debugger.
+------------------------------------------------------------------------
+r833 | arnoud | 2007-11-21 11:07:46 +0100 (Wed, 21 Nov 2007) | 1 line
+
+Relay 1:10 PoseUpdates to the other Agents
+------------------------------------------------------------------------
+r834 | arnoud | 2007-11-21 16:09:52 +0100 (Wed, 21 Nov 2007) | 1 line
+
+RelaySync is requested every 10 seconds by OperatorAgent. Receives the latest 5 patches + 4 relations
+------------------------------------------------------------------------
+r835 | arnoud | 2007-11-21 18:17:05 +0100 (Wed, 21 Nov 2007) | 1 line
+
+Added CorridorWalk and DifferentialDrive. To be further tested
+------------------------------------------------------------------------
+r838 | arnoud | 2007-11-22 23:50:52 +0100 (Thu, 22 Nov 2007) | 1 line
+
+Added an EstimateSignalStrengthAtDistance to CommAgent
+------------------------------------------------------------------------
+r839 | arnoud | 2007-11-23 21:33:53 +0100 (Fri, 23 Nov 2007) | 1 line
+
+Working estimation of power with QuadTree
+------------------------------------------------------------------------
+r958 | rtobi | 2008-02-17 23:37:00 +0100 (Sun, 17 Feb 2008) | 1 line
+
+comment updates
+------------------------------------------------------------------------
+r1158 | arnoud | 2008-04-24 18:16:11 +0200 (Thu, 24 Apr 2008) | 1 line
+
+German Open: Thursday Evening: Debugged BtnCamReq + added some comments
+------------------------------------------------------------------------
+r1272 | jdehoog | 2008-06-13 16:20:13 +0200 (Fri, 13 Jun 2008) | 1 line
+
+
+------------------------------------------------------------------------
+r1324 | jdehoog | 2008-06-27 19:20:40 +0200 (Fri, 27 Jun 2008) | 1 line
+
+Initial behavior change broadcast message testing
+------------------------------------------------------------------------
+r1338 | arnoud | 2008-07-10 22:25:17 +0200 (Thu, 10 Jul 2008) | 3 lines
+
+This is the version for the WSS 0.4
+* this version is NOT backwards compatible with the old wireless simulator
+* change the wireless port to 50000
+------------------------------------------------------------------------
+r1339 | arnoud | 2008-07-13 06:34:20 +0200 (Sun, 13 Jul 2008) | 2 lines
+
+- Do not return own patches back to the robot.
+- Tested with a single robot
+------------------------------------------------------------------------
+r1340 | jdehoog | 2008-07-13 12:41:05 +0200 (Sun, 13 Jul 2008) | 1 line
+
+ConservativeTeleOp behavior added -- currently only uses laser range scanner to detect obstacles
+------------------------------------------------------------------------
+r1342 | jdehoog | 2008-07-14 12:25:14 +0200 (Mon, 14 Jul 2008) | 1 line
+
+Minor bug fix to allow ConservativeTeleOp over proxy, started working on camReq improvement
+------------------------------------------------------------------------
+r1343 | jdehoog | 2008-07-16 06:53:33 +0200 (Wed, 16 Jul 2008) | 1 line
+
+RoboCup08 Prelim Trial version: sleep between spawn and WSS connection, some sensors unmounted, prelim work on camera image use, multiple small bug fixes
+------------------------------------------------------------------------

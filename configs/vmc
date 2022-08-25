@@ -1,0 +1,55 @@
+[map]
+levelname = VMAC2011
+startposes = Vehicle1 -2.8160,-9.2141,1.7280 0.0000,0.0000,0.0000 kivaPallet1 -2.9081,-9.2103,1.4400 0.0000,0.0000,0.0000 Control 9.2196,-9.2132,1.7280 0.0000,0.0000,0.0000 kivaPallet2 -2.9081,-18.4303,1.4000 0.0000,0.0000,0.0000 Vehicle2 -2.8160,-18.4314,1.7280 0.0000,0.0000,0.0000 Battery1 6.7848,-30.3669,1.7280 0.0000,0.0000,1.5708 Battery2 11.6486,-30.3649,1.7280 0.0000,0.0000,1.5708 kivaPallet3 21.3421,-18.4309,1.4000 0.0000,0.0000,3.1416 Vehicle3 21.2452,-18.4268,1.7280 0.0000,0.0000,3.1416 Battery3 21.2471,-2.4316,1.7280 0.0000,0.0000,3.1416 Battery4 21.2452,2.4339,1.7280 0.0000,0.0000,3.1416 truck1 -10.0160,0.0000,1.7280 0.0000,0.0000,0.0000 truck2 28.4800,-9.2160,1.7280 0.0000,0.0000,3.1416
+
+
+[team]
+operatorname = BaseStation
+teammembers = 0-BaseStation
+
+
+[local]
+localhost = 127.0.0.1
+
+
+[network]
+imageserverhost = 127.0.0.1
+imageserverport = 5003
+usarsimhost = 127.0.0.1
+usarsimport = 3000
+wirelessserverhost = 127.0.0.1
+wirelessserverport = 5874
+
+
+[backup]
+backupfrequency = 120
+createbackups = True
+
+
+[basestation]
+agentnumber = 1
+agenttype = slam
+behaviorbalance = 1
+behaviormode = TeleOperation
+detectortheta = 
+logfile = <Click to Select ...>
+logfileformat = UsarSim
+logplayback = False
+multiviewpanels = 
+noisesigma = 0
+pathplangoal = 
+robotmodel = P3AT
+skindetectotmode = Detection
+slam-mappingmode = ScanMatching
+slam-scanmatcher = IDC
+slam-seedmode = None
+spawnfromcommander = True
+startlocation = -2.8160,-9.2141,1.7280
+startrotation = 
+teachermode = SkinOnly
+useimageserver = True
+uselogger = False
+usemultiview = False
+usenoise = False
+
+

@@ -1,0 +1,250 @@
+------------------------------------------------------------------------
+r674 | baslamet | 2007-07-08 10:12:36 +0200 (Sun, 08 Jul 2007) | 10 lines
+
+Comm refactory:
+- only the Operator had access to Comm-related information like which agents are out-of-range and in-range
+- moved this functionality to CommAgent, which is the base class for Operator but also for regular agents
+- as a consequence, CommAgent and derived classes have full access to all info provided by the CommActor too
+
+Put SmartAgent in the loop:
+- UsarAgent is the base class for our UsarSlamAgent and UsarSkinDetAgent
+- UsarAgent used to be derived from CommAgent, but now it derives from SmartAgent
+- SmartAgent in turn derives from CommAgent so it put 'in the chain'
+- SmartAgent adds behavior control .... (turned off by default)
+------------------------------------------------------------------------
+r675 | tschmits | 2007-07-08 11:05:59 +0200 (Sun, 08 Jul 2007) | 1 line
+
+- intermediate version for check with Bayu
+------------------------------------------------------------------------
+r676 | baslamet | 2007-07-08 11:20:31 +0200 (Sun, 08 Jul 2007) | 1 line
+
+- fixed camrequest 
+------------------------------------------------------------------------
+r678 | tschmits | 2007-07-08 12:15:16 +0200 (Sun, 08 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r681 | baslamet | 2007-07-08 14:50:14 +0200 (Sun, 08 Jul 2007) | 11 lines
+
+Implemented retreat behavior in case robot get out of range of the ComStation:
+- pose update message has been extended such that every robot also communicates the other robots he is connected to
+- therefore the pose update message is no longer directed to just the operator, but to everyone
+- this enables every robot to maintain a complete connectivity matrix of who is connected with whom
+
+This connectivity matrix is then used to:
+- make the robot retreat as soon as it looses contact (directly AND indirectly) with the Operator
+(- hence, as long as there is at least indirect contact the robot will be simply happy)
+- this retreat is pretty dumb (read 'pragmatic' ;-p): no obstacle avoidance of any kind. It just goes until connectivity with the Operator is re-established
+- so, the (reasonably valid) underlying assumption is that the robot went out of range while going straight ahead, and that it can get in range simply using reverse drive
+
+------------------------------------------------------------------------
+r682 | tschmits | 2007-07-08 15:58:23 +0200 (Sun, 08 Jul 2007) | 1 line
+
+- Setup for Camera Requests
+------------------------------------------------------------------------
+r684 | baslamet | 2007-07-08 16:11:53 +0200 (Sun, 08 Jul 2007) | 4 lines
+
+Two things: 
+- fixed double deliveries of broadcasted messages by checking timestamps
+- fixed sending of cam-replies back to operator
+- fixed a mini-bug in OperatorAgent
+------------------------------------------------------------------------
+r685 | baslamet | 2007-07-08 17:00:45 +0200 (Sun, 08 Jul 2007) | 1 line
+
+BUG FIXED
+------------------------------------------------------------------------
+r686 | baslamet | 2007-07-12 15:19:16 +0200 (Thu, 12 Jul 2007) | 3 lines
+
+- MbICP works!
+- renamed SmartAgent to BehaviorAgent, thought that would be more descriptive
+
+------------------------------------------------------------------------
+r714 | baslamet | 2007-07-21 12:10:40 +0200 (Sat, 21 Jul 2007) | 6 lines
+
+Re-activated BehaviorControl (see BehaviorAgent):
+- TeleOperation behavior is turned on by default, the robot will not initiate any exploratory actions by itself but await for drive commands from the operator instead. What this behavior \does\ do is ensure connectivity to the Operator by initiating a retreat as soon as the robot got out-of-range.
+
+The motions currently supported are:
+- NoMotion, halts the robot upon activation and does nothing after that (so Operator is in control and robot will not interfer)
+- Retreat, triggered when Operator lost contact, then robot will change to Reverse gear and try to get back in range
+------------------------------------------------------------------------
+r767 | baslamet | 2007-08-07 23:13:53 +0200 (Tue, 07 Aug 2007) | 1 line
+
+Half-done result of today's efforts to get frontier exploration behavior.
+------------------------------------------------------------------------
+r779 | baslamet | 2007-08-12 16:53:36 +0200 (Sun, 12 Aug 2007) | 3 lines
+
+- added Gaussian blurred image extraction 
+- started multi-robot frontier exploration code
+
+------------------------------------------------------------------------
+r785 | baslamet | 2007-08-12 22:14:33 +0200 (Sun, 12 Aug 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r806 | baslamet | 2007-09-26 15:53:00 +0200 (Wed, 26 Sep 2007) | 1 line
+
+Changes made for Probabilistic Robotics.
+------------------------------------------------------------------------
+r808 | arnoud | 2007-09-26 18:41:53 +0200 (Wed, 26 Sep 2007) | 1 line
+
+Added Configuration box to control behavior.
+------------------------------------------------------------------------
+r809 | arnoud | 2007-10-11 19:44:49 +0200 (Thu, 11 Oct 2007) | 1 line
+
+Experimental version of FrontierExploration. Strange behavior, so I tried to draw the current goal or future path (seems to be different than the FrontierLayer). Corrected TeleOperation.OnActivated (should be tested). pc-unreal = 146.50.1.149. 
+------------------------------------------------------------------------
+r810 | arnoud | 2007-10-25 18:31:34 +0200 (Thu, 25 Oct 2007) | 2 lines
+
+Tested version, including StatusSensor (threshold should be increased from 1 to 60 seconds, because Battery starts at 1200 sec).
+
+------------------------------------------------------------------------
+r816 | arnoud | 2007-10-30 17:36:53 +0100 (Tue, 30 Oct 2007) | 1 line
+
+Added Gui for BehaviorBalance
+------------------------------------------------------------------------
+r825 | arnoud | 2007-11-14 17:26:31 +0100 (Wed, 14 Nov 2007) | 3 lines
+
+First changes for the MultiHop paper.
+
+Tested combination of Operator (T-junction) and Achilles (North-West corridor)
+------------------------------------------------------------------------
+r827 | arnoud | 2007-11-15 16:44:11 +0100 (Thu, 15 Nov 2007) | 2 lines
+
+Changed the protocol completely. LastUpdate is written at only one place: when a Commit is received. A commit is received directly when a message is received, followed by t
+he Manifold Writers-block. Reduced the WSSdevice frequency to 10 seconds, because it takes up to 5 seconds before a commit returns.
+------------------------------------------------------------------------
+r830 | arnoud | 2007-11-16 14:20:01 +0100 (Fri, 16 Nov 2007) | 3 lines
+
+Every body can ask an Sync, but now first master gives a fast update of the latest information, followed by a complete update from the slave.
+
+Not tested
+------------------------------------------------------------------------
+r831 | arnoud | 2007-11-19 14:30:40 +0100 (Mon, 19 Nov 2007) | 1 line
+
+Normally, only latest updates. Only complete updates when paused
+------------------------------------------------------------------------
+r832 | arnoud | 2007-11-20 18:33:55 +0100 (Tue, 20 Nov 2007) | 1 line
+
+When no target is found, the robots switch back to Random Walk behavior. In principle after two minutes the robots should go back to FrontierExploration, but have not observed this switch. Test tomorrow with debugger.
+------------------------------------------------------------------------
+r833 | arnoud | 2007-11-21 11:07:46 +0100 (Wed, 21 Nov 2007) | 1 line
+
+Relay 1:10 PoseUpdates to the other Agents
+------------------------------------------------------------------------
+r834 | arnoud | 2007-11-21 16:09:52 +0100 (Wed, 21 Nov 2007) | 1 line
+
+RelaySync is requested every 10 seconds by OperatorAgent. Receives the latest 5 patches + 4 relations
+------------------------------------------------------------------------
+r835 | arnoud | 2007-11-21 18:17:05 +0100 (Wed, 21 Nov 2007) | 1 line
+
+Added CorridorWalk and DifferentialDrive. To be further tested
+------------------------------------------------------------------------
+r836 | arnoud | 2007-11-22 13:33:25 +0100 (Thu, 22 Nov 2007) | 2 lines
+
+* Sanity-check in ManifoldSlam before storing the first Patch
+* Tilt-sensing and Retreat 
+------------------------------------------------------------------------
+r837 | arnoud | 2007-11-22 15:33:57 +0100 (Thu, 22 Nov 2007) | 1 line
+
+Commit for nb-avmovie (only added more PoseUpdates when connecting (for the Operator))
+------------------------------------------------------------------------
+r838 | arnoud | 2007-11-22 23:50:52 +0100 (Thu, 22 Nov 2007) | 1 line
+
+Added an EstimateSignalStrengthAtDistance to CommAgent
+------------------------------------------------------------------------
+r839 | arnoud | 2007-11-23 21:33:53 +0100 (Fri, 23 Nov 2007) | 1 line
+
+Working estimation of power with QuadTree
+------------------------------------------------------------------------
+r840 | arnoud | 2007-11-25 15:51:36 +0100 (Sun, 25 Nov 2007) | 1 line
+
+Distributing the map over the agent with NotifyPoseEstimateReceived in BehaviorAgent.vb
+------------------------------------------------------------------------
+r891 | arnoud | 2008-01-30 15:43:42 +0100 (Wed, 30 Jan 2008) | 1 line
+
+Do not start WssConversation when BehaviorAgent is spawn from Commander
+------------------------------------------------------------------------
+r951 | rtobi | 2008-02-17 13:50:33 +0100 (Sun, 17 Feb 2008) | 1 line
+
+prepare the codebase for assigment 2
+------------------------------------------------------------------------
+r952 | rtobi | 2008-02-17 16:05:35 +0100 (Sun, 17 Feb 2008) | 1 line
+
+add some WriteLine() calls to clear up the program control flow
+------------------------------------------------------------------------
+r953 | rtobi | 2008-02-17 16:16:09 +0100 (Sun, 17 Feb 2008) | 1 line
+
+fix a bug that always caused the TeleOperation behavior to be activated (instead of CorridorWalk)
+------------------------------------------------------------------------
+r955 | rtobi | 2008-02-17 22:15:32 +0100 (Sun, 17 Feb 2008) | 1 line
+
+partially implement Max & Bayu's original C++ processSonarData() algorithm for ass2
+------------------------------------------------------------------------
+r958 | rtobi | 2008-02-17 23:37:00 +0100 (Sun, 17 Feb 2008) | 1 line
+
+comment updates
+------------------------------------------------------------------------
+r978 | rtobi | 2008-02-20 14:41:59 +0100 (Wed, 20 Feb 2008) | 1 line
+
+preparations for ObstacleAvoidance assigment
+------------------------------------------------------------------------
+r1157 | arnoud | 2008-04-24 09:42:44 +0200 (Thu, 24 Apr 2008) | 12 lines
+
+German Open 2008 Thursday morning: 
+* bugfix to allow  TeleOperation over WSS
+* included GPSSensor
+* Preparations for including Apriori-data in FrontierExploration (not active)
+* Larger Axis-font
+* FreeSpaceAlpha on competition setting
+* Every 20 seconds an AREA print
+* Protection on creation of histogram-bitmap (pre-GO2008)
+* AirRobot introduced (no buttons to get AirBorne yet)
+* 
+* 
+
+------------------------------------------------------------------------
+r1158 | arnoud | 2008-04-24 18:16:11 +0200 (Thu, 24 Apr 2008) | 1 line
+
+German Open: Thursday Evening: Debugged BtnCamReq + added some comments
+------------------------------------------------------------------------
+r1272 | jdehoog | 2008-06-13 16:20:13 +0200 (Fri, 13 Jun 2008) | 1 line
+
+
+------------------------------------------------------------------------
+r1300 | jdehoog | 2008-06-24 13:47:12 +0200 (Tue, 24 Jun 2008) | 1 line
+
+Implemented ability to change behaviour during run; several small changes to user interface
+------------------------------------------------------------------------
+r1324 | jdehoog | 2008-06-27 19:20:40 +0200 (Fri, 27 Jun 2008) | 1 line
+
+Initial behavior change broadcast message testing
+------------------------------------------------------------------------
+r1333 | jdehoog | 2008-07-02 18:17:36 +0200 (Wed, 02 Jul 2008) | 1 line
+
+Extensive changes to SaveMapDialog: individual agent contributions can be adjusted using trackbars; added constant class (e.g. map resolution)
+------------------------------------------------------------------------
+r1340 | jdehoog | 2008-07-13 12:41:05 +0200 (Sun, 13 Jul 2008) | 1 line
+
+ConservativeTeleOp behavior added -- currently only uses laser range scanner to detect obstacles
+------------------------------------------------------------------------
+r1342 | jdehoog | 2008-07-14 12:25:14 +0200 (Mon, 14 Jul 2008) | 1 line
+
+Minor bug fix to allow ConservativeTeleOp over proxy, started working on camReq improvement
+------------------------------------------------------------------------
+r1343 | jdehoog | 2008-07-16 06:53:33 +0200 (Wed, 16 Jul 2008) | 1 line
+
+RoboCup08 Prelim Trial version: sleep between spawn and WSS connection, some sensors unmounted, prelim work on camera image use, multiple small bug fixes
+------------------------------------------------------------------------
+r1345 | arnoud | 2008-07-16 19:30:14 +0200 (Wed, 16 Jul 2008) | 1 line
+
+Added functionality to look that checks the fix and satellite information in GPS messages 
+------------------------------------------------------------------------
+r1349 | arnoud | 2008-07-23 09:45:40 +0200 (Wed, 23 Jul 2008) | 5 lines
+
+Last changes of 2008 competition code
+* Updated licence, readme.txt and add_revisions to AOJFR 2008
+* Agent uses new GPSsensor
+* UsarCommander.vbproj includes postbuild which allows to read Apriori
+* RegularThread reports the name of the thread started
+------------------------------------------------------------------------

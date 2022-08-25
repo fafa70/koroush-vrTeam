@@ -1,0 +1,962 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+UvARescue.Agent
+</name>
+</assembly>
+<members>
+<member name="P:UvARescue.Agent.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:UvARescue.Agent.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:UvARescue.Agent.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:UvARescue.Agent.StandardDriveActor">
+	<summary>
+ Really simplistic, yet effective, steering actor that works
+ fine for most skid-steered and differential drive robots.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.VictimRfidSensor.ToKeyValuePair(System.String)">
+	<summary>
+ Specific handling is required since the information for 1 victim 
+ is spread over multiple parts and also a single reading can involve
+ an arbitrary number of victims.
+ </summary>
+	<param name="part"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.MotionControl.NotifySensorUpdate(UvARescue.Agent.Sensor)">
+	<summary>
+ Forward sensor update to all currently active motions.
+ </summary>
+	<param name="sensor"></param>
+	<remarks></remarks>
+</member><member name="P:UvARescue.Agent.MotionControl.ActiveMotions">
+	<summary>
+ All currently active motions.
+ </summary>
+	<value></value>
+	<returns></returns>
+</member><member name="M:UvARescue.Agent.MotionControl.IsActiveMotion(UvARescue.Agent.MotionType)">
+	<summary>
+ Checks if a motion is active.
+ </summary>
+	<param name="motionType">motion to be checked</param>
+	<returns>true when active</returns>
+</member><member name="M:UvARescue.Agent.MotionControl.ActivateMotion(UvARescue.Agent.MotionType,System.Boolean)">
+	<summary>
+ Invoked to activate a particular motion.
+ Use the exclusive parameter to specify if all other active motions
+ should be deactivated first.
+ </summary>
+	<param name="motionType"></param>
+	<param name="exclusive"></param>
+</member><member name="M:UvARescue.Agent.MotionControl.DeActivateMotion(UvARescue.Agent.MotionType)">
+	<summary>
+ Invoked to deactivate a particular motion.
+ </summary>
+	<param name="motionType"></param>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.MotionControl.DeActivateAllMotions">
+	<summary>
+ Invoked to deactivate all currently active motions in one call.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Agent.MotionControl">
+	<summary>
+ Motion control is implemented as a finite state machine where each state represents
+ a particular motion. The implementation is such that multiple motions can be active
+ at the same time. 
+ 
+ The idea behind the support for multiple concurrent motions is that different motions
+ could deal with different effectors simultaneously. E.g. an 'explore' motion that deals 
+ with driving, while a 'search victims' motion deals with the camera and a 'leave trail' motion
+ drops an RFID tag every 30 secs.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Agent.ConservativeTeleOpMotion">
+	<summary>
+ Motion for Conservative TeleOp behavior
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.Sensor.ReceiveMessage(UvARescue.Agent.MessageType,System.Collections.Specialized.StringCollection)">
+	<summary>
+ The Agent will have taken care of some of the message parsing already, since 
+ it had to anyway in order to figure out to which sensor the message should
+ be forwarded. All that the agent does is extracting all the separate
+ curly-brached parts which are supplied here in a stringcollection.
+ 
+ It is up to the sensor to further examine the relevant parts and translate
+ this into a sensor reading. Since most sensors follow the same convention
+ within the curly braced to convey particular information this base class
+ will further process the strings assuming that format by default. All 
+ involved members are overridable so subclasses can take as much control
+ as desired/necessary.
+ </summary>
+	<param name="msgtype"></param>
+	<param name="parts"></param>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.Sensor.ReceiveBytes(System.Byte[])">
+	<summary>
+ Some sensors, e.g. CameraSensor and WSS, communicate using bytes.
+ </summary>
+	<param name="bytes"></param>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.Sensor.ToDictionary(System.Collections.Specialized.StringCollection)">
+	<summary>
+ Assumes the default format for sensor messages. The message parts
+ will be broken down further into key-value pairs using the ToKeyValuePair
+ member and subsequently be put in a stringdictionary.
+ </summary>
+	<param name="msg"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.Sensor.ToKeyValuePair(System.String)">
+	<summary>
+ Breaks down a single message part into a key and its corresponding value.
+ </summary>
+	<param name="part"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.Sensor.SendSetCommand(System.String)">
+	<summary>
+ To send a command to the server using the standard OPCODE convention.
+ </summary>
+	<param name="opCode"></param>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.Sensor.SendConfigurationRequest">
+	<summary>
+ To request information about the current sensor's configuration in the simulator.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Agent.Sensor">
+	<summary>
+ Base class for sensors.
+ 
+ A sensor is identified by its Type and Name. Some sensors only want (need)
+ to specify a type and want to receive reading sent for a sensor with any name
+ as long as the type matches, in that case use the constant MATCH_ANYNAME as 
+ the sensor's name.
+ 
+ Tha base class provides standard message handling as well as several 
+ convenient utility functions.
+ 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.CommAgent.OnAgentSpawned">
+	<summary>
+ We can only start communicating when the robot is spawned in the simulator
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.CommAgent.OnAgentStopped">
+	<summary>
+ Stop communicating when robots stop.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.CommAgent.IsDirectlyConnectedTo(System.String)">
+	<summary>
+ Only checks direct connections
+ </summary>
+	<param name="member"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.CommAgent.IsConnectedTo(System.String)">
+	<summary>
+ Uses the connection matrix, so also checks indirect connections
+ </summary>
+	<param name="member"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Agent.CommAgent">
+	<summary>
+ Sub-class of Agent that adds a CommActor.
+ 
+ This functionality was factored into a separate class since
+ the WSS functionality may be a bit heavy on the CPU. 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.ClearSpaceLayer.RenderPatch(UvARescue.Agent.Patch)">
+	<summary>
+ The space that we can automatically clear is the space that
+ is within the view of the victsensor, as specified by the 
+ clearFov and clearRange.
+ </summary>
+	<param name="patch"></param>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Agent.MultiStateSensor`1">
+	<summary>
+ A multi-state sensor holds a (limited) history of sensor readings.
+ </summary>
+	<typeparam name="TData"></typeparam>
+	<remarks></remarks>
+</member><member name="P:UvARescue.Agent.Driver.Agent">
+	<summary>
+ The Agent will run in the Driver's thread. So between these
+ a single thread is assumed and hence they can access each other
+ freely without locking each other. If external parties need
+ access to the driver or agent, they should enforce thread-safety.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:UvARescue.Agent.Driver.IsRunning">
+	<summary>
+ Wraps the base-class' member in order to implement the interface.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:UvARescue.Agent.Driver.IsPaused">
+	<summary>
+ Wraps the base-class' member in order to implement the interface.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Agent.Driver">
+	<summary>
+ Base Driver for Agents.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.Manifold.NotifyVictimUpdated(UvARescue.Agent.VictimObservation)">
+	<summary>
+ Invoked by VictimObservations to notify the manifold of updates.
+ </summary>
+	<param name="victim"></param>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Agent.Manifold">
+	<summary>
+ Extends graph with locking capabilities and specific Manifold-related 
+ functionality.
+ 
+ Please note that although locking functionality is provided, it is NOT
+ used in the Manifold's members. So the Manifold (like the Graph from which
+ it inherits) is NOT thread-safe UNLESS this is enforced by all consuming 
+ parties.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Agent.ConservativeTeleOp">
+	<summary>
+ When this behavior is activated the Agent will not initiate any exploration
+ actions by itself. All it will do is 
+    - try to get back in range of the ComStation as soon as the connection with the Operator is lost
+    - stop if it senses an obstacle straight ahead using either laser or sonar, and only continue
+      if operating person confirms
+    - stop if there is a major change in incline and also wait for confirmation
+ </summary>
+	<remarks></remarks>
+</member><member name="P:UvARescue.Agent.IDriver.IsRunning">
+	<summary>
+ This property should return True as long as the thread should continue
+ execution. Typically, there is a while-loop that checks this value
+ in every iteration.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:UvARescue.Agent.IDriver.IsPaused">
+	<summary>
+ Should return True when the thread is to be paused (put in 
+ waiting state). 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:UvARescue.Agent.IDriver.LogFile">
+	<summary>
+ The name of the file which is read or written to. 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Agent.IDriver">
+	<summary>
+ Driver Interface.
+ Is intended to encapsulate the data-flow between the agent 
+ and external sources.
+ 
+ The LogDriver is used to have an agent process logged sensor data.
+ The LifeDriver is used for agents that connect to a usarsim server.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Agent.LiveDriver">
+	<summary>
+ Used for agents that obtain live sensor data from the Usarsim server.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Agent.node">
+	<summary>
+ this is the class that is used by A* algorithm and it consists an area that is about 10 meter and two bool variable.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Agent.LiveProxyDriver">
+	<summary>
+ Used for agents that obtain live sensor data from the Usarsim server.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Agent.LineParsers">
+	<summary>
+ Utility class shich can parse several standard logfile formats.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Agent.Retreat">
+	<summary>
+ Will initiate an immediate retreat by changing to reverse gear.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.SingleStateSensor`1.ProcessMessage(UvARescue.Agent.MessageType,System.Collections.Specialized.StringDictionary)">
+	<summary>
+ Updates the current data with the data from the msg. 
+ </summary>
+	<param name="msg"></param>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Agent.SingleStateSensor`1">
+	<summary>
+ A single-state sensor only hold the last (i.e. current) sensor reading.
+ </summary>
+	<typeparam name="TData"></typeparam>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Agent.StandardFlyActor">
+	<summary>
+ Really simplistic, yet effective, steering actor that works
+ fine for most skid-steered and differential drive robots.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.ProxyAgent.Spawn">
+	<summary>
+ Proxies do not spawn in UsarSim. Their alter-ego's do. The proxy
+ is to interact with his alter-ego through the WSS. That is: by relaying
+ commands through the Operator.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.ProxyAgent.SendUsarSimCommand(System.String)">
+	<summary>
+ Re-route UsarSim commands through the WSS.
+ </summary>
+	<param name="command"></param>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.BehaviorControl.NotifySensorUpdate(UvARescue.Agent.Sensor)">
+	<summary>
+ Forward sensor updates to currently active behavior
+ </summary>
+	<param name="sensor"></param>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.BehaviorControl.NotifyOperatorConnected">
+	<summary>
+ Invoked when the direct or indirect connection to the operator was 
+ (re-)established. 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.BehaviorControl.NotifyOperatorDisconnected">
+	<summary>
+ Invoked when the direct or indirect connection to the operator was 
+ lost.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.BehaviorControl.NotifyAgentConnected(System.String)">
+	<summary>
+ Invoked for every direct connection with another robot or operator that
+ was (re-)established.
+ </summary>
+	<param name="agentName"></param>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.BehaviorControl.NotifyAgentDisconnected(System.String)">
+	<summary>
+ Invoked for every direct connection with another robot or operator that
+ was lost.
+ </summary>
+	<param name="agentName"></param>
+	<remarks></remarks>
+</member><member name="P:UvARescue.Agent.BehaviorControl.CurrentBehavior">
+	<summary>
+ Only one behavior can be active at a time: the 'current' behavior.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.BehaviorControl.SwitchToBehavior(UvARescue.Agent.BehaviorType)">
+	<summary>
+ Invoked to change the current behavior.
+ </summary>
+	<param name="behaviorType"></param>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Agent.BehaviorControl">
+	<summary>
+ Behavior Control manages a finite state machine where each state
+ represent a particular behavior. The implementation is such that only
+ one behavior can be active at a time.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.ManifoldImage.EnsureMinimumImageBounds(System.Drawing.RectangleF)">
+	<summary>
+ Invoked by layers to make sure the image is sizable enough
+ </summary>
+	<param name="bounds"></param>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.ManifoldImage.RoundedUpRect(System.Drawing.RectangleF,System.Int32)">
+	<summary>
+ Small helper function that will inflate the rectangle
+ in all dimensions until the first divisor of the specified
+ unit is found.
+ </summary>
+	<param name="minrect"></param>
+	<param name="unit"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:UvARescue.Agent.ManifoldImage.Resolution">
+	<summary>
+ Image resolution in pixels/meter
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.ManifoldImage.ResetTransformations(System.Drawing.PointF)">
+	<summary>
+ Is invoked every time the image is resized.
+ This routine resets all transformation-related properties
+ to match the current world-to-image transformation.
+ </summary>
+	<param name="offset"></param>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.ManifoldImage.RenderAgent(UvARescue.Agent.Agent,UvARescue.Math.Pose2D,System.Double[0:,0:])">
+	<summary>
+ Invoked by background thread to render new patch data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.ManifoldImage.RenderPatch(UvARescue.Agent.Patch)">
+	<summary>
+ Invoked by background thread to render new patch data
+ </summary>
+	<param name="patch"></param>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.ManifoldImage.RenderRelation(UvARescue.Agent.Relation)">
+	<summary>
+ Invoked by background thread to render new relation data
+ </summary>
+	<param name="relation"></param>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.ManifoldImage.Draw(System.Drawing.Graphics)">
+	<summary>
+ Invoked by UI-thread to render the manifold on the supplied 
+ graphics canvas.
+ </summary>
+	<param name="g"></param>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.ManifoldImage.GetImageFileSaveData(System.Drawing.Bitmap@,UvARescue.Agent.ManifoldImage.SaveOption)">
+	<summary>
+ Creates a temporary image and calls Draw to have the manifold
+ painted on it's graphics canvas. The manifold will be saved
+ in GeoTIFF format.
+ </summary>
+	<param name="bmp"></param>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Agent.ManifoldImage">
+	<summary>
+ Manages a multi-layer, double-buffered image that depicts the
+ manifold. The image is maintained in real-time, as new data is 
+ retrieved from manifold.
+ 
+ The image does not render anything itself, all painting logic is encapsulated
+ by the Layers.
+ 
+ As the Image handles all threading and locking issues, the layers can 
+ assume a single-threaded environment.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.RfidSensor.ToKeyValuePair(System.String)">
+	<summary>
+ Specific handling is required since the information for 1 RFID tag
+ is spread over multiple parts and also a single reading can involve
+ an arbitrary number of tags.
+ </summary>
+	<param name="part"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.Agent.CreateDriveActor">
+	<summary>
+ Override this function if you want to mount a different kind of DriveActor.
+ By default the StandardDriveActor will be created.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.Agent.CreateFlyActor">
+	<summary>
+ Override this function if you want to mount a different kind of FlyActor.
+ By default the StandardFlyActor will be created.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:UvARescue.Agent.Agent.Driver">
+	<summary>
+ The Agent will run in the Driver's thread. Therefore the
+ two assume free access to each other's members. If any extnernal
+ thread needs access to Agent's members, thread-safety MUST
+ be enforced by the EXTERNAL thread.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.Agent.Pause">
+	<summary>
+ This is just a wrapper method. No synchronization is
+ enforced here, should be enforced by the Driver.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.Agent.Resume">
+	<summary>
+ This is just a wrapper method. No synchronization is
+ enforced here, should be enforced by the Driver.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.Agent.ProcessSensorUpdate(UvARescue.Agent.Sensor)">
+	<summary>
+ This method is invoked by sensors when new sensor data was received.
+ Does nothing much by default, just forwards the message to observers.
+ Provides a hook (template method) for 
+ subclasses.
+ </summary>
+	<param name="sensor"></param>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.Agent.Spawn">
+	<summary>
+ This method gets invoked by the Driver when the agent needs
+ to be spawned on the usarsim server.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.Agent.OnAgentSpawned">
+	<summary>
+ This member is invoked exactly once immediately after the 
+ usarsim server confirms that the agent was successfully spawned
+ in the simulator. 
+ 
+ See also the ReceiveMessage routine where the NFO message is identified
+ as the server's confirmation message.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:UvARescue.Agent.Agent._UsarSimCommmands">
+	<summary>
+ The agent should keep a queue of all its commands here. 
+ The driver will Dequeue the commands when sent.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.Agent.SendUsarSimCommand(System.String)">
+	<summary>
+ The agent simply queues the commands. The driver will 
+ actually send the commands to the server.
+ </summary>
+	<param name="command"></param>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.Agent.ReceiveMessage(UvARescue.Agent.MessageType,System.String,System.String,System.Collections.Specialized.StringCollection)">
+	<summary>
+ Invoked by the Driver whenever a new text message was received
+ from the UsarSim simulater.
+ </summary>
+	<param name="msgtype"></param>
+	<param name="type"></param>
+	<param name="name"></param>
+	<param name="parts"></param>
+	<remarks>
+ Actually it's a helper method in the LineParsers utility that will 
+ invoke this method. But conceptually it's the same.
+ </remarks>
+</member><member name="M:UvARescue.Agent.Agent.ToDictionary(System.Collections.Specialized.StringCollection)">
+	<summary>
+ Assumes the default format for geo messages. The message parts
+ will be broken down further into key-value pairs using the ToKeyValuePair
+ member and subsequently be put in a stringdictionary.
+ </summary>
+	<param name="msg"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.Agent.ToKeyValuePair(System.String)">
+	<summary>
+ Breaks down a single message part into a key and its corresponding value.
+ </summary>
+	<param name="part"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.Agent.ReceiveBytes(System.String,System.String,System.Byte[])">
+	<summary>
+ Invoked by the Driver whenever a new byte data was received
+ from the ImageServer.
+ </summary>
+	<param name="type"></param>
+	<param name="name"></param>
+	<param name="bytes"></param>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.Agent.NotifyPoseEstimateUpdated(UvARescue.Math.Pose2D)">
+	<summary>
+ Hook used by SLAM methods to notify the agent of updates pose estimates.
+ The agent will notify all attached observers.
+ </summary>
+	<param name="pose"></param>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.Agent.NotifyAlertReceived(System.String)">
+	<summary>
+ Hook used by conservativeTeleOpMotion to notify the agent of alerts.
+ The agent will notify all attached observers.
+ </summary>
+	<param name="alert"></param>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Agent.Agent">
+	<summary>
+ Base class for a single agent that provides the following core 
+ functionalities:
+ - spawning the virtual robot in the game
+ - sending and recieving of messages 
+ - sensor and actor mounting
+ 
+ The Agent and all its Sensors run in the Driver's thread. Therefore
+ they assume free access to each other's members where no locking is
+ necessary. 
+ 
+ Observers attached to Agent typically run on an external thread. Therefore
+ Adding, Removing and Notifying observers IS implemented with locking.
+ 
+ </summary>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Agent.Relation">
+	<summary>
+ Stores the odometry estimate between two patches with the associated uncertainty.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.CommActor.LoadDataForSyncDataMessage(System.DateTime,UvARescue.Communication.SyncDataMessage,System.String)">
+	<summary>
+ Helper function that will construct a message with all changes
+ since the timestamp.
+ </summary>
+	<param name="lastUpdate"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Agent.FlyActor">
+	<summary>
+ Base class for Drive actors.
+ 
+ UsarSim knows several kinds of steering models like
+ skid-steering, Ackerman steering and differential drive.
+ 
+ </summary>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Agent.DeploymentMotion">
+	<summary>
+ Meant to make a team of robots create as extensive a comm network as possible
+ (Created in response to the "Deployment Test" at RoboCup German Open 2009)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.ISensorData.Load(System.Collections.Specialized.StringDictionary)">
+	<summary>
+ Sensor data should be able to Load itself from a fully parsed sensor message.
+ </summary>
+	<param name="msg"></param>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.VictimSensor.ToKeyValuePair(System.String)">
+	<summary>
+ Specific handling is required since the information for 1 victim 
+ is spread over multiple parts and also a single reading can involve
+ an arbitrary number of victim parts.
+ </summary>
+	<param name="part"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Agent.TeleOperation">
+	<summary>
+ When this behavior is activated the Agent will not initiate any exploration
+ actions by itself. All it will do is try to get back in range of the ComStation
+ as soon as the connection with the Operator is lost.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:UvARescue.Agent.PriorityTarget.MaximumFirts">
+	<summary>
+ Items with greater priority are poped first from priority front
+ </summary>
+	<remarks></remarks>
+</member><member name="F:UvARescue.Agent.PriorityTarget.MinimumFirst">
+	<summary>
+ Items with lower priority are poped first from priority front
+ </summary>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Agent.PriorityTarget">
+	<summary>
+ Indicates, which priority is poped first from the front
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.PriorityQueue`2.#ctor">
+	<summary>
+ Create new priority front
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.PriorityQueue`2.#ctor(UvARescue.Agent.PriorityTarget)">
+	<summary>
+ Create new priority front
+ </summary>
+	<param name="Target">indicates, which priority is poped first from the front</param>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.PriorityQueue`2.#ctor(System.Collections.Generic.IComparer{`0})">
+	<summary>
+ Create new priority front
+ </summary>
+	<param name="Comparer">Comparer used to compare priorities</param>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.PriorityQueue`2.#ctor(UvARescue.Agent.PriorityTarget,System.Collections.Generic.IComparer{`0})">
+	<summary>
+ Create new priority front
+ </summary>
+	<param name="Target">indicates, which priority is poped first from the front</param>
+	<param name="Comparer">Comparer used to compare priorities</param>
+	<remarks></remarks>
+</member><member name="P:UvARescue.Agent.PriorityQueue`2.Target">
+	<summary>
+ Gets value indicating, which priority is poped first from the front
+ </summary>
+	<value>indicates, which priority is poped first from the front</value>
+	<returns>value indicating, which priority is poped first from the front</returns>
+	<remarks>Default is MaximumFirst</remarks>
+</member><member name="M:UvARescue.Agent.PriorityQueue`2.Push(`0,`1)">
+	<summary>
+ Add new item into priority front
+ </summary>
+	<param name="Priority">Priority of the item</param>
+	<param name="Value">Item to add</param>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.PriorityQueue`2.Pop">
+	<summary>
+ Returns item with minimal or maximal priority and remove it from the priority front
+ </summary>
+	<returns>Returns item with minimal or maximal priority</returns>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.PriorityQueue`2.Peek">
+	<summary>
+ Returns item with minimal or maximal priority
+ </summary>
+	<returns>Returns item with minimal or maximal priority</returns>
+	<remarks></remarks>
+</member><member name="P:UvARescue.Agent.PriorityQueue`2.Count">
+	<summary>
+ Gets number of items in priority front
+ </summary>
+	<value>number of items in priority front</value>
+	<returns>number of items in priority front</returns>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.PriorityQueue`2.AdvanceNextVersion">
+	<summary>
+ Change version number indicating that priority front has changed
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.PriorityQueue`2.ComparePriorities(`0,`0)">
+	<summary>
+ Compare two priorities taking Target property into account. If Target is MinimumFirst, then lower priority is considered as greater
+ </summary>
+	<param name="Priority1">Priority 1 to compare</param>
+	<param name="Priority2">Priority 2 to compare</param>
+	<returns>lower than 0: if Priority 1 is greater
+ 0: if Priority 1 is equal to Priority 2
+ greater than 0: if Priority 2 is greater</returns>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.PriorityQueue`2.GetEnumerator">
+	<summary>
+ Return enumerator to enumerate values in priority front
+ </summary>
+	<returns>enumerator to enumerate values in priority front</returns>
+	<remarks>This enumerator enumerates only values (not priorities).
+ It does not enumerate values sorted by priority.</remarks>
+</member><member name="M:UvARescue.Agent.PriorityQueue`2.CopyTo(System.Array,System.Int32)">
+	<summary>
+ Copy values from priority front to an array
+ </summary>
+	<param name="array">The one-dimensional System.Array that is the destination of the elements copied from System.Collections.ICollection. The System.Array must have zero-based indexing.</param>
+	<param name="index">The zero-based index in array at which copying begins.</param>
+	<remarks></remarks>
+</member><member name="P:UvARescue.Agent.PriorityQueue`2.IsSynchronized">
+	<summary>
+ Return true if priority front is synchronized
+ </summary>
+	<value>true if priority front is synchronized</value>
+	<returns>true if priority front is synchronized</returns>
+	<remarks>Always return false</remarks>
+</member><member name="P:UvARescue.Agent.PriorityQueue`2.SyncRoot">
+	<summary>
+ Return object used to synchronize access to collection
+ </summary>
+	<value>object used to synchronize access to collection</value>
+	<returns>object used to synchronize access to collection</returns>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Agent.PriorityQueue`2.HeapItem">
+	<summary>
+ This structure defines pair of value and it's priority
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.PriorityQueue`2.HeapLevel.#ctor(UvARescue.Agent.PriorityQueue{`0,`1})">
+	<summary>
+ Create root (0-level) of the heap. This level can contain only one item
+ </summary>
+	<param name="Root">Priority front to associate</param>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.PriorityQueue`2.HeapLevel.#ctor(UvARescue.Agent.PriorityQueue{`0,`1}.HeapLevel)">
+	<summary>
+ Create next level of the heap.
+ </summary>
+	<param name="PrevLevel">Previous level of the heap to associate</param>
+	<remarks></remarks>
+</member><member name="P:UvARescue.Agent.PriorityQueue`2.HeapLevel.Root">
+	<summary>
+ Return associated priority level
+ </summary>
+	<value>associated priority level</value>
+	<returns>associated priority level</returns>
+	<remarks></remarks>
+</member><member name="P:UvARescue.Agent.PriorityQueue`2.HeapLevel.LevelSize">
+	<summary>
+ Return number of items in this level
+ </summary>
+	<value>number of items in this level</value>
+	<returns>number of items in this level</returns>
+	<remarks></remarks>
+</member><member name="P:UvARescue.Agent.PriorityQueue`2.HeapLevel.IsFull">
+	<summary>
+ Return true if level is full and next level have to be created
+ </summary>
+	<value>true if level is full</value>
+	<returns>true if level is full</returns>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.PriorityQueue`2.HeapLevel.AddItem(UvARescue.Agent.PriorityQueue{`0,`1}.HeapItem)">
+	<summary>
+ Add item at the end of level or create new level if this level is full
+ </summary>
+	<param name="TheItem">item to add</param>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.PriorityQueue`2.HeapLevel.RemoveItem">
+	<summary>
+ Remove last item or remove this level, if it is empty
+ </summary>
+	<returns>removed heap item</returns>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.PriorityQueue`2.HeapLevel.Heapify(System.Int32)">
+	<summary>
+ Compare heap item with it's children and move greates item to the top.
+ </summary>
+	<param name="Index">Index of heap item, which compare</param>
+	<returns>-1: if left child was moved to top.
+ 1: if right child was moved to top.
+ 0: if nothing was moved</returns>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Agent.PriorityQueue`2.HeapLevel">
+	<summary>
+ This class represents level in heap
+ </summary>
+	<remarks>Heap is binary tree of heap items, where each item's priority is greater than it's children. So at the top is maximum.
+ Binary tree is encoded as doubly linked list of arrays, where each array is level in the tree. So level 0 contains only one item and each level contains 2x more items as previous level.</remarks>
+</member><member name="M:UvARescue.Agent.PriorityQueue`2.PriorityFrontEnumerator.#ctor(UvARescue.Agent.PriorityQueue{`0,`1})">
+	<summary>
+ Creates new priority front enumerator
+ </summary>
+	<param name="PF">priority front to enumerate</param>
+	<remarks></remarks>
+</member><member name="P:UvARescue.Agent.PriorityQueue`2.PriorityFrontEnumerator.Current">
+	<summary>
+ Returns current value
+ </summary>
+	<value>current value</value>
+	<returns>current value</returns>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.PriorityQueue`2.PriorityFrontEnumerator.MoveNext">
+	<summary>
+ Advance to next value in priority front
+ </summary>
+	<returns>Return false, if end of priority front is reached; otherwise it returns true</returns>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.PriorityQueue`2.PriorityFrontEnumerator.Reset">
+	<summary>
+ Reset enumerator
+ </summary>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Agent.PriorityQueue`2.PriorityFrontEnumerator">
+	<summary>
+ Implements enumerator for priority front
+ </summary>
+	<remarks>This enumerator enumerates only values (not priorities).
+ It does not enumerate values sorted by priority.</remarks>
+</member><member name="M:UvARescue.Agent.Patch.#ctor(UvARescue.Agent.Manifold,UvARescue.Agent.ScanObservation,UvARescue.Math.Pose2D,System.String)">
+	<summary>
+ Will construct a new Patch with a newly assigned globally unique ID (Guid)
+ </summary>
+	<param name="manifold"></param>
+	<param name="scan"></param>
+	<param name="rawOrigin"></param>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.Patch.#ctor(UvARescue.Agent.Manifold,System.Guid,UvARescue.Agent.ScanObservation,UvARescue.Math.Pose2D,System.DateTime,System.Drawing.Size,System.String)">
+	<summary>
+ Will construct a patch with the specified id
+ </summary>
+	<param name="manifold"></param>
+	<param name="patchID"></param>
+	<param name="scan"></param>
+	<param name="rawOrigin"></param>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.Patch.PatchMemento.#ctor(UvARescue.Agent.Patch)">
+	<summary>
+ The sender constructs a summary of the particular patch.
+ </summary>
+	<param name="patch"></param>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.Patch.PatchMemento.Restore(UvARescue.Agent.Manifold)">
+	<summary>
+ Invoked by the receiver to create an exact copy of the patch in his own
+ manifold.
+ </summary>
+	<param name="manifold"></param>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Agent.Patch.PatchMemento">
+	<summary>
+ This class is to hold a serializable summary of the Patch that captures
+ all relevant information usually stored on the patch. The memento will be sent
+ to other team-members which can copy the information by restoring this memento
+ in their own manifold.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:UvARescue.Agent.Patch.EstimatedOrigin">
+	<summary>
+ This property is publicly writable, however it is typically solely
+ up to a SLAM implementation to maintain the estimate.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Agent.Patch">
+	<summary>
+ A patch stores a single laser range scan with a pose estimate.
+ TODO: calculate data to enhance patch for constructing a mobility map. (MAARTEN)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Agent.AgentConfig.CleanStartPositionValue(System.String)">
+	<summary>
+ UsarSim does not like spaces in startlocation and -rotation.
+ </summary>
+	<param name="value"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Agent.LogDriver">
+	<summary>
+ Will use a logfile to obtain sensor readings.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Agent.DriveActor">
+	<summary>
+ Base class for Drive actors.
+ 
+ UsarSim knows several kinds of steering models like
+ skid-steering, Ackerman steering and differential drive.
+ 
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

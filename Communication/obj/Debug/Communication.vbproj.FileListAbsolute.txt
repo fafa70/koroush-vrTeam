@@ -1,0 +1,151 @@
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Communication\bin\Debug\UvARescue.Communication.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Communication\bin\Debug\UvARescue.Communication.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Communication\bin\Debug\UvARescue.Communication.xml
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Communication\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Communication\bin\Debug\UvARescue.Math.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Communication\bin\Debug\UvARescue.Tools.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Communication\bin\Debug\gdal_csharp.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Communication\bin\Debug\ogr_csharp.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Communication\bin\Debug\UvARescue.Math.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Communication\bin\Debug\ICSharpCode.SharpZipLib.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Communication\bin\Debug\UvARescue.Tools.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Communication\bin\Debug\UvARescue.Tools.xml
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Communication\obj\Debug\ResolveAssemblyReference.cache
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Communication\obj\Debug\UvARescue.Communication.Resources.resources
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Communication\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Communication\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Communication\obj\Debug\UvARescue.Communication.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Communication\obj\Debug\UvARescue.Communication.xml
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Communication\obj\Debug\UvARescue.Communication.pdb
+H:\AOJRF2011\Communication\bin\Debug\UvARescue.Communication.dll
+H:\AOJRF2011\Communication\bin\Debug\UvARescue.Communication.pdb
+H:\AOJRF2011\Communication\bin\Debug\UvARescue.Communication.xml
+H:\AOJRF2011\Communication\bin\Debug\ICSharpCode.SharpZipLib.dll
+H:\AOJRF2011\Communication\bin\Debug\UvARescue.Math.dll
+H:\AOJRF2011\Communication\bin\Debug\UvARescue.Tools.dll
+H:\AOJRF2011\Communication\bin\Debug\gdal_csharp.dll
+H:\AOJRF2011\Communication\bin\Debug\ogr_csharp.dll
+H:\AOJRF2011\Communication\bin\Debug\ICSharpCode.SharpZipLib.pdb
+H:\AOJRF2011\Communication\bin\Debug\UvARescue.Math.pdb
+H:\AOJRF2011\Communication\bin\Debug\UvARescue.Tools.pdb
+H:\AOJRF2011\Communication\bin\Debug\UvARescue.Tools.xml
+H:\AOJRF2011\Communication\obj\Debug\ResolveAssemblyReference.cache
+H:\AOJRF2011\Communication\obj\Debug\UvARescue.Communication.Resources.resources
+H:\AOJRF2011\Communication\obj\Debug\Communication.vbproj.GenerateResource.Cache
+H:\AOJRF2011\Communication\obj\Debug\UvARescue.Communication.dll
+H:\AOJRF2011\Communication\obj\Debug\UvARescue.Communication.xml
+H:\AOJRF2011\Communication\obj\Debug\UvARescue.Communication.pdb
+D:\AOJRF2012\Communication\bin\Debug\UvARescue.Communication.dll
+D:\AOJRF2012\Communication\bin\Debug\UvARescue.Communication.pdb
+D:\AOJRF2012\Communication\bin\Debug\UvARescue.Communication.xml
+D:\AOJRF2012\Communication\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\AOJRF2012\Communication\bin\Debug\UvARescue.Math.dll
+D:\AOJRF2012\Communication\bin\Debug\UvARescue.Tools.dll
+D:\AOJRF2012\Communication\bin\Debug\gdal_csharp.dll
+D:\AOJRF2012\Communication\bin\Debug\ogr_csharp.dll
+D:\AOJRF2012\Communication\bin\Debug\UvARescue.Math.pdb
+D:\AOJRF2012\Communication\bin\Debug\ICSharpCode.SharpZipLib.pdb
+D:\AOJRF2012\Communication\bin\Debug\UvARescue.Tools.pdb
+D:\AOJRF2012\Communication\bin\Debug\UvARescue.Tools.xml
+D:\AOJRF2012\Communication\obj\Debug\ResolveAssemblyReference.cache
+D:\AOJRF2012\Communication\obj\Debug\UvARescue.Communication.Resources.resources
+D:\AOJRF2012\Communication\obj\Debug\ResGen.read.1.tlog
+D:\AOJRF2012\Communication\obj\Debug\ResGen.write.1.tlog
+D:\AOJRF2012\Communication\obj\Debug\UvARescue.Communication.dll
+D:\AOJRF2012\Communication\obj\Debug\UvARescue.Communication.xml
+D:\AOJRF2012\Communication\obj\Debug\UvARescue.Communication.pdb
+D:\IUST-BASE\Communication\bin\Debug\UvARescue.Communication.dll
+D:\IUST-BASE\Communication\bin\Debug\UvARescue.Communication.pdb
+D:\IUST-BASE\Communication\bin\Debug\UvARescue.Communication.xml
+D:\IUST-BASE\Communication\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\IUST-BASE\Communication\bin\Debug\UvARescue.Math.dll
+D:\IUST-BASE\Communication\bin\Debug\UvARescue.Tools.dll
+D:\IUST-BASE\Communication\bin\Debug\gdal_csharp.dll
+D:\IUST-BASE\Communication\bin\Debug\ogr_csharp.dll
+D:\IUST-BASE\Communication\bin\Debug\UvARescue.Math.pdb
+D:\IUST-BASE\Communication\bin\Debug\ICSharpCode.SharpZipLib.pdb
+D:\IUST-BASE\Communication\bin\Debug\UvARescue.Tools.pdb
+D:\IUST-BASE\Communication\bin\Debug\UvARescue.Tools.xml
+D:\IUST-BASE\Communication\obj\Debug\ResolveAssemblyReference.cache
+D:\IUST-BASE\Communication\obj\Debug\UvARescue.Communication.Resources.resources
+D:\IUST-BASE\Communication\obj\Debug\ResGen.read.1.tlog
+D:\IUST-BASE\Communication\obj\Debug\ResGen.write.1.tlog
+D:\IUST-BASE\Communication\obj\Debug\UvARescue.Communication.dll
+D:\IUST-BASE\Communication\obj\Debug\UvARescue.Communication.xml
+D:\IUST-BASE\Communication\obj\Debug\UvARescue.Communication.pdb
+F:\IUST-BASE\Communication\bin\Debug\UvARescue.Communication.dll
+F:\IUST-BASE\Communication\bin\Debug\UvARescue.Communication.pdb
+F:\IUST-BASE\Communication\bin\Debug\UvARescue.Communication.xml
+F:\IUST-BASE\Communication\bin\Debug\ICSharpCode.SharpZipLib.dll
+F:\IUST-BASE\Communication\bin\Debug\UvARescue.Math.dll
+F:\IUST-BASE\Communication\bin\Debug\UvARescue.Tools.dll
+F:\IUST-BASE\Communication\bin\Debug\gdal_csharp.dll
+F:\IUST-BASE\Communication\bin\Debug\ogr_csharp.dll
+F:\IUST-BASE\Communication\bin\Debug\UvARescue.Math.pdb
+F:\IUST-BASE\Communication\bin\Debug\ICSharpCode.SharpZipLib.pdb
+F:\IUST-BASE\Communication\bin\Debug\UvARescue.Tools.pdb
+F:\IUST-BASE\Communication\bin\Debug\UvARescue.Tools.xml
+F:\IUST-BASE\Communication\obj\Debug\ResolveAssemblyReference.cache
+F:\IUST-BASE\Communication\obj\Debug\UvARescue.Communication.Resources.resources
+F:\IUST-BASE\Communication\obj\Debug\ResGen.read.1.tlog
+F:\IUST-BASE\Communication\obj\Debug\ResGen.write.1.tlog
+F:\IUST-BASE\Communication\obj\Debug\UvARescue.Communication.dll
+F:\IUST-BASE\Communication\obj\Debug\UvARescue.Communication.xml
+F:\IUST-BASE\Communication\obj\Debug\UvARescue.Communication.pdb
+D:\usarsim\IUST-BASE\Communication\bin\Debug\UvARescue.Communication.dll
+D:\usarsim\IUST-BASE\Communication\bin\Debug\UvARescue.Communication.pdb
+D:\usarsim\IUST-BASE\Communication\bin\Debug\UvARescue.Communication.xml
+D:\usarsim\IUST-BASE\Communication\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\usarsim\IUST-BASE\Communication\bin\Debug\UvARescue.Math.dll
+D:\usarsim\IUST-BASE\Communication\bin\Debug\UvARescue.Tools.dll
+D:\usarsim\IUST-BASE\Communication\bin\Debug\gdal_csharp.dll
+D:\usarsim\IUST-BASE\Communication\bin\Debug\ogr_csharp.dll
+D:\usarsim\IUST-BASE\Communication\bin\Debug\UvARescue.Math.pdb
+D:\usarsim\IUST-BASE\Communication\bin\Debug\ICSharpCode.SharpZipLib.pdb
+D:\usarsim\IUST-BASE\Communication\bin\Debug\UvARescue.Tools.pdb
+D:\usarsim\IUST-BASE\Communication\bin\Debug\UvARescue.Tools.xml
+D:\usarsim\IUST-BASE\Communication\obj\Debug\ResolveAssemblyReference.cache
+D:\usarsim\IUST-BASE\Communication\obj\Debug\UvARescue.Communication.Resources.resources
+D:\usarsim\IUST-BASE\Communication\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\usarsim\IUST-BASE\Communication\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\usarsim\IUST-BASE\Communication\obj\Debug\UvARescue.Communication.dll
+D:\usarsim\IUST-BASE\Communication\obj\Debug\UvARescue.Communication.xml
+D:\usarsim\IUST-BASE\Communication\obj\Debug\UvARescue.Communication.pdb
+C:\base-backup\fresh-backup\IUST-BASE\Communication\bin\Debug\UvARescue.Communication.dll
+C:\base-backup\fresh-backup\IUST-BASE\Communication\bin\Debug\UvARescue.Communication.pdb
+C:\base-backup\fresh-backup\IUST-BASE\Communication\bin\Debug\UvARescue.Communication.xml
+C:\base-backup\fresh-backup\IUST-BASE\Communication\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\base-backup\fresh-backup\IUST-BASE\Communication\bin\Debug\UvARescue.Math.dll
+C:\base-backup\fresh-backup\IUST-BASE\Communication\bin\Debug\UvARescue.Tools.dll
+C:\base-backup\fresh-backup\IUST-BASE\Communication\bin\Debug\gdal_csharp.dll
+C:\base-backup\fresh-backup\IUST-BASE\Communication\bin\Debug\ogr_csharp.dll
+C:\base-backup\fresh-backup\IUST-BASE\Communication\bin\Debug\UvARescue.Math.pdb
+C:\base-backup\fresh-backup\IUST-BASE\Communication\bin\Debug\ICSharpCode.SharpZipLib.pdb
+C:\base-backup\fresh-backup\IUST-BASE\Communication\bin\Debug\UvARescue.Tools.pdb
+C:\base-backup\fresh-backup\IUST-BASE\Communication\bin\Debug\UvARescue.Tools.xml
+C:\base-backup\fresh-backup\IUST-BASE\Communication\obj\Debug\ResolveAssemblyReference.cache
+C:\base-backup\fresh-backup\IUST-BASE\Communication\obj\Debug\UvARescue.Communication.Resources.resources
+C:\base-backup\fresh-backup\IUST-BASE\Communication\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\base-backup\fresh-backup\IUST-BASE\Communication\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\base-backup\fresh-backup\IUST-BASE\Communication\obj\Debug\UvARescue.Communication.dll
+C:\base-backup\fresh-backup\IUST-BASE\Communication\obj\Debug\UvARescue.Communication.xml
+C:\base-backup\fresh-backup\IUST-BASE\Communication\obj\Debug\UvARescue.Communication.pdb
+D:\mapping\IUST-BASE\Communication\bin\Debug\UvARescue.Communication.dll
+D:\mapping\IUST-BASE\Communication\bin\Debug\UvARescue.Communication.pdb
+D:\mapping\IUST-BASE\Communication\bin\Debug\UvARescue.Communication.xml
+D:\mapping\IUST-BASE\Communication\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\mapping\IUST-BASE\Communication\bin\Debug\UvARescue.Math.dll
+D:\mapping\IUST-BASE\Communication\bin\Debug\UvARescue.Tools.dll
+D:\mapping\IUST-BASE\Communication\bin\Debug\gdal_csharp.dll
+D:\mapping\IUST-BASE\Communication\bin\Debug\ogr_csharp.dll
+D:\mapping\IUST-BASE\Communication\bin\Debug\UvARescue.Math.pdb
+D:\mapping\IUST-BASE\Communication\bin\Debug\ICSharpCode.SharpZipLib.pdb
+D:\mapping\IUST-BASE\Communication\bin\Debug\UvARescue.Tools.pdb
+D:\mapping\IUST-BASE\Communication\bin\Debug\UvARescue.Tools.xml
+D:\mapping\IUST-BASE\Communication\obj\Debug\ResolveAssemblyReference.cache
+D:\mapping\IUST-BASE\Communication\obj\Debug\UvARescue.Communication.Resources.resources
+D:\mapping\IUST-BASE\Communication\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\mapping\IUST-BASE\Communication\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\mapping\IUST-BASE\Communication\obj\Debug\UvARescue.Communication.dll
+D:\mapping\IUST-BASE\Communication\obj\Debug\UvARescue.Communication.xml
+D:\mapping\IUST-BASE\Communication\obj\Debug\UvARescue.Communication.pdb

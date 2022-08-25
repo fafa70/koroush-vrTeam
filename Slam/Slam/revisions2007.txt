@@ -1,0 +1,151 @@
+------------------------------------------------------------------------
+r461 | baslamet | 2007-05-10 22:36:24 +0200 (Thu, 10 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r462 | baslamet | 2007-05-11 17:50:48 +0200 (Fri, 11 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r464 | baslamet | 2007-05-12 12:52:53 +0200 (Sat, 12 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r467 | baslamet | 2007-05-12 17:54:01 +0200 (Sat, 12 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r468 | baslamet | 2007-05-13 18:08:35 +0200 (Sun, 13 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r469 | baslamet | 2007-05-14 18:36:10 +0200 (Mon, 14 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r475 | baslamet | 2007-05-15 18:50:55 +0200 (Tue, 15 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r476 | baslamet | 2007-05-16 11:19:24 +0200 (Wed, 16 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r487 | baslamet | 2007-05-20 00:19:05 +0200 (Sun, 20 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r496 | arnoud | 2007-05-22 18:58:53 +0200 (Tue, 22 May 2007) | 1 line
+
+Tried to add rendering of Victims. Partly solved. Tried to render in a specific layer, but I cannot control the layer. Commented out the link to specific layer, so code should still work. (Tested on DM-VictTest)
+------------------------------------------------------------------------
+r522 | baslamet | 2007-06-09 16:29:17 +0200 (Sat, 09 Jun 2007) | 5 lines
+
+- debugged TcpMessagingConnection, should work just fine now
+- tuned DriveActor so the robot moves at reasonable speed
+
+
+
+------------------------------------------------------------------------
+r544 | baslamet | 2007-06-13 15:45:07 +0200 (Wed, 13 Jun 2007) | 6 lines
+
+Added dead-reckoning functionality to SLAM
+- based on Odometry
+- based on INS
+- based on GroundTruth (only when bDebug is set to true in p2at section of usarbot.ini
+
+Bayu
+------------------------------------------------------------------------
+r545 | baslamet | 2007-06-13 15:46:34 +0200 (Wed, 13 Jun 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r563 | baslamet | 2007-06-19 13:42:38 +0200 (Tue, 19 Jun 2007) | 4 lines
+
+- debugged IdcScanMatcher
+- added reset functionality to OdometrySensor
+- added reset functioality to InsSensor
+
+------------------------------------------------------------------------
+r577 | baslamet | 2007-06-27 10:53:56 +0200 (Wed, 27 Jun 2007) | 1 line
+
+Merged Tijn's code from yesterday and this morning into my latest changes.
+------------------------------------------------------------------------
+r591 | tschmits | 2007-06-29 15:02:12 +0200 (Fri, 29 Jun 2007) | 2 lines
+
+- added Histograms from ICIS presentation day
+- included 'add victim observation'-functionality to Manifold Patches
+------------------------------------------------------------------------
+r593 | baslamet | 2007-06-29 22:06:59 +0200 (Fri, 29 Jun 2007) | 4 lines
+
+- Comm works (WSS), huge refactory and numerous little improvements
+- refactored OperatorAgent
+- introduced some extension thresholds for ManifoldSLAM
+
+------------------------------------------------------------------------
+r594 | baslamet | 2007-06-29 22:38:21 +0200 (Fri, 29 Jun 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r598 | baslamet | 2007-06-30 14:01:17 +0200 (Sat, 30 Jun 2007) | 7 lines
+
+Got confused!
+
+For my own clarity:
+- renamed VictimSensor of 2006 to VictimRfidSensor (put the RFID in the name to make its working obvious)
+- renamed VictSensor of 2007 to VictimSensor (since it works with 'real victim', and not with the RFIDs)
+
+
+------------------------------------------------------------------------
+r599 | baslamet | 2007-06-30 17:12:20 +0200 (Sat, 30 Jun 2007) | 7 lines
+
+Victim stuff works:
+- victims observations are stored on the Manifold
+- and they are nicely rendered in the map
+- 2 new layers were added for this purpose; VictimsLayer and VictimReportsLayer
+
+
+
+------------------------------------------------------------------------
+r601 | tschmits | 2007-07-01 04:43:16 +0200 (Sun, 01 Jul 2007) | 3 lines
+
+- modified VictimObservation to catch only head and chest to prevent multiple observations per single victim
+- modified skindetector to higher positive skin threshold
+- modified ManifoldSlam to prevent false single victim part positives (like a 'head' in a police car's wheels...)
+------------------------------------------------------------------------
+r606 | baslamet | 2007-07-01 22:41:36 +0200 (Sun, 01 Jul 2007) | 5 lines
+
+- added min-range and max-range handling to SLAM
+- switch GeoTIFF back to native .Net based tiff loading
+- committed non-functioning HybridScanMatcher.vb, this is work in progress
+
+
+------------------------------------------------------------------------
+r613 | baslamet | 2007-07-02 16:33:10 +0200 (Mon, 02 Jul 2007) | 4 lines
+
+- added some logic to SLAM so that it reverts to the odometry/INS estimate if the scanmatcher does not converge
+- made some changes to CommActor to aid debugging
+
+
+------------------------------------------------------------------------
+r615 | baslamet | 2007-07-02 16:52:33 +0200 (Mon, 02 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r621 | baslamet | 2007-07-03 10:26:36 +0200 (Tue, 03 Jul 2007) | 2 lines
+
+- fixed a bug in IcpScanMatcher that made it assume 180 degrees range scans
+
+------------------------------------------------------------------------
+r639 | baslamet | 2007-07-04 23:57:15 +0200 (Wed, 04 Jul 2007) | 1 line
+
+fixed a bug in ManifoldSlam regarding the extension thresholds
+------------------------------------------------------------------------
+r647 | baslamet | 2007-07-05 16:46:42 +0200 (Thu, 05 Jul 2007) | 1 line
+
+added check to ManifoldSlam so that it will only match scans that are at least 2 cm or 2 degrees displaced according to INS or Odometry. As a result lots of scans are skipped when the robot is standing still which enables SLAM to catch up much faster.
+------------------------------------------------------------------------
+r660 | baslamet | 2007-07-06 11:08:55 +0200 (Fri, 06 Jul 2007) | 1 line
+
+- disabled pose-update broadcasting when scanmatching is skipped anyway, saves bandwidth on the WSS and avoids a huge 'back-log' of pose-update messages during syncs
+------------------------------------------------------------------------

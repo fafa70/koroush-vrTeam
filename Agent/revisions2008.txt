@@ -1,0 +1,629 @@
+------------------------------------------------------------------------
+r674 | baslamet | 2007-07-08 10:12:36 +0200 (Sun, 08 Jul 2007) | 10 lines
+
+Comm refactory:
+- only the Operator had access to Comm-related information like which agents are out-of-range and in-range
+- moved this functionality to CommAgent, which is the base class for Operator but also for regular agents
+- as a consequence, CommAgent and derived classes have full access to all info provided by the CommActor too
+
+Put SmartAgent in the loop:
+- UsarAgent is the base class for our UsarSlamAgent and UsarSkinDetAgent
+- UsarAgent used to be derived from CommAgent, but now it derives from SmartAgent
+- SmartAgent in turn derives from CommAgent so it put 'in the chain'
+- SmartAgent adds behavior control .... (turned off by default)
+------------------------------------------------------------------------
+r675 | tschmits | 2007-07-08 11:05:59 +0200 (Sun, 08 Jul 2007) | 1 line
+
+- intermediate version for check with Bayu
+------------------------------------------------------------------------
+r676 | baslamet | 2007-07-08 11:20:31 +0200 (Sun, 08 Jul 2007) | 1 line
+
+- fixed camrequest 
+------------------------------------------------------------------------
+r678 | tschmits | 2007-07-08 12:15:16 +0200 (Sun, 08 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r681 | baslamet | 2007-07-08 14:50:14 +0200 (Sun, 08 Jul 2007) | 11 lines
+
+Implemented retreat behavior in case robot get out of range of the ComStation:
+- pose update message has been extended such that every robot also communicates the other robots he is connected to
+- therefore the pose update message is no longer directed to just the operator, but to everyone
+- this enables every robot to maintain a complete connectivity matrix of who is connected with whom
+
+This connectivity matrix is then used to:
+- make the robot retreat as soon as it looses contact (directly AND indirectly) with the Operator
+(- hence, as long as there is at least indirect contact the robot will be simply happy)
+- this retreat is pretty dumb (read 'pragmatic' ;-p): no obstacle avoidance of any kind. It just goes until connectivity with the Operator is re-established
+- so, the (reasonably valid) underlying assumption is that the robot went out of range while going straight ahead, and that it can get in range simply using reverse drive
+
+------------------------------------------------------------------------
+r682 | tschmits | 2007-07-08 15:58:23 +0200 (Sun, 08 Jul 2007) | 1 line
+
+- Setup for Camera Requests
+------------------------------------------------------------------------
+r684 | baslamet | 2007-07-08 16:11:53 +0200 (Sun, 08 Jul 2007) | 4 lines
+
+Two things: 
+- fixed double deliveries of broadcasted messages by checking timestamps
+- fixed sending of cam-replies back to operator
+- fixed a mini-bug in OperatorAgent
+------------------------------------------------------------------------
+r685 | baslamet | 2007-07-08 17:00:45 +0200 (Sun, 08 Jul 2007) | 1 line
+
+BUG FIXED
+------------------------------------------------------------------------
+r686 | baslamet | 2007-07-12 15:19:16 +0200 (Thu, 12 Jul 2007) | 3 lines
+
+- MbICP works!
+- renamed SmartAgent to BehaviorAgent, thought that would be more descriptive
+
+------------------------------------------------------------------------
+r688 | baslamet | 2007-07-13 10:02:50 +0200 (Fri, 13 Jul 2007) | 1 line
+
+Minor refactory to memento stuff. Also added some documentation.
+------------------------------------------------------------------------
+r692 | baslamet | 2007-07-14 13:24:50 +0200 (Sat, 14 Jul 2007) | 6 lines
+
+1. Changed convergence check in IcpScanMatcher:
+- it will consider the scan matcher as having converged iff the scan matcher needed less than max-iterations
+
+2. Factored Noise settings into AgentConfig.
+- in the AgentConfigDialog you can now also configure the noise to apply to SLAM
+
+------------------------------------------------------------------------
+r693 | baslamet | 2007-07-14 14:01:58 +0200 (Sat, 14 Jul 2007) | 10 lines
+
+Did some refactory to pave the way for frontiers:
+- restored the nice gradient-style FreeSpaceLayer
+- ditched FastFreeSpaceLayer, the rendering performance is fine as it is, the factor that slowed it down most was the high resolution used in the past. We used to be on 50px/m and have been using 20px/m for a while now.
+- started new FrontierLayer, is work in progress as it is now, will work on this the coming week.
+
+Enhanced ManifoldView to accomodate changes:
+- added button to show/hide new FrontierLayer
+- added missing button to show/hide victim reports
+- it became a but crowded up there, so sized it down to make it fit again on my 15in screen .:-)
+
+------------------------------------------------------------------------
+r694 | baslamet | 2007-07-14 17:04:53 +0200 (Sat, 14 Jul 2007) | 1 line
+
+Made a first step towards frontier extraction.
+------------------------------------------------------------------------
+r695 | baslamet | 2007-07-15 17:36:04 +0200 (Sun, 15 Jul 2007) | 11 lines
+
+Large refactory to ManifoldImage and related classes:
+- added lots of garbage collection (using blocks)
+- moved agent trail to AgentsLayer, where it belongs
+- made naming consistent" renamed all Observations to Obstacles
+- added settings that remember which layers were on/off
+- added SafeSpaceLayer
+- added buttons to show/hide VictimsLayer, SafeSpaceLayer and FrontierLayer
+
+And probably much more .... don't recall. Nothing 'dangerous' though. 
+
+
+------------------------------------------------------------------------
+r697 | arnoud | 2007-07-17 19:26:58 +0200 (Tue, 17 Jul 2007) | 3 lines
+
+Added ParseCognironLine (FOV fixed on Hokuyo).
+
+Select P2DV to mount Hokuyo on robot
+------------------------------------------------------------------------
+r698 | baslamet | 2007-07-17 22:07:57 +0200 (Tue, 17 Jul 2007) | 1 line
+
+Trimmed the last space in Cogniron line parsing
+------------------------------------------------------------------------
+r699 | baslamet | 2007-07-18 08:27:13 +0200 (Wed, 18 Jul 2007) | 5 lines
+
+added COMPETITION_MODE Symbol to UsarLib project:
+- when set to true, SLAM will be run in optimal settings
+
+This replaces the old check for DEBUG builds that did the same. The problem with checking for the DEBUG flag is that in release builds you are always running SLAM in optimal settings, thereby preventing other experiments to be done with release builds.
+
+------------------------------------------------------------------------
+r700 | baslamet | 2007-07-18 09:28:07 +0200 (Wed, 18 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r701 | baslamet | 2007-07-18 13:10:08 +0200 (Wed, 18 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r702 | baslamet | 2007-07-18 15:37:14 +0200 (Wed, 18 Jul 2007) | 1 line
+
+Fixed a small but crucial bug in LineParsers 
+------------------------------------------------------------------------
+r703 | arnoud | 2007-07-18 20:10:10 +0200 (Wed, 18 Jul 2007) | 1 line
+
+Cut off the first and last 43 numbers, because that are status bits. The Hokuyo has now 683 beams of 1.5 pi rad (270 deg). Created subscan with half of the points (instead of one third).
+------------------------------------------------------------------------
+r706 | baslamet | 2007-07-19 09:01:45 +0200 (Thu, 19 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r707 | baslamet | 2007-07-19 09:25:19 +0200 (Thu, 19 Jul 2007) | 2 lines
+
+- reversed back the scan in ParseCognironLine since I noticed that it was in disagreement with the orientation fro mthe INS logfile.
+- added a check on IDC's confidence with a fall-back on INS in MultiIcpScanMatcher
+------------------------------------------------------------------------
+r708 | baslamet | 2007-07-19 10:16:49 +0200 (Thu, 19 Jul 2007) | 5 lines
+
+Got the Hokuyo right this time.
+- 43 numbers at beginning and end are ignored
+- field of view is set correctly
+- every second beam is used only for slam
+
+------------------------------------------------------------------------
+r709 | baslamet | 2007-07-19 11:12:43 +0200 (Thu, 19 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r710 | baslamet | 2007-07-19 12:40:43 +0200 (Thu, 19 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r711 | baslamet | 2007-07-20 09:35:01 +0200 (Fri, 20 Jul 2007) | 8 lines
+
+LineParsers:
+- fixed a bug in Carmen line parsing
+- created separate routine for Noman+Hokuyo parsing
+- fixed bugs in Cogniron line parsing
+
+Added specific SICK setup for Hummer:
+- SICK with max-range of 80 meters
+- can be used for outdoor Freiburg Campus log
+------------------------------------------------------------------------
+r714 | baslamet | 2007-07-21 12:10:40 +0200 (Sat, 21 Jul 2007) | 6 lines
+
+Re-activated BehaviorControl (see BehaviorAgent):
+- TeleOperation behavior is turned on by default, the robot will not initiate any exploratory actions by itself but await for drive commands from the operator instead. What this behavior \does\ do is ensure connectivity to the Operator by initiating a retreat as soon as the robot got out-of-range.
+
+The motions currently supported are:
+- NoMotion, halts the robot upon activation and does nothing after that (so Operator is in control and robot will not interfer)
+- Retreat, triggered when Operator lost contact, then robot will change to Reverse gear and try to get back in range
+------------------------------------------------------------------------
+r715 | baslamet | 2007-07-22 00:14:40 +0200 (Sun, 22 Jul 2007) | 5 lines
+
+Implemented a QuadTree:
+- HybridIcpScanMatcher uses this to index the points before correlating them, performance boost is HUGE (factor 2 speedup)
+- next step is index the full manifold using a QuadTree, ManifoldIndex.vb is a first step
+- then it will be possible to match a scan against the whole manifold while still having acceptable performance
+- refactored parts of scan matching classes to prepare for these upcoming changes 
+------------------------------------------------------------------------
+r716 | baslamet | 2007-07-22 23:50:01 +0200 (Sun, 22 Jul 2007) | 2 lines
+
+Many updates to all the scan matching stuff. The code is growing into a mess, will clean this up asap. 
+This commit is mainly for backup purposes, may great additions needed a secure place. :-)
+------------------------------------------------------------------------
+r719 | baslamet | 2007-07-23 16:11:21 +0200 (Mon, 23 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r720 | baslamet | 2007-07-23 16:14:01 +0200 (Mon, 23 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r721 | baslamet | 2007-07-23 16:41:02 +0200 (Mon, 23 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r722 | baslamet | 2007-07-24 15:09:17 +0200 (Tue, 24 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r723 | baslamet | 2007-07-24 16:09:00 +0200 (Tue, 24 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r724 | arnoud | 2007-07-25 13:41:08 +0200 (Wed, 25 Jul 2007) | 1 line
+
+Added PlayerLineParser
+------------------------------------------------------------------------
+r765 | baslamet | 2007-08-06 18:44:39 +0200 (Mon, 06 Aug 2007) | 9 lines
+
+Leftovers:
+- numerous little modifications to slam and scan matching, mostly fine-tunings for the purpose of several log files
+
+Implemented frontier extraction tools:
+- set resolution of manifold image to 10px/m for performance
+- numerous little routine that are able to filter out some piece of information from the manifold image
+- most importantly: frontier extraction
+- very nice too: navigation map extraction using value iteration
+
+------------------------------------------------------------------------
+r766 | baslamet | 2007-08-07 17:47:32 +0200 (Tue, 07 Aug 2007) | 4 lines
+
+Added another frontier tool: ExtractFrontierRegions
+- frontier space = free space - safe space (so, all free space beyond 2m)
+- frontier region = all connected components in frontier space (i.e. 'blobs')
+- the associated information gain for each frontier region is simply the area of the region in m^2
+------------------------------------------------------------------------
+r767 | baslamet | 2007-08-07 23:13:53 +0200 (Tue, 07 Aug 2007) | 1 line
+
+Half-done result of today's efforts to get frontier exploration behavior.
+------------------------------------------------------------------------
+r768 | baslamet | 2007-08-08 17:55:04 +0200 (Wed, 08 Aug 2007) | 1 line
+
+Implemented single-robot frontier exploration
+------------------------------------------------------------------------
+r769 | baslamet | 2007-08-09 00:28:04 +0200 (Thu, 09 Aug 2007) | 3 lines
+
+Improved single-robot frontier exploration.
+- performance is up because safety maps are only computed on a local scale
+- robustness is up due to some tuning
+------------------------------------------------------------------------
+r779 | baslamet | 2007-08-12 16:53:36 +0200 (Sun, 12 Aug 2007) | 3 lines
+
+- added Gaussian blurred image extraction 
+- started multi-robot frontier exploration code
+
+------------------------------------------------------------------------
+r780 | baslamet | 2007-08-12 17:00:06 +0200 (Sun, 12 Aug 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r781 | baslamet | 2007-08-12 18:36:20 +0200 (Sun, 12 Aug 2007) | 1 line
+
+intermediate commit
+------------------------------------------------------------------------
+r782 | baslamet | 2007-08-12 19:09:05 +0200 (Sun, 12 Aug 2007) | 1 line
+
+- changed frontier assignment protocol
+------------------------------------------------------------------------
+r783 | baslamet | 2007-08-12 21:21:56 +0200 (Sun, 12 Aug 2007) | 1 line
+
+another intermediate commit
+------------------------------------------------------------------------
+r784 | baslamet | 2007-08-12 22:04:28 +0200 (Sun, 12 Aug 2007) | 1 line
+
+added area computation function to ManifoldImage
+------------------------------------------------------------------------
+r785 | baslamet | 2007-08-12 22:14:33 +0200 (Sun, 12 Aug 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r786 | baslamet | 2007-08-12 23:46:38 +0200 (Sun, 12 Aug 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r787 | baslamet | 2007-08-13 00:31:52 +0200 (Mon, 13 Aug 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r788 | baslamet | 2007-08-13 01:14:42 +0200 (Mon, 13 Aug 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r789 | baslamet | 2007-08-13 20:51:02 +0200 (Mon, 13 Aug 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r790 | baslamet | 2007-08-14 03:11:35 +0200 (Tue, 14 Aug 2007) | 1 line
+
+THIS IS THE REVISION THAT I DID THE FRONTIER EXPLORATION EXPERIMENTS WITH IN DM-COMPWORLDDAY2
+------------------------------------------------------------------------
+r806 | baslamet | 2007-09-26 15:53:00 +0200 (Wed, 26 Sep 2007) | 1 line
+
+Changes made for Probabilistic Robotics.
+------------------------------------------------------------------------
+r807 | arnoud | 2007-09-26 15:59:11 +0200 (Wed, 26 Sep 2007) | 1 line
+
+New DriveSquare behavior and motion WalkSquare
+------------------------------------------------------------------------
+r808 | arnoud | 2007-09-26 18:41:53 +0200 (Wed, 26 Sep 2007) | 1 line
+
+Added Configuration box to control behavior.
+------------------------------------------------------------------------
+r809 | arnoud | 2007-10-11 19:44:49 +0200 (Thu, 11 Oct 2007) | 1 line
+
+Experimental version of FrontierExploration. Strange behavior, so I tried to draw the current goal or future path (seems to be different than the FrontierLayer). Corrected TeleOperation.OnActivated (should be tested). pc-unreal = 146.50.1.149. 
+------------------------------------------------------------------------
+r810 | arnoud | 2007-10-25 18:31:34 +0200 (Thu, 25 Oct 2007) | 2 lines
+
+Tested version, including StatusSensor (threshold should be increased from 1 to 60 seconds, because Battery starts at 1200 sec).
+
+------------------------------------------------------------------------
+r811 | arnoud | 2007-10-25 23:08:49 +0200 (Thu, 25 Oct 2007) | 1 line
+
+* Tested Battery < 1100, and set it to 100. 
+------------------------------------------------------------------------
+r812 | arnoud | 2007-10-29 12:03:05 +0100 (Mon, 29 Oct 2007) | 1 line
+
+Created parameter for ReplanningDistance (and reduced the value from 15000 to 5000).
+------------------------------------------------------------------------
+r813 | arnoud | 2007-10-30 09:55:29 +0100 (Tue, 30 Oct 2007) | 1 line
+
+Last 10 frontiers
+------------------------------------------------------------------------
+r814 | arnoud | 2007-10-30 15:16:06 +0100 (Tue, 30 Oct 2007) | 1 line
+
+Added UpperBound to pathplanning.
+------------------------------------------------------------------------
+r815 | arnoud | 2007-10-30 16:47:41 +0100 (Tue, 30 Oct 2007) | 1 line
+
+Some extra code to count the number of Frontiers that are searched
+------------------------------------------------------------------------
+r816 | arnoud | 2007-10-30 17:36:53 +0100 (Tue, 30 Oct 2007) | 1 line
+
+Added Gui for BehaviorBalance
+------------------------------------------------------------------------
+r817 | arnoud | 2007-10-30 19:36:15 +0100 (Tue, 30 Oct 2007) | 1 line
+
+Added distance-measure between agents, to prevent coordinating too much
+------------------------------------------------------------------------
+r818 | arnoud | 2007-10-31 01:00:38 +0100 (Wed, 31 Oct 2007) | 2 lines
+
+* Added third bestpath-cache
+* Increased Blur-kernel from 13 to 15
+------------------------------------------------------------------------
+r819 | arnoud | 2007-10-31 16:12:55 +0100 (Wed, 31 Oct 2007) | 1 line
+
+* Solved third-bestcache bug
+------------------------------------------------------------------------
+r820 | arnoud | 2007-10-31 20:24:48 +0100 (Wed, 31 Oct 2007) | 2 lines
+
+* Complete new algorithm. First the complete utility matrix is calculated, and only the best utilities are recalculated with the distance from the pathplanning.
+* This version still contains a bug, because not always the best utility is chosen (but the last tested).
+------------------------------------------------------------------------
+r821 | arnoud | 2007-11-01 00:55:26 +0100 (Thu, 01 Nov 2007) | 2 lines
+
+* Solved problem with too tight upperbound by using the utility of the 2nd (goodmemberutil)
+* The previous best is set on 0.99 of the goodmember if pp doesn't succeed (should be 0.9)
+------------------------------------------------------------------------
+r822 | arnoud | 2007-11-01 13:06:15 +0100 (Thu, 01 Nov 2007) | 1 line
+
+Recalculate  best and good util for every agent after assignment, to prevent looping
+------------------------------------------------------------------------
+r823 | arnoud | 2007-11-05 16:04:31 +0100 (Mon, 05 Nov 2007) | 1 line
+
+Version as used for Euros2008 paper (including solved SafeSpaceLayer problem)
+------------------------------------------------------------------------
+r824 | arnoud | 2007-11-05 18:06:27 +0100 (Mon, 05 Nov 2007) | 1 line
+
+Corrected endless loop when no solution can be found
+------------------------------------------------------------------------
+r825 | arnoud | 2007-11-14 17:26:31 +0100 (Wed, 14 Nov 2007) | 3 lines
+
+First changes for the MultiHop paper.
+
+Tested combination of Operator (T-junction) and Achilles (North-West corridor)
+------------------------------------------------------------------------
+r826 | arnoud | 2007-11-14 20:49:05 +0100 (Wed, 14 Nov 2007) | 3 lines
+
+No patches are forgotten, although some patches are sent double.
+
+To be tested more extensively.
+------------------------------------------------------------------------
+r827 | arnoud | 2007-11-15 16:44:11 +0100 (Thu, 15 Nov 2007) | 2 lines
+
+Changed the protocol completely. LastUpdate is written at only one place: when a Commit is received. A commit is received directly when a message is received, followed by t
+he Manifold Writers-block. Reduced the WSSdevice frequency to 10 seconds, because it takes up to 5 seconds before a commit returns.
+------------------------------------------------------------------------
+r828 | arnoud | 2007-11-15 18:11:10 +0100 (Thu, 15 Nov 2007) | 2 lines
+
+Changed the protocol further. The Slave sends complete updates, the Master sends only the latest updates. Works fine, a few extra patches (one in set of 12). Only had a socket problem that should be catched.
+
+------------------------------------------------------------------------
+r830 | arnoud | 2007-11-16 14:20:01 +0100 (Fri, 16 Nov 2007) | 3 lines
+
+Every body can ask an Sync, but now first master gives a fast update of the latest information, followed by a complete update from the slave.
+
+Not tested
+------------------------------------------------------------------------
+r831 | arnoud | 2007-11-19 14:30:40 +0100 (Mon, 19 Nov 2007) | 1 line
+
+Normally, only latest updates. Only complete updates when paused
+------------------------------------------------------------------------
+r832 | arnoud | 2007-11-20 18:33:55 +0100 (Tue, 20 Nov 2007) | 1 line
+
+When no target is found, the robots switch back to Random Walk behavior. In principle after two minutes the robots should go back to FrontierExploration, but have not observed this switch. Test tomorrow with debugger.
+------------------------------------------------------------------------
+r833 | arnoud | 2007-11-21 11:07:46 +0100 (Wed, 21 Nov 2007) | 1 line
+
+Relay 1:10 PoseUpdates to the other Agents
+------------------------------------------------------------------------
+r834 | arnoud | 2007-11-21 16:09:52 +0100 (Wed, 21 Nov 2007) | 1 line
+
+RelaySync is requested every 10 seconds by OperatorAgent. Receives the latest 5 patches + 4 relations
+------------------------------------------------------------------------
+r835 | arnoud | 2007-11-21 18:17:05 +0100 (Wed, 21 Nov 2007) | 1 line
+
+Added CorridorWalk and DifferentialDrive. To be further tested
+------------------------------------------------------------------------
+r836 | arnoud | 2007-11-22 13:33:25 +0100 (Thu, 22 Nov 2007) | 2 lines
+
+* Sanity-check in ManifoldSlam before storing the first Patch
+* Tilt-sensing and Retreat 
+------------------------------------------------------------------------
+r837 | arnoud | 2007-11-22 15:33:57 +0100 (Thu, 22 Nov 2007) | 1 line
+
+Commit for nb-avmovie (only added more PoseUpdates when connecting (for the Operator))
+------------------------------------------------------------------------
+r838 | arnoud | 2007-11-22 23:50:52 +0100 (Thu, 22 Nov 2007) | 1 line
+
+Added an EstimateSignalStrengthAtDistance to CommAgent
+------------------------------------------------------------------------
+r839 | arnoud | 2007-11-23 21:33:53 +0100 (Fri, 23 Nov 2007) | 1 line
+
+Working estimation of power with QuadTree
+------------------------------------------------------------------------
+r840 | arnoud | 2007-11-25 15:51:36 +0100 (Sun, 25 Nov 2007) | 1 line
+
+Distributing the map over the agent with NotifyPoseEstimateReceived in BehaviorAgent.vb
+------------------------------------------------------------------------
+r841 | arnoud | 2007-11-26 02:46:51 +0100 (Mon, 26 Nov 2007) | 1 line
+
+Two small optimalisations
+------------------------------------------------------------------------
+r891 | arnoud | 2008-01-30 15:43:42 +0100 (Wed, 30 Jan 2008) | 1 line
+
+Do not start WssConversation when BehaviorAgent is spawn from Commander
+------------------------------------------------------------------------
+r892 | arnoud | 2008-02-05 12:15:52 +0100 (Tue, 05 Feb 2008) | 1 line
+
+Adapted to new CARMEN format used in Freiburg for the mobirob course
+------------------------------------------------------------------------
+r951 | rtobi | 2008-02-17 13:50:33 +0100 (Sun, 17 Feb 2008) | 1 line
+
+prepare the codebase for assigment 2
+------------------------------------------------------------------------
+r952 | rtobi | 2008-02-17 16:05:35 +0100 (Sun, 17 Feb 2008) | 1 line
+
+add some WriteLine() calls to clear up the program control flow
+------------------------------------------------------------------------
+r953 | rtobi | 2008-02-17 16:16:09 +0100 (Sun, 17 Feb 2008) | 1 line
+
+fix a bug that always caused the TeleOperation behavior to be activated (instead of CorridorWalk)
+------------------------------------------------------------------------
+r955 | rtobi | 2008-02-17 22:15:32 +0100 (Sun, 17 Feb 2008) | 1 line
+
+partially implement Max & Bayu's original C++ processSonarData() algorithm for ass2
+------------------------------------------------------------------------
+r956 | rtobi | 2008-02-17 22:45:03 +0100 (Sun, 17 Feb 2008) | 1 line
+
+fix a WriteLine() call
+------------------------------------------------------------------------
+r958 | rtobi | 2008-02-17 23:37:00 +0100 (Sun, 17 Feb 2008) | 1 line
+
+comment updates
+------------------------------------------------------------------------
+r959 | arnoud | 2008-02-18 14:57:31 +0100 (Mon, 18 Feb 2008) | 1 line
+
+Added Reading of Longwood format
+------------------------------------------------------------------------
+r960 | arnoud | 2008-02-18 15:25:12 +0100 (Mon, 18 Feb 2008) | 1 line
+
+Odometry is now reported as INS, because it seem to be global values. Still, the results look very noisy.
+------------------------------------------------------------------------
+r978 | rtobi | 2008-02-20 14:41:59 +0100 (Wed, 20 Feb 2008) | 1 line
+
+preparations for ObstacleAvoidance assigment
+------------------------------------------------------------------------
+r1003 | rtobi | 2008-02-26 14:29:47 +0100 (Tue, 26 Feb 2008) | 1 line
+
+add the OA behavior and motion classes
+------------------------------------------------------------------------
+r1004 | rtobi | 2008-02-26 14:38:04 +0100 (Tue, 26 Feb 2008) | 1 line
+
+add the ProcessSensorUpdate functions again
+------------------------------------------------------------------------
+r1007 | rtobi | 2008-02-26 17:13:26 +0100 (Tue, 26 Feb 2008) | 1 line
+
+commit the basic obstacle-avoidance algorithm
+------------------------------------------------------------------------
+r1008 | rtobi | 2008-02-26 17:16:11 +0100 (Tue, 26 Feb 2008) | 1 line
+
+small bugfix
+------------------------------------------------------------------------
+r1009 | rtobi | 2008-02-26 18:27:51 +0100 (Tue, 26 Feb 2008) | 1 line
+
+eliminate some Console.WriteLine() calls
+------------------------------------------------------------------------
+r1010 | rtobi | 2008-02-26 19:56:23 +0100 (Tue, 26 Feb 2008) | 1 line
+
+deal with the 0 <==> 2PI angle flip for the ObstAvoid behavior
+------------------------------------------------------------------------
+r1011 | rtobi | 2008-02-26 20:07:12 +0100 (Tue, 26 Feb 2008) | 1 line
+
+bugfix
+------------------------------------------------------------------------
+r1020 | rtobi | 2008-02-27 14:51:27 +0100 (Wed, 27 Feb 2008) | 1 line
+
+laser-range step preparation
+------------------------------------------------------------------------
+r1051 | rtobi | 2008-03-05 14:47:51 +0100 (Wed, 05 Mar 2008) | 1 line
+
+some fiddling
+------------------------------------------------------------------------
+r1136 | arnoud | 2008-04-02 17:18:38 +0200 (Wed, 02 Apr 2008) | 1 line
+
+Added OmniP2DX
+------------------------------------------------------------------------
+r1157 | arnoud | 2008-04-24 09:42:44 +0200 (Thu, 24 Apr 2008) | 12 lines
+
+German Open 2008 Thursday morning: 
+* bugfix to allow  TeleOperation over WSS
+* included GPSSensor
+* Preparations for including Apriori-data in FrontierExploration (not active)
+* Larger Axis-font
+* FreeSpaceAlpha on competition setting
+* Every 20 seconds an AREA print
+* Protection on creation of histogram-bitmap (pre-GO2008)
+* AirRobot introduced (no buttons to get AirBorne yet)
+* 
+* 
+
+------------------------------------------------------------------------
+r1158 | arnoud | 2008-04-24 18:16:11 +0200 (Thu, 24 Apr 2008) | 1 line
+
+German Open: Thursday Evening: Debugged BtnCamReq + added some comments
+------------------------------------------------------------------------
+r1159 | arnoud | 2008-04-24 20:10:02 +0200 (Thu, 24 Apr 2008) | 1 line
+
+Missing GPS-files
+------------------------------------------------------------------------
+r1272 | jdehoog | 2008-06-13 16:20:13 +0200 (Fri, 13 Jun 2008) | 1 line
+
+
+------------------------------------------------------------------------
+r1273 | jdehoog | 2008-06-13 16:27:29 +0200 (Fri, 13 Jun 2008) | 1 line
+
+Implemented AvoidTeamMate motion, triggered by FrontierExploration, CorridorWalk or RandomWalk
+------------------------------------------------------------------------
+r1300 | jdehoog | 2008-06-24 13:47:12 +0200 (Tue, 24 Jun 2008) | 1 line
+
+Implemented ability to change behaviour during run; several small changes to user interface
+------------------------------------------------------------------------
+r1324 | jdehoog | 2008-06-27 19:20:40 +0200 (Fri, 27 Jun 2008) | 1 line
+
+Initial behavior change broadcast message testing
+------------------------------------------------------------------------
+r1333 | jdehoog | 2008-07-02 18:17:36 +0200 (Wed, 02 Jul 2008) | 1 line
+
+Extensive changes to SaveMapDialog: individual agent contributions can be adjusted using trackbars; added constant class (e.g. map resolution)
+------------------------------------------------------------------------
+r1338 | arnoud | 2008-07-10 22:25:17 +0200 (Thu, 10 Jul 2008) | 3 lines
+
+This is the version for the WSS 0.4
+* this version is NOT backwards compatible with the old wireless simulator
+* change the wireless port to 50000
+------------------------------------------------------------------------
+r1339 | arnoud | 2008-07-13 06:34:20 +0200 (Sun, 13 Jul 2008) | 2 lines
+
+- Do not return own patches back to the robot.
+- Tested with a single robot
+------------------------------------------------------------------------
+r1340 | jdehoog | 2008-07-13 12:41:05 +0200 (Sun, 13 Jul 2008) | 1 line
+
+ConservativeTeleOp behavior added -- currently only uses laser range scanner to detect obstacles
+------------------------------------------------------------------------
+r1342 | jdehoog | 2008-07-14 12:25:14 +0200 (Mon, 14 Jul 2008) | 1 line
+
+Minor bug fix to allow ConservativeTeleOp over proxy, started working on camReq improvement
+------------------------------------------------------------------------
+r1343 | jdehoog | 2008-07-16 06:53:33 +0200 (Wed, 16 Jul 2008) | 1 line
+
+RoboCup08 Prelim Trial version: sleep between spawn and WSS connection, some sensors unmounted, prelim work on camera image use, multiple small bug fixes
+------------------------------------------------------------------------
+r1345 | arnoud | 2008-07-16 19:30:14 +0200 (Wed, 16 Jul 2008) | 1 line
+
+Added functionality to look that checks the fix and satellite information in GPS messages 
+------------------------------------------------------------------------
+r1346 | arnoud | 2008-07-16 21:03:37 +0200 (Wed, 16 Jul 2008) | 3 lines
+
+Hopefully fix of GPS problems. To be tested with latest version of GPSsensor.uc
+
+What should be tested if the number of Satellites are also given for Fix=1 messages, and if the messages cannot be longer trusted for Satellites < 6
+------------------------------------------------------------------------
+r1347 | arnoud | 2008-07-16 21:04:26 +0200 (Wed, 16 Jul 2008) | 1 line
+
+Satellites with Lat,Long
+------------------------------------------------------------------------
+r1349 | arnoud | 2008-07-23 09:45:40 +0200 (Wed, 23 Jul 2008) | 5 lines
+
+Last changes of 2008 competition code
+* Updated licence, readme.txt and add_revisions to AOJFR 2008
+* Agent uses new GPSsensor
+* UsarCommander.vbproj includes postbuild which allows to read Apriori
+* RegularThread reports the name of the thread started
+------------------------------------------------------------------------

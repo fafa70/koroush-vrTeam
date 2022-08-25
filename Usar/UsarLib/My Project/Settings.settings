@@ -1,0 +1,63 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="UsarRunTimeLength" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">22</Value>
+    </Setting>
+    <Setting Name="UsarReportingTimeLength" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+    <Setting Name="LastAgentConfigFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="LastConfigFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="LastTeamConfigFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ShowApriori" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ShowAprioriMobility" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ShowAprioriVictims" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ShowAprioriComm" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ShowFreeSpace" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ShowClearSpace" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ShowFrontiers" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ShowObstacles" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ShowNotes" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ShowAgents" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ShowVictims" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ShowSafeSpace" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="LastMapSavePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ShowComms" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>

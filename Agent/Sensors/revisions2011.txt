@@ -1,0 +1,23 @@
+------------------------------------------------------------------------
+r2198 | ndijkshoorn | 2011-03-31 17:46:02 +0200 (Thu, 31 Mar 2011) | 2 lines
+
+Visual Studio 2011 project
+Added separate conversations for frames
+------------------------------------------------------------------------
+r2201 | ndijkshoorn | 2011-04-04 11:54:20 +0200 (Mon, 04 Apr 2011) | 1 line
+
+added keyboard navigation
+------------------------------------------------------------------------
+r2214 | ndijkshoorn | 2011-04-09 06:37:16 +0200 (Sat, 09 Apr 2011) | 2 lines
+
+competition improvements: deploy p3at instead of comstation.
+Increased the priority of LiveDriver
+------------------------------------------------------------------------
+r2216 | arnoud | 2011-06-26 21:18:28 +0200 (Sun, 26 Jun 2011) | 5 lines
+
+Added some protections needed for UDK.
++ Status message is shorter
++ Tachometer gives empty messages
++ Removed some debug messages
++ Added some extra information in existing debug messages
+------------------------------------------------------------------------

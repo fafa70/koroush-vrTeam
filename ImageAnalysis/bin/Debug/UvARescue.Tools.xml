@@ -1,0 +1,368 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+UvARescue.Tools
+</name>
+</assembly>
+<members>
+<member name="M:UvARescue.Tools.MapInfo.#ctor(System.Double[])">
+	<summary>
+ Private constructor.
+ </summary>
+	<param name="transformation"></param>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Tools.MapInfo.InitializeOgr">
+	<summary>
+ Because initializing GDAL can take several seconds, this
+ method was implemented such that gdal initialization will
+ occur only once for the whole application lifetime.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Tools.MapInfo">
+	<summary>
+ Reads and writes MapInfo Interchange Files (mif/mid) using the OGR library.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:UvARescue.Tools.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:UvARescue.Tools.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:UvARescue.Tools.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:UvARescue.Tools.GeoTiff.InitializeGdal">
+	<summary>
+ Because initializing GDAL can take several seconds, this
+ method was implemented such that gdal initialization will
+ occur only once for the whole application lifetime.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Tools.GeoTiff.Load(System.String)">
+	<summary>
+ Opens the specified GeoTiFF file Neodym's BitmapConverter.
+ </summary>
+	<param name="filename"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Tools.GeoTiff.Save(System.String,System.Drawing.Bitmap,UvARescue.Tools.GeoReference)">
+	<summary>
+ Saves the supplied image as GeoTiff in the specified filename.
+ </summary>
+	<param name="filename"></param>
+	<param name="image"></param>
+	<param name="geo"></param>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Tools.GeoTiff.GetSaveOptions">
+	<summary>
+ Return "key=value" pairs compatible with WGS84 Orthographic projections
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Tools.GeoTiff.#ctor(System.Double[],System.Drawing.Image)">
+	<summary>
+ Private constructor, new GeoTiffs should be created using the shared Open
+ member.
+ </summary>
+	<param name="num"></param>
+	<param name="img"></param>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Tools.GeoTiff">
+	<summary>
+ Reads and writes GeoTIFF images using the GDAL library.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Tools.RegularThread.Start">
+	<summary>
+ Starts the wrapped thread. The Run member is referenced as the
+ the main executive routine of this thread.
+ 
+ Please note that by default the wrapped thread will run with
+ lower priority than the UI in order to ensure UI responsiveness.
+ 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Tools.RegularThread.Stop">
+	<summary>
+ Stops the wrapped thread. 
+ 
+ The wrapped thread will be politely asked to stop by setting
+ IsRunning to false. After 10 seconds of no reaction the 
+ wrapped thread will be forced to abort.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Tools.DataQueue`1">
+	<summary>
+ A (limited) queue of Graphical Object.
+ </summary>
+	<typeparam name="TData"></typeparam>
+	<remarks>Copy/Edit of MultiStateSensor, without Sensor inheritance.</remarks>
+</member><member name="M:UvARescue.Tools.PausableThread.Pause">
+	<summary>
+ Just sets the IsPaused flag to true. This does not 
+ actually pause the wrapped thread yet. Pausing will occur 
+ only as soon as CheckForPause is invoked.
+ 
+ It will always be an external (other) thread that invokes
+ Pause and Resume on this thread. However, the actual pausing 
+ should NOT happen on these, but on the wrapped thread. 
+ That's why pausing will only occur as soon as
+ the wrapped thread calls CheckForPause.
+ 
+ As a consequence, pausing will only have any effect if 
+ the Run method actually invokes CheckForPause from time to 
+ time.
+ 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Tools.PausableThread.CheckForPause">
+	<summary>
+ This member should be invoked by subclasses as part of
+ their Run routine. If the paused flag was set to true 
+ by an external thread (through invoking Pause) then the wrapped
+ thread will enter a (non-busy) waiting state. The wrapped 
+ thread continues execution when an external thread calls 
+ Resume.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Tools.PausableThread.Resume">
+	<summary>
+ Will resume the execution of the wrapped thread.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Tools.PausableThread">
+	<summary>
+ This class wraps a Thread in such a way that the main execution
+ can be paused without (!) busy-waiting to occur. So, pausing this
+ thread actually should yield the benefit of having resources being 
+ freed up for other threads.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:UvARescue.Tools.gpx.gpxType.schemaLocation">
+Manually added<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.gpxType.metadata">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.gpxType.wpt">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.gpxType.rte">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.gpxType.trk">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.gpxType.extensions">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.gpxType.version">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.gpxType.creator">
+	<remarks/>
+</member><member name="T:UvARescue.Tools.gpx.gpxType">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.metadataType.name">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.metadataType.desc">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.metadataType.author">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.metadataType.copyright">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.metadataType.link">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.metadataType.time">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.metadataType.timeSpecified">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.metadataType.keywords">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.metadataType.bounds">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.metadataType.extensions">
+	<remarks/>
+</member><member name="T:UvARescue.Tools.gpx.metadataType">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.personType.name">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.personType.email">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.personType.link">
+	<remarks/>
+</member><member name="T:UvARescue.Tools.gpx.personType">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.emailType.id">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.emailType.domain">
+	<remarks/>
+</member><member name="T:UvARescue.Tools.gpx.emailType">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.trksegType.trkpt">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.trksegType.extensions">
+	<remarks/>
+</member><member name="T:UvARescue.Tools.gpx.trksegType">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.wptType.ele">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.wptType.eleSpecified">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.wptType.time">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.wptType.timeSpecified">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.wptType.magvar">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.wptType.magvarSpecified">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.wptType.geoidheight">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.wptType.geoidheightSpecified">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.wptType.name">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.wptType.cmt">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.wptType.desc">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.wptType.src">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.wptType.link">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.wptType.sym">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.wptType.type">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.wptType.fix">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.wptType.fixSpecified">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.wptType.sat">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.wptType.hdop">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.wptType.hdopSpecified">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.wptType.vdop">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.wptType.vdopSpecified">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.wptType.pdop">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.wptType.pdopSpecified">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.wptType.ageofdgpsdata">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.wptType.ageofdgpsdataSpecified">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.wptType.dgpsid">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.wptType.extensions">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.wptType.lat">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.wptType.lon">
+	<remarks/>
+</member><member name="T:UvARescue.Tools.gpx.wptType">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.linkType.text">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.linkType.type">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.linkType.href">
+	<remarks/>
+</member><member name="T:UvARescue.Tools.gpx.linkType">
+	<remarks/>
+</member><member name="F:UvARescue.Tools.gpx.fixType.none">
+	<remarks/>
+</member><member name="F:UvARescue.Tools.gpx.fixType.Item2d">
+	<remarks/>
+</member><member name="F:UvARescue.Tools.gpx.fixType.Item3d">
+	<remarks/>
+</member><member name="F:UvARescue.Tools.gpx.fixType.dgps">
+	<remarks/>
+</member><member name="F:UvARescue.Tools.gpx.fixType.pps">
+	<remarks/>
+</member><member name="T:UvARescue.Tools.gpx.fixType">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.extensionsType.Any">
+	<remarks/>
+</member><member name="T:UvARescue.Tools.gpx.extensionsType">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.trkType.name">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.trkType.cmt">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.trkType.desc">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.trkType.src">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.trkType.link">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.trkType.number">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.trkType.type">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.trkType.extensions">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.trkType.trkseg">
+	<remarks/>
+</member><member name="T:UvARescue.Tools.gpx.trkType">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.rteType.name">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.rteType.cmt">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.rteType.desc">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.rteType.src">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.rteType.link">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.rteType.number">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.rteType.type">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.rteType.extensions">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.rteType.rtept">
+	<remarks/>
+</member><member name="T:UvARescue.Tools.gpx.rteType">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.boundsType.minlat">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.boundsType.minlon">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.boundsType.maxlat">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.boundsType.maxlon">
+	<remarks/>
+</member><member name="T:UvARescue.Tools.gpx.boundsType">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.copyrightType.year">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.copyrightType.license">
+	<remarks/>
+</member><member name="P:UvARescue.Tools.gpx.copyrightType.author">
+	<remarks/>
+</member><member name="T:UvARescue.Tools.gpx.copyrightType">
+	<remarks/>
+</member><member name="T:UvARescue.Tools.Graph`2">
+	<summary>
+ Strong-typed template data structure for Graphs. You cannot just inherit it by 
+ itself, the Graph and the GraphNode and GraphLink classes should be inherited
+ simultaneously for all template specifiers to work.
+ </summary>
+	<typeparam name="TNode"></typeparam>
+	<typeparam name="TLink"></typeparam>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Tools.TcpConnection.Send(System.String)">
+	<summary>
+ a string-based (ASCII) message sending format is assumed.
+ </summary>
+	<param name="message"></param>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

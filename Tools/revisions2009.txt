@@ -1,0 +1,81 @@
+------------------------------------------------------------------------
+r1505 | arnoud | 2008-10-22 16:47:33 +0200 (Wed, 22 Oct 2008) | 1 line
+
+
+------------------------------------------------------------------------
+r1506 | arnoud | 2008-10-22 19:28:10 +0200 (Wed, 22 Oct 2008) | 1 line
+
+The map is now saved with Resolution 30, and during driving rendered with 15 (both configurable in Tools/Constants.vb)
+------------------------------------------------------------------------
+r1508 | jdehoog | 2008-10-24 11:04:07 +0200 (Fri, 24 Oct 2008) | 1 line
+
+Automated reporting:  if Tools.Constants.AUTOMATED_REPORTING is true then tif maps and a victim file are automatically written to a directory AOJRF_REPORTS in the project root directory.
+------------------------------------------------------------------------
+r1607 | arnoud | 2009-01-06 18:02:12 +0100 (Tue, 06 Jan 2009) | 1 line
+
+Moved remotely
+------------------------------------------------------------------------
+r1608 | arnoud | 2009-01-06 18:02:49 +0100 (Tue, 06 Jan 2009) | 1 line
+
+Renamed remotely
+------------------------------------------------------------------------
+r1819 | arnoud | 2009-04-17 13:39:41 +0200 (Fri, 17 Apr 2009) | 3 lines
+
+* Implemented Bas recommendations (should be 11% faster).
+* Reduced dependencies of different projects
+* Better Sync of AgentConfigDialog
+------------------------------------------------------------------------
+r1829 | jdehoog | 2009-04-22 21:00:14 +0200 (Wed, 22 Apr 2009) | 4 lines
+
+Added two buttons to teamController:  "All Auto" and "All Tele".  
+Added DeploymentTest behavior, currently just driving in a circle but to be changed soon.  
+Small bugfix in FrontierExploration to ignore empty infos.  
+Turned auto-reporting toggle off.
+------------------------------------------------------------------------
+r1836 | hnijhuis | 2009-04-23 13:06:26 +0200 (Thu, 23 Apr 2009) | 1 line
+
+Protection against wrong pathloss numbers
+------------------------------------------------------------------------
+r1843 | jdehoog | 2009-04-23 20:03:02 +0200 (Thu, 23 Apr 2009) | 2 lines
+
+Created Framework for writing of DeploymentMotion.
+Added auto-backup of Map and Victim Files, currently backing up every 20 seconds, seems to work but still to be tested.
+------------------------------------------------------------------------
+r1844 | jdehoog | 2009-04-23 22:55:01 +0200 (Thu, 23 Apr 2009) | 2 lines
+
+Updated automatic backup.
+Backup behavior defined by two values in Tools.Constants:  boolean AUTOMATED_BACKUP and integer BACKUP_FREQUENCY (number of seconds between backups).
+------------------------------------------------------------------------
+r1849 | jdehoog | 2009-04-24 09:40:12 +0200 (Fri, 24 Apr 2009) | 1 line
+
+Turned automated reporting off.  Also just wanted to add another commit.
+------------------------------------------------------------------------
+r1856 | jdehoog | 2009-05-08 19:10:04 +0200 (Fri, 08 May 2009) | 1 line
+
+Added backup option to teamconfig dialog to enable regular backups.   Geotiff bug fixed.  For more details see Julian's AOJRF log entry of May 8.
+------------------------------------------------------------------------
+r1883 | qnguyen | 2009-06-10 10:29:51 +0200 (Wed, 10 Jun 2009) | 5 lines
+
+Some extra protection
+* With ImgSrv running 1024x768, CameraData gets Out Of Memory
+* MainForm gets locked
+* Checking Disposes and LockBits
+* ManifoldImage.Dispose modification not tested
+------------------------------------------------------------------------
+r1885 | arnoud | 2009-06-10 20:13:44 +0200 (Wed, 10 Jun 2009) | 4 lines
+
+ComputeArea is now only done in SaveMapDialog 
+* ComputeArea was locking every 20 seconds the manifold and manifoldImage
+* Depending on the size of the map, this locking could be several seconds
+* Also no longer crash when connection cannot be made
+------------------------------------------------------------------------
+r1905 | jdehoog | 2009-07-01 11:44:11 +0200 (Wed, 01 Jul 2009) | 3 lines
+
+Added functionality for second range finder (since we added a tilted Hokuyo to the P2AT to detect drop-offs and obstacles at different levels from sick).
+Second range finder is called TiltedScanner and is ignored everywhere except ConservativeTeleOpMotion, for now.
+Changes made in every ProcessLaserRangeData throughout code.
+------------------------------------------------------------------------
+r1912 | jdehoog | 2009-07-05 00:16:14 +0200 (Sun, 05 Jul 2009) | 1 line
+
+Minor temporary changes to some buttons in the GUI (want to take pictures with AirRobot).  Also added some try-catch in quad tree to prevent crash where it seemed to happen regularly, just in case.
+------------------------------------------------------------------------

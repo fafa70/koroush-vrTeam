@@ -1,0 +1,14 @@
+------------------------------------------------------------------------
+r2198 | ndijkshoorn | 2011-03-31 17:46:02 +0200 (Thu, 31 Mar 2011) | 2 lines
+
+Visual Studio 2011 project
+Added separate conversations for frames
+------------------------------------------------------------------------
+r2207 | ndijkshoorn | 2011-04-06 07:54:03 +0200 (Wed, 06 Apr 2011) | 1 line
+
+Fixed keyboard controls when conservative behavior causes halt
+------------------------------------------------------------------------
+r2217 | jdehoog | 2011-07-05 11:56:05 +0200 (Tue, 05 Jul 2011) | 1 line
+
+Renamed "FollowingBehaviour" to "FollowWaypoint";  removed many behaviours from GUI (to avoid mistakes in competition)
+------------------------------------------------------------------------

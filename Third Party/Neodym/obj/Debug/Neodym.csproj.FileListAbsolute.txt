@@ -1,0 +1,80 @@
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Third Party\Neodym\bin\Debug\MathNet.Neodym.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Third Party\Neodym\bin\Debug\MathNet.Neodym.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Third Party\Neodym\bin\Debug\MathNet.Iridium.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Third Party\Neodym\bin\Debug\MathNet.Iridium.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Third Party\Neodym\bin\Debug\de\MathNet.Iridium.resources.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Third Party\Neodym\bin\Debug\es\MathNet.Iridium.resources.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Third Party\Neodym\bin\Debug\fr\MathNet.Iridium.resources.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Third Party\Neodym\obj\Debug\ResolveAssemblyReference.cache
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Third Party\Neodym\obj\Debug\MathNet.Neodym.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Third Party\Neodym\obj\Debug\MathNet.Neodym.pdb
+H:\AOJRF2011\Third Party\Neodym\bin\Debug\MathNet.Neodym.dll
+H:\AOJRF2011\Third Party\Neodym\bin\Debug\MathNet.Neodym.pdb
+H:\AOJRF2011\Third Party\Neodym\bin\Debug\MathNet.Iridium.dll
+H:\AOJRF2011\Third Party\Neodym\bin\Debug\MathNet.Iridium.pdb
+H:\AOJRF2011\Third Party\Neodym\bin\Debug\de\MathNet.Iridium.resources.dll
+H:\AOJRF2011\Third Party\Neodym\bin\Debug\es\MathNet.Iridium.resources.dll
+H:\AOJRF2011\Third Party\Neodym\bin\Debug\fr\MathNet.Iridium.resources.dll
+H:\AOJRF2011\Third Party\Neodym\obj\Debug\ResolveAssemblyReference.cache
+H:\AOJRF2011\Third Party\Neodym\obj\Debug\MathNet.Neodym.dll
+H:\AOJRF2011\Third Party\Neodym\obj\Debug\MathNet.Neodym.pdb
+D:\AOJRF2012\Third Party\Neodym\bin\Debug\MathNet.Neodym.dll
+D:\AOJRF2012\Third Party\Neodym\bin\Debug\MathNet.Neodym.pdb
+D:\AOJRF2012\Third Party\Neodym\bin\Debug\MathNet.Iridium.dll
+D:\AOJRF2012\Third Party\Neodym\bin\Debug\MathNet.Iridium.pdb
+D:\AOJRF2012\Third Party\Neodym\bin\Debug\de\MathNet.Iridium.resources.dll
+D:\AOJRF2012\Third Party\Neodym\bin\Debug\es\MathNet.Iridium.resources.dll
+D:\AOJRF2012\Third Party\Neodym\bin\Debug\fr\MathNet.Iridium.resources.dll
+D:\AOJRF2012\Third Party\Neodym\obj\Debug\ResolveAssemblyReference.cache
+D:\AOJRF2012\Third Party\Neodym\obj\Debug\MathNet.Neodym.dll
+D:\AOJRF2012\Third Party\Neodym\obj\Debug\MathNet.Neodym.pdb
+D:\IUST-BASE\Third Party\Neodym\bin\Debug\MathNet.Neodym.dll
+D:\IUST-BASE\Third Party\Neodym\bin\Debug\MathNet.Neodym.pdb
+D:\IUST-BASE\Third Party\Neodym\bin\Debug\MathNet.Iridium.dll
+D:\IUST-BASE\Third Party\Neodym\bin\Debug\MathNet.Iridium.pdb
+D:\IUST-BASE\Third Party\Neodym\bin\Debug\de\MathNet.Iridium.resources.dll
+D:\IUST-BASE\Third Party\Neodym\bin\Debug\es\MathNet.Iridium.resources.dll
+D:\IUST-BASE\Third Party\Neodym\bin\Debug\fr\MathNet.Iridium.resources.dll
+D:\IUST-BASE\Third Party\Neodym\obj\Debug\ResolveAssemblyReference.cache
+D:\IUST-BASE\Third Party\Neodym\obj\Debug\MathNet.Neodym.dll
+D:\IUST-BASE\Third Party\Neodym\obj\Debug\MathNet.Neodym.pdb
+F:\IUST-BASE\Third Party\Neodym\bin\Debug\MathNet.Neodym.dll
+F:\IUST-BASE\Third Party\Neodym\bin\Debug\MathNet.Neodym.pdb
+F:\IUST-BASE\Third Party\Neodym\bin\Debug\MathNet.Iridium.dll
+F:\IUST-BASE\Third Party\Neodym\bin\Debug\MathNet.Iridium.pdb
+F:\IUST-BASE\Third Party\Neodym\bin\Debug\de\MathNet.Iridium.resources.dll
+F:\IUST-BASE\Third Party\Neodym\bin\Debug\es\MathNet.Iridium.resources.dll
+F:\IUST-BASE\Third Party\Neodym\bin\Debug\fr\MathNet.Iridium.resources.dll
+F:\IUST-BASE\Third Party\Neodym\obj\Debug\ResolveAssemblyReference.cache
+F:\IUST-BASE\Third Party\Neodym\obj\Debug\MathNet.Neodym.dll
+F:\IUST-BASE\Third Party\Neodym\obj\Debug\MathNet.Neodym.pdb
+D:\usarsim\IUST-BASE\Third Party\Neodym\bin\Debug\MathNet.Neodym.dll
+D:\usarsim\IUST-BASE\Third Party\Neodym\bin\Debug\MathNet.Neodym.pdb
+D:\usarsim\IUST-BASE\Third Party\Neodym\bin\Debug\MathNet.Iridium.dll
+D:\usarsim\IUST-BASE\Third Party\Neodym\bin\Debug\MathNet.Iridium.pdb
+D:\usarsim\IUST-BASE\Third Party\Neodym\bin\Debug\de\MathNet.Iridium.resources.dll
+D:\usarsim\IUST-BASE\Third Party\Neodym\bin\Debug\es\MathNet.Iridium.resources.dll
+D:\usarsim\IUST-BASE\Third Party\Neodym\bin\Debug\fr\MathNet.Iridium.resources.dll
+D:\usarsim\IUST-BASE\Third Party\Neodym\obj\Debug\ResolveAssemblyReference.cache
+D:\usarsim\IUST-BASE\Third Party\Neodym\obj\Debug\MathNet.Neodym.dll
+D:\usarsim\IUST-BASE\Third Party\Neodym\obj\Debug\MathNet.Neodym.pdb
+C:\base-backup\fresh-backup\IUST-BASE\Third Party\Neodym\bin\Debug\MathNet.Neodym.dll
+C:\base-backup\fresh-backup\IUST-BASE\Third Party\Neodym\bin\Debug\MathNet.Neodym.pdb
+C:\base-backup\fresh-backup\IUST-BASE\Third Party\Neodym\bin\Debug\MathNet.Iridium.dll
+C:\base-backup\fresh-backup\IUST-BASE\Third Party\Neodym\bin\Debug\MathNet.Iridium.pdb
+C:\base-backup\fresh-backup\IUST-BASE\Third Party\Neodym\bin\Debug\de\MathNet.Iridium.resources.dll
+C:\base-backup\fresh-backup\IUST-BASE\Third Party\Neodym\bin\Debug\es\MathNet.Iridium.resources.dll
+C:\base-backup\fresh-backup\IUST-BASE\Third Party\Neodym\bin\Debug\fr\MathNet.Iridium.resources.dll
+C:\base-backup\fresh-backup\IUST-BASE\Third Party\Neodym\obj\Debug\ResolveAssemblyReference.cache
+C:\base-backup\fresh-backup\IUST-BASE\Third Party\Neodym\obj\Debug\MathNet.Neodym.dll
+C:\base-backup\fresh-backup\IUST-BASE\Third Party\Neodym\obj\Debug\MathNet.Neodym.pdb
+D:\mapping\IUST-BASE\Third Party\Neodym\bin\Debug\MathNet.Neodym.dll
+D:\mapping\IUST-BASE\Third Party\Neodym\bin\Debug\MathNet.Neodym.pdb
+D:\mapping\IUST-BASE\Third Party\Neodym\bin\Debug\MathNet.Iridium.dll
+D:\mapping\IUST-BASE\Third Party\Neodym\bin\Debug\MathNet.Iridium.pdb
+D:\mapping\IUST-BASE\Third Party\Neodym\bin\Debug\de\MathNet.Iridium.resources.dll
+D:\mapping\IUST-BASE\Third Party\Neodym\bin\Debug\es\MathNet.Iridium.resources.dll
+D:\mapping\IUST-BASE\Third Party\Neodym\bin\Debug\fr\MathNet.Iridium.resources.dll
+D:\mapping\IUST-BASE\Third Party\Neodym\obj\Debug\ResolveAssemblyReference.cache
+D:\mapping\IUST-BASE\Third Party\Neodym\obj\Debug\MathNet.Neodym.dll
+D:\mapping\IUST-BASE\Third Party\Neodym\obj\Debug\MathNet.Neodym.pdb

@@ -1,0 +1,123 @@
+------------------------------------------------------------------------
+r692 | baslamet | 2007-07-14 13:24:50 +0200 (Sat, 14 Jul 2007) | 6 lines
+
+1. Changed convergence check in IcpScanMatcher:
+- it will consider the scan matcher as having converged iff the scan matcher needed less than max-iterations
+
+2. Factored Noise settings into AgentConfig.
+- in the AgentConfigDialog you can now also configure the noise to apply to SLAM
+
+------------------------------------------------------------------------
+r696 | baslamet | 2007-07-17 17:10:22 +0200 (Tue, 17 Jul 2007) | 5 lines
+
+Added HybridIcpScanMatcher.vb and MultiIcpScanMatcher.vb:
+- HybridIcpScanMatcher.vb = WSM using metric from MbICP, this is work in progress so don't use 
+- MultiIcpScanMatcher.vb = basically WSM which runs IDC as fall-back option, work in progress but seems to work nicely already
+
+
+------------------------------------------------------------------------
+r697 | arnoud | 2007-07-17 19:26:58 +0200 (Tue, 17 Jul 2007) | 3 lines
+
+Added ParseCognironLine (FOV fixed on Hokuyo).
+
+Select P2DV to mount Hokuyo on robot
+------------------------------------------------------------------------
+r710 | baslamet | 2007-07-19 12:40:43 +0200 (Thu, 19 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r711 | baslamet | 2007-07-20 09:35:01 +0200 (Fri, 20 Jul 2007) | 8 lines
+
+LineParsers:
+- fixed a bug in Carmen line parsing
+- created separate routine for Noman+Hokuyo parsing
+- fixed bugs in Cogniron line parsing
+
+Added specific SICK setup for Hummer:
+- SICK with max-range of 80 meters
+- can be used for outdoor Freiburg Campus log
+------------------------------------------------------------------------
+r712 | baslamet | 2007-07-20 09:40:33 +0200 (Fri, 20 Jul 2007) | 1 line
+
+Added specific laser range sensor configuration for AIBO.
+------------------------------------------------------------------------
+r716 | baslamet | 2007-07-22 23:50:01 +0200 (Sun, 22 Jul 2007) | 2 lines
+
+Many updates to all the scan matching stuff. The code is growing into a mess, will clean this up asap. 
+This commit is mainly for backup purposes, may great additions needed a secure place. :-)
+------------------------------------------------------------------------
+r722 | baslamet | 2007-07-24 15:09:17 +0200 (Tue, 24 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r724 | arnoud | 2007-07-25 13:41:08 +0200 (Wed, 25 Jul 2007) | 1 line
+
+Added PlayerLineParser
+------------------------------------------------------------------------
+r806 | baslamet | 2007-09-26 15:53:00 +0200 (Wed, 26 Sep 2007) | 1 line
+
+Changes made for Probabilistic Robotics.
+------------------------------------------------------------------------
+r808 | arnoud | 2007-09-26 18:41:53 +0200 (Wed, 26 Sep 2007) | 1 line
+
+Added Configuration box to control behavior.
+------------------------------------------------------------------------
+r813 | arnoud | 2007-10-30 09:55:29 +0100 (Tue, 30 Oct 2007) | 1 line
+
+Last 10 frontiers
+------------------------------------------------------------------------
+r816 | arnoud | 2007-10-30 17:36:53 +0100 (Tue, 30 Oct 2007) | 1 line
+
+Added Gui for BehaviorBalance
+------------------------------------------------------------------------
+r951 | rtobi | 2008-02-17 13:50:33 +0100 (Sun, 17 Feb 2008) | 1 line
+
+prepare the codebase for assigment 2
+------------------------------------------------------------------------
+r959 | arnoud | 2008-02-18 14:57:31 +0100 (Mon, 18 Feb 2008) | 1 line
+
+Added Reading of Longwood format
+------------------------------------------------------------------------
+r978 | rtobi | 2008-02-20 14:41:59 +0100 (Wed, 20 Feb 2008) | 1 line
+
+preparations for ObstacleAvoidance assigment
+------------------------------------------------------------------------
+r1136 | arnoud | 2008-04-02 17:18:38 +0200 (Wed, 02 Apr 2008) | 1 line
+
+Added OmniP2DX
+------------------------------------------------------------------------
+r1157 | arnoud | 2008-04-24 09:42:44 +0200 (Thu, 24 Apr 2008) | 12 lines
+
+German Open 2008 Thursday morning: 
+* bugfix to allow  TeleOperation over WSS
+* included GPSSensor
+* Preparations for including Apriori-data in FrontierExploration (not active)
+* Larger Axis-font
+* FreeSpaceAlpha on competition setting
+* Every 20 seconds an AREA print
+* Protection on creation of histogram-bitmap (pre-GO2008)
+* AirRobot introduced (no buttons to get AirBorne yet)
+* 
+* 
+
+------------------------------------------------------------------------
+r1300 | jdehoog | 2008-06-24 13:47:12 +0200 (Tue, 24 Jun 2008) | 1 line
+
+Implemented ability to change behaviour during run; several small changes to user interface
+------------------------------------------------------------------------
+r1333 | jdehoog | 2008-07-02 18:17:36 +0200 (Wed, 02 Jul 2008) | 1 line
+
+Extensive changes to SaveMapDialog: individual agent contributions can be adjusted using trackbars; added constant class (e.g. map resolution)
+------------------------------------------------------------------------
+r1335 | jdehoog | 2008-07-02 18:50:08 +0200 (Wed, 02 Jul 2008) | 1 line
+
+Fixed bug in map saving
+------------------------------------------------------------------------
+r1340 | jdehoog | 2008-07-13 12:41:05 +0200 (Sun, 13 Jul 2008) | 1 line
+
+ConservativeTeleOp behavior added -- currently only uses laser range scanner to detect obstacles
+------------------------------------------------------------------------
+r1343 | jdehoog | 2008-07-16 06:53:33 +0200 (Wed, 16 Jul 2008) | 1 line
+
+RoboCup08 Prelim Trial version: sleep between spawn and WSS connection, some sensors unmounted, prelim work on camera image use, multiple small bug fixes
+------------------------------------------------------------------------

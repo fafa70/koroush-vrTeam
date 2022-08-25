@@ -1,0 +1,11 @@
+------------------------------------------------------------------------
+r691 | baslamet | 2007-07-14 10:11:36 +0200 (Sat, 14 Jul 2007) | 3 lines
+
+Resolved a minor annoyance with SharpZLib.csproj. It used to build to a bin-directory in its parent folder (i.e. Third Party\bin), now it will build to a local bin directory.
+
+
+------------------------------------------------------------------------
+r806 | baslamet | 2007-09-26 15:53:00 +0200 (Wed, 26 Sep 2007) | 1 line
+
+Changes made for Probabilistic Robotics.
+------------------------------------------------------------------------

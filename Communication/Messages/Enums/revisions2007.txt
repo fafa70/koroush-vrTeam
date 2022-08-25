@@ -1,0 +1,51 @@
+------------------------------------------------------------------------
+r566 | baslamet | 2007-06-23 19:55:49 +0200 (Sat, 23 Jun 2007) | 9 lines
+
+Factored CommAgent into framework
+- redesigned Agent - Sensor/Actor collaboration
+- added CommActor
+- added Communication project
+
+Unfortunately, due to the amount and kind of changes, bugs and merge conflicts are almost guaranteed.
+Sorry for that. ;-)
+
+Bayu
+------------------------------------------------------------------------
+r586 | baslamet | 2007-06-27 23:05:20 +0200 (Wed, 27 Jun 2007) | 6 lines
+
+Lotsa changes:
+- moved Manifold data structure to Agent project
+- got WSS to work such that any pair of Agents will try to have an open connection whenever they are within range
+- got Agents to submit manifold data over the wire (Patches)
+
+
+------------------------------------------------------------------------
+r593 | baslamet | 2007-06-29 22:06:59 +0200 (Fri, 29 Jun 2007) | 4 lines
+
+- Comm works (WSS), huge refactory and numerous little improvements
+- refactored OperatorAgent
+- introduced some extension thresholds for ManifoldSLAM
+
+------------------------------------------------------------------------
+r595 | baslamet | 2007-06-30 11:54:25 +0200 (Sat, 30 Jun 2007) | 3 lines
+
+- relaying actor commands (e.g. DRIVE commands) from operator to robot works
+- atm this only works when the operator is in DIRECT contact with the robot, later on (asap) I will work on a broadcasting system that will enable the operator to communicate through intermediary robots (if time permits I hope to get to this later today)
+- the setup with Operator + Proxies works, this means that the Usar Commander boots an operator and several proxies of which only the operator (usually ComStation) is actually spawned in the simulator. The 'real' counterparts of the proxies are to be spawned from the command line (using the UsarClient console app).
+------------------------------------------------------------------------
+r631 | baslamet | 2007-07-04 01:10:23 +0200 (Wed, 04 Jul 2007) | 6 lines
+
+Debugged WSS:
+- rewrote the sync protocol, the time-stamping system was flawed and caused 'gaps' to occur, should be solved now
+- found a serious bug in ProxyAgent that caused it to 'think' it could not control the remote robot, while in fact it just could, this bug is also fixed
+- got the path-loss values to be printed in the AgentController, really convenient
+- made agents continuously communicate their current pose, so even though the operators GUI is not up-to-date, it does receive pose updates which may be enough to act in time. Note that also the pose updates will suffer from lags when the WSS is in the midst of a sync-routine.
+
+------------------------------------------------------------------------
+r634 | baslamet | 2007-07-04 13:39:14 +0200 (Wed, 04 Jul 2007) | 4 lines
+
+- modified syn such that it does not run automatically
+- the operator now triggers syncs 
+- this implies a MASSIVE reduction of the load on WSS
+- fixed a small bug in AgentConfig
+------------------------------------------------------------------------

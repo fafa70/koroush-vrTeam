@@ -1,0 +1,63 @@
+------------------------------------------------------------------------
+r714 | baslamet | 2007-07-21 12:10:40 +0200 (Sat, 21 Jul 2007) | 6 lines
+
+Re-activated BehaviorControl (see BehaviorAgent):
+- TeleOperation behavior is turned on by default, the robot will not initiate any exploratory actions by itself but await for drive commands from the operator instead. What this behavior \does\ do is ensure connectivity to the Operator by initiating a retreat as soon as the robot got out-of-range.
+
+The motions currently supported are:
+- NoMotion, halts the robot upon activation and does nothing after that (so Operator is in control and robot will not interfer)
+- Retreat, triggered when Operator lost contact, then robot will change to Reverse gear and try to get back in range
+------------------------------------------------------------------------
+r767 | baslamet | 2007-08-07 23:13:53 +0200 (Tue, 07 Aug 2007) | 1 line
+
+Half-done result of today's efforts to get frontier exploration behavior.
+------------------------------------------------------------------------
+r806 | baslamet | 2007-09-26 15:53:00 +0200 (Wed, 26 Sep 2007) | 1 line
+
+Changes made for Probabilistic Robotics.
+------------------------------------------------------------------------
+r807 | arnoud | 2007-09-26 15:59:11 +0200 (Wed, 26 Sep 2007) | 1 line
+
+New DriveSquare behavior and motion WalkSquare
+------------------------------------------------------------------------
+r809 | arnoud | 2007-10-11 19:44:49 +0200 (Thu, 11 Oct 2007) | 1 line
+
+Experimental version of FrontierExploration. Strange behavior, so I tried to draw the current goal or future path (seems to be different than the FrontierLayer). Corrected TeleOperation.OnActivated (should be tested). pc-unreal = 146.50.1.149. 
+------------------------------------------------------------------------
+r827 | arnoud | 2007-11-15 16:44:11 +0100 (Thu, 15 Nov 2007) | 2 lines
+
+Changed the protocol completely. LastUpdate is written at only one place: when a Commit is received. A commit is received directly when a message is received, followed by t
+he Manifold Writers-block. Reduced the WSSdevice frequency to 10 seconds, because it takes up to 5 seconds before a commit returns.
+------------------------------------------------------------------------
+r832 | arnoud | 2007-11-20 18:33:55 +0100 (Tue, 20 Nov 2007) | 1 line
+
+When no target is found, the robots switch back to Random Walk behavior. In principle after two minutes the robots should go back to FrontierExploration, but have not observed this switch. Test tomorrow with debugger.
+------------------------------------------------------------------------
+r833 | arnoud | 2007-11-21 11:07:46 +0100 (Wed, 21 Nov 2007) | 1 line
+
+Relay 1:10 PoseUpdates to the other Agents
+------------------------------------------------------------------------
+r951 | rtobi | 2008-02-17 13:50:33 +0100 (Sun, 17 Feb 2008) | 1 line
+
+prepare the codebase for assigment 2
+------------------------------------------------------------------------
+r953 | rtobi | 2008-02-17 16:16:09 +0100 (Sun, 17 Feb 2008) | 1 line
+
+fix a bug that always caused the TeleOperation behavior to be activated (instead of CorridorWalk)
+------------------------------------------------------------------------
+r958 | rtobi | 2008-02-17 23:37:00 +0100 (Sun, 17 Feb 2008) | 1 line
+
+comment updates
+------------------------------------------------------------------------
+r1003 | rtobi | 2008-02-26 14:29:47 +0100 (Tue, 26 Feb 2008) | 1 line
+
+add the OA behavior and motion classes
+------------------------------------------------------------------------
+r1300 | jdehoog | 2008-06-24 13:47:12 +0200 (Tue, 24 Jun 2008) | 1 line
+
+Implemented ability to change behaviour during run; several small changes to user interface
+------------------------------------------------------------------------
+r1340 | jdehoog | 2008-07-13 12:41:05 +0200 (Sun, 13 Jul 2008) | 1 line
+
+ConservativeTeleOp behavior added -- currently only uses laser range scanner to detect obstacles
+------------------------------------------------------------------------

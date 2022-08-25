@@ -1,0 +1,97 @@
+------------------------------------------------------------------------
+r672 | tschmits | 2007-07-07 20:10:44 +0200 (Sat, 07 Jul 2007) | 2 lines
+
+- update victdetect parameters
+- image save for clients
+------------------------------------------------------------------------
+r673 | tschmits | 2007-07-08 00:51:06 +0200 (Sun, 08 Jul 2007) | 1 line
+
+- a revert to 671
+------------------------------------------------------------------------
+r695 | baslamet | 2007-07-15 17:36:04 +0200 (Sun, 15 Jul 2007) | 11 lines
+
+Large refactory to ManifoldImage and related classes:
+- added lots of garbage collection (using blocks)
+- moved agent trail to AgentsLayer, where it belongs
+- made naming consistent" renamed all Observations to Obstacles
+- added settings that remember which layers were on/off
+- added SafeSpaceLayer
+- added buttons to show/hide VictimsLayer, SafeSpaceLayer and FrontierLayer
+
+And probably much more .... don't recall. Nothing 'dangerous' though. 
+
+
+------------------------------------------------------------------------
+r699 | baslamet | 2007-07-18 08:27:13 +0200 (Wed, 18 Jul 2007) | 5 lines
+
+added COMPETITION_MODE Symbol to UsarLib project:
+- when set to true, SLAM will be run in optimal settings
+
+This replaces the old check for DEBUG builds that did the same. The problem with checking for the DEBUG flag is that in release builds you are always running SLAM in optimal settings, thereby preventing other experiments to be done with release builds.
+
+------------------------------------------------------------------------
+r765 | baslamet | 2007-08-06 18:44:39 +0200 (Mon, 06 Aug 2007) | 9 lines
+
+Leftovers:
+- numerous little modifications to slam and scan matching, mostly fine-tunings for the purpose of several log files
+
+Implemented frontier extraction tools:
+- set resolution of manifold image to 10px/m for performance
+- numerous little routine that are able to filter out some piece of information from the manifold image
+- most importantly: frontier extraction
+- very nice too: navigation map extraction using value iteration
+
+------------------------------------------------------------------------
+r785 | baslamet | 2007-08-12 22:14:33 +0200 (Sun, 12 Aug 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r806 | baslamet | 2007-09-26 15:53:00 +0200 (Wed, 26 Sep 2007) | 1 line
+
+Changes made for Probabilistic Robotics.
+------------------------------------------------------------------------
+r810 | arnoud | 2007-10-25 18:31:34 +0200 (Thu, 25 Oct 2007) | 2 lines
+
+Tested version, including StatusSensor (threshold should be increased from 1 to 60 seconds, because Battery starts at 1200 sec).
+
+------------------------------------------------------------------------
+r828 | arnoud | 2007-11-15 18:11:10 +0100 (Thu, 15 Nov 2007) | 2 lines
+
+Changed the protocol further. The Slave sends complete updates, the Master sends only the latest updates. Works fine, a few extra patches (one in set of 12). Only had a socket problem that should be catched.
+
+------------------------------------------------------------------------
+r951 | rtobi | 2008-02-17 13:50:33 +0100 (Sun, 17 Feb 2008) | 1 line
+
+prepare the codebase for assigment 2
+------------------------------------------------------------------------
+r1157 | arnoud | 2008-04-24 09:42:44 +0200 (Thu, 24 Apr 2008) | 12 lines
+
+German Open 2008 Thursday morning: 
+* bugfix to allow  TeleOperation over WSS
+* included GPSSensor
+* Preparations for including Apriori-data in FrontierExploration (not active)
+* Larger Axis-font
+* FreeSpaceAlpha on competition setting
+* Every 20 seconds an AREA print
+* Protection on creation of histogram-bitmap (pre-GO2008)
+* AirRobot introduced (no buttons to get AirBorne yet)
+* 
+* 
+
+------------------------------------------------------------------------
+r1333 | jdehoog | 2008-07-02 18:17:36 +0200 (Wed, 02 Jul 2008) | 1 line
+
+Extensive changes to SaveMapDialog: individual agent contributions can be adjusted using trackbars; added constant class (e.g. map resolution)
+------------------------------------------------------------------------
+r1343 | jdehoog | 2008-07-16 06:53:33 +0200 (Wed, 16 Jul 2008) | 1 line
+
+RoboCup08 Prelim Trial version: sleep between spawn and WSS connection, some sensors unmounted, prelim work on camera image use, multiple small bug fixes
+------------------------------------------------------------------------
+r1349 | arnoud | 2008-07-23 09:45:40 +0200 (Wed, 23 Jul 2008) | 5 lines
+
+Last changes of 2008 competition code
+* Updated licence, readme.txt and add_revisions to AOJFR 2008
+* Agent uses new GPSsensor
+* UsarCommander.vbproj includes postbuild which allows to read Apriori
+* RegularThread reports the name of the thread started
+------------------------------------------------------------------------

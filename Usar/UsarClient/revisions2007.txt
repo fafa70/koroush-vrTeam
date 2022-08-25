@@ -1,0 +1,99 @@
+------------------------------------------------------------------------
+r464 | baslamet | 2007-05-12 12:52:53 +0200 (Sat, 12 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r467 | baslamet | 2007-05-12 17:54:01 +0200 (Sat, 12 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r468 | baslamet | 2007-05-13 18:08:35 +0200 (Sun, 13 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r476 | baslamet | 2007-05-16 11:19:24 +0200 (Wed, 16 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r477 | baslamet | 2007-05-16 13:59:54 +0200 (Wed, 16 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r480 | baslamet | 2007-05-17 16:05:13 +0200 (Thu, 17 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r533 | baslamet | 2007-06-12 13:03:07 +0200 (Tue, 12 Jun 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r544 | baslamet | 2007-06-13 15:45:07 +0200 (Wed, 13 Jun 2007) | 6 lines
+
+Added dead-reckoning functionality to SLAM
+- based on Odometry
+- based on INS
+- based on GroundTruth (only when bDebug is set to true in p2at section of usarbot.ini
+
+Bayu
+------------------------------------------------------------------------
+r562 | baslamet | 2007-06-18 17:45:46 +0200 (Mon, 18 Jun 2007) | 6 lines
+
+IDC has been implemented:
+- IdcScanMatcher works
+- AgentConfig extended with relevant options
+- AgentConfigDialog changed accordingly
+
+Bayu
+------------------------------------------------------------------------
+r566 | baslamet | 2007-06-23 19:55:49 +0200 (Sat, 23 Jun 2007) | 9 lines
+
+Factored CommAgent into framework
+- redesigned Agent - Sensor/Actor collaboration
+- added CommActor
+- added Communication project
+
+Unfortunately, due to the amount and kind of changes, bugs and merge conflicts are almost guaranteed.
+Sorry for that. ;-)
+
+Bayu
+------------------------------------------------------------------------
+r571 | baslamet | 2007-06-26 11:57:52 +0200 (Tue, 26 Jun 2007) | 7 lines
+
+Added functionality so that each agent, regardless of which pc it is spawned, knows a-priori who his team members are and how he can communicate to them (i.e. port numbers they are listening to).
+- renamed NetworkConfig to TeamConfig
+- renamed NetworkConfigDialog to TeamConfigDialog
+- added [team] section to TeamConfig, so now it has two sections: [network] and [team]
+- the [team] section will hold a setting for the name of the operator and one for all team-members (comma-delimited)
+
+
+------------------------------------------------------------------------
+r577 | baslamet | 2007-06-27 10:53:56 +0200 (Wed, 27 Jun 2007) | 1 line
+
+Merged Tijn's code from yesterday and this morning into my latest changes.
+------------------------------------------------------------------------
+r582 | baslamet | 2007-06-27 13:09:56 +0200 (Wed, 27 Jun 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r583 | baslamet | 2007-06-27 14:01:00 +0200 (Wed, 27 Jun 2007) | 15 lines
+
+Moved some code around for ProxyAgent:
+- UsarCommander now checks the 'SpawnFromCommander' flag, when set it will NOT spawn the agent but will start a proxy instead
+- UsarClient ignores this flag and will spawn the actual agent
+
+To promote reuse among the commander and the client, the Agent creation code has been moved to a new UsarAgentConfig class:
+- CreateAgent will create an agent that matches the current settings
+- CreateDriver will create a corresponding driver
+
+Also there is a new ArgsParser class:
+- parsers command-line arguments for UsarClient, currently it knows about 3 args:
+- use the -tc 'filename' flag to specify the teamconfig file
+- use the -ac 'filename' flag to specify the agentconfig file
+- use the -n 'name' flag to tell which of the agents should be spawned from this client
+
+Bayu
+------------------------------------------------------------------------
+r635 | baslamet | 2007-07-04 14:32:03 +0200 (Wed, 04 Jul 2007) | 1 line
+
+added post-build events such that OpenCV and GDAL libraries are copied to UsarClient and UsarCommander build directories.
+------------------------------------------------------------------------

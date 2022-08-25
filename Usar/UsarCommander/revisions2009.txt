@@ -1,0 +1,55 @@
+------------------------------------------------------------------------
+r1505 | arnoud | 2008-10-22 16:47:33 +0200 (Wed, 22 Oct 2008) | 1 line
+
+
+------------------------------------------------------------------------
+r1607 | arnoud | 2009-01-06 18:02:12 +0100 (Tue, 06 Jan 2009) | 1 line
+
+Moved remotely
+------------------------------------------------------------------------
+r1608 | arnoud | 2009-01-06 18:02:49 +0100 (Tue, 06 Jan 2009) | 1 line
+
+Renamed remotely
+------------------------------------------------------------------------
+r1685 | jdehoog | 2009-02-03 16:27:00 +0100 (Tue, 03 Feb 2009) | 1 line
+
+Merge with DOAS revision 1683
+------------------------------------------------------------------------
+r1815 | arnoud | 2009-04-16 16:53:56 +0200 (Thu, 16 Apr 2009) | 1 line
+
+Added Number NamingScheme, and made it directly default
+------------------------------------------------------------------------
+r1819 | arnoud | 2009-04-17 13:39:41 +0200 (Fri, 17 Apr 2009) | 3 lines
+
+* Implemented Bas recommendations (should be 11% faster).
+* Reduced dependencies of different projects
+* Better Sync of AgentConfigDialog
+------------------------------------------------------------------------
+r1823 | arnoud | 2009-04-20 10:21:27 +0200 (Mon, 20 Apr 2009) | 3 lines
+
+Georeferencing works again with partial Merge of honours rev 1822
+* Mainly UsarLib/Dialogs and UsarLib/Views/
+* Also Agent/Agent and Agent/Sensor (which mainly contain relevant modifications from experimental)
+------------------------------------------------------------------------
+r1843 | jdehoog | 2009-04-23 20:03:02 +0200 (Thu, 23 Apr 2009) | 2 lines
+
+Created Framework for writing of DeploymentMotion.
+Added auto-backup of Map and Victim Files, currently backing up every 20 seconds, seems to work but still to be tested.
+------------------------------------------------------------------------
+r1898 | jdehoog | 2009-06-29 23:17:00 +0200 (Mon, 29 Jun 2009) | 4 lines
+
+Day 1 of RoboCup2009
+- Minor bugfixes to existing NewTargetLocationMessage functionality, not tested
+- Added interface to Kenaf robot, can raise and lower flippers -- works ok, but robot jumps a bit when first driving/reversing, maybe a robot parameter to be changed in config files
+- Added Deploy button, next to AllTele, AllAuto buttons
+------------------------------------------------------------------------
+r1899 | hflynn | 2009-06-30 00:25:36 +0200 (Tue, 30 Jun 2009) | 3 lines
+
+I've made changes to CameraSensor.vb to implement my face detection system. This is still very much in the experimental stage!
+
+NOTE: The image server window must be size 400x300 because all calculations are based on that.
+------------------------------------------------------------------------
+r1902 | hflynn | 2009-06-30 12:20:43 +0200 (Tue, 30 Jun 2009) | 1 line
+
+I've added the missing EMGU files from the last commit.
+------------------------------------------------------------------------

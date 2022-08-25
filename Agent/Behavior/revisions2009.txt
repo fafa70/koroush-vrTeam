@@ -1,0 +1,78 @@
+------------------------------------------------------------------------
+r1505 | arnoud | 2008-10-22 16:47:33 +0200 (Wed, 22 Oct 2008) | 1 line
+
+
+------------------------------------------------------------------------
+r1506 | arnoud | 2008-10-22 19:28:10 +0200 (Wed, 22 Oct 2008) | 1 line
+
+The map is now saved with Resolution 30, and during driving rendered with 15 (both configurable in Tools/Constants.vb)
+------------------------------------------------------------------------
+r1607 | arnoud | 2009-01-06 18:02:12 +0100 (Tue, 06 Jan 2009) | 1 line
+
+Moved remotely
+------------------------------------------------------------------------
+r1608 | arnoud | 2009-01-06 18:02:49 +0100 (Tue, 06 Jan 2009) | 1 line
+
+Renamed remotely
+------------------------------------------------------------------------
+r1685 | jdehoog | 2009-02-03 16:27:00 +0100 (Tue, 03 Feb 2009) | 1 line
+
+Merge with DOAS revision 1683
+------------------------------------------------------------------------
+r1823 | arnoud | 2009-04-20 10:21:27 +0200 (Mon, 20 Apr 2009) | 3 lines
+
+Georeferencing works again with partial Merge of honours rev 1822
+* Mainly UsarLib/Dialogs and UsarLib/Views/
+* Also Agent/Agent and Agent/Sensor (which mainly contain relevant modifications from experimental)
+------------------------------------------------------------------------
+r1829 | jdehoog | 2009-04-22 21:00:14 +0200 (Wed, 22 Apr 2009) | 4 lines
+
+Added two buttons to teamController:  "All Auto" and "All Tele".  
+Added DeploymentTest behavior, currently just driving in a circle but to be changed soon.  
+Small bugfix in FrontierExploration to ignore empty infos.  
+Turned auto-reporting toggle off.
+------------------------------------------------------------------------
+r1835 | hnijhuis | 2009-04-23 10:56:58 +0200 (Thu, 23 Apr 2009) | 1 line
+
+Commented out a print statement because index was going out of range. Didn't seem to be crucial..
+------------------------------------------------------------------------
+r1837 | hnijhuis | 2009-04-23 15:22:21 +0200 (Thu, 23 Apr 2009) | 1 line
+
+increased the tilting-threshold for all behaviors from 0.1 to 0.3 (only for the pitch.. not the roll)
+------------------------------------------------------------------------
+r1838 | arnoud | 2009-04-23 15:33:43 +0200 (Thu, 23 Apr 2009) | 1 line
+
+AllRobot changeBehavior is now working with a single click
+------------------------------------------------------------------------
+r1839 | hnijhuis | 2009-04-23 18:15:30 +0200 (Thu, 23 Apr 2009) | 1 line
+
+This was the winning revision for the Deployment-test. We built in a hard-coded check on the signal-strength (-88.0) and activated the no-motion as soon as their SS would get below this threshold. This worked very well, but all robots (2) only checked against the CommStation. So with hopping you could get even better results.
+------------------------------------------------------------------------
+r1841 | hnijhuis | 2009-04-23 18:36:02 +0200 (Thu, 23 Apr 2009) | 2 lines
+
+Undo on all changes we made specifically for the Deployment-test Challenge German Open 2009.
+(hence took out the hard-coded stop on the signal strength)
+------------------------------------------------------------------------
+r1843 | jdehoog | 2009-04-23 20:03:02 +0200 (Thu, 23 Apr 2009) | 2 lines
+
+Created Framework for writing of DeploymentMotion.
+Added auto-backup of Map and Victim Files, currently backing up every 20 seconds, seems to work but still to be tested.
+------------------------------------------------------------------------
+r1847 | hnijhuis | 2009-04-24 04:24:17 +0200 (Fri, 24 Apr 2009) | 1 line
+
+Made it possible to send targetlocations from the AirRobot to another robot through the WSS-server.
+------------------------------------------------------------------------
+r1905 | jdehoog | 2009-07-01 11:44:11 +0200 (Wed, 01 Jul 2009) | 3 lines
+
+Added functionality for second range finder (since we added a tilted Hokuyo to the P2AT to detect drop-offs and obstacles at different levels from sick).
+Second range finder is called TiltedScanner and is ignored everywhere except ConservativeTeleOpMotion, for now.
+Changes made in every ProcessLaserRangeData throughout code.
+------------------------------------------------------------------------
+r1907 | jdehoog | 2009-07-02 08:12:04 +0200 (Thu, 02 Jul 2009) | 1 line
+
+Very badly programmed DeploymentMotion ...  to be used for one test only!  Will revert after.
+------------------------------------------------------------------------
+r1908 | jdehoog | 2009-07-02 11:58:45 +0200 (Thu, 02 Jul 2009) | 1 line
+
+Quickly get rid of that motion, ouch.
+------------------------------------------------------------------------

@@ -1,0 +1,10 @@
+------------------------------------------------------------------------
+r619 | baslamet | 2007-07-03 00:05:14 +0200 (Tue, 03 Jul 2007) | 6 lines
+
+Laid out the basics for behavior control
+- behavior controller
+- motion controller
+- SmartAgent which runs them and forwards sensor data
+- most basic version of autonomous exploration 
+
+------------------------------------------------------------------------

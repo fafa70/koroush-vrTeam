@@ -1,0 +1,734 @@
+------------------------------------------------------------------------
+r259 | baslamet | 2006-06-28 08:50:36 +0200 (Wed, 28 Jun 2006) | 1 line
+
+Moved remotely
+------------------------------------------------------------------------
+r262 | baslamet | 2006-06-28 08:51:17 +0200 (Wed, 28 Jun 2006) | 2 lines
+
+
+
+------------------------------------------------------------------------
+r263 | baslamet | 2006-06-28 08:51:21 +0200 (Wed, 28 Jun 2006) | 1 line
+
+
+------------------------------------------------------------------------
+r272 | baslamet | 2006-06-29 15:32:23 +0200 (Thu, 29 Jun 2006) | 1 line
+
+
+------------------------------------------------------------------------
+r273 | baslamet | 2006-07-01 10:05:40 +0200 (Sat, 01 Jul 2006) | 1 line
+
+
+------------------------------------------------------------------------
+r455 | baslamet | 2007-05-08 16:28:53 +0200 (Tue, 08 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r458 | baslamet | 2007-05-08 16:36:36 +0200 (Tue, 08 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r459 | baslamet | 2007-05-08 16:48:26 +0200 (Tue, 08 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r461 | baslamet | 2007-05-10 22:36:24 +0200 (Thu, 10 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r464 | baslamet | 2007-05-12 12:52:53 +0200 (Sat, 12 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r467 | baslamet | 2007-05-12 17:54:01 +0200 (Sat, 12 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r469 | baslamet | 2007-05-14 18:36:10 +0200 (Mon, 14 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r475 | baslamet | 2007-05-15 18:50:55 +0200 (Tue, 15 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r476 | baslamet | 2007-05-16 11:19:24 +0200 (Wed, 16 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r477 | baslamet | 2007-05-16 13:59:54 +0200 (Wed, 16 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r478 | baslamet | 2007-05-16 17:43:23 +0200 (Wed, 16 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r481 | baslamet | 2007-05-18 00:35:55 +0200 (Fri, 18 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r485 | baslamet | 2007-05-18 16:02:16 +0200 (Fri, 18 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r487 | baslamet | 2007-05-20 00:19:05 +0200 (Sun, 20 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r489 | tschmits | 2007-05-21 16:18:33 +0200 (Mon, 21 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r490 | baslamet | 2007-05-21 16:40:08 +0200 (Mon, 21 May 2007) | 5 lines
+
+Bug fixed in Driver.
+
+This bug caused an 'agent already connected exception' to be thrown.
+
+Bayu
+------------------------------------------------------------------------
+r491 | arnoud | 2007-05-21 18:29:57 +0200 (Mon, 21 May 2007) | 1 line
+
+Added parsing of VictSensor-msg. Nothing is done with this information (yet). Had to change Base/Sensor.vb with a check if a key already exists. Change can have side-effects. Tested both on UsarSim 3.11 (DM-VictTest) and arena-loop.log.
+------------------------------------------------------------------------
+r492 | tschmits | 2007-05-22 00:02:21 +0200 (Tue, 22 May 2007) | 9 lines
+
+Update CameraAgent, CameraDriver en CameraSensor door tschmits
+
+De CameraDriver is een wrapped thread die een CameraAgent moet bevatten met een CameraSensor:
+
+- De CameraDriver gaat een connectie aan met zowel de USARSim server en de ImageServer
+- De CameraDriver kan de imagedata uitlezen van de ImageServer en schrijft de inhoud op dit moment nog slechts weg naar cameraLog.log
+
+- De driver.stop() methode wordt nog om onduidelijke redenen niet aangeroepen, waardoor er niet gedisconnect wordt met de ImageServer. Dit wordt nog gecorrigeerd.
+
+------------------------------------------------------------------------
+r493 | baslamet | 2007-05-22 09:35:44 +0200 (Tue, 22 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r494 | baslamet | 2007-05-22 09:49:04 +0200 (Tue, 22 May 2007) | 4 lines
+
+Renamed LifeDriver to LiveDriver
+
+Dah!
+
+------------------------------------------------------------------------
+r495 | tschmits | 2007-05-22 15:22:26 +0200 (Tue, 22 May 2007) | 2 lines
+
+- Modified CameraDriver to make use of the extended TcpConnection class
+- Added FrameData class
+------------------------------------------------------------------------
+r496 | arnoud | 2007-05-22 18:58:53 +0200 (Tue, 22 May 2007) | 1 line
+
+Tried to add rendering of Victims. Partly solved. Tried to render in a specific layer, but I cannot control the layer. Commented out the link to specific layer, so code should still work. (Tested on DM-VictTest)
+------------------------------------------------------------------------
+r497 | tschmits | 2007-05-23 15:44:34 +0200 (Wed, 23 May 2007) | 1 line
+
+Implemented FrameData and ImageParser classes and updated TcpConnection, CameraAgent, CameraDriver and CameraSensor. The camera sensor setup is completely according to UsarCommander project design.
+------------------------------------------------------------------------
+r498 | tschmits | 2007-05-24 18:14:57 +0200 (Thu, 24 May 2007) | 1 line
+
+Included Public ReadOnly Property SensorHash() used in CameraAgent.ReceiveFD()
+------------------------------------------------------------------------
+r503 | tschmits | 2007-05-29 23:19:33 +0200 (Tue, 29 May 2007) | 5 lines
+
+- Updated FrameData class to process Jpeg data sent by Image Server
+- Added ImageAnalysis project containing
+ *ImageAnalysis Interface
+ *SkinDetector class
+ *ColorHistogram class
+------------------------------------------------------------------------
+r506 | baslamet | 2007-05-30 13:51:16 +0200 (Wed, 30 May 2007) | 1 line
+
+Added SharpZipLib (#ZipLib), open source zip library that supports Zip, GZip, BZip, Tar, ...
+------------------------------------------------------------------------
+r508 | tschmits | 2007-05-30 16:03:52 +0200 (Wed, 30 May 2007) | 1 line
+
+Added MathNet.Numerics.BitmapConverter functionality to FrameData.vb to retrieve RGB data from Jpeg
+------------------------------------------------------------------------
+r509 | baslamet | 2007-05-30 16:37:17 +0200 (Wed, 30 May 2007) | 1 line
+
+Refactored UI stuff, moved everything to the shared usarlib.
+------------------------------------------------------------------------
+r512 | baslamet | 2007-06-07 15:07:28 +0200 (Thu, 07 Jun 2007) | 19 lines
+
+Massive update:
+
+- new NavAgent, subclass of Agent that adds navigability through a joystick
+
+- revamped Gui all over the place
+  - ManifoldView is now wrapped in a MapController which now also enables you to turn on/off individual layers 
+  - RunControllerView is refactored into a TeamController 
+  - AgentController is enriched with a joystick control
+
+- The TeamController has a workflow model that mimics typical competition runs:
+  - preparation stage: setup robots
+  - ready stage: check configurations, load apriori file (you can switch forth and back between preparation and ready)
+  - running stage: shows 20-mins countdown stopwatch, config buttons disappear and joystick controls appear
+  - deliverables stage: shows 10-mins countdown stopwatch, all agents are stopped
+  - done stage: run is over
+
+Numerous bits and pieces have been refactored / debugged all over the place.
+
+Bayu
+------------------------------------------------------------------------
+r516 | baslamet | 2007-06-08 17:36:23 +0200 (Fri, 08 Jun 2007) | 16 lines
+
+Since Tijn got all ImageServer related functionality to work, I have decided to merge his work into the core framework classes:
+- merged CameraDriver into LiveDriver
+- merged CameraAgent into Agent
+- renamed FrameData to CameraData for consistency (the xxxSensor has xxxData, so CameraSensor has CameraData)
+
+
+Also refactored the TcpConnection class, also to pave the way for future work on WSS by Luis:
+- two types of connections are distinguished
+- MessagingConnection is for text-based communication as between the Agent and UsarSim
+- CameraConnection is for the ImageServer, where sent messages are plain text (e.g. acknowledgements) and the incoming data are images
+- they both derive from the by now well-known TcpConnection class which has transformed into a regular base class
+
+Other then that I also found and fixed some bugs in the image recieving logic.
+
+Bayu
+
+------------------------------------------------------------------------
+r517 | baslamet | 2007-06-08 17:39:32 +0200 (Fri, 08 Jun 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r518 | baslamet | 2007-06-09 08:21:16 +0200 (Sat, 09 Jun 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r519 | baslamet | 2007-06-09 08:55:39 +0200 (Sat, 09 Jun 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r520 | baslamet | 2007-06-09 09:31:51 +0200 (Sat, 09 Jun 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r521 | tschmits | 2007-06-09 11:59:50 +0200 (Sat, 09 Jun 2007) | 1 line
+
+Cleaned up CameraData.vb
+------------------------------------------------------------------------
+r522 | baslamet | 2007-06-09 16:29:17 +0200 (Sat, 09 Jun 2007) | 5 lines
+
+- debugged TcpMessagingConnection, should work just fine now
+- tuned DriveActor so the robot moves at reasonable speed
+
+
+
+------------------------------------------------------------------------
+r523 | baslamet | 2007-06-09 17:14:01 +0200 (Sat, 09 Jun 2007) | 2 lines
+
+Added GroundTruthSensor 
+- only works when bDebug is set to true in Usarbot.ini, in the section of the specific robot
+------------------------------------------------------------------------
+r524 | baslamet | 2007-06-11 08:56:01 +0200 (Mon, 11 Jun 2007) | 11 lines
+
+Refactored and extended Sensor model:
+- MessageType enum describes what kind of message was recieved (sensor/status/response/configuration/...)
+- added InsSensor (new in UsarSim 3, seems to replace INU, maintains x,y,z and roll,pitch,yaw)
+- added StatusSenor, gives several pieces of information of which only the Battery is of interest
+
+Modified base Agent class:
+- Agent now mounts GroundTruthSensor and StatusSensor by default
+
+Also modified AgentController view so that it displays the ground-truth and battery status.
+
+Bayu
+------------------------------------------------------------------------
+r525 | baslamet | 2007-06-11 09:46:11 +0200 (Mon, 11 Jun 2007) | 3 lines
+
+- Updated some icons
+- Added light switch for robot headlight
+- reverse gear works now too
+------------------------------------------------------------------------
+r532 | baslamet | 2007-06-12 12:40:04 +0200 (Tue, 12 Jun 2007) | 4 lines
+
+Refactored Config options
+- NetworkConfig for server names/ips and ports
+- AgentConfig for robotmodel/startlocations
+- ConfigDialogs 
+------------------------------------------------------------------------
+r533 | baslamet | 2007-06-12 13:03:07 +0200 (Tue, 12 Jun 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r536 | tschmits | 2007-06-12 15:16:30 +0200 (Tue, 12 Jun 2007) | 4 lines
+
+ImageParser: Modified for proper use of global variables
+Agent, CameraSensor, AgentController, TeamController: SpawnNumber Handling
+CameraData: Handling of sampling correct camera subview (based on SpawnNumber) in UTClient running with Multiview 
+
+------------------------------------------------------------------------
+r537 | baslamet | 2007-06-12 15:46:01 +0200 (Tue, 12 Jun 2007) | 2 lines
+
+- bugfix CameraData
+- camera mode in agentcontroller
+------------------------------------------------------------------------
+r540 | tschmits | 2007-06-12 16:18:38 +0200 (Tue, 12 Jun 2007) | 1 line
+
+Fixed sequence overflow bug
+------------------------------------------------------------------------
+r544 | baslamet | 2007-06-13 15:45:07 +0200 (Wed, 13 Jun 2007) | 6 lines
+
+Added dead-reckoning functionality to SLAM
+- based on Odometry
+- based on INS
+- based on GroundTruth (only when bDebug is set to true in p2at section of usarbot.ini
+
+Bayu
+------------------------------------------------------------------------
+r556 | baslamet | 2007-06-16 11:47:37 +0200 (Sat, 16 Jun 2007) | 13 lines
+
+Integrated OpenCV into the framework:
+- added C++ OpenCV libs to Third Party libs
+- added OpenCVDotNet wrapper to Third Party libs
+- changed reference to OpenCVDotNet in UsarLib project to make it point to the relative path
+- added post-build event to UsarCommander so that it copies the C++ files to the build directory, this should fix file-not-found exceptions error
+
+Many small things:
+- made histoPic2.JPG part of the UsarLib project as Content that is copied to the build dir
+- fixed GEO and CONF message handling
+- fixed GETGEO and GETCONF message requests in Sensor
+- fixed GeoReferencing of the produced GeoTIFF files (x-north / y-east)
+- reorganized scamatching code a bit
+
+------------------------------------------------------------------------
+r559 | aethemba | 2007-06-18 09:35:59 +0200 (Mon, 18 Jun 2007) | 3 lines
+
+Added  functions in IAgentobserver, usarfollowAgent and the agentcontroller for a visual interface with USARCOmmander. The tracker doesn't work yet however but I had to commit in order to test on PC-UNreal.
+
+It will not disturb the USARCOmmander if you do not use the tracker
+------------------------------------------------------------------------
+r562 | baslamet | 2007-06-18 17:45:46 +0200 (Mon, 18 Jun 2007) | 6 lines
+
+IDC has been implemented:
+- IdcScanMatcher works
+- AgentConfig extended with relevant options
+- AgentConfigDialog changed accordingly
+
+Bayu
+------------------------------------------------------------------------
+r563 | baslamet | 2007-06-19 13:42:38 +0200 (Tue, 19 Jun 2007) | 4 lines
+
+- debugged IdcScanMatcher
+- added reset functionality to OdometrySensor
+- added reset functioality to InsSensor
+
+------------------------------------------------------------------------
+r564 | baslamet | 2007-06-19 15:27:43 +0200 (Tue, 19 Jun 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r565 | baslamet | 2007-06-21 13:29:39 +0200 (Thu, 21 Jun 2007) | 8 lines
+
+MbICP:
+- refactored scanmatchers to prepare for MbICP
+- added initial (unstable) version of MbICP scanmatcher
+
+WSS:
+- moved Actors
+- prepared Agent for WSS
+
+------------------------------------------------------------------------
+r566 | baslamet | 2007-06-23 19:55:49 +0200 (Sat, 23 Jun 2007) | 9 lines
+
+Factored CommAgent into framework
+- redesigned Agent - Sensor/Actor collaboration
+- added CommActor
+- added Communication project
+
+Unfortunately, due to the amount and kind of changes, bugs and merge conflicts are almost guaranteed.
+Sorry for that. ;-)
+
+Bayu
+------------------------------------------------------------------------
+r567 | baslamet | 2007-06-23 20:02:14 +0200 (Sat, 23 Jun 2007) | 1 line
+
+Disabled Comm functionality to avoid trouble for other users.
+------------------------------------------------------------------------
+r568 | baslamet | 2007-06-24 17:01:24 +0200 (Sun, 24 Jun 2007) | 1 line
+
+Sending text through WSS works
+------------------------------------------------------------------------
+r570 | baslamet | 2007-06-25 16:59:27 +0200 (Mon, 25 Jun 2007) | 1 line
+
+Numerous bits and pieces.
+------------------------------------------------------------------------
+r571 | baslamet | 2007-06-26 11:57:52 +0200 (Tue, 26 Jun 2007) | 7 lines
+
+Added functionality so that each agent, regardless of which pc it is spawned, knows a-priori who his team members are and how he can communicate to them (i.e. port numbers they are listening to).
+- renamed NetworkConfig to TeamConfig
+- renamed NetworkConfigDialog to TeamConfigDialog
+- added [team] section to TeamConfig, so now it has two sections: [network] and [team]
+- the [team] section will hold a setting for the name of the operator and one for all team-members (comma-delimited)
+
+
+------------------------------------------------------------------------
+r572 | tschmits | 2007-06-26 14:00:29 +0200 (Tue, 26 Jun 2007) | 2 lines
+
+- extended Config and Config Dialog for SkinDetector agent configuration
+- Included hist-file handling for SkinDetector(Teacher) classes
+------------------------------------------------------------------------
+r577 | baslamet | 2007-06-27 10:53:56 +0200 (Wed, 27 Jun 2007) | 1 line
+
+Merged Tijn's code from yesterday and this morning into my latest changes.
+------------------------------------------------------------------------
+r582 | baslamet | 2007-06-27 13:09:56 +0200 (Wed, 27 Jun 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r584 | baslamet | 2007-06-27 14:25:47 +0200 (Wed, 27 Jun 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r586 | baslamet | 2007-06-27 23:05:20 +0200 (Wed, 27 Jun 2007) | 6 lines
+
+Lotsa changes:
+- moved Manifold data structure to Agent project
+- got WSS to work such that any pair of Agents will try to have an open connection whenever they are within range
+- got Agents to submit manifold data over the wire (Patches)
+
+
+------------------------------------------------------------------------
+r588 | baslamet | 2007-06-28 10:32:26 +0200 (Thu, 28 Jun 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r591 | tschmits | 2007-06-29 15:02:12 +0200 (Fri, 29 Jun 2007) | 2 lines
+
+- added Histograms from ICIS presentation day
+- included 'add victim observation'-functionality to Manifold Patches
+------------------------------------------------------------------------
+r593 | baslamet | 2007-06-29 22:06:59 +0200 (Fri, 29 Jun 2007) | 4 lines
+
+- Comm works (WSS), huge refactory and numerous little improvements
+- refactored OperatorAgent
+- introduced some extension thresholds for ManifoldSLAM
+
+------------------------------------------------------------------------
+r594 | baslamet | 2007-06-29 22:38:21 +0200 (Fri, 29 Jun 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r595 | baslamet | 2007-06-30 11:54:25 +0200 (Sat, 30 Jun 2007) | 3 lines
+
+- relaying actor commands (e.g. DRIVE commands) from operator to robot works
+- atm this only works when the operator is in DIRECT contact with the robot, later on (asap) I will work on a broadcasting system that will enable the operator to communicate through intermediary robots (if time permits I hope to get to this later today)
+- the setup with Operator + Proxies works, this means that the Usar Commander boots an operator and several proxies of which only the operator (usually ComStation) is actually spawned in the simulator. The 'real' counterparts of the proxies are to be spawned from the command line (using the UsarClient console app).
+------------------------------------------------------------------------
+r596 | baslamet | 2007-06-30 13:04:23 +0200 (Sat, 30 Jun 2007) | 5 lines
+
+Added ClearSpaceLayer
+- manifold image paints cleared areas in solid green, according to the map delivery rules
+- the area that falls within the victsensors view is cleared automatically
+- see also the clearFov and clearRange properties on the ClearSpaceLayer class
+
+------------------------------------------------------------------------
+r598 | baslamet | 2007-06-30 14:01:17 +0200 (Sat, 30 Jun 2007) | 7 lines
+
+Got confused!
+
+For my own clarity:
+- renamed VictimSensor of 2006 to VictimRfidSensor (put the RFID in the name to make its working obvious)
+- renamed VictSensor of 2007 to VictimSensor (since it works with 'real victim', and not with the RFIDs)
+
+
+------------------------------------------------------------------------
+r599 | baslamet | 2007-06-30 17:12:20 +0200 (Sat, 30 Jun 2007) | 7 lines
+
+Victim stuff works:
+- victims observations are stored on the Manifold
+- and they are nicely rendered in the map
+- 2 new layers were added for this purpose; VictimsLayer and VictimReportsLayer
+
+
+
+------------------------------------------------------------------------
+r600 | baslamet | 2007-06-30 18:11:01 +0200 (Sat, 30 Jun 2007) | 1 line
+
+several minor bits and pieces
+------------------------------------------------------------------------
+r601 | tschmits | 2007-07-01 04:43:16 +0200 (Sun, 01 Jul 2007) | 3 lines
+
+- modified VictimObservation to catch only head and chest to prevent multiple observations per single victim
+- modified skindetector to higher positive skin threshold
+- modified ManifoldSlam to prevent false single victim part positives (like a 'head' in a police car's wheels...)
+------------------------------------------------------------------------
+r602 | arnoud | 2007-07-01 13:29:25 +0200 (Sun, 01 Jul 2007) | 1 line
+
+Added ProcessMessage to SonarSensor. No collision avoidance yet.
+------------------------------------------------------------------------
+r603 | tschmits | 2007-07-01 13:41:01 +0200 (Sun, 01 Jul 2007) | 1 line
+
+- implemented victim rapport: creates victim file + images
+------------------------------------------------------------------------
+r604 | baslamet | 2007-07-01 14:16:26 +0200 (Sun, 01 Jul 2007) | 7 lines
+
+Redesigned map saving routines:
+- one layer with the map, exactly according to map-scoring rules
+- one additional layer with victim reports (funky annotations with position, name and parts info)
+- and another additional layer with the axes (minor importance, but since I was into it anyways ...)
+
+Merged recent changes from Tijn, not sure if I did that correctly. 
+- NEEDS VERIFICATION!
+------------------------------------------------------------------------
+r606 | baslamet | 2007-07-01 22:41:36 +0200 (Sun, 01 Jul 2007) | 5 lines
+
+- added min-range and max-range handling to SLAM
+- switch GeoTIFF back to native .Net based tiff loading
+- committed non-functioning HybridScanMatcher.vb, this is work in progress
+
+
+------------------------------------------------------------------------
+r607 | baslamet | 2007-07-02 00:34:33 +0200 (Mon, 02 Jul 2007) | 3 lines
+
+implemented a speed-up in the Weighted Scanmatcher. Did not want to mess with the current implementation (yet), so put it in a subclass called FastWeightedScanMatcher. The performance boost is about 20%.
+
+Also reverted all Matrix and Vector classes to work with Doubles again.
+------------------------------------------------------------------------
+r608 | tschmits | 2007-07-02 11:10:37 +0200 (Mon, 02 Jul 2007) | 2 lines
+
+- Fixed UsarCommander camera-image peek functionality: the commander has its own image queue now
+- Included ProcessVictimPicture to Memento in Patch
+------------------------------------------------------------------------
+r609 | tschmits | 2007-07-02 12:08:12 +0200 (Mon, 02 Jul 2007) | 1 line
+
+- improved usarcommander camera view
+------------------------------------------------------------------------
+r610 | baslamet | 2007-07-02 14:17:57 +0200 (Mon, 02 Jul 2007) | 7 lines
+
+- fixed apriori handling
+- use thumbnail images in GeoTiffLayer to speed up rendering, it does speed up but some apriori files are simply too big
+- implemented another speed up in map saving
+- returned to default gdi+ coords system in ManifoldView again
+- fixed text rendering in geo referenced mode (90 degrees rotated)
+- fixed a bug in PatchMemento that would cause syncs to fail
+- numerous little things ...
+------------------------------------------------------------------------
+r612 | baslamet | 2007-07-02 15:25:19 +0200 (Mon, 02 Jul 2007) | 1 line
+
+Set the wireless cutoff to -70 dBm according to the specs for the Mobility test.
+------------------------------------------------------------------------
+r613 | baslamet | 2007-07-02 16:33:10 +0200 (Mon, 02 Jul 2007) | 4 lines
+
+- added some logic to SLAM so that it reverts to the odometry/INS estimate if the scanmatcher does not converge
+- made some changes to CommActor to aid debugging
+
+
+------------------------------------------------------------------------
+r614 | baslamet | 2007-07-02 16:40:49 +0200 (Mon, 02 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r615 | baslamet | 2007-07-02 16:52:33 +0200 (Mon, 02 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r616 | baslamet | 2007-07-02 18:04:22 +0200 (Mon, 02 Jul 2007) | 3 lines
+
+- agents now also communicate poses so that the Operator can render the agents in the Manifold
+- resync timeout set to 1 sec, results in faster feed-back from agent to operator
+
+------------------------------------------------------------------------
+r617 | baslamet | 2007-07-02 19:16:05 +0200 (Mon, 02 Jul 2007) | 1 line
+
+Add min-range and max-range check to manifold rendering. Out-of-range values will no longer result in black dots.
+------------------------------------------------------------------------
+r619 | baslamet | 2007-07-03 00:05:14 +0200 (Tue, 03 Jul 2007) | 6 lines
+
+Laid out the basics for behavior control
+- behavior controller
+- motion controller
+- SmartAgent which runs them and forwards sensor data
+- most basic version of autonomous exploration 
+
+------------------------------------------------------------------------
+r620 | arnoud | 2007-07-03 03:50:18 +0200 (Tue, 03 Jul 2007) | 1 line
+
+Made the robot's path Maroon (Flavour DarkRed, pure in blue and green channels). Also modified Load of AprioriFile, but should be further tested.
+------------------------------------------------------------------------
+r621 | baslamet | 2007-07-03 10:26:36 +0200 (Tue, 03 Jul 2007) | 2 lines
+
+- fixed a bug in IcpScanMatcher that made it assume 180 degrees range scans
+
+------------------------------------------------------------------------
+r623 | baslamet | 2007-07-03 12:05:38 +0200 (Tue, 03 Jul 2007) | 3 lines
+
+Added advanced apriori analysis functionality:
+- using Aforge image library (http://code.google.com/p/aforge/)
+- individual apriori-layers can be turned on and off now
+------------------------------------------------------------------------
+r624 | arnoud | 2007-07-03 12:10:31 +0200 (Tue, 03 Jul 2007) | 1 line
+
+Chosen Chartreuse (RGB #7FFF00) as path-colour, because a path is per definition cleared. Cleared is indicated in the green channel #00FF00, the path should be indicate with a shade of red (< #FF0000). The result looks nice, the path is clearly visible, but only when you take notice of it: http://staff.science.uva.nl/~arnoud/research/roboresc/Robocup2007/chartreuse.jpg
+------------------------------------------------------------------------
+r628 | baslamet | 2007-07-03 16:22:48 +0200 (Tue, 03 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r629 | tschmits | 2007-07-03 16:34:40 +0200 (Tue, 03 Jul 2007) | 2 lines
+
+- fixed Bitmap memory sharing error handling
+- Patch logging enabled
+------------------------------------------------------------------------
+r631 | baslamet | 2007-07-04 01:10:23 +0200 (Wed, 04 Jul 2007) | 6 lines
+
+Debugged WSS:
+- rewrote the sync protocol, the time-stamping system was flawed and caused 'gaps' to occur, should be solved now
+- found a serious bug in ProxyAgent that caused it to 'think' it could not control the remote robot, while in fact it just could, this bug is also fixed
+- got the path-loss values to be printed in the AgentController, really convenient
+- made agents continuously communicate their current pose, so even though the operators GUI is not up-to-date, it does receive pose updates which may be enough to act in time. Note that also the pose updates will suffer from lags when the WSS is in the midst of a sync-routine.
+
+------------------------------------------------------------------------
+r633 | tschmits | 2007-07-04 03:23:22 +0200 (Wed, 04 Jul 2007) | 2 lines
+
+- Patch: crucial memento Restore() bug fixed
+- Skindetector: minor output functionality modifications
+------------------------------------------------------------------------
+r634 | baslamet | 2007-07-04 13:39:14 +0200 (Wed, 04 Jul 2007) | 4 lines
+
+- modified syn such that it does not run automatically
+- the operator now triggers syncs 
+- this implies a MASSIVE reduction of the load on WSS
+- fixed a small bug in AgentConfig
+------------------------------------------------------------------------
+r636 | baslamet | 2007-07-04 15:21:59 +0200 (Wed, 04 Jul 2007) | 1 line
+
+fixed a major bug in WssConversation
+------------------------------------------------------------------------
+r638 | baslamet | 2007-07-04 22:44:58 +0200 (Wed, 04 Jul 2007) | 2 lines
+
+MAJOR BUGFIX
+- the 'jumpy' behavior with first scans was due to a bug in InsData ........ FIXED
+------------------------------------------------------------------------
+r641 | baslamet | 2007-07-05 10:15:25 +0200 (Thu, 05 Jul 2007) | 1 line
+
+Improved axes layer, now it also render the x- and y-values at every 5m.
+------------------------------------------------------------------------
+r642 | baslamet | 2007-07-05 10:32:46 +0200 (Thu, 05 Jul 2007) | 4 lines
+
+Added thumbnail option to BufferedLayer in an attempt to improve rendering performance:
+- this effects the FreeSpaceLayer (white), ClearedLayer (green) and ObservationsLayer (black dots)
+- quality of the visualization degrades noticeably, so when the map is saved on disk the thumbnail option will be ignored, so maps saved on disk will always be full-quality
+- creating the thumbnail is a trade-off: rendering speed should improve, but creating the thumb also costs CPU cycles. I'm not sure if and when the thumb is actually a benefit in CPU-terms, so I added a flag that enables to turn it off easily again.
+------------------------------------------------------------------------
+r643 | baslamet | 2007-07-05 12:10:55 +0200 (Thu, 05 Jul 2007) | 1 line
+
+added real-time pose tracking to manifold view, it doesn't get any faster than this.
+------------------------------------------------------------------------
+r644 | baslamet | 2007-07-05 13:56:31 +0200 (Thu, 05 Jul 2007) | 6 lines
+
+Added FastFreeSpaceLayer:
+- the regular FreeSpaceLayer plots the individual scan beams (usually 181 lines)
+- this may slow down the ManifoldView as more agents contribute to the shared map
+- the FastFreeSpaceLayer constructs a circle based on the max-range of the laser range scanner and intersects this with all observed obstacles. The result is a single polygon.
+- the idea (assumption) is that rendering a single polygon is much faster than rendering 181 lines
+- this assumption is NOT verified yet, but was based on the observation that the ClearSpaceLayer renders much faster than the regular FreeSpaceLayer, and the ClearSpaceLayer is based on a single polygon too ...
+------------------------------------------------------------------------
+r645 | baslamet | 2007-07-05 13:57:34 +0200 (Thu, 05 Jul 2007) | 1 line
+
+Forgot the new FastFreeSpaceLayer.vb in the previous commit!
+------------------------------------------------------------------------
+r646 | baslamet | 2007-07-05 15:01:16 +0200 (Thu, 05 Jul 2007) | 3 lines
+
+- fixed a small bug in FastFreeSpaceLayer
+- added and tested speed-up and speed-down buttons to AgentController
+- set rotational speed back to .5, it was too hard to get between cars with .8
+------------------------------------------------------------------------
+r649 | tschmits | 2007-07-06 00:31:59 +0200 (Fri, 06 Jul 2007) | 2 lines
+
+- Manifold: fixed VictLog file bug
+- Layers: included exception catch for rendering of victdata at point {-1.#IND, -1.#INF} - an unresolved bug atm
+------------------------------------------------------------------------
+r651 | arnoud | 2007-07-06 05:01:09 +0200 (Fri, 06 Jul 2007) | 1 line
+
+Consequent usage of otherName: the name used during the Greeting
+------------------------------------------------------------------------
+r652 | arnoud | 2007-07-06 05:10:21 +0200 (Fri, 06 Jul 2007) | 2 lines
+
+Added warning if otherName is not in the list
+UsarFollowAgent repaired
+------------------------------------------------------------------------
+r653 | arnoud | 2007-07-06 06:00:24 +0200 (Fri, 06 Jul 2007) | 1 line
+
+Sync Message is prepared from the last update till now, to prevent an endless msg.
+------------------------------------------------------------------------
+r654 | arnoud | 2007-07-06 06:12:39 +0200 (Fri, 06 Jul 2007) | 1 line
+
+Style error, nearly a bug
+------------------------------------------------------------------------
+r655 | arnoud | 2007-07-06 06:36:09 +0200 (Fri, 06 Jul 2007) | 1 line
+
+Cannot generate message without timestamp
+------------------------------------------------------------------------
+r656 | arnoud | 2007-07-06 07:04:24 +0200 (Fri, 06 Jul 2007) | 1 line
+
+Remove the sending of an empty message without timestamp in OnSyncStartReceived
+------------------------------------------------------------------------
+r657 | baslamet | 2007-07-06 10:45:49 +0200 (Fri, 06 Jul 2007) | 2 lines
+
+- fixed a bug in Console.WriteLine statement CommActor
+- fixed a bug in PatchMemento Restore function that did not restore the original ID of the patch. This caused relations to be unable to restore as they could not find back the patches they relate.
+------------------------------------------------------------------------
+r658 | baslamet | 2007-07-06 10:51:33 +0200 (Fri, 06 Jul 2007) | 1 line
+
+- bugfix in RelationMemento, the from-patch-id and to-patch-id were not set in the constructor
+------------------------------------------------------------------------
+r659 | baslamet | 2007-07-06 11:00:05 +0200 (Fri, 06 Jul 2007) | 1 line
+
+- fixed a bug in RelationMemento which did not restore original relation ID
+------------------------------------------------------------------------
+r661 | baslamet | 2007-07-06 12:27:05 +0200 (Fri, 06 Jul 2007) | 1 line
+
+- fixed a bug in the timestamp returned by Slave upon commit, to solve the bug where the Slave sends back patches it just recieved from the Master during the next Sync.
+------------------------------------------------------------------------
+r662 | baslamet | 2007-07-06 12:38:50 +0200 (Fri, 06 Jul 2007) | 3 lines
+
+- undid changes of previous revision, the bug was not fixed, it rather 'reversed'
+
+
+------------------------------------------------------------------------
+r664 | tschmits | 2007-07-06 14:09:27 +0200 (Fri, 06 Jul 2007) | 2 lines
+
+- Loglineparser could not parse strings of size 0: Bug FIXED
+- Included Camera (up/down) control to GUI. (Maybe Bayu can share some of his precious icons for this interface...?)
+------------------------------------------------------------------------
+r665 | baslamet | 2007-07-06 14:43:10 +0200 (Fri, 06 Jul 2007) | 1 line
+
+- bugfix sync protocol, also works for multiple agents now
+------------------------------------------------------------------------
+r667 | arnoud | 2007-07-07 06:10:38 +0200 (Sat, 07 Jul 2007) | 3 lines
+
+Protection against Theseus-bug. Theseus-bug originated in the config-file, which specified ground-truth as seed.
+
+This protection prevents that the offset is stored in the origin, independent where this origin is coming from. Has some side-effect, but should be save during the competition
+------------------------------------------------------------------------
+r669 | baslamet | 2007-07-07 08:47:30 +0200 (Sat, 07 Jul 2007) | 4 lines
+
+Disabled anti-aliasing in BufferedLayer
+- this effects free-space, clear-space and observations layer
+- so the jury should be able to score our maps automatically as all colors remain 'pure' now
+
+------------------------------------------------------------------------
+r670 | baslamet | 2007-07-07 11:52:09 +0200 (Sat, 07 Jul 2007) | 14 lines
+
+WARNING:
+- Comm will most probably NOT be backwards compatible with previous revisions
+- so either update all your clients and commander, or update none
+
+Comm update:
+- command relaying through intermediaries works (DRIVE commands)
+- pose update broadcasting through intermediaries works
+- NOT implemented: sync through intermediaries, too complex to implement on short notice (semi is in 4 hours)
+
+Comm improvements:
+- SyncStart and SyncCommit messages now also include CurrentPose of remote robot
+- benefit 1: before applying the sync, the GUI will already display the current pose of the robot
+- benefit 2: after the sync is applied, the pose update will cause the GUI to refresh, so no more clicking necessary
+
+------------------------------------------------------------------------

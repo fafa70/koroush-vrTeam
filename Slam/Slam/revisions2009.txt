@@ -1,0 +1,33 @@
+------------------------------------------------------------------------
+r1505 | arnoud | 2008-10-22 16:47:33 +0200 (Wed, 22 Oct 2008) | 1 line
+
+
+------------------------------------------------------------------------
+r1607 | arnoud | 2009-01-06 18:02:12 +0100 (Tue, 06 Jan 2009) | 1 line
+
+Moved remotely
+------------------------------------------------------------------------
+r1608 | arnoud | 2009-01-06 18:02:49 +0100 (Tue, 06 Jan 2009) | 1 line
+
+Renamed remotely
+------------------------------------------------------------------------
+r1685 | jdehoog | 2009-02-03 16:27:00 +0100 (Tue, 03 Feb 2009) | 1 line
+
+Merge with DOAS revision 1683
+------------------------------------------------------------------------
+r1819 | arnoud | 2009-04-17 13:39:41 +0200 (Fri, 17 Apr 2009) | 3 lines
+
+* Implemented Bas recommendations (should be 11% faster).
+* Reduced dependencies of different projects
+* Better Sync of AgentConfigDialog
+------------------------------------------------------------------------
+r1861 | arnoud | 2009-05-11 15:31:55 +0200 (Mon, 11 May 2009) | 1 line
+
+AirRobot sends now PoseUpdates when a INS is mounted (instead of a GroundTruth sensor)
+------------------------------------------------------------------------
+r1905 | jdehoog | 2009-07-01 11:44:11 +0200 (Wed, 01 Jul 2009) | 3 lines
+
+Added functionality for second range finder (since we added a tilted Hokuyo to the P2AT to detect drop-offs and obstacles at different levels from sick).
+Second range finder is called TiltedScanner and is ignored everywhere except ConservativeTeleOpMotion, for now.
+Changes made in every ProcessLaserRangeData throughout code.
+------------------------------------------------------------------------

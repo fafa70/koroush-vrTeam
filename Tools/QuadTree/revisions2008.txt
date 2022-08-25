@@ -1,0 +1,35 @@
+------------------------------------------------------------------------
+r715 | baslamet | 2007-07-22 00:14:40 +0200 (Sun, 22 Jul 2007) | 5 lines
+
+Implemented a QuadTree:
+- HybridIcpScanMatcher uses this to index the points before correlating them, performance boost is HUGE (factor 2 speedup)
+- next step is index the full manifold using a QuadTree, ManifoldIndex.vb is a first step
+- then it will be possible to match a scan against the whole manifold while still having acceptable performance
+- refactored parts of scan matching classes to prepare for these upcoming changes 
+------------------------------------------------------------------------
+r716 | baslamet | 2007-07-22 23:50:01 +0200 (Sun, 22 Jul 2007) | 2 lines
+
+Many updates to all the scan matching stuff. The code is growing into a mess, will clean this up asap. 
+This commit is mainly for backup purposes, may great additions needed a secure place. :-)
+------------------------------------------------------------------------
+r717 | baslamet | 2007-07-23 08:24:01 +0200 (Mon, 23 Jul 2007) | 2 lines
+
+Fixed a bug in QuadIDC
+
+------------------------------------------------------------------------
+r719 | baslamet | 2007-07-23 16:11:21 +0200 (Mon, 23 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r723 | baslamet | 2007-07-24 16:09:00 +0200 (Tue, 24 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r781 | baslamet | 2007-08-12 18:36:20 +0200 (Sun, 12 Aug 2007) | 1 line
+
+intermediate commit
+------------------------------------------------------------------------
+r806 | baslamet | 2007-09-26 15:53:00 +0200 (Wed, 26 Sep 2007) | 1 line
+
+Changes made for Probabilistic Robotics.
+------------------------------------------------------------------------

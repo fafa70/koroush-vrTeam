@@ -1,0 +1,163 @@
+------------------------------------------------------------------------
+r464 | baslamet | 2007-05-12 12:52:53 +0200 (Sat, 12 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r467 | baslamet | 2007-05-12 17:54:01 +0200 (Sat, 12 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r468 | baslamet | 2007-05-13 18:08:35 +0200 (Sun, 13 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r469 | baslamet | 2007-05-14 18:36:10 +0200 (Mon, 14 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r473 | baslamet | 2007-05-15 15:25:09 +0200 (Tue, 15 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r474 | baslamet | 2007-05-15 16:09:57 +0200 (Tue, 15 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r475 | baslamet | 2007-05-15 18:50:55 +0200 (Tue, 15 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r476 | baslamet | 2007-05-16 11:19:24 +0200 (Wed, 16 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r477 | baslamet | 2007-05-16 13:59:54 +0200 (Wed, 16 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r478 | baslamet | 2007-05-16 17:43:23 +0200 (Wed, 16 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r479 | baslamet | 2007-05-16 18:53:21 +0200 (Wed, 16 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r480 | baslamet | 2007-05-17 16:05:13 +0200 (Thu, 17 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r481 | baslamet | 2007-05-18 00:35:55 +0200 (Fri, 18 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r485 | baslamet | 2007-05-18 16:02:16 +0200 (Fri, 18 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r486 | baslamet | 2007-05-19 23:20:18 +0200 (Sat, 19 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r491 | arnoud | 2007-05-21 18:29:57 +0200 (Mon, 21 May 2007) | 1 line
+
+Added parsing of VictSensor-msg. Nothing is done with this information (yet). Had to change Base/Sensor.vb with a check if a key already exists. Change can have side-effects. Tested both on UsarSim 3.11 (DM-VictTest) and arena-loop.log.
+------------------------------------------------------------------------
+r501 | baslamet | 2007-05-29 17:33:27 +0200 (Tue, 29 May 2007) | 1 line
+
+Added GeoTiffLayer to ManifoldView for a-priori data.
+------------------------------------------------------------------------
+r502 | baslamet | 2007-05-29 17:35:40 +0200 (Tue, 29 May 2007) | 1 line
+
+Removed Logs
+------------------------------------------------------------------------
+r503 | tschmits | 2007-05-29 23:19:33 +0200 (Tue, 29 May 2007) | 5 lines
+
+- Updated FrameData class to process Jpeg data sent by Image Server
+- Added ImageAnalysis project containing
+ *ImageAnalysis Interface
+ *SkinDetector class
+ *ColorHistogram class
+------------------------------------------------------------------------
+r509 | baslamet | 2007-05-30 16:37:17 +0200 (Wed, 30 May 2007) | 1 line
+
+Refactored UI stuff, moved everything to the shared usarlib.
+------------------------------------------------------------------------
+r512 | baslamet | 2007-06-07 15:07:28 +0200 (Thu, 07 Jun 2007) | 19 lines
+
+Massive update:
+
+- new NavAgent, subclass of Agent that adds navigability through a joystick
+
+- revamped Gui all over the place
+  - ManifoldView is now wrapped in a MapController which now also enables you to turn on/off individual layers 
+  - RunControllerView is refactored into a TeamController 
+  - AgentController is enriched with a joystick control
+
+- The TeamController has a workflow model that mimics typical competition runs:
+  - preparation stage: setup robots
+  - ready stage: check configurations, load apriori file (you can switch forth and back between preparation and ready)
+  - running stage: shows 20-mins countdown stopwatch, config buttons disappear and joystick controls appear
+  - deliverables stage: shows 10-mins countdown stopwatch, all agents are stopped
+  - done stage: run is over
+
+Numerous bits and pieces have been refactored / debugged all over the place.
+
+Bayu
+------------------------------------------------------------------------
+r531 | baslamet | 2007-06-11 17:40:59 +0200 (Mon, 11 Jun 2007) | 3 lines
+
+Added Config functionality
+- it is now possible to load/save configs
+
+------------------------------------------------------------------------
+r532 | baslamet | 2007-06-12 12:40:04 +0200 (Tue, 12 Jun 2007) | 4 lines
+
+Refactored Config options
+- NetworkConfig for server names/ips and ports
+- AgentConfig for robotmodel/startlocations
+- ConfigDialogs 
+------------------------------------------------------------------------
+r556 | baslamet | 2007-06-16 11:47:37 +0200 (Sat, 16 Jun 2007) | 13 lines
+
+Integrated OpenCV into the framework:
+- added C++ OpenCV libs to Third Party libs
+- added OpenCVDotNet wrapper to Third Party libs
+- changed reference to OpenCVDotNet in UsarLib project to make it point to the relative path
+- added post-build event to UsarCommander so that it copies the C++ files to the build directory, this should fix file-not-found exceptions error
+
+Many small things:
+- made histoPic2.JPG part of the UsarLib project as Content that is copied to the build dir
+- fixed GEO and CONF message handling
+- fixed GETGEO and GETCONF message requests in Sensor
+- fixed GeoReferencing of the produced GeoTIFF files (x-north / y-east)
+- reorganized scamatching code a bit
+
+------------------------------------------------------------------------
+r559 | aethemba | 2007-06-18 09:35:59 +0200 (Mon, 18 Jun 2007) | 3 lines
+
+Added  functions in IAgentobserver, usarfollowAgent and the agentcontroller for a visual interface with USARCOmmander. The tracker doesn't work yet however but I had to commit in order to test on PC-UNreal.
+
+It will not disturb the USARCOmmander if you do not use the tracker
+------------------------------------------------------------------------
+r591 | tschmits | 2007-06-29 15:02:12 +0200 (Fri, 29 Jun 2007) | 2 lines
+
+- added Histograms from ICIS presentation day
+- included 'add victim observation'-functionality to Manifold Patches
+------------------------------------------------------------------------
+r635 | baslamet | 2007-07-04 14:32:03 +0200 (Wed, 04 Jul 2007) | 1 line
+
+added post-build events such that OpenCV and GDAL libraries are copied to UsarClient and UsarCommander build directories.
+------------------------------------------------------------------------
+r643 | baslamet | 2007-07-05 12:10:55 +0200 (Thu, 05 Jul 2007) | 1 line
+
+added real-time pose tracking to manifold view, it doesn't get any faster than this.
+------------------------------------------------------------------------
+r648 | aethemba | 2007-07-05 21:42:33 +0200 (Thu, 05 Jul 2007) | 1 line
+
+Made it a team
+------------------------------------------------------------------------
+r671 | baslamet | 2007-07-07 14:40:05 +0200 (Sat, 07 Jul 2007) | 1 line
+
+- set resolution of manifoldimage to 20 pix/meter in an attempt to improve rendering performance 
+------------------------------------------------------------------------

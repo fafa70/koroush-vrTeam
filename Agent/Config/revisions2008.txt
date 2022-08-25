@@ -1,0 +1,26 @@
+------------------------------------------------------------------------
+r692 | baslamet | 2007-07-14 13:24:50 +0200 (Sat, 14 Jul 2007) | 6 lines
+
+1. Changed convergence check in IcpScanMatcher:
+- it will consider the scan matcher as having converged iff the scan matcher needed less than max-iterations
+
+2. Factored Noise settings into AgentConfig.
+- in the AgentConfigDialog you can now also configure the noise to apply to SLAM
+
+------------------------------------------------------------------------
+r806 | baslamet | 2007-09-26 15:53:00 +0200 (Wed, 26 Sep 2007) | 1 line
+
+Changes made for Probabilistic Robotics.
+------------------------------------------------------------------------
+r808 | arnoud | 2007-09-26 18:41:53 +0200 (Wed, 26 Sep 2007) | 1 line
+
+Added Configuration box to control behavior.
+------------------------------------------------------------------------
+r816 | arnoud | 2007-10-30 17:36:53 +0100 (Tue, 30 Oct 2007) | 1 line
+
+Added Gui for BehaviorBalance
+------------------------------------------------------------------------
+r951 | rtobi | 2008-02-17 13:50:33 +0100 (Sun, 17 Feb 2008) | 1 line
+
+prepare the codebase for assigment 2
+------------------------------------------------------------------------

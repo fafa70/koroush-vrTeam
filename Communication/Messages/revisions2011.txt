@@ -1,0 +1,10 @@
+------------------------------------------------------------------------
+r2198 | ndijkshoorn | 2011-03-31 17:46:02 +0200 (Thu, 31 Mar 2011) | 2 lines
+
+Visual Studio 2011 project
+Added separate conversations for frames
+------------------------------------------------------------------------
+r2226 | jdehoog | 2011-07-09 12:24:45 +0200 (Sat, 09 Jul 2011) | 1 line
+
+Major changes.  Added Comm layer that allows viewing comm strengths between all robots in UsarCommander.  This also required adding Teammate signal strength messages.  Seems to work so far, but not tested extensively (no guarantees!).
+------------------------------------------------------------------------

@@ -1,0 +1,13 @@
+------------------------------------------------------------------------
+r806 | baslamet | 2007-09-26 15:53:00 +0200 (Wed, 26 Sep 2007) | 1 line
+
+Changes made for Probabilistic Robotics.
+------------------------------------------------------------------------
+r1349 | arnoud | 2008-07-23 09:45:40 +0200 (Wed, 23 Jul 2008) | 5 lines
+
+Last changes of 2008 competition code
+* Updated licence, readme.txt and add_revisions to AOJFR 2008
+* Agent uses new GPSsensor
+* UsarCommander.vbproj includes postbuild which allows to read Apriori
+* RegularThread reports the name of the thread started
+------------------------------------------------------------------------

@@ -1,0 +1,26 @@
+------------------------------------------------------------------------
+r2105 | arnoud | 2010-02-19 10:36:05 +0100 (Fri, 19 Feb 2010) | 1 line
+
+Copy from 2009 competition rev. 2100
+------------------------------------------------------------------------
+r2106 | arnoud | 2010-02-19 11:35:48 +0100 (Fri, 19 Feb 2010) | 1 line
+
+Merge with 2009/honours 1950 (ConservativeTeleOp for AirRobot)
+------------------------------------------------------------------------
+r2107 | arnoud | 2010-02-19 14:55:55 +0100 (Fri, 19 Feb 2010) | 7 lines
+
+Merge with experimental (rev. 2053) COMPILES, not tested yet
+* GetPoses should work now
+* P3AT and ATVR from UT3 available
+* Some additional Behaviors
+* SensorPoses instead of SensorCurrentData
+* Some additional logfiles which can be Read
+
+------------------------------------------------------------------------
+r2154 | oformsma | 2010-05-27 21:13:58 +0200 (Thu, 27 May 2010) | 4 lines
+
+Changed following behavior to follow point that can be specified on the Map.
+So far, the scaling is off, so a path can not be planned.
+Also, if a location can not be planned to, it should be dropped and the next waypoint should be the new target.
+Removed LightFx references, as they broke my build.
+------------------------------------------------------------------------

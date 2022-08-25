@@ -1,0 +1,72 @@
+------------------------------------------------------------------------
+r532 | baslamet | 2007-06-12 12:40:04 +0200 (Tue, 12 Jun 2007) | 4 lines
+
+Refactored Config options
+- NetworkConfig for server names/ips and ports
+- AgentConfig for robotmodel/startlocations
+- ConfigDialogs 
+------------------------------------------------------------------------
+r533 | baslamet | 2007-06-12 13:03:07 +0200 (Tue, 12 Jun 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r544 | baslamet | 2007-06-13 15:45:07 +0200 (Wed, 13 Jun 2007) | 6 lines
+
+Added dead-reckoning functionality to SLAM
+- based on Odometry
+- based on INS
+- based on GroundTruth (only when bDebug is set to true in p2at section of usarbot.ini
+
+Bayu
+------------------------------------------------------------------------
+r562 | baslamet | 2007-06-18 17:45:46 +0200 (Mon, 18 Jun 2007) | 6 lines
+
+IDC has been implemented:
+- IdcScanMatcher works
+- AgentConfig extended with relevant options
+- AgentConfigDialog changed accordingly
+
+Bayu
+------------------------------------------------------------------------
+r566 | baslamet | 2007-06-23 19:55:49 +0200 (Sat, 23 Jun 2007) | 9 lines
+
+Factored CommAgent into framework
+- redesigned Agent - Sensor/Actor collaboration
+- added CommActor
+- added Communication project
+
+Unfortunately, due to the amount and kind of changes, bugs and merge conflicts are almost guaranteed.
+Sorry for that. ;-)
+
+Bayu
+------------------------------------------------------------------------
+r570 | baslamet | 2007-06-25 16:59:27 +0200 (Mon, 25 Jun 2007) | 1 line
+
+Numerous bits and pieces.
+------------------------------------------------------------------------
+r571 | baslamet | 2007-06-26 11:57:52 +0200 (Tue, 26 Jun 2007) | 7 lines
+
+Added functionality so that each agent, regardless of which pc it is spawned, knows a-priori who his team members are and how he can communicate to them (i.e. port numbers they are listening to).
+- renamed NetworkConfig to TeamConfig
+- renamed NetworkConfigDialog to TeamConfigDialog
+- added [team] section to TeamConfig, so now it has two sections: [network] and [team]
+- the [team] section will hold a setting for the name of the operator and one for all team-members (comma-delimited)
+
+
+------------------------------------------------------------------------
+r572 | tschmits | 2007-06-26 14:00:29 +0200 (Tue, 26 Jun 2007) | 2 lines
+
+- extended Config and Config Dialog for SkinDetector agent configuration
+- Included hist-file handling for SkinDetector(Teacher) classes
+------------------------------------------------------------------------
+r577 | baslamet | 2007-06-27 10:53:56 +0200 (Wed, 27 Jun 2007) | 1 line
+
+Merged Tijn's code from yesterday and this morning into my latest changes.
+------------------------------------------------------------------------
+r634 | baslamet | 2007-07-04 13:39:14 +0200 (Wed, 04 Jul 2007) | 4 lines
+
+- modified syn such that it does not run automatically
+- the operator now triggers syncs 
+- this implies a MASSIVE reduction of the load on WSS
+- fixed a small bug in AgentConfig
+------------------------------------------------------------------------

@@ -1,0 +1,19 @@
+------------------------------------------------------------------------
+r2105 | arnoud | 2010-02-19 10:36:05 +0100 (Fri, 19 Feb 2010) | 1 line
+
+Copy from 2009 competition rev. 2100
+------------------------------------------------------------------------
+r2106 | arnoud | 2010-02-19 11:35:48 +0100 (Fri, 19 Feb 2010) | 1 line
+
+Merge with 2009/honours 1950 (ConservativeTeleOp for AirRobot)
+------------------------------------------------------------------------
+r2122 | arnoud | 2010-04-04 16:03:46 +0200 (Sun, 04 Apr 2010) | 1 line
+
+Solved the NoSync bug (could not serialize omnicam bitmap).
+------------------------------------------------------------------------
+r2123 | arnoud | 2010-04-05 10:11:20 +0200 (Mon, 05 Apr 2010) | 3 lines
+
+Operator has no longer imageview in the AgentController
+* Added three buttons (Flip, FrontLeft and FrontRear)
+* Solved a small bug in SonarSensor
+------------------------------------------------------------------------

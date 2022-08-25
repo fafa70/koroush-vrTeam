@@ -1,0 +1,21 @@
+------------------------------------------------------------------------
+r1612 | hnijhuis | 2009-01-14 11:35:54 +0100 (Wed, 14 Jan 2009) | 1 line
+
+Added a FlyActor (based on the DriveActor) to be able to operate the AirRobot. (First Commit)
+------------------------------------------------------------------------
+r1658 | hnijhuis | 2009-01-27 17:43:27 +0100 (Tue, 27 Jan 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r1679 | hnijhuis | 2009-01-29 18:46:08 +0100 (Thu, 29 Jan 2009) | 1 line
+
+cameratilting and buttons for driving fixed
+------------------------------------------------------------------------
+r1685 | jdehoog | 2009-02-03 16:27:00 +0100 (Tue, 03 Feb 2009) | 1 line
+
+Merge with DOAS revision 1683
+------------------------------------------------------------------------
+r1847 | hnijhuis | 2009-04-24 04:24:17 +0200 (Fri, 24 Apr 2009) | 1 line
+
+Made it possible to send targetlocations from the AirRobot to another robot through the WSS-server.
+------------------------------------------------------------------------

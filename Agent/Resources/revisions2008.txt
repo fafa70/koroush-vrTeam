@@ -1,0 +1,12 @@
+------------------------------------------------------------------------
+r766 | baslamet | 2007-08-07 17:47:32 +0200 (Tue, 07 Aug 2007) | 4 lines
+
+Added another frontier tool: ExtractFrontierRegions
+- frontier space = free space - safe space (so, all free space beyond 2m)
+- frontier region = all connected components in frontier space (i.e. 'blobs')
+- the associated information gain for each frontier region is simply the area of the region in m^2
+------------------------------------------------------------------------
+r806 | baslamet | 2007-09-26 15:53:00 +0200 (Wed, 26 Sep 2007) | 1 line
+
+Changes made for Probabilistic Robotics.
+------------------------------------------------------------------------

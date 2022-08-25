@@ -1,0 +1,26 @@
+------------------------------------------------------------------------
+r586 | baslamet | 2007-06-27 23:05:20 +0200 (Wed, 27 Jun 2007) | 6 lines
+
+Lotsa changes:
+- moved Manifold data structure to Agent project
+- got WSS to work such that any pair of Agents will try to have an open connection whenever they are within range
+- got Agents to submit manifold data over the wire (Patches)
+
+
+------------------------------------------------------------------------
+r593 | baslamet | 2007-06-29 22:06:59 +0200 (Fri, 29 Jun 2007) | 4 lines
+
+- Comm works (WSS), huge refactory and numerous little improvements
+- refactored OperatorAgent
+- introduced some extension thresholds for ManifoldSLAM
+
+------------------------------------------------------------------------
+r631 | baslamet | 2007-07-04 01:10:23 +0200 (Wed, 04 Jul 2007) | 6 lines
+
+Debugged WSS:
+- rewrote the sync protocol, the time-stamping system was flawed and caused 'gaps' to occur, should be solved now
+- found a serious bug in ProxyAgent that caused it to 'think' it could not control the remote robot, while in fact it just could, this bug is also fixed
+- got the path-loss values to be printed in the AgentController, really convenient
+- made agents continuously communicate their current pose, so even though the operators GUI is not up-to-date, it does receive pose updates which may be enough to act in time. Note that also the pose updates will suffer from lags when the WSS is in the midst of a sync-routine.
+
+------------------------------------------------------------------------

@@ -1,0 +1,26 @@
+------------------------------------------------------------------------
+r2198 | ndijkshoorn | 2011-03-31 17:46:02 +0200 (Thu, 31 Mar 2011) | 2 lines
+
+Visual Studio 2011 project
+Added separate conversations for frames
+------------------------------------------------------------------------
+r2204 | arnoud | 2011-04-05 09:03:55 +0200 (Tue, 05 Apr 2011) | 4 lines
+
+* Added names to GoalPoints in NotesLayer
+* Added IrOpenMapping to KnownMaps
+* Added Helen to team
+
+------------------------------------------------------------------------
+r2211 | ndijkshoorn | 2011-04-07 09:19:22 +0200 (Thu, 07 Apr 2011) | 1 line
+
+Improved Following Motion. Code seems ready for competition
+------------------------------------------------------------------------
+r2213 | arnoud | 2011-04-09 05:35:31 +0200 (Sat, 09 Apr 2011) | 2 lines
+
+Tempory Final commit; reduce the layers
+* Removed Notes, Victims, Frontiers, Clear (buttons are still there)
+------------------------------------------------------------------------
+r2226 | jdehoog | 2011-07-09 12:24:45 +0200 (Sat, 09 Jul 2011) | 1 line
+
+Major changes.  Added Comm layer that allows viewing comm strengths between all robots in UsarCommander.  This also required adding Teammate signal strength messages.  Seems to work so far, but not tested extensively (no guarantees!).
+------------------------------------------------------------------------

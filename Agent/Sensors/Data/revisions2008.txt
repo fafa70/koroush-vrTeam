@@ -1,0 +1,35 @@
+------------------------------------------------------------------------
+r806 | baslamet | 2007-09-26 15:53:00 +0200 (Wed, 26 Sep 2007) | 1 line
+
+Changes made for Probabilistic Robotics.
+------------------------------------------------------------------------
+r955 | rtobi | 2008-02-17 22:15:32 +0100 (Sun, 17 Feb 2008) | 1 line
+
+partially implement Max & Bayu's original C++ processSonarData() algorithm for ass2
+------------------------------------------------------------------------
+r978 | rtobi | 2008-02-20 14:41:59 +0100 (Wed, 20 Feb 2008) | 1 line
+
+preparations for ObstacleAvoidance assigment
+------------------------------------------------------------------------
+r1009 | rtobi | 2008-02-26 18:27:51 +0100 (Tue, 26 Feb 2008) | 1 line
+
+eliminate some Console.WriteLine() calls
+------------------------------------------------------------------------
+r1159 | arnoud | 2008-04-24 20:10:02 +0200 (Thu, 24 Apr 2008) | 1 line
+
+Missing GPS-files
+------------------------------------------------------------------------
+r1345 | arnoud | 2008-07-16 19:30:14 +0200 (Wed, 16 Jul 2008) | 1 line
+
+Added functionality to look that checks the fix and satellite information in GPS messages 
+------------------------------------------------------------------------
+r1346 | arnoud | 2008-07-16 21:03:37 +0200 (Wed, 16 Jul 2008) | 3 lines
+
+Hopefully fix of GPS problems. To be tested with latest version of GPSsensor.uc
+
+What should be tested if the number of Satellites are also given for Fix=1 messages, and if the messages cannot be longer trusted for Satellites < 6
+------------------------------------------------------------------------
+r1347 | arnoud | 2008-07-16 21:04:26 +0200 (Wed, 16 Jul 2008) | 1 line
+
+Satellites with Lat,Long
+------------------------------------------------------------------------

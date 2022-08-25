@@ -1,0 +1,175 @@
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Tools\bin\Debug\UvARescue.Tools.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Tools\bin\Debug\UvARescue.Tools.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Tools\bin\Debug\UvARescue.Tools.xml
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Tools\bin\Debug\gdal_csharp.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Tools\bin\Debug\MathNet.Iridium.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Tools\bin\Debug\MathNet.Neodym.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Tools\bin\Debug\ogr_csharp.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Tools\bin\Debug\osr_csharp.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Tools\bin\Debug\UvARescue.Math.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Tools\bin\Debug\UvARescue.Math.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Tools\bin\Debug\MathNet.Iridium.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Tools\bin\Debug\MathNet.Neodym.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Tools\bin\Debug\de\MathNet.Iridium.resources.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Tools\bin\Debug\es\MathNet.Iridium.resources.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Tools\bin\Debug\fr\MathNet.Iridium.resources.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Tools\obj\Debug\ResolveAssemblyReference.cache
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Tools\obj\Debug\UvARescue.Tools.Resources.resources
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Tools\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Tools\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Tools\obj\Debug\UvARescue.Tools.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Tools\obj\Debug\UvARescue.Tools.xml
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Tools\obj\Debug\UvARescue.Tools.pdb
+H:\AOJRF2011\Tools\bin\Debug\UvARescue.Tools.dll
+H:\AOJRF2011\Tools\bin\Debug\UvARescue.Tools.pdb
+H:\AOJRF2011\Tools\bin\Debug\UvARescue.Tools.xml
+H:\AOJRF2011\Tools\bin\Debug\gdal_csharp.dll
+H:\AOJRF2011\Tools\bin\Debug\MathNet.Iridium.dll
+H:\AOJRF2011\Tools\bin\Debug\MathNet.Neodym.dll
+H:\AOJRF2011\Tools\bin\Debug\ogr_csharp.dll
+H:\AOJRF2011\Tools\bin\Debug\osr_csharp.dll
+H:\AOJRF2011\Tools\bin\Debug\UvARescue.Math.dll
+H:\AOJRF2011\Tools\bin\Debug\UvARescue.Math.pdb
+H:\AOJRF2011\Tools\bin\Debug\MathNet.Neodym.pdb
+H:\AOJRF2011\Tools\bin\Debug\MathNet.Iridium.pdb
+H:\AOJRF2011\Tools\bin\Debug\de\MathNet.Iridium.resources.dll
+H:\AOJRF2011\Tools\bin\Debug\es\MathNet.Iridium.resources.dll
+H:\AOJRF2011\Tools\bin\Debug\fr\MathNet.Iridium.resources.dll
+H:\AOJRF2011\Tools\obj\Debug\ResolveAssemblyReference.cache
+H:\AOJRF2011\Tools\obj\Debug\UvARescue.Tools.Resources.resources
+H:\AOJRF2011\Tools\obj\Debug\Tools.vbproj.GenerateResource.Cache
+H:\AOJRF2011\Tools\obj\Debug\UvARescue.Tools.dll
+H:\AOJRF2011\Tools\obj\Debug\UvARescue.Tools.xml
+H:\AOJRF2011\Tools\obj\Debug\UvARescue.Tools.pdb
+D:\AOJRF2012\Tools\bin\Debug\UvARescue.Tools.dll
+D:\AOJRF2012\Tools\bin\Debug\UvARescue.Tools.pdb
+D:\AOJRF2012\Tools\bin\Debug\UvARescue.Tools.xml
+D:\AOJRF2012\Tools\bin\Debug\gdal_csharp.dll
+D:\AOJRF2012\Tools\bin\Debug\MathNet.Iridium.dll
+D:\AOJRF2012\Tools\bin\Debug\MathNet.Neodym.dll
+D:\AOJRF2012\Tools\bin\Debug\ogr_csharp.dll
+D:\AOJRF2012\Tools\bin\Debug\osr_csharp.dll
+D:\AOJRF2012\Tools\bin\Debug\UvARescue.Math.dll
+D:\AOJRF2012\Tools\bin\Debug\UvARescue.Math.pdb
+D:\AOJRF2012\Tools\bin\Debug\MathNet.Iridium.pdb
+D:\AOJRF2012\Tools\bin\Debug\MathNet.Neodym.pdb
+D:\AOJRF2012\Tools\bin\Debug\de\MathNet.Iridium.resources.dll
+D:\AOJRF2012\Tools\bin\Debug\es\MathNet.Iridium.resources.dll
+D:\AOJRF2012\Tools\bin\Debug\fr\MathNet.Iridium.resources.dll
+D:\AOJRF2012\Tools\obj\Debug\ResolveAssemblyReference.cache
+D:\AOJRF2012\Tools\obj\Debug\UvARescue.Tools.Resources.resources
+D:\AOJRF2012\Tools\obj\Debug\ResGen.read.1.tlog
+D:\AOJRF2012\Tools\obj\Debug\ResGen.write.1.tlog
+D:\AOJRF2012\Tools\obj\Debug\UvARescue.Tools.dll
+D:\AOJRF2012\Tools\obj\Debug\UvARescue.Tools.xml
+D:\AOJRF2012\Tools\obj\Debug\UvARescue.Tools.pdb
+D:\IUST-BASE\Tools\bin\Debug\UvARescue.Tools.dll
+D:\IUST-BASE\Tools\bin\Debug\UvARescue.Tools.pdb
+D:\IUST-BASE\Tools\bin\Debug\UvARescue.Tools.xml
+D:\IUST-BASE\Tools\bin\Debug\gdal_csharp.dll
+D:\IUST-BASE\Tools\bin\Debug\MathNet.Iridium.dll
+D:\IUST-BASE\Tools\bin\Debug\MathNet.Neodym.dll
+D:\IUST-BASE\Tools\bin\Debug\ogr_csharp.dll
+D:\IUST-BASE\Tools\bin\Debug\osr_csharp.dll
+D:\IUST-BASE\Tools\bin\Debug\UvARescue.Math.dll
+D:\IUST-BASE\Tools\bin\Debug\UvARescue.Math.pdb
+D:\IUST-BASE\Tools\bin\Debug\MathNet.Iridium.pdb
+D:\IUST-BASE\Tools\bin\Debug\MathNet.Neodym.pdb
+D:\IUST-BASE\Tools\bin\Debug\de\MathNet.Iridium.resources.dll
+D:\IUST-BASE\Tools\bin\Debug\es\MathNet.Iridium.resources.dll
+D:\IUST-BASE\Tools\bin\Debug\fr\MathNet.Iridium.resources.dll
+D:\IUST-BASE\Tools\obj\Debug\ResolveAssemblyReference.cache
+D:\IUST-BASE\Tools\obj\Debug\UvARescue.Tools.Resources.resources
+D:\IUST-BASE\Tools\obj\Debug\ResGen.read.1.tlog
+D:\IUST-BASE\Tools\obj\Debug\ResGen.write.1.tlog
+D:\IUST-BASE\Tools\obj\Debug\UvARescue.Tools.dll
+D:\IUST-BASE\Tools\obj\Debug\UvARescue.Tools.xml
+D:\IUST-BASE\Tools\obj\Debug\UvARescue.Tools.pdb
+F:\IUST-BASE\Tools\bin\Debug\UvARescue.Tools.dll
+F:\IUST-BASE\Tools\bin\Debug\UvARescue.Tools.pdb
+F:\IUST-BASE\Tools\bin\Debug\UvARescue.Tools.xml
+F:\IUST-BASE\Tools\bin\Debug\gdal_csharp.dll
+F:\IUST-BASE\Tools\bin\Debug\MathNet.Iridium.dll
+F:\IUST-BASE\Tools\bin\Debug\MathNet.Neodym.dll
+F:\IUST-BASE\Tools\bin\Debug\ogr_csharp.dll
+F:\IUST-BASE\Tools\bin\Debug\osr_csharp.dll
+F:\IUST-BASE\Tools\bin\Debug\UvARescue.Math.dll
+F:\IUST-BASE\Tools\bin\Debug\UvARescue.Math.pdb
+F:\IUST-BASE\Tools\bin\Debug\MathNet.Iridium.pdb
+F:\IUST-BASE\Tools\bin\Debug\MathNet.Neodym.pdb
+F:\IUST-BASE\Tools\bin\Debug\de\MathNet.Iridium.resources.dll
+F:\IUST-BASE\Tools\bin\Debug\es\MathNet.Iridium.resources.dll
+F:\IUST-BASE\Tools\bin\Debug\fr\MathNet.Iridium.resources.dll
+F:\IUST-BASE\Tools\obj\Debug\ResolveAssemblyReference.cache
+F:\IUST-BASE\Tools\obj\Debug\UvARescue.Tools.Resources.resources
+F:\IUST-BASE\Tools\obj\Debug\ResGen.read.1.tlog
+F:\IUST-BASE\Tools\obj\Debug\ResGen.write.1.tlog
+F:\IUST-BASE\Tools\obj\Debug\UvARescue.Tools.dll
+F:\IUST-BASE\Tools\obj\Debug\UvARescue.Tools.xml
+F:\IUST-BASE\Tools\obj\Debug\UvARescue.Tools.pdb
+D:\usarsim\IUST-BASE\Tools\bin\Debug\UvARescue.Tools.dll
+D:\usarsim\IUST-BASE\Tools\bin\Debug\UvARescue.Tools.pdb
+D:\usarsim\IUST-BASE\Tools\bin\Debug\UvARescue.Tools.xml
+D:\usarsim\IUST-BASE\Tools\bin\Debug\gdal_csharp.dll
+D:\usarsim\IUST-BASE\Tools\bin\Debug\MathNet.Iridium.dll
+D:\usarsim\IUST-BASE\Tools\bin\Debug\MathNet.Neodym.dll
+D:\usarsim\IUST-BASE\Tools\bin\Debug\ogr_csharp.dll
+D:\usarsim\IUST-BASE\Tools\bin\Debug\osr_csharp.dll
+D:\usarsim\IUST-BASE\Tools\bin\Debug\UvARescue.Math.dll
+D:\usarsim\IUST-BASE\Tools\bin\Debug\UvARescue.Math.pdb
+D:\usarsim\IUST-BASE\Tools\bin\Debug\MathNet.Iridium.pdb
+D:\usarsim\IUST-BASE\Tools\bin\Debug\MathNet.Neodym.pdb
+D:\usarsim\IUST-BASE\Tools\bin\Debug\de\MathNet.Iridium.resources.dll
+D:\usarsim\IUST-BASE\Tools\bin\Debug\es\MathNet.Iridium.resources.dll
+D:\usarsim\IUST-BASE\Tools\bin\Debug\fr\MathNet.Iridium.resources.dll
+D:\usarsim\IUST-BASE\Tools\obj\Debug\ResolveAssemblyReference.cache
+D:\usarsim\IUST-BASE\Tools\obj\Debug\UvARescue.Tools.Resources.resources
+D:\usarsim\IUST-BASE\Tools\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\usarsim\IUST-BASE\Tools\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\usarsim\IUST-BASE\Tools\obj\Debug\UvARescue.Tools.dll
+D:\usarsim\IUST-BASE\Tools\obj\Debug\UvARescue.Tools.xml
+D:\usarsim\IUST-BASE\Tools\obj\Debug\UvARescue.Tools.pdb
+C:\base-backup\fresh-backup\IUST-BASE\Tools\bin\Debug\UvARescue.Tools.dll
+C:\base-backup\fresh-backup\IUST-BASE\Tools\bin\Debug\UvARescue.Tools.pdb
+C:\base-backup\fresh-backup\IUST-BASE\Tools\bin\Debug\UvARescue.Tools.xml
+C:\base-backup\fresh-backup\IUST-BASE\Tools\bin\Debug\gdal_csharp.dll
+C:\base-backup\fresh-backup\IUST-BASE\Tools\bin\Debug\MathNet.Iridium.dll
+C:\base-backup\fresh-backup\IUST-BASE\Tools\bin\Debug\MathNet.Neodym.dll
+C:\base-backup\fresh-backup\IUST-BASE\Tools\bin\Debug\ogr_csharp.dll
+C:\base-backup\fresh-backup\IUST-BASE\Tools\bin\Debug\osr_csharp.dll
+C:\base-backup\fresh-backup\IUST-BASE\Tools\bin\Debug\UvARescue.Math.dll
+C:\base-backup\fresh-backup\IUST-BASE\Tools\bin\Debug\UvARescue.Math.pdb
+C:\base-backup\fresh-backup\IUST-BASE\Tools\bin\Debug\MathNet.Iridium.pdb
+C:\base-backup\fresh-backup\IUST-BASE\Tools\bin\Debug\MathNet.Neodym.pdb
+C:\base-backup\fresh-backup\IUST-BASE\Tools\bin\Debug\de\MathNet.Iridium.resources.dll
+C:\base-backup\fresh-backup\IUST-BASE\Tools\bin\Debug\es\MathNet.Iridium.resources.dll
+C:\base-backup\fresh-backup\IUST-BASE\Tools\bin\Debug\fr\MathNet.Iridium.resources.dll
+C:\base-backup\fresh-backup\IUST-BASE\Tools\obj\Debug\ResolveAssemblyReference.cache
+C:\base-backup\fresh-backup\IUST-BASE\Tools\obj\Debug\UvARescue.Tools.Resources.resources
+C:\base-backup\fresh-backup\IUST-BASE\Tools\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\base-backup\fresh-backup\IUST-BASE\Tools\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\base-backup\fresh-backup\IUST-BASE\Tools\obj\Debug\UvARescue.Tools.dll
+C:\base-backup\fresh-backup\IUST-BASE\Tools\obj\Debug\UvARescue.Tools.xml
+C:\base-backup\fresh-backup\IUST-BASE\Tools\obj\Debug\UvARescue.Tools.pdb
+D:\mapping\IUST-BASE\Tools\bin\Debug\UvARescue.Tools.dll
+D:\mapping\IUST-BASE\Tools\bin\Debug\UvARescue.Tools.pdb
+D:\mapping\IUST-BASE\Tools\bin\Debug\UvARescue.Tools.xml
+D:\mapping\IUST-BASE\Tools\bin\Debug\gdal_csharp.dll
+D:\mapping\IUST-BASE\Tools\bin\Debug\MathNet.Iridium.dll
+D:\mapping\IUST-BASE\Tools\bin\Debug\MathNet.Neodym.dll
+D:\mapping\IUST-BASE\Tools\bin\Debug\ogr_csharp.dll
+D:\mapping\IUST-BASE\Tools\bin\Debug\osr_csharp.dll
+D:\mapping\IUST-BASE\Tools\bin\Debug\UvARescue.Math.dll
+D:\mapping\IUST-BASE\Tools\bin\Debug\UvARescue.Math.pdb
+D:\mapping\IUST-BASE\Tools\bin\Debug\MathNet.Iridium.pdb
+D:\mapping\IUST-BASE\Tools\bin\Debug\MathNet.Neodym.pdb
+D:\mapping\IUST-BASE\Tools\bin\Debug\de\MathNet.Iridium.resources.dll
+D:\mapping\IUST-BASE\Tools\bin\Debug\es\MathNet.Iridium.resources.dll
+D:\mapping\IUST-BASE\Tools\bin\Debug\fr\MathNet.Iridium.resources.dll
+D:\mapping\IUST-BASE\Tools\obj\Debug\ResolveAssemblyReference.cache
+D:\mapping\IUST-BASE\Tools\obj\Debug\UvARescue.Tools.Resources.resources
+D:\mapping\IUST-BASE\Tools\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\mapping\IUST-BASE\Tools\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\mapping\IUST-BASE\Tools\obj\Debug\UvARescue.Tools.dll
+D:\mapping\IUST-BASE\Tools\obj\Debug\UvARescue.Tools.xml
+D:\mapping\IUST-BASE\Tools\obj\Debug\UvARescue.Tools.pdb

@@ -1,0 +1,109 @@
+[basestation]
+agentnumber = 1
+agenttype = skin
+behaviorbalance = 1
+behaviormode = TeleOperation
+detectortheta = 50
+logfile = <Click to Select ...>
+logfileformat = UsarSim
+logplayback = False
+multiviewpanels = 
+noisesigma = 0
+pathplangoal = 
+robotmodel = ComStation
+skindetectotmode = Detection
+slam-mappingmode = ScanMatching
+slam-scanmatcher = IDC
+slam-seedmode = None
+spawnfromcommander = True
+startlocation = 17.1680,-3.1280,1.4720
+startrotation = 0,0,0
+teachermode = SkinOnly
+useimageserver = True
+uselogger = True
+usemultiview = False
+usenoise = False
+
+
+[map]
+levelname = RoboCup2011day2WhiteSmoke
+startposes = Robot3 -7.7759,6.0354,1.4720 0.0000,0.0000,1.5769 Robot2 -8.9400,4.7782,1.4720 0.0000,0.0000,-3.1323 ComStation -7.7704,4.7792,1.4720 0.0000,0.0000,0.7827 Robot4 -7.7413,3.4218,1.4720 0.0000,0.0000,-1.5624 Robot1 -6.7800,4.7331,1.4720 0.0000,0.0000,0.0000
+
+
+[team]
+operatorname = BaseStation
+teammembers = 0-BaseStation
+
+
+[local]
+localhost = 127.0.0.1
+
+
+[network]
+imageserverhost = 127.0.0.1
+imageserverport = 5003
+usarsimhost = 127.0.0.1
+usarsimport = 3000
+wirelessserverhost = 127.0.0.1
+wirelessserverport = 5874
+
+
+[backup]
+backupfrequency = 100000000
+createbackups = True
+
+
+[robot1]
+agentnumber = 2
+agenttype = slam
+behaviorbalance = 1
+behaviormode = TeleOperation
+detectortheta = 
+logfile = <Click to Select ...>
+logfileformat = UsarSim
+logplayback = False
+multiviewpanels = 
+noisesigma = 0
+pathplangoal = 
+robotmodel = P3AT
+skindetectotmode = Detection
+slam-mappingmode = ScanMatching
+slam-scanmatcher = WSM
+slam-seedmode = None
+spawnfromcommander = True
+startlocation = 5.7120,-2.4880,1.4720
+startrotation = 
+teachermode = SkinOnly
+useimageserver = True
+uselogger = False
+usemultiview = False
+usenoise = False
+
+
+[zeus]
+agentnumber = 1
+agenttype = slam
+behaviorbalance = 1
+behaviormode = TeleOperation
+detectortheta = 
+logfile = <Click to Select ...>
+logfileformat = UsarSim
+logplayback = False
+multiviewpanels = 
+noisesigma = 0
+pathplangoal = 
+robotmodel = P3AT
+skindetectotmode = Detection
+slam-mappingmode = ScanMatching
+slam-scanmatcher = WSM
+slam-seedmode = None
+spawnfromcommander = True
+startlocation = -2.8160,-9.2141,1.7280
+startrotation = 
+teachermode = SkinOnly
+useimageserver = False
+uselogger = False
+usemultiview = False
+usenoise = False
+
+

@@ -1,0 +1,99 @@
+------------------------------------------------------------------------
+r503 | tschmits | 2007-05-29 23:19:33 +0200 (Tue, 29 May 2007) | 5 lines
+
+- Updated FrameData class to process Jpeg data sent by Image Server
+- Added ImageAnalysis project containing
+ *ImageAnalysis Interface
+ *SkinDetector class
+ *ColorHistogram class
+------------------------------------------------------------------------
+r516 | baslamet | 2007-06-08 17:36:23 +0200 (Fri, 08 Jun 2007) | 16 lines
+
+Since Tijn got all ImageServer related functionality to work, I have decided to merge his work into the core framework classes:
+- merged CameraDriver into LiveDriver
+- merged CameraAgent into Agent
+- renamed FrameData to CameraData for consistency (the xxxSensor has xxxData, so CameraSensor has CameraData)
+
+
+Also refactored the TcpConnection class, also to pave the way for future work on WSS by Luis:
+- two types of connections are distinguished
+- MessagingConnection is for text-based communication as between the Agent and UsarSim
+- CameraConnection is for the ImageServer, where sent messages are plain text (e.g. acknowledgements) and the incoming data are images
+- they both derive from the by now well-known TcpConnection class which has transformed into a regular base class
+
+Other then that I also found and fixed some bugs in the image recieving logic.
+
+Bayu
+
+------------------------------------------------------------------------
+r572 | tschmits | 2007-06-26 14:00:29 +0200 (Tue, 26 Jun 2007) | 2 lines
+
+- extended Config and Config Dialog for SkinDetector agent configuration
+- Included hist-file handling for SkinDetector(Teacher) classes
+------------------------------------------------------------------------
+r576 | tschmits | 2007-06-27 10:50:03 +0200 (Wed, 27 Jun 2007) | 1 line
+
+- Missing skindetection teacher class
+------------------------------------------------------------------------
+r578 | tschmits | 2007-06-27 12:03:50 +0200 (Wed, 27 Jun 2007) | 2 lines
+
+- updated .hist file handling in ImageAnalysis
+- started connected component functionality
+------------------------------------------------------------------------
+r581 | tschmits | 2007-06-27 12:31:13 +0200 (Wed, 27 Jun 2007) | 1 line
+
+- Proper Skin Det. images file handling implemented
+------------------------------------------------------------------------
+r582 | baslamet | 2007-06-27 13:09:56 +0200 (Wed, 27 Jun 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r587 | tschmits | 2007-06-28 09:35:46 +0200 (Thu, 28 Jun 2007) | 1 line
+
+- Improved victim detection
+------------------------------------------------------------------------
+r591 | tschmits | 2007-06-29 15:02:12 +0200 (Fri, 29 Jun 2007) | 2 lines
+
+- added Histograms from ICIS presentation day
+- included 'add victim observation'-functionality to Manifold Patches
+------------------------------------------------------------------------
+r598 | baslamet | 2007-06-30 14:01:17 +0200 (Sat, 30 Jun 2007) | 7 lines
+
+Got confused!
+
+For my own clarity:
+- renamed VictimSensor of 2006 to VictimRfidSensor (put the RFID in the name to make its working obvious)
+- renamed VictSensor of 2007 to VictimSensor (since it works with 'real victim', and not with the RFIDs)
+
+
+------------------------------------------------------------------------
+r599 | baslamet | 2007-06-30 17:12:20 +0200 (Sat, 30 Jun 2007) | 7 lines
+
+Victim stuff works:
+- victims observations are stored on the Manifold
+- and they are nicely rendered in the map
+- 2 new layers were added for this purpose; VictimsLayer and VictimReportsLayer
+
+
+
+------------------------------------------------------------------------
+r601 | tschmits | 2007-07-01 04:43:16 +0200 (Sun, 01 Jul 2007) | 3 lines
+
+- modified VictimObservation to catch only head and chest to prevent multiple observations per single victim
+- modified skindetector to higher positive skin threshold
+- modified ManifoldSlam to prevent false single victim part positives (like a 'head' in a police car's wheels...)
+------------------------------------------------------------------------
+r603 | tschmits | 2007-07-01 13:41:01 +0200 (Sun, 01 Jul 2007) | 1 line
+
+- implemented victim rapport: creates victim file + images
+------------------------------------------------------------------------
+r608 | tschmits | 2007-07-02 11:10:37 +0200 (Mon, 02 Jul 2007) | 2 lines
+
+- Fixed UsarCommander camera-image peek functionality: the commander has its own image queue now
+- Included ProcessVictimPicture to Memento in Patch
+------------------------------------------------------------------------
+r633 | tschmits | 2007-07-04 03:23:22 +0200 (Wed, 04 Jul 2007) | 2 lines
+
+- Patch: crucial memento Restore() bug fixed
+- Skindetector: minor output functionality modifications
+------------------------------------------------------------------------

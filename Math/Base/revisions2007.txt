@@ -1,0 +1,57 @@
+------------------------------------------------------------------------
+r260 | baslamet | 2006-06-28 08:50:40 +0200 (Wed, 28 Jun 2006) | 1 line
+
+Moved remotely
+------------------------------------------------------------------------
+r272 | baslamet | 2006-06-29 15:32:23 +0200 (Thu, 29 Jun 2006) | 1 line
+
+
+------------------------------------------------------------------------
+r273 | baslamet | 2006-07-01 10:05:40 +0200 (Sat, 01 Jul 2006) | 1 line
+
+
+------------------------------------------------------------------------
+r455 | baslamet | 2007-05-08 16:28:53 +0200 (Tue, 08 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r461 | baslamet | 2007-05-10 22:36:24 +0200 (Thu, 10 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r462 | baslamet | 2007-05-11 17:50:48 +0200 (Fri, 11 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r467 | baslamet | 2007-05-12 17:54:01 +0200 (Sat, 12 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r469 | baslamet | 2007-05-14 18:36:10 +0200 (Mon, 14 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r562 | baslamet | 2007-06-18 17:45:46 +0200 (Mon, 18 Jun 2007) | 6 lines
+
+IDC has been implemented:
+- IdcScanMatcher works
+- AgentConfig extended with relevant options
+- AgentConfigDialog changed accordingly
+
+Bayu
+------------------------------------------------------------------------
+r586 | baslamet | 2007-06-27 23:05:20 +0200 (Wed, 27 Jun 2007) | 6 lines
+
+Lotsa changes:
+- moved Manifold data structure to Agent project
+- got WSS to work such that any pair of Agents will try to have an open connection whenever they are within range
+- got Agents to submit manifold data over the wire (Patches)
+
+
+------------------------------------------------------------------------
+r607 | baslamet | 2007-07-02 00:34:33 +0200 (Mon, 02 Jul 2007) | 3 lines
+
+implemented a speed-up in the Weighted Scanmatcher. Did not want to mess with the current implementation (yet), so put it in a subclass called FastWeightedScanMatcher. The performance boost is about 20%.
+
+Also reverted all Matrix and Vector classes to work with Doubles again.
+------------------------------------------------------------------------

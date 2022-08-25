@@ -1,0 +1,47 @@
+------------------------------------------------------------------------
+r680 | baslamet | 2007-07-08 12:25:43 +0200 (Sun, 08 Jul 2007) | 1 line
+
+- added console prints to WssDevice to ease debugging
+------------------------------------------------------------------------
+r806 | baslamet | 2007-09-26 15:53:00 +0200 (Wed, 26 Sep 2007) | 1 line
+
+Changes made for Probabilistic Robotics.
+------------------------------------------------------------------------
+r825 | arnoud | 2007-11-14 17:26:31 +0100 (Wed, 14 Nov 2007) | 3 lines
+
+First changes for the MultiHop paper.
+
+Tested combination of Operator (T-junction) and Achilles (North-West corridor)
+------------------------------------------------------------------------
+r827 | arnoud | 2007-11-15 16:44:11 +0100 (Thu, 15 Nov 2007) | 2 lines
+
+Changed the protocol completely. LastUpdate is written at only one place: when a Commit is received. A commit is received directly when a message is received, followed by t
+he Manifold Writers-block. Reduced the WSSdevice frequency to 10 seconds, because it takes up to 5 seconds before a commit returns.
+------------------------------------------------------------------------
+r828 | arnoud | 2007-11-15 18:11:10 +0100 (Thu, 15 Nov 2007) | 2 lines
+
+Changed the protocol further. The Slave sends complete updates, the Master sends only the latest updates. Works fine, a few extra patches (one in set of 12). Only had a socket problem that should be catched.
+
+------------------------------------------------------------------------
+r829 | arnoud | 2007-11-15 18:45:49 +0100 (Thu, 15 Nov 2007) | 1 line
+
+Exception Handling on Send seems to work (once tested)
+------------------------------------------------------------------------
+r834 | arnoud | 2007-11-21 16:09:52 +0100 (Wed, 21 Nov 2007) | 1 line
+
+RelaySync is requested every 10 seconds by OperatorAgent. Receives the latest 5 patches + 4 relations
+------------------------------------------------------------------------
+r1324 | jdehoog | 2008-06-27 19:20:40 +0200 (Fri, 27 Jun 2008) | 1 line
+
+Initial behavior change broadcast message testing
+------------------------------------------------------------------------
+r1338 | arnoud | 2008-07-10 22:25:17 +0200 (Thu, 10 Jul 2008) | 3 lines
+
+This is the version for the WSS 0.4
+* this version is NOT backwards compatible with the old wireless simulator
+* change the wireless port to 50000
+------------------------------------------------------------------------
+r1340 | jdehoog | 2008-07-13 12:41:05 +0200 (Sun, 13 Jul 2008) | 1 line
+
+ConservativeTeleOp behavior added -- currently only uses laser range scanner to detect obstacles
+------------------------------------------------------------------------

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+UvARescue.Communication
+</name>
+</assembly>
+<members>
+<member name="M:UvARescue.Communication.WssConversation.Send(UvARescue.Communication.Protocol,System.Byte[])">
+	<summary>
+ This routine actually streams the bytes of the tcp-wire.
+ It does so by wrapping the bytes in a SEND command as dictated
+ by the WSS specs.
+ </summary>
+	<param name="protocol"></param>
+	<param name="data"></param>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Communication.WssConversation.Receive(System.Int32)">
+	<summary>
+ Will receive maxLength bytes at a time. Any messages
+ contained in the tcp-buffer will be reconstructed using the helper
+ function for the specific byte-encoding protocol.
+ </summary>
+	<param name="maxLength"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Communication.WssConversation.SendText(System.String)">
+	<summary>
+ Plain text sending, ASCII encoded
+ </summary>
+	<param name="text"></param>
+	<remarks></remarks>
+</member><member name="M:UvARescue.Communication.WssConversation.ReceiveText(System.Byte[])">
+	<summary>
+ Decode as ASCII text.
+ </summary>
+	<param name="data"></param>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Communication.WssDevice">
+	<summary>
+ The central object that provides WSS capabilities to the Agent.
+ 
+ The WssDevice:
+ - holds a single TcpConnection to the WSS server to send 
+ all commands and requests
+ - holds a single WssListener on which it accepts incoming connections
+ on the listen-port that are initiated by other agents through the WSS.
+ - holds a single WssConversation for every currently active connection
+ with other agents through the WSS. Note: multiple conversations can
+ be active simultaneously.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:UvARescue.Communication.WssListener">
+	<summary>
+ Listens to a dedicated listen-port and accepts incoming 
+ connections from the WSS.
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

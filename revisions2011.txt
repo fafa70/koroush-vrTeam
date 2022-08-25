@@ -1,0 +1,148 @@
+i comment function insert in quadtree:
+1)commAgent.vb line 380
+2)manifoldIndex.vb  line 18,27
+3)icpscanmatcher.vb  line 493,500
+4)quadweightscanmatcher.vb line 284
+
+----------------------------------------------------------------------------------------------------
+    ElseIf Me._moving = True And Me._finished = True Then
+            Console.WriteLine("is moving")
+            If (Me._Astar.heading = 0) Then
+
+                Dim choice As Integer = Me._Astar.findMin(Me._Astar.HeuristicDistance)
+
+                If choice = 0 Then
+                    Me.moveToTarget(Me.Number, New Point(CInt(Me._CurrentPoseEstimate.X), CInt(Me._CurrentPoseEstimate.Y - 4000)))
+                    Console.WriteLine("front is choosen.")
+                ElseIf (choice = 1) Then
+                    Me.moveToTarget(Me.Number, New Point(CInt(Me._CurrentPoseEstimate.X - 2800), CInt(Me._CurrentPoseEstimate.Y - 2800)))
+                    Console.WriteLine("left is choosen")
+
+                ElseIf (choice = 2) Then
+                    Me.moveToTarget(Me.Number, New Point(CInt(Me._CurrentPoseEstimate.X + 2800), CInt(Me._CurrentPoseEstimate.Y - 2800)))
+                    Console.WriteLine("right is choosen")
+
+                End If
+
+            ElseIf (Me._Astar.heading = 1) Then
+
+                Dim choice As Integer = Me._Astar.findMin(Me._Astar.HeuristicDistance)
+                Console.WriteLine("choice : {0}", choice)
+                If choice = 0 Then
+                    Me.moveToTarget(Me.Number, New Point(CInt(Me._CurrentPoseEstimate.X + 2800), CInt(Me._CurrentPoseEstimate.Y - 2800)))
+                    Console.WriteLine("front is choosen.")
+                ElseIf (choice = 1) Then
+                    Me.moveToTarget(Me.Number, New Point(CInt(Me._CurrentPoseEstimate.X), CInt(Me._CurrentPoseEstimate.Y - 4000)))
+                    Console.WriteLine("left is choosen")
+
+                ElseIf (choice = 2) Then
+                    Me.moveToTarget(Me.Number, New Point(CInt(Me._CurrentPoseEstimate.X + 4000), CInt(Me._CurrentPoseEstimate.Y)))
+                    Console.WriteLine("right is choosen")
+
+                End If
+
+
+            ElseIf (Me._Astar.heading = 2) Then
+
+                Dim choice As Integer = Me._Astar.findMin(Me._Astar.HeuristicDistance)
+                Console.WriteLine("choice : {0}", choice)
+                If choice = 0 Then
+                    Me.moveToTarget(Me.Number, New Point(CInt(Me._CurrentPoseEstimate.X + 4000), CInt(Me._CurrentPoseEstimate.Y)))
+                    Console.WriteLine("front is choosen.")
+                ElseIf (choice = 1) Then
+                    Me.moveToTarget(Me.Number, New Point(CInt(Me._CurrentPoseEstimate.X + 2800), CInt(Me._CurrentPoseEstimate.Y - 2800)))
+                    Console.WriteLine("left is choosen")
+
+                ElseIf (choice = 2) Then
+                    Me.moveToTarget(Me.Number, New Point(CInt(Me._CurrentPoseEstimate.X + 2800), CInt(Me._CurrentPoseEstimate.Y + 2800)))
+                    Console.WriteLine("right is choosen")
+
+                End If
+
+
+            ElseIf (Me._Astar.heading = 3) Then
+
+                Dim choice As Integer = Me._Astar.findMin(Me._Astar.HeuristicDistance)
+                Console.WriteLine("choice : {0}", choice)
+                If choice = 0 Then
+                    Me.moveToTarget(Me.Number, New Point(CInt(Me._CurrentPoseEstimate.X + 2800), CInt(Me._CurrentPoseEstimate.Y + 2800)))
+                    Console.WriteLine("front is choosen.")
+                ElseIf (choice = 1) Then
+                    Me.moveToTarget(Me.Number, New Point(CInt(Me._CurrentPoseEstimate.X + 4000), CInt(Me._CurrentPoseEstimate.Y)))
+                    Console.WriteLine("left is choosen")
+
+                ElseIf (choice = 2) Then
+                    Me.moveToTarget(Me.Number, New Point(CInt(Me._CurrentPoseEstimate.X), CInt(Me._CurrentPoseEstimate.Y + 4000)))
+                    Console.WriteLine("right is choosen")
+
+                End If
+
+            ElseIf (Me._Astar.heading = 4) Then
+
+                Dim choice As Integer = Me._Astar.findMin(Me._Astar.HeuristicDistance)
+                Console.WriteLine("choice : {0}", choice)
+                If choice = 0 Then
+                    Me.moveToTarget(Me.Number, New Point(CInt(Me._CurrentPoseEstimate.X), CInt(Me._CurrentPoseEstimate.Y + 4000)))
+                    Console.WriteLine("front is choosen.")
+                ElseIf (choice = 1) Then
+                    Me.moveToTarget(Me.Number, New Point(CInt(Me._CurrentPoseEstimate.X + 2800), CInt(Me._CurrentPoseEstimate.Y + 2800)))
+                    Console.WriteLine("left is choosen")
+
+                ElseIf (choice = 2) Then
+                    Me.moveToTarget(Me.Number, New Point(CInt(Me._CurrentPoseEstimate.X - 2800), CInt(Me._CurrentPoseEstimate.Y + 2800)))
+                    Console.WriteLine("right is choosen")
+
+                End If
+
+            ElseIf (Me._Astar.heading = 5) Then
+
+                Dim choice As Integer = Me._Astar.findMin(Me._Astar.HeuristicDistance)
+                Console.WriteLine("choice : {0}", choice)
+                If choice = 0 Then
+                    Me.moveToTarget(Me.Number, New Point(CInt(Me._CurrentPoseEstimate.X - 2800), CInt(Me._CurrentPoseEstimate.Y + 2800)))
+                    Console.WriteLine("front is choosen.")
+                ElseIf (choice = 1) Then
+                    Me.moveToTarget(Me.Number, New Point(CInt(Me._CurrentPoseEstimate.X), CInt(Me._CurrentPoseEstimate.Y + 4000)))
+                    Console.WriteLine("left is choosen")
+
+                ElseIf (choice = 2) Then
+                    Me.moveToTarget(Me.Number, New Point(CInt(Me._CurrentPoseEstimate.X - 4000), CInt(Me._CurrentPoseEstimate.Y)))
+                    Console.WriteLine("right is choosen")
+
+                End If
+
+            ElseIf (Me._Astar.heading = 6) Then
+
+                Dim choice As Integer = Me._Astar.findMin(Me._Astar.HeuristicDistance)
+                Console.WriteLine("choice : {0}", choice)
+                If choice = 0 Then
+                    Me.moveToTarget(Me.Number, New Point(CInt(Me._CurrentPoseEstimate.X - 4000), CInt(Me._CurrentPoseEstimate.Y)))
+                    Console.WriteLine("front is choosen.")
+                ElseIf (choice = 1) Then
+                    Me.moveToTarget(Me.Number, New Point(CInt(Me._CurrentPoseEstimate.X - 2800), CInt(Me._CurrentPoseEstimate.Y + 2800)))
+                    Console.WriteLine("left is choosen")
+
+                ElseIf (choice = 2) Then
+                    Me.moveToTarget(Me.Number, New Point(CInt(Me._CurrentPoseEstimate.X - 2800), CInt(Me._CurrentPoseEstimate.Y - 2800)))
+                    Console.WriteLine("right is choosen")
+
+                End If
+
+            ElseIf (Me._Astar.heading = 7) Then
+
+                Dim choice As Integer = Me._Astar.findMin(Me._Astar.HeuristicDistance)
+                Console.WriteLine("choice : {0}", choice)
+                If choice = 0 Then
+                    Me.moveToTarget(Me.Number, New Point(CInt(Me._CurrentPoseEstimate.X - 2800), CInt(Me._CurrentPoseEstimate.Y - 2800)))
+                    Console.WriteLine("front is choosen.")
+                ElseIf (choice = 1) Then
+                    Me.moveToTarget(Me.Number, New Point(CInt(Me._CurrentPoseEstimate.X - 4000), CInt(Me._CurrentPoseEstimate.Y)))
+                    Console.WriteLine("left is choosen")
+
+                ElseIf (choice = 2) Then
+                    Me.moveToTarget(Me.Number, New Point(CInt(Me._CurrentPoseEstimate.X), CInt(Me._CurrentPoseEstimate.Y - 4000)))
+                    Console.WriteLine("right is choosen")
+
+                End If
+
+            End If

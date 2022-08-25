@@ -1,0 +1,113 @@
+------------------------------------------------------------------------
+r672 | tschmits | 2007-07-07 20:10:44 +0200 (Sat, 07 Jul 2007) | 2 lines
+
+- update victdetect parameters
+- image save for clients
+------------------------------------------------------------------------
+r673 | tschmits | 2007-07-08 00:51:06 +0200 (Sun, 08 Jul 2007) | 1 line
+
+- a revert to 671
+------------------------------------------------------------------------
+r689 | baslamet | 2007-07-13 17:18:09 +0200 (Fri, 13 Jul 2007) | 1 line
+
+Added NoisedSlam, a subclass from ManifoldSLAM that adds Gaussian noise to the laser range scan readings.
+------------------------------------------------------------------------
+r696 | baslamet | 2007-07-17 17:10:22 +0200 (Tue, 17 Jul 2007) | 5 lines
+
+Added HybridIcpScanMatcher.vb and MultiIcpScanMatcher.vb:
+- HybridIcpScanMatcher.vb = WSM using metric from MbICP, this is work in progress so don't use 
+- MultiIcpScanMatcher.vb = basically WSM which runs IDC as fall-back option, work in progress but seems to work nicely already
+
+
+------------------------------------------------------------------------
+r715 | baslamet | 2007-07-22 00:14:40 +0200 (Sun, 22 Jul 2007) | 5 lines
+
+Implemented a QuadTree:
+- HybridIcpScanMatcher uses this to index the points before correlating them, performance boost is HUGE (factor 2 speedup)
+- next step is index the full manifold using a QuadTree, ManifoldIndex.vb is a first step
+- then it will be possible to match a scan against the whole manifold while still having acceptable performance
+- refactored parts of scan matching classes to prepare for these upcoming changes 
+------------------------------------------------------------------------
+r716 | baslamet | 2007-07-22 23:50:01 +0200 (Sun, 22 Jul 2007) | 2 lines
+
+Many updates to all the scan matching stuff. The code is growing into a mess, will clean this up asap. 
+This commit is mainly for backup purposes, may great additions needed a secure place. :-)
+------------------------------------------------------------------------
+r723 | baslamet | 2007-07-24 16:09:00 +0200 (Tue, 24 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r765 | baslamet | 2007-08-06 18:44:39 +0200 (Mon, 06 Aug 2007) | 9 lines
+
+Leftovers:
+- numerous little modifications to slam and scan matching, mostly fine-tunings for the purpose of several log files
+
+Implemented frontier extraction tools:
+- set resolution of manifold image to 10px/m for performance
+- numerous little routine that are able to filter out some piece of information from the manifold image
+- most importantly: frontier extraction
+- very nice too: navigation map extraction using value iteration
+
+------------------------------------------------------------------------
+r767 | baslamet | 2007-08-07 23:13:53 +0200 (Tue, 07 Aug 2007) | 1 line
+
+Half-done result of today's efforts to get frontier exploration behavior.
+------------------------------------------------------------------------
+r806 | baslamet | 2007-09-26 15:53:00 +0200 (Wed, 26 Sep 2007) | 1 line
+
+Changes made for Probabilistic Robotics.
+------------------------------------------------------------------------
+r834 | arnoud | 2007-11-21 16:09:52 +0100 (Wed, 21 Nov 2007) | 1 line
+
+RelaySync is requested every 10 seconds by OperatorAgent. Receives the latest 5 patches + 4 relations
+------------------------------------------------------------------------
+r836 | arnoud | 2007-11-22 13:33:25 +0100 (Thu, 22 Nov 2007) | 2 lines
+
+* Sanity-check in ManifoldSlam before storing the first Patch
+* Tilt-sensing and Retreat 
+------------------------------------------------------------------------
+r955 | rtobi | 2008-02-17 22:15:32 +0100 (Sun, 17 Feb 2008) | 1 line
+
+partially implement Max & Bayu's original C++ processSonarData() algorithm for ass2
+------------------------------------------------------------------------
+r1009 | rtobi | 2008-02-26 18:27:51 +0100 (Tue, 26 Feb 2008) | 1 line
+
+eliminate some Console.WriteLine() calls
+------------------------------------------------------------------------
+r1157 | arnoud | 2008-04-24 09:42:44 +0200 (Thu, 24 Apr 2008) | 12 lines
+
+German Open 2008 Thursday morning: 
+* bugfix to allow  TeleOperation over WSS
+* included GPSSensor
+* Preparations for including Apriori-data in FrontierExploration (not active)
+* Larger Axis-font
+* FreeSpaceAlpha on competition setting
+* Every 20 seconds an AREA print
+* Protection on creation of histogram-bitmap (pre-GO2008)
+* AirRobot introduced (no buttons to get AirBorne yet)
+* 
+* 
+
+------------------------------------------------------------------------
+r1333 | jdehoog | 2008-07-02 18:17:36 +0200 (Wed, 02 Jul 2008) | 1 line
+
+Extensive changes to SaveMapDialog: individual agent contributions can be adjusted using trackbars; added constant class (e.g. map resolution)
+------------------------------------------------------------------------
+r1343 | jdehoog | 2008-07-16 06:53:33 +0200 (Wed, 16 Jul 2008) | 1 line
+
+RoboCup08 Prelim Trial version: sleep between spawn and WSS connection, some sensors unmounted, prelim work on camera image use, multiple small bug fixes
+------------------------------------------------------------------------
+r1345 | arnoud | 2008-07-16 19:30:14 +0200 (Wed, 16 Jul 2008) | 1 line
+
+Added functionality to look that checks the fix and satellite information in GPS messages 
+------------------------------------------------------------------------
+r1348 | arnoud | 2008-07-17 20:26:58 +0200 (Thu, 17 Jul 2008) | 7 lines
+
+Tested GPS-version. This modification handles the indoor-case.
+
+Do not use GPS as seed for the localization.
+
+Outdoor testing revealed that GPS can only be used with a good filter is implemented (signal is jumping with an amplitude of 2 meter around the groundtruth.
+
+Care has to be taken for the initial estimate, because the current implementation seems to start at the origin (0,0)
+------------------------------------------------------------------------

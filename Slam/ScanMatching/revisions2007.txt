@@ -1,0 +1,125 @@
+------------------------------------------------------------------------
+r456 | baslamet | 2007-05-08 16:30:58 +0200 (Tue, 08 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r461 | baslamet | 2007-05-10 22:36:24 +0200 (Thu, 10 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r462 | baslamet | 2007-05-11 17:50:48 +0200 (Fri, 11 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r467 | baslamet | 2007-05-12 17:54:01 +0200 (Sat, 12 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r468 | baslamet | 2007-05-13 18:08:35 +0200 (Sun, 13 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r469 | baslamet | 2007-05-14 18:36:10 +0200 (Mon, 14 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r487 | baslamet | 2007-05-20 00:19:05 +0200 (Sun, 20 May 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r537 | baslamet | 2007-06-12 15:46:01 +0200 (Tue, 12 Jun 2007) | 2 lines
+
+- bugfix CameraData
+- camera mode in agentcontroller
+------------------------------------------------------------------------
+r544 | baslamet | 2007-06-13 15:45:07 +0200 (Wed, 13 Jun 2007) | 6 lines
+
+Added dead-reckoning functionality to SLAM
+- based on Odometry
+- based on INS
+- based on GroundTruth (only when bDebug is set to true in p2at section of usarbot.ini
+
+Bayu
+------------------------------------------------------------------------
+r556 | baslamet | 2007-06-16 11:47:37 +0200 (Sat, 16 Jun 2007) | 13 lines
+
+Integrated OpenCV into the framework:
+- added C++ OpenCV libs to Third Party libs
+- added OpenCVDotNet wrapper to Third Party libs
+- changed reference to OpenCVDotNet in UsarLib project to make it point to the relative path
+- added post-build event to UsarCommander so that it copies the C++ files to the build directory, this should fix file-not-found exceptions error
+
+Many small things:
+- made histoPic2.JPG part of the UsarLib project as Content that is copied to the build dir
+- fixed GEO and CONF message handling
+- fixed GETGEO and GETCONF message requests in Sensor
+- fixed GeoReferencing of the produced GeoTIFF files (x-north / y-east)
+- reorganized scamatching code a bit
+
+------------------------------------------------------------------------
+r562 | baslamet | 2007-06-18 17:45:46 +0200 (Mon, 18 Jun 2007) | 6 lines
+
+IDC has been implemented:
+- IdcScanMatcher works
+- AgentConfig extended with relevant options
+- AgentConfigDialog changed accordingly
+
+Bayu
+------------------------------------------------------------------------
+r563 | baslamet | 2007-06-19 13:42:38 +0200 (Tue, 19 Jun 2007) | 4 lines
+
+- debugged IdcScanMatcher
+- added reset functionality to OdometrySensor
+- added reset functioality to InsSensor
+
+------------------------------------------------------------------------
+r565 | baslamet | 2007-06-21 13:29:39 +0200 (Thu, 21 Jun 2007) | 8 lines
+
+MbICP:
+- refactored scanmatchers to prepare for MbICP
+- added initial (unstable) version of MbICP scanmatcher
+
+WSS:
+- moved Actors
+- prepared Agent for WSS
+
+------------------------------------------------------------------------
+r577 | baslamet | 2007-06-27 10:53:56 +0200 (Wed, 27 Jun 2007) | 1 line
+
+Merged Tijn's code from yesterday and this morning into my latest changes.
+------------------------------------------------------------------------
+r586 | baslamet | 2007-06-27 23:05:20 +0200 (Wed, 27 Jun 2007) | 6 lines
+
+Lotsa changes:
+- moved Manifold data structure to Agent project
+- got WSS to work such that any pair of Agents will try to have an open connection whenever they are within range
+- got Agents to submit manifold data over the wire (Patches)
+
+
+------------------------------------------------------------------------
+r606 | baslamet | 2007-07-01 22:41:36 +0200 (Sun, 01 Jul 2007) | 5 lines
+
+- added min-range and max-range handling to SLAM
+- switch GeoTIFF back to native .Net based tiff loading
+- committed non-functioning HybridScanMatcher.vb, this is work in progress
+
+
+------------------------------------------------------------------------
+r607 | baslamet | 2007-07-02 00:34:33 +0200 (Mon, 02 Jul 2007) | 3 lines
+
+implemented a speed-up in the Weighted Scanmatcher. Did not want to mess with the current implementation (yet), so put it in a subclass called FastWeightedScanMatcher. The performance boost is about 20%.
+
+Also reverted all Matrix and Vector classes to work with Doubles again.
+------------------------------------------------------------------------
+r613 | baslamet | 2007-07-02 16:33:10 +0200 (Mon, 02 Jul 2007) | 4 lines
+
+- added some logic to SLAM so that it reverts to the odometry/INS estimate if the scanmatcher does not converge
+- made some changes to CommActor to aid debugging
+
+
+------------------------------------------------------------------------
+r621 | baslamet | 2007-07-03 10:26:36 +0200 (Tue, 03 Jul 2007) | 2 lines
+
+- fixed a bug in IcpScanMatcher that made it assume 180 degrees range scans
+
+------------------------------------------------------------------------

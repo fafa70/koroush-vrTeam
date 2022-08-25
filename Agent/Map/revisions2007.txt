@@ -1,0 +1,208 @@
+------------------------------------------------------------------------
+r586 | baslamet | 2007-06-27 23:05:20 +0200 (Wed, 27 Jun 2007) | 6 lines
+
+Lotsa changes:
+- moved Manifold data structure to Agent project
+- got WSS to work such that any pair of Agents will try to have an open connection whenever they are within range
+- got Agents to submit manifold data over the wire (Patches)
+
+
+------------------------------------------------------------------------
+r591 | tschmits | 2007-06-29 15:02:12 +0200 (Fri, 29 Jun 2007) | 2 lines
+
+- added Histograms from ICIS presentation day
+- included 'add victim observation'-functionality to Manifold Patches
+------------------------------------------------------------------------
+r593 | baslamet | 2007-06-29 22:06:59 +0200 (Fri, 29 Jun 2007) | 4 lines
+
+- Comm works (WSS), huge refactory and numerous little improvements
+- refactored OperatorAgent
+- introduced some extension thresholds for ManifoldSLAM
+
+------------------------------------------------------------------------
+r596 | baslamet | 2007-06-30 13:04:23 +0200 (Sat, 30 Jun 2007) | 5 lines
+
+Added ClearSpaceLayer
+- manifold image paints cleared areas in solid green, according to the map delivery rules
+- the area that falls within the victsensors view is cleared automatically
+- see also the clearFov and clearRange properties on the ClearSpaceLayer class
+
+------------------------------------------------------------------------
+r599 | baslamet | 2007-06-30 17:12:20 +0200 (Sat, 30 Jun 2007) | 7 lines
+
+Victim stuff works:
+- victims observations are stored on the Manifold
+- and they are nicely rendered in the map
+- 2 new layers were added for this purpose; VictimsLayer and VictimReportsLayer
+
+
+
+------------------------------------------------------------------------
+r600 | baslamet | 2007-06-30 18:11:01 +0200 (Sat, 30 Jun 2007) | 1 line
+
+several minor bits and pieces
+------------------------------------------------------------------------
+r601 | tschmits | 2007-07-01 04:43:16 +0200 (Sun, 01 Jul 2007) | 3 lines
+
+- modified VictimObservation to catch only head and chest to prevent multiple observations per single victim
+- modified skindetector to higher positive skin threshold
+- modified ManifoldSlam to prevent false single victim part positives (like a 'head' in a police car's wheels...)
+------------------------------------------------------------------------
+r603 | tschmits | 2007-07-01 13:41:01 +0200 (Sun, 01 Jul 2007) | 1 line
+
+- implemented victim rapport: creates victim file + images
+------------------------------------------------------------------------
+r604 | baslamet | 2007-07-01 14:16:26 +0200 (Sun, 01 Jul 2007) | 7 lines
+
+Redesigned map saving routines:
+- one layer with the map, exactly according to map-scoring rules
+- one additional layer with victim reports (funky annotations with position, name and parts info)
+- and another additional layer with the axes (minor importance, but since I was into it anyways ...)
+
+Merged recent changes from Tijn, not sure if I did that correctly. 
+- NEEDS VERIFICATION!
+------------------------------------------------------------------------
+r606 | baslamet | 2007-07-01 22:41:36 +0200 (Sun, 01 Jul 2007) | 5 lines
+
+- added min-range and max-range handling to SLAM
+- switch GeoTIFF back to native .Net based tiff loading
+- committed non-functioning HybridScanMatcher.vb, this is work in progress
+
+
+------------------------------------------------------------------------
+r607 | baslamet | 2007-07-02 00:34:33 +0200 (Mon, 02 Jul 2007) | 3 lines
+
+implemented a speed-up in the Weighted Scanmatcher. Did not want to mess with the current implementation (yet), so put it in a subclass called FastWeightedScanMatcher. The performance boost is about 20%.
+
+Also reverted all Matrix and Vector classes to work with Doubles again.
+------------------------------------------------------------------------
+r608 | tschmits | 2007-07-02 11:10:37 +0200 (Mon, 02 Jul 2007) | 2 lines
+
+- Fixed UsarCommander camera-image peek functionality: the commander has its own image queue now
+- Included ProcessVictimPicture to Memento in Patch
+------------------------------------------------------------------------
+r610 | baslamet | 2007-07-02 14:17:57 +0200 (Mon, 02 Jul 2007) | 7 lines
+
+- fixed apriori handling
+- use thumbnail images in GeoTiffLayer to speed up rendering, it does speed up but some apriori files are simply too big
+- implemented another speed up in map saving
+- returned to default gdi+ coords system in ManifoldView again
+- fixed text rendering in geo referenced mode (90 degrees rotated)
+- fixed a bug in PatchMemento that would cause syncs to fail
+- numerous little things ...
+------------------------------------------------------------------------
+r615 | baslamet | 2007-07-02 16:52:33 +0200 (Mon, 02 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r616 | baslamet | 2007-07-02 18:04:22 +0200 (Mon, 02 Jul 2007) | 3 lines
+
+- agents now also communicate poses so that the Operator can render the agents in the Manifold
+- resync timeout set to 1 sec, results in faster feed-back from agent to operator
+
+------------------------------------------------------------------------
+r617 | baslamet | 2007-07-02 19:16:05 +0200 (Mon, 02 Jul 2007) | 1 line
+
+Add min-range and max-range check to manifold rendering. Out-of-range values will no longer result in black dots.
+------------------------------------------------------------------------
+r620 | arnoud | 2007-07-03 03:50:18 +0200 (Tue, 03 Jul 2007) | 1 line
+
+Made the robot's path Maroon (Flavour DarkRed, pure in blue and green channels). Also modified Load of AprioriFile, but should be further tested.
+------------------------------------------------------------------------
+r621 | baslamet | 2007-07-03 10:26:36 +0200 (Tue, 03 Jul 2007) | 2 lines
+
+- fixed a bug in IcpScanMatcher that made it assume 180 degrees range scans
+
+------------------------------------------------------------------------
+r623 | baslamet | 2007-07-03 12:05:38 +0200 (Tue, 03 Jul 2007) | 3 lines
+
+Added advanced apriori analysis functionality:
+- using Aforge image library (http://code.google.com/p/aforge/)
+- individual apriori-layers can be turned on and off now
+------------------------------------------------------------------------
+r624 | arnoud | 2007-07-03 12:10:31 +0200 (Tue, 03 Jul 2007) | 1 line
+
+Chosen Chartreuse (RGB #7FFF00) as path-colour, because a path is per definition cleared. Cleared is indicated in the green channel #00FF00, the path should be indicate with a shade of red (< #FF0000). The result looks nice, the path is clearly visible, but only when you take notice of it: http://staff.science.uva.nl/~arnoud/research/roboresc/Robocup2007/chartreuse.jpg
+------------------------------------------------------------------------
+r628 | baslamet | 2007-07-03 16:22:48 +0200 (Tue, 03 Jul 2007) | 1 line
+
+
+------------------------------------------------------------------------
+r629 | tschmits | 2007-07-03 16:34:40 +0200 (Tue, 03 Jul 2007) | 2 lines
+
+- fixed Bitmap memory sharing error handling
+- Patch logging enabled
+------------------------------------------------------------------------
+r631 | baslamet | 2007-07-04 01:10:23 +0200 (Wed, 04 Jul 2007) | 6 lines
+
+Debugged WSS:
+- rewrote the sync protocol, the time-stamping system was flawed and caused 'gaps' to occur, should be solved now
+- found a serious bug in ProxyAgent that caused it to 'think' it could not control the remote robot, while in fact it just could, this bug is also fixed
+- got the path-loss values to be printed in the AgentController, really convenient
+- made agents continuously communicate their current pose, so even though the operators GUI is not up-to-date, it does receive pose updates which may be enough to act in time. Note that also the pose updates will suffer from lags when the WSS is in the midst of a sync-routine.
+
+------------------------------------------------------------------------
+r633 | tschmits | 2007-07-04 03:23:22 +0200 (Wed, 04 Jul 2007) | 2 lines
+
+- Patch: crucial memento Restore() bug fixed
+- Skindetector: minor output functionality modifications
+------------------------------------------------------------------------
+r641 | baslamet | 2007-07-05 10:15:25 +0200 (Thu, 05 Jul 2007) | 1 line
+
+Improved axes layer, now it also render the x- and y-values at every 5m.
+------------------------------------------------------------------------
+r642 | baslamet | 2007-07-05 10:32:46 +0200 (Thu, 05 Jul 2007) | 4 lines
+
+Added thumbnail option to BufferedLayer in an attempt to improve rendering performance:
+- this effects the FreeSpaceLayer (white), ClearedLayer (green) and ObservationsLayer (black dots)
+- quality of the visualization degrades noticeably, so when the map is saved on disk the thumbnail option will be ignored, so maps saved on disk will always be full-quality
+- creating the thumbnail is a trade-off: rendering speed should improve, but creating the thumb also costs CPU cycles. I'm not sure if and when the thumb is actually a benefit in CPU-terms, so I added a flag that enables to turn it off easily again.
+------------------------------------------------------------------------
+r643 | baslamet | 2007-07-05 12:10:55 +0200 (Thu, 05 Jul 2007) | 1 line
+
+added real-time pose tracking to manifold view, it doesn't get any faster than this.
+------------------------------------------------------------------------
+r644 | baslamet | 2007-07-05 13:56:31 +0200 (Thu, 05 Jul 2007) | 6 lines
+
+Added FastFreeSpaceLayer:
+- the regular FreeSpaceLayer plots the individual scan beams (usually 181 lines)
+- this may slow down the ManifoldView as more agents contribute to the shared map
+- the FastFreeSpaceLayer constructs a circle based on the max-range of the laser range scanner and intersects this with all observed obstacles. The result is a single polygon.
+- the idea (assumption) is that rendering a single polygon is much faster than rendering 181 lines
+- this assumption is NOT verified yet, but was based on the observation that the ClearSpaceLayer renders much faster than the regular FreeSpaceLayer, and the ClearSpaceLayer is based on a single polygon too ...
+------------------------------------------------------------------------
+r645 | baslamet | 2007-07-05 13:57:34 +0200 (Thu, 05 Jul 2007) | 1 line
+
+Forgot the new FastFreeSpaceLayer.vb in the previous commit!
+------------------------------------------------------------------------
+r646 | baslamet | 2007-07-05 15:01:16 +0200 (Thu, 05 Jul 2007) | 3 lines
+
+- fixed a small bug in FastFreeSpaceLayer
+- added and tested speed-up and speed-down buttons to AgentController
+- set rotational speed back to .5, it was too hard to get between cars with .8
+------------------------------------------------------------------------
+r649 | tschmits | 2007-07-06 00:31:59 +0200 (Fri, 06 Jul 2007) | 2 lines
+
+- Manifold: fixed VictLog file bug
+- Layers: included exception catch for rendering of victdata at point {-1.#IND, -1.#INF} - an unresolved bug atm
+------------------------------------------------------------------------
+r657 | baslamet | 2007-07-06 10:45:49 +0200 (Fri, 06 Jul 2007) | 2 lines
+
+- fixed a bug in Console.WriteLine statement CommActor
+- fixed a bug in PatchMemento Restore function that did not restore the original ID of the patch. This caused relations to be unable to restore as they could not find back the patches they relate.
+------------------------------------------------------------------------
+r658 | baslamet | 2007-07-06 10:51:33 +0200 (Fri, 06 Jul 2007) | 1 line
+
+- bugfix in RelationMemento, the from-patch-id and to-patch-id were not set in the constructor
+------------------------------------------------------------------------
+r659 | baslamet | 2007-07-06 11:00:05 +0200 (Fri, 06 Jul 2007) | 1 line
+
+- fixed a bug in RelationMemento which did not restore original relation ID
+------------------------------------------------------------------------
+r669 | baslamet | 2007-07-07 08:47:30 +0200 (Sat, 07 Jul 2007) | 4 lines
+
+Disabled anti-aliasing in BufferedLayer
+- this effects free-space, clear-space and observations layer
+- so the jury should be able to score our maps automatically as all colors remain 'pure' now
+
+------------------------------------------------------------------------

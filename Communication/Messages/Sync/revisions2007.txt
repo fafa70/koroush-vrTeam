@@ -1,0 +1,34 @@
+------------------------------------------------------------------------
+r631 | baslamet | 2007-07-04 01:10:23 +0200 (Wed, 04 Jul 2007) | 6 lines
+
+Debugged WSS:
+- rewrote the sync protocol, the time-stamping system was flawed and caused 'gaps' to occur, should be solved now
+- found a serious bug in ProxyAgent that caused it to 'think' it could not control the remote robot, while in fact it just could, this bug is also fixed
+- got the path-loss values to be printed in the AgentController, really convenient
+- made agents continuously communicate their current pose, so even though the operators GUI is not up-to-date, it does receive pose updates which may be enough to act in time. Note that also the pose updates will suffer from lags when the WSS is in the midst of a sync-routine.
+
+------------------------------------------------------------------------
+r634 | baslamet | 2007-07-04 13:39:14 +0200 (Wed, 04 Jul 2007) | 4 lines
+
+- modified syn such that it does not run automatically
+- the operator now triggers syncs 
+- this implies a MASSIVE reduction of the load on WSS
+- fixed a small bug in AgentConfig
+------------------------------------------------------------------------
+r670 | baslamet | 2007-07-07 11:52:09 +0200 (Sat, 07 Jul 2007) | 14 lines
+
+WARNING:
+- Comm will most probably NOT be backwards compatible with previous revisions
+- so either update all your clients and commander, or update none
+
+Comm update:
+- command relaying through intermediaries works (DRIVE commands)
+- pose update broadcasting through intermediaries works
+- NOT implemented: sync through intermediaries, too complex to implement on short notice (semi is in 4 hours)
+
+Comm improvements:
+- SyncStart and SyncCommit messages now also include CurrentPose of remote robot
+- benefit 1: before applying the sync, the GUI will already display the current pose of the robot
+- benefit 2: after the sync is applied, the pose update will cause the GUI to refresh, so no more clicking necessary
+
+------------------------------------------------------------------------

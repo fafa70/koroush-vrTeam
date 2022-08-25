@@ -1,0 +1,46 @@
+------------------------------------------------------------------------
+r1643 | esamoukas | 2009-01-23 12:10:59 +0100 (Fri, 23 Jan 2009) | 1 line
+
+Following and RFIDtags detection
+------------------------------------------------------------------------
+r1645 | hnijhuis | 2009-01-23 14:40:39 +0100 (Fri, 23 Jan 2009) | 1 line
+
+Fixed some errors. Following works (ground follows airrobot), but only with deadreckoning for both robots. Apparently I (hanne) broke the scan-matching somehow.. Will try to fix this now.
+------------------------------------------------------------------------
+r1655 | hnijhuis | 2009-01-27 14:44:15 +0100 (Tue, 27 Jan 2009) | 2 lines
+
+Fixed a small bug in the Following.vb
+
+------------------------------------------------------------------------
+r1664 | esamoukas | 2009-01-28 13:46:45 +0100 (Wed, 28 Jan 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r1670 | hnijhuis | 2009-01-28 16:09:41 +0100 (Wed, 28 Jan 2009) | 1 line
+
+Everything should be working now. The GroundRobot sometimes has difficulties reaching it's target, but at least the target-stack is filled by the AirRobot and followed by the Ground.
+------------------------------------------------------------------------
+r1685 | jdehoog | 2009-02-03 16:27:00 +0100 (Tue, 03 Feb 2009) | 1 line
+
+Merge with DOAS revision 1683
+------------------------------------------------------------------------
+r1823 | arnoud | 2009-04-20 10:21:27 +0200 (Mon, 20 Apr 2009) | 3 lines
+
+Georeferencing works again with partial Merge of honours rev 1822
+* Mainly UsarLib/Dialogs and UsarLib/Views/
+* Also Agent/Agent and Agent/Sensor (which mainly contain relevant modifications from experimental)
+------------------------------------------------------------------------
+r1837 | hnijhuis | 2009-04-23 15:22:21 +0200 (Thu, 23 Apr 2009) | 1 line
+
+increased the tilting-threshold for all behaviors from 0.1 to 0.3 (only for the pitch.. not the roll)
+------------------------------------------------------------------------
+r1847 | hnijhuis | 2009-04-24 04:24:17 +0200 (Fri, 24 Apr 2009) | 1 line
+
+Made it possible to send targetlocations from the AirRobot to another robot through the WSS-server.
+------------------------------------------------------------------------
+r1905 | jdehoog | 2009-07-01 11:44:11 +0200 (Wed, 01 Jul 2009) | 3 lines
+
+Added functionality for second range finder (since we added a tilted Hokuyo to the P2AT to detect drop-offs and obstacles at different levels from sick).
+Second range finder is called TiltedScanner and is ignored everywhere except ConservativeTeleOpMotion, for now.
+Changes made in every ProcessLaserRangeData throughout code.
+------------------------------------------------------------------------

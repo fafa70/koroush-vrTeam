@@ -1,0 +1,27 @@
+------------------------------------------------------------------------
+r2198 | ndijkshoorn | 2011-03-31 17:46:02 +0200 (Thu, 31 Mar 2011) | 2 lines
+
+Visual Studio 2011 project
+Added separate conversations for frames
+------------------------------------------------------------------------
+r2199 | ndijkshoorn | 2011-04-01 12:25:12 +0200 (Fri, 01 Apr 2011) | 1 line
+
+cam conversation seems to work most of the times.. sometimes it fails and the frames are send using the regular conversation
+------------------------------------------------------------------------
+r2207 | ndijkshoorn | 2011-04-06 07:54:03 +0200 (Wed, 06 Apr 2011) | 1 line
+
+Fixed keyboard controls when conservative behavior causes halt
+------------------------------------------------------------------------
+r2208 | ndijkshoorn | 2011-04-06 09:27:26 +0200 (Wed, 06 Apr 2011) | 1 line
+
+Fixed camera request issue: Me.Agent.ShowImages is now used instead of ShowCameraImages (AgentController)
+------------------------------------------------------------------------
+r2209 | ndijkshoorn | 2011-04-06 13:31:21 +0200 (Wed, 06 Apr 2011) | 1 line
+
+fixed ProxyAgent continuous loop. Improved conversationID > agent name conversion
+------------------------------------------------------------------------
+r2214 | ndijkshoorn | 2011-04-09 06:37:16 +0200 (Sat, 09 Apr 2011) | 2 lines
+
+competition improvements: deploy p3at instead of comstation.
+Increased the priority of LiveDriver
+------------------------------------------------------------------------

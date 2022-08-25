@@ -1,0 +1,79 @@
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Math\bin\Debug\UvARescue.Math.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Math\bin\Debug\UvARescue.Math.pdb
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Math\bin\Debug\UvARescue.xml
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Math\obj\Debug\ResolveAssemblyReference.cache
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Math\obj\Debug\UvARescue.Math.Resources.resources
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Math\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Math\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Math\obj\Debug\UvARescue.Math.dll
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Math\obj\Debug\UvARescue.xml
+D:\Scientific\Projects & Competitions and Works\Robocup new era\source codes\New folder\AOJRF2011\Math\obj\Debug\UvARescue.Math.pdb
+H:\AOJRF2011\Math\bin\Debug\UvARescue.Math.dll
+H:\AOJRF2011\Math\bin\Debug\UvARescue.Math.pdb
+H:\AOJRF2011\Math\bin\Debug\UvARescue.xml
+H:\AOJRF2011\Math\obj\Debug\ResolveAssemblyReference.cache
+H:\AOJRF2011\Math\obj\Debug\UvARescue.Math.Resources.resources
+H:\AOJRF2011\Math\obj\Debug\Math.vbproj.GenerateResource.Cache
+H:\AOJRF2011\Math\obj\Debug\UvARescue.Math.dll
+H:\AOJRF2011\Math\obj\Debug\UvARescue.xml
+H:\AOJRF2011\Math\obj\Debug\UvARescue.Math.pdb
+D:\AOJRF2012\Math\bin\Debug\UvARescue.Math.dll
+D:\AOJRF2012\Math\bin\Debug\UvARescue.Math.pdb
+D:\AOJRF2012\Math\bin\Debug\UvARescue.xml
+D:\AOJRF2012\Math\obj\Debug\ResolveAssemblyReference.cache
+D:\AOJRF2012\Math\obj\Debug\UvARescue.Math.Resources.resources
+D:\AOJRF2012\Math\obj\Debug\ResGen.read.1.tlog
+D:\AOJRF2012\Math\obj\Debug\ResGen.write.1.tlog
+D:\AOJRF2012\Math\obj\Debug\UvARescue.Math.dll
+D:\AOJRF2012\Math\obj\Debug\UvARescue.xml
+D:\AOJRF2012\Math\obj\Debug\UvARescue.Math.pdb
+D:\IUST-BASE\Math\bin\Debug\UvARescue.Math.dll
+D:\IUST-BASE\Math\bin\Debug\UvARescue.Math.pdb
+D:\IUST-BASE\Math\bin\Debug\UvARescue.xml
+D:\IUST-BASE\Math\obj\Debug\ResolveAssemblyReference.cache
+D:\IUST-BASE\Math\obj\Debug\UvARescue.Math.Resources.resources
+D:\IUST-BASE\Math\obj\Debug\ResGen.read.1.tlog
+D:\IUST-BASE\Math\obj\Debug\ResGen.write.1.tlog
+D:\IUST-BASE\Math\obj\Debug\UvARescue.Math.dll
+D:\IUST-BASE\Math\obj\Debug\UvARescue.xml
+D:\IUST-BASE\Math\obj\Debug\UvARescue.Math.pdb
+F:\IUST-BASE\Math\bin\Debug\UvARescue.Math.dll
+F:\IUST-BASE\Math\bin\Debug\UvARescue.Math.pdb
+F:\IUST-BASE\Math\bin\Debug\UvARescue.xml
+F:\IUST-BASE\Math\obj\Debug\ResolveAssemblyReference.cache
+F:\IUST-BASE\Math\obj\Debug\UvARescue.Math.Resources.resources
+F:\IUST-BASE\Math\obj\Debug\ResGen.read.1.tlog
+F:\IUST-BASE\Math\obj\Debug\ResGen.write.1.tlog
+F:\IUST-BASE\Math\obj\Debug\UvARescue.Math.dll
+F:\IUST-BASE\Math\obj\Debug\UvARescue.xml
+F:\IUST-BASE\Math\obj\Debug\UvARescue.Math.pdb
+D:\usarsim\IUST-BASE\Math\bin\Debug\UvARescue.Math.dll
+D:\usarsim\IUST-BASE\Math\bin\Debug\UvARescue.Math.pdb
+D:\usarsim\IUST-BASE\Math\bin\Debug\UvARescue.xml
+D:\usarsim\IUST-BASE\Math\obj\Debug\ResolveAssemblyReference.cache
+D:\usarsim\IUST-BASE\Math\obj\Debug\UvARescue.Math.Resources.resources
+D:\usarsim\IUST-BASE\Math\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\usarsim\IUST-BASE\Math\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\usarsim\IUST-BASE\Math\obj\Debug\UvARescue.Math.dll
+D:\usarsim\IUST-BASE\Math\obj\Debug\UvARescue.xml
+D:\usarsim\IUST-BASE\Math\obj\Debug\UvARescue.Math.pdb
+C:\base-backup\fresh-backup\IUST-BASE\Math\bin\Debug\UvARescue.Math.dll
+C:\base-backup\fresh-backup\IUST-BASE\Math\bin\Debug\UvARescue.Math.pdb
+C:\base-backup\fresh-backup\IUST-BASE\Math\bin\Debug\UvARescue.xml
+C:\base-backup\fresh-backup\IUST-BASE\Math\obj\Debug\ResolveAssemblyReference.cache
+C:\base-backup\fresh-backup\IUST-BASE\Math\obj\Debug\UvARescue.Math.Resources.resources
+C:\base-backup\fresh-backup\IUST-BASE\Math\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\base-backup\fresh-backup\IUST-BASE\Math\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\base-backup\fresh-backup\IUST-BASE\Math\obj\Debug\UvARescue.Math.dll
+C:\base-backup\fresh-backup\IUST-BASE\Math\obj\Debug\UvARescue.xml
+C:\base-backup\fresh-backup\IUST-BASE\Math\obj\Debug\UvARescue.Math.pdb
+D:\mapping\IUST-BASE\Math\bin\Debug\UvARescue.Math.dll
+D:\mapping\IUST-BASE\Math\bin\Debug\UvARescue.Math.pdb
+D:\mapping\IUST-BASE\Math\bin\Debug\UvARescue.xml
+D:\mapping\IUST-BASE\Math\obj\Debug\ResolveAssemblyReference.cache
+D:\mapping\IUST-BASE\Math\obj\Debug\UvARescue.Math.Resources.resources
+D:\mapping\IUST-BASE\Math\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\mapping\IUST-BASE\Math\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\mapping\IUST-BASE\Math\obj\Debug\UvARescue.Math.dll
+D:\mapping\IUST-BASE\Math\obj\Debug\UvARescue.xml
+D:\mapping\IUST-BASE\Math\obj\Debug\UvARescue.Math.pdb
